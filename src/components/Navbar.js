@@ -79,13 +79,21 @@ function Navbar() {
           onMouseLeave={() => setIsSolutionsOpen(false)}
         >
           <Link to="/solutions">Solutions</Link>
-          {isSolutionsOpen && (
-            <ul className="submenu">
-              {solutionsSubMenuItems.map((item, index) => (
-                <li key={index}><Link to={item.href}>{item.label}</Link></li>
-              ))}
-            </ul>
-          )}
+          
+            <div >
+              {isSolutionsOpen && (
+                  // this place needs a container which wil hold everything else,
+              
+                <ul className="submenu" style={{backgroundColor:"red", height:"100vh", Width:"100%"}}>
+                  {solutionsSubMenuItems.map((item, index) => (
+                  
+                      <li key={index}><Link to={item.href}>{item.label}</Link></li>
+              
+                  ))}
+                </ul>
+              )}
+            </div>
+      
         </li>
 
         {/* servces menu and subs */}
