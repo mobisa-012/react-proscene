@@ -1,9 +1,14 @@
 import React from "react";
+import Footer from "../components/Footer";
+import LogoCarousel from "../components/LogoCarousel";
 
 function Home() {
     return(
-        <h1>
-        This is the home page</h1>
+        <div>
+        <h1>This is ht ehome page</h1>
+        <LogoCarousel/>
+        <Footer/>
+        </div>
     );
 }
 
