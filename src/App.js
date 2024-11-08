@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import './components/Navbar.css';
+// import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import Home from './pages/Home';
 import About from  './pages/About';
@@ -41,7 +41,7 @@ import Extron from "./pages/Extron";
 function App() {
   return (
     <Router>
-    <Navbar />
+    <Navbar />    
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
@@ -79,9 +79,10 @@ function App() {
       <Route path="/avaya" element = {<Avaya/>} />
       <Route path="/kramer" element = {<Kramer/>} />
       <Route path="/vogel" element = {<Vogel/>} />
-      <Route path="/extron" element = {<Extron/>} />
+      <Route path="/extron" element = {<Extron/>} />      
     </Routes>
-    </Router>
+    {/* <Footer /> */}
+    </Router>        
   );
 }
 
