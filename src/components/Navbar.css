@@ -3,7 +3,6 @@
 /* z-index - to stay above elements */
 /* position - determine if moves when scrolling or not */
 /* to make logo responsive use max-width */
-
 .navbar {
   display: flex;
   align-items: center;
@@ -16,11 +15,10 @@
   z-index: 1000;
 }
 
-
 .logo img {
   max-width: 100%;
   height: auto; 
-  width: 150px; 
+  width: 150px;
 }
 
 .navbar ul {
@@ -41,7 +39,7 @@
   padding: 10px 15px;
   display: flex;
   align-items: center;
-  color: #333;
+  color: #16213D;
 }
 
 .navbar a:hover {
@@ -49,17 +47,45 @@
 }
 
 .submenu {
-  display: inline-block;
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #fff;
+  width: 300px;
+  background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
-  min-width: 500px;
+  padding: 20px;
   z-index: 1000;
+  max-width: 500px;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  overflow-y: auto;
+  max-height: 380px
 }
 
 .navbar li:hover .submenu {
-  display: block;
+  display: flex;
+}
+
+.submenu li {
+  color: #333;
+  background-color: #b5c6fc;
+  border-radius: 8px;
+  margin: 5px;
+  transition: border 0.3s ease;
+}
+
+.submenu li:hover {
+  border: 1px solid #16213D;
+}
+
+.submenu li a {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  color: #0f41c0;
 }
