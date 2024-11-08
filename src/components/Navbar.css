@@ -1,0 +1,65 @@
+/* Navbar.css */
+
+/* z-index - to stay above elements */
+/* position - determine if moves when scrolling or not */
+/* to make logo responsive use max-width */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.logo img {
+  max-width: 100%;
+  height: auto; 
+  width: 150px; 
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar li {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.navbar a:hover {
+  color: #1788f8;
+}
+
+.submenu {
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  min-width: 500px;
+  z-index: 1000;
+}
+
+.navbar li:hover .submenu {
+  display: block;
+}
