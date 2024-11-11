@@ -3,6 +3,7 @@ import './Footer.css';
 import logo from './logo.png';
 import { Link } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import Copyright from "./Copyright";
 
 const Footer = () => {
     const solutionsSubMenuItems = [
@@ -92,6 +93,7 @@ const Footer = () => {
             <div className="legal-links">
                 <Link to="/terms-and-conditions" className="footer-link">Terms & Conditions</Link>
                 <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
+                <Copyright/>
             </div>
         </div>
     );
