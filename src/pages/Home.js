@@ -3,6 +3,9 @@ import Footer from "../components/Footer";
 import LogoCarousel from "../components/LogoCarousel";
 import SectorCards from "../components/SectorCards.js";
 import './Home.css';
+// import Partners from "../components/Partners.js";
+
+// When I add hte Partnerrs card, the shape of the Sector cards changes. please help!!
 
 function Home() {
     return (
@@ -15,7 +18,11 @@ function Home() {
 
         <div className="home-section">
         <SectorCards />
-        </div>
+        </div>    
+
+        {/* <div className="home-section">
+        <Partners/>
+        </div>     */}
 
         <Footer />
         </div>
