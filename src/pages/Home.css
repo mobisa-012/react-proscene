@@ -1,0 +1,15 @@
+.home-section {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .home-section {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-section {
+        width: 80px;
+    }
+}
