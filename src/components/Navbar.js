@@ -8,7 +8,7 @@ function Navbar() {
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
   const [isSectorsOpen, setIsSectorsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [isPartnersOpen, setIsPartnersOpen] = useState(false);
+  // const [isPartnersOpen, setIsPartnersOpen] = useState(false);
 
   const solutionsSubMenuItems = [
     { label: 'Audio Visual Integration', href: '/avIntegration' },
@@ -35,20 +35,20 @@ function Navbar() {
     { label: 'Video Conference Rental', href: '/videoConferenceRental' },
   ];
 
-  const partnersSubMenuItems = [
-    { label: 'Panasonic', href: '/panasonic' },
-    { label: 'Crestron', href: '/crestron' },
-    { label: 'Optoma', href: '/optoma' },
-    { label: 'Lifesize', href: '/lifesize' },
-    { label: 'Barco', href: '/barco' },
-    { label: 'Samsung', href: '/samsung' },
-    { label: 'LG', href: '/lg' },
-    { label: 'Epson', href: '/epson' },
-    { label: 'Avaya', href: '/avaya' },
-    { label: 'Kramer', href: '/kramer' },
-    { label: 'Vogel', href: '/vogel' },
-    { label: 'Extron', href: '/extron' },
-  ];
+  // const partnersSubMenuItems = [
+  //   { label: 'Panasonic', href: '/panasonic' },
+  //   { label: 'Crestron', href: '/crestron' },
+  //   { label: 'Optoma', href: '/optoma' },
+  //   { label: 'Lifesize', href: '/lifesize' },
+  //   { label: 'Barco', href: '/barco' },
+  //   { label: 'Samsung', href: '/samsung' },
+  //   { label: 'LG', href: '/lg' },
+  //   { label: 'Epson', href: '/epson' },
+  //   { label: 'Avaya', href: '/avaya' },
+  //   { label: 'Kramer', href: '/kramer' },
+  //   { label: 'Vogel', href: '/vogel' },
+  //   { label: 'Extron', href: '/extron' },
+  // ];
 
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1024px)' });
 
@@ -105,7 +105,7 @@ function Navbar() {
           )}
         </li>
 
-        <li
+        {/* <li
           onMouseEnter={() => setIsPartnersOpen(true)}
           onMouseLeave={() => setIsPartnersOpen(false)}
         >
@@ -117,7 +117,7 @@ function Navbar() {
               ))}
             </ul>
           )}
-        </li>
+        </li> */}
 
         <li><Link to="/case-studies">Case Studies</Link></li>
         <li><Link to="/contact">Contact</Link></li>

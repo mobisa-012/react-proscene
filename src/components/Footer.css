@@ -55,7 +55,7 @@
 .legal-links {
     display: flex;
     gap: 10px;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
