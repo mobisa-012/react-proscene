@@ -1,15 +1,18 @@
-.card-container {
+.partner-card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-  margin: 100px 0px;
+  gap: 20px;
+  justify-content: center; /*  This keeps the card on the center of the screen (horizontally)*/
+  align-items: center;     /* This keeps the card on the center of the screen (vertically) */
+  margin: 0 auto;/* This keeps the card on the center of the screen*/
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-.card {
+.partner-card {
   background-color: white;
-  box-shadow: 0 4px 6px rgba(14, 13, 13, 0.1);
-  width: calc(20% - 8px);
+  box-shadow: 0 4px 8px rgba(117, 200, 248, 0.5);
+  width: calc(22% - 8px);  /* Adjust as necessary for desired card width */
   padding: 12px;
   border-radius: 12px;
   text-align: center;
@@ -25,6 +28,7 @@
   height: auto;
   max-width: 150px;
   margin-bottom: 16px;
+  margin: 0 auto; /* Makes the logo to be at the center of the card*/
 }
 
 .card-description {

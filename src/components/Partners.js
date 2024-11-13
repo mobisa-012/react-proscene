@@ -18,7 +18,7 @@ const partnerData = [
 
 const Card = ({ logo, description, link }) => {
   return (
-    <div className="card">
+    <div className="partner-card">
       <img src={logo} alt="Logo" className="card-logo" />
       <p className="card-description">{description}</p>
       <a href={link} className="card-link">More info</a>
@@ -40,7 +40,7 @@ const Partners = () => {
   };
 
   return (
-    <div className="card-container">
+    <div className="partner-card-container">
     <div className="partners-header">
         <h2>Trusted by the Best</h2>
       </div>
