@@ -7,11 +7,12 @@
   margin: 0 auto;/* This keeps the card on the center of the screen*/
   padding: 10px;
   box-sizing: border-box;
+  
 }
 
 .partner-card {
   background-color: white;
-  box-shadow: 0 4px 8px rgba(117, 200, 248, 0.5);
+  box-shadow: 0 4px 8px rgba(102, 94, 214, 0.3);
   width: calc(22% - 8px);  /* Adjust as necessary for desired card width */
   padding: 12px;
   border-radius: 12px;
