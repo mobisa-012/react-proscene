@@ -5,7 +5,6 @@ import legal from './assets/legal.jpeg';
 import ed from './assets/ed.jpeg';
 import coop from './assets/coop.jpeg';
 import ps from './assets/ps.jpeg';
-import './CardComponent.css';
 import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
 import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
 
@@ -49,20 +48,22 @@ function SectorCards() {
   };
 
   return (
-    <div className="card-carousel">
-      <div className="arrow left-arrow" onClick={handlePreviousCard}>
-        <ArrowBackOutlinedIcon />
+    <div className="w-full max-w-7xl mx-auto flex flex-row justify-between items-center gap-6 my-12">
+      <div className="bg-blue-100 rounded-full p-4" onClick={handlePreviousCard}>
+        <ArrowBackOutlinedIcon className="text-indigo-400" />
       </div>
 
-      <CardComponent
-        title={cards[selectedCardIndex].title}
-        description={cards[selectedCardIndex].description}
-        imageUrl={cards[selectedCardIndex].image}
-        link= {cards[selectedCardIndex].link}
-      />
+      <div>
+        <CardComponent
+          title={cards[selectedCardIndex].title}
+          description={cards[selectedCardIndex].description}
+          imageUrl={cards[selectedCardIndex].image}
+          link= {cards[selectedCardIndex].link}
+        />
+      </div>
 
-      <div className="arrow right-arrow" onClick={handleNextCard}>
-        <ArrowForwardOutlinedIcon />
+      <div className="bg-blue-100 rounded-full p-4" onClick={handleNextCard}>
+        <ArrowForwardOutlinedIcon className = "text-indigo-400"/>
       </div>
     </div>
   );

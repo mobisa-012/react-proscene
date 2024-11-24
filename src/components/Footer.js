@@ -82,10 +82,10 @@ const Footer = () => {
 
                 {/* Social Media To proscene*/}
                 <div className="social-icons">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+                    <a href="https://www.facebook.com/proscenesystems" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+                    <a href="https://x.com/AudioVisualEA" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+                    <a href="https://www.linkedin.com/company/proscene-systems-ltd/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                    <a href="https://www.instagram.com/proscenesystems/?__pwa=1#" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                 </div>                
             </main>
             {/* placing this here will make them go below the existing footer cntent */}
