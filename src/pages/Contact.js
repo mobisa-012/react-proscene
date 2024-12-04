@@ -1,29 +1,444 @@
-import { Map, Marker, APIProvider } from "@vis.gl/react-google-maps";
 import React, { useState } from "react";
-import "./Contact.css"
+import Footer from "../components/Footer";
+import BookDemoToday from "../components/BookDemo.js";
 
-const API_KEY = "AIzaSyCoxCd3ZrbaeruLPg5irsJwOrBH1TS_FLU";
+const HelpSection = () => {
+  const [selectedOption, setSelectedOption] = useState(null);
 
-const Contact= () => {
-    const [marker, setMarkerOnProscene] = useState({
-        lat: -1.286389,
-        lng: 36.817223
-    });
-    return (
-    <APIProvider apiKey={API_KEY}>
-      <div className="map">
-        <Map
-          style={{ borderRadius: "20px" }}
-          defaultZoom={15}
-          defaultCenter={marker}
-          gestureHandling={"greedy"}
-          disableDefaultUI
+  const [email, setEmail] = useState('');
+  const [interest, setInterest] = useState('');
+  const [error, setError] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!email || !interest) {
+      setError('Please complete this required field.');
+    } else {
+      setError('');
+      // Handle form submission logic here
+    }
+  };
+
+  const renderForm = () => {
+    switch (selectedOption) {
+      case "sales":
+        return (
+          <div className="bg-blue-100 p-10 px-11 rounded-lg shadow-md w-1/2 mx-auto">
+            <h2 className="text-xl font-bold text-blue-700 mb-4 text-center">
+              Contact our sales expert
+            </h2>
+            <form>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  placeholder="Enter your full name"
+                  className="w-full p-2 border border-gray-300 rounded-2xl"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Business Email
+                </label>
+                <input
+                  type="email"
+                  placeholder="Enter your business email"
+                  className="w-full p-2 border border-gray-300 rounded-2xl"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  placeholder="Enter your phone number"
+                  className="w-full p-2 border border-gray-300 rounded-2xl"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Company Name
+                </label>
+                <input
+                  type="tel"
+                  placeholder="Enter your company name"
+                  className="w-full p-2 border border-gray-300 rounded-2xl"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Country
+                </label>
+                <input
+                  type="email"
+                  placeholder="Enter your country name"
+                  className="w-full p-2 border border-gray-300 rounded-2xl"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Interested In
+                </label>
+                <input
+                  type="tel"
+                  placeholder="Interested in..."
+                  className="w-full p-2 border border-gray-300 rounded-2xl"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  What can we help you with?
+                </label>
+                <input
+                  type="tel"
+                  placeholder="What can we help you with?"
+                  className="w-full p-2 border border-gray-300 rounded-2xl resize-none h-32"
+                />
+              </div>
+              <div className="flex justify-center">
+              <button
+                type="submit"
+                className="bg-blue-500 text-white py-2 px-4 rounded-xl w-1/2"
+              >
+                Submit
+              </button>
+            </div>
+            </form>
+          </div>
+        );
+      case "representative":
+        return (
+          <div className="bg-orange-100 p-6 rounded-lg shadow-md w-1/2 mx-auto">
+            <h2 className="text-xl font-bold text-orange-700 mb-4 text-center">
+              Speak to a Proscene representative
+            </h2>
+            <form>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  placeholder="Enter your full name"
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Business Email
+                </label>
+                <input
+                  type="email"
+                  placeholder="Enter your business email"
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  placeholder="Enter your phone number"
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Company Name
+                </label>
+                <input
+                  type="tel"
+                  placeholder="Enter your company name"
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Country
+                </label>
+                <input
+                  type="email"
+                  placeholder="Enter your country name"
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Interested In
+                </label>
+                <input
+                  type="tel"
+                  placeholder="Interested in..."
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  What can we help you with?
+                </label>
+                <input
+                  type="tel"
+                  placeholder="What can we help you with?"
+                  className="w-full p-2 border border-gray-300 rounded-2xl resize-none h-32"
+                />
+              </div>
+              <div className="flex justify-center">
+              <button
+                type="submit"
+                className="bg-orange-500 text-white py-2 px-4 rounded-xl w-1/2"
+              >
+                Submit
+              </button>
+            </div>
+            </form>
+          </div>
+        );
+      case "partner":
+        return (
+          <div className="bg-purple-100 p-6 rounded-lg shadow-md mx-auto w-1/2">
+            <h2 className="text-xl font-bold text-purple-700 mb-4 text-center">
+              Become a Proscene Partner
+            </h2>
+            <form>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  placeholder="Enter your full name"
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Business Email
+                </label>
+                <input
+                  type="email"
+                  placeholder="Enter your business email"
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  placeholder="Enter your phone number"
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Company Name
+                </label>
+                <input
+                  type="tel"
+                  placeholder="Enter your company name"
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Country
+                </label>
+                <input
+                  type="email"
+                  placeholder="Enter your country name"
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  Interested In
+                </label>
+                <input
+                  type="tel"
+                  placeholder="Interested in..."
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium mb-2">
+                  What can we help you with?
+                </label>
+                <input
+                  type="tel"
+                  placeholder="What can we help you with?"
+                  className="w-full p-2 border border-gray-300 rounded-2xl resize-none h-32"
+                />
+              </div>
+              <div className="flex justify-center">
+              <button
+                type="submit"
+                className="bg-purple-500 text-white py-2 px-4 rounded-xl w-1/2"
+              >
+                Submit
+              </button>
+            </div>
+            </form>
+          </div>
+        );
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <div className="pt-12 p-0 pb-0">
+      <h1 className="text-5xl font-bold text-center mb-6">How can we help?</h1>
+      <p className="text-center text-3xl mb-6">Select an option below</p>
+      <div className="flex justify-center items-center space-x-8 mb-8">
+        <div
+          className={`flex flex-col items-center p-4 rounded-lg ${
+            selectedOption === "sales" ? "bg-blue-200" : "bg-blue-100"
+          }`}
+          onClick={() => setSelectedOption("sales")}
         >
-          <Marker position={setMarkerOnProscene} />
-        </Map>
+          <input
+            type="checkbox"
+            checked={selectedOption === "sales"}
+            onChange={() => setSelectedOption("sales")}
+            className="appearance-none h-5 w-5 rounded-full border-2 border-blue-500 bg-white checked:bg-blue-500 mb-2 cursor-pointer"
+          />
+          <span className="text-center">I’m interested in software solutions</span>
+        </div>
+        <div
+          className={`flex flex-col items-center p-4 rounded-lg ${
+            selectedOption === "representative"
+              ? "bg-orange-200"
+              : "bg-orange-100"
+          }`}
+          onClick={() => setSelectedOption("representative")}
+        >
+          <input
+            type="checkbox"
+            checked={selectedOption === "representative"}
+            onChange={() => setSelectedOption("representative")}
+            className="appearance-none h-5 w-5 rounded-full border-2 border-orange-500 bg-white checked:bg-orange-500 mb-2 cursor-pointer"
+          />
+          <span className="text-center">I’m an existing customer</span>
+        </div>
+        <div
+          className={`flex flex-col items-center p-4 rounded-lg ${
+            selectedOption === "partner" ? "bg-purple-200" : "bg-purple-100"
+          }`}
+          onClick={() => setSelectedOption("partner")}
+        >
+          <input
+            type="checkbox"
+            checked={selectedOption === "partner"}
+            onChange={() => setSelectedOption("partner")}
+            className="appearance-none h-5 w-5 rounded-full border-2 border-purple-500 bg-white checked:bg-purple-500 mb-2 cursor-pointer"
+          />
+          <span className="text-center">I’d like to be a Proscene Partner</span>
+        </div>
       </div>
-    </APIProvider>
-  );
-}
+      <div>{renderForm()}</div>
+      <div>
+      <h2 className="mt-10 text-center font-bold text-5xl mb-5">Contact Us</h2>
+      <p className="text-center text-3xl mb-6">Find us at</p>
+      </div>
 
-export default Contact; 
+      {/* Contact us */}
+      <div className = "pb-7 pt-4  mx-auto bg-white">
+        <div className="max-w-xs mx-auto p-10 bg-white border border-blue-500 rounded-lg shadow-lg">
+        <h2 className="text-2xl font-semibold text-black mb-2 pb-2">Headquarters</h2>
+        <p className="text-black text-lg font-semibold mb-2">Nairobi, Kenya</p>
+        <p className="text-gray-600 text-base mb-2">Karen Southern Bypass</p>
+        <div className="flex items-center text-blue-500 mb-2">
+          <span className="mr-2">📞</span>
+          <span className="text-lg font-semibold">Tel: +254713761269</span>
+        </div>
+        <div className="flex items-center text-blue-500 mb-2">
+          <span className="mr-2">📩</span>
+          <span className="text-lg font-semibold">info@proscene.co.ke</span>
+        </div>
+        <a href="https://www.google.com/maps" className="text-blue-500 text-sm font-semibold hover:underline">
+          See directions &rarr;
+        </a>
+      </div>
+    </div>
+
+    {/* email us */}
+    <div className="mx-auto p-14 bg-blue-50 px-20">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-0 p-12 justify-between pl-28 border border-blue-500 rounded-2xl">
+    <div className="pl-8 pr-6">
+      <h2 className="text-3xl font-bold text-purple-600">Our newsletter</h2>
+      <p className="text-gray-600 mt-2">Sign up for our newsletter to receive updates straight to your inbox.</p>
+      
+      <div className="mt-4">
+        <form onSubmit={handleSubmit}>
+          <div className="flex gap-3 mb-4">
+            {/* Email Field */}
+            <div className="w-full md:w-1/2">
+              <label className="block text-gray-700 font-medium mb-2">
+                Business email*
+              </label>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Business email"
+                className="w-full p-2 border border-gray-300 rounded-lg"
+              />
+            </div>
+
+            {/* Interest Field */}
+            <div className="w-full md:w-1/2">
+              <label className="block text-gray-700 font-medium mb-2">
+                What are you interested in?*
+              </label>
+              <select
+                value={interest}
+                onChange={(e) => setInterest(e.target.value)}
+                className="w-full p-2 border border-gray-300 rounded-lg"
+                required
+              >
+                <option value="">Select an option</option>
+                <option value="product-updates">Product Updates</option>
+                <option value="news">News</option>
+                <option value="offers">Offers</option>
+              </select>
+              <p className="text-red-500 text-sm mt-1">{error && error}</p>
+            </div>
+          </div>
+
+          <div className="flex justify-center pt-10">
+            <button
+              type="submit"
+              className="w-full max-w-xs py-3 bg-purple-600 text-white rounded-lg text-lg font-semibold hover:bg-purple-700 focus:outline-none"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div className="flex justify-center md:justify-end">
+      {/* Image Section */}
+      <img
+        src="https://www.priority-software.com/wp-content/uploads/2023/04/group-17441.png"
+        alt="Illustration"
+        className="w-full max-w-xs mx-auto rounded-lg"
+      />
+    </div>
+    </div>
+
+
+    </div>
+    <div className="bg-white h-20 max-w-full"></div>
+      <BookDemoToday/>
+      <Footer />
+    </div>
+  );
+};
+
+export default HelpSection;
