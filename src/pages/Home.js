@@ -6,11 +6,15 @@ import './Home.css';
 import Partners from "../components/Partners.js";
 import BookDemoToday from "../components/BookDemo.js";
 import SolutionsLayout from "../components/Solutions";
+import DriveGrowth from "../components/DriveGrowth.js";
 
 
 function Home() {
     return (
         <div className="home-container">
+        <div>
+        <DriveGrowth/>
+        </div>
         <div>
         <SolutionsLayout/>
         </div>
