@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import logo from './assets/logo.png';
 import { useMediaQuery } from 'react-responsive';
 
@@ -8,7 +9,26 @@ function Navbar() {
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
   const [isSectorsOpen, setIsSectorsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-  // const [isPartnersOpen, setIsPartnersOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const closeAllDropdowns = () => {
+    setIsSolutionsOpen(false);
+    setIsSectorsOpen(false);
+    setIsServicesOpen(false);
+  };
+
+  const handleClickOutside = (event) => {
+    if (!event.target.closest('.navbar')) {
+      closeAllDropdowns();
+    }
+  };
+
+  React.useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
 
   const solutionsSubMenuItems = [
     { label: 'Audio Visual Integration', href: '/avIntegration' },
@@ -35,21 +55,6 @@ function Navbar() {
     { label: 'Video Conference Rental', href: '/videoConferenceRental' },
   ];
 
-  // const partnersSubMenuItems = [
-  //   { label: 'Panasonic', href: '/panasonic' },
-  //   { label: 'Crestron', href: '/crestron' },
-  //   { label: 'Optoma', href: '/optoma' },
-  //   { label: 'Lifesize', href: '/lifesize' },
-  //   { label: 'Barco', href: '/barco' },
-  //   { label: 'Samsung', href: '/samsung' },
-  //   { label: 'LG', href: '/lg' },
-  //   { label: 'Epson', href: '/epson' },
-  //   { label: 'Avaya', href: '/avaya' },
-  //   { label: 'Kramer', href: '/kramer' },
-  //   { label: 'Vogel', href: '/vogel' },
-  //   { label: 'Extron', href: '/extron' },
-  // ];
-
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1024px)' });
 
   return (
@@ -59,15 +64,31 @@ function Navbar() {
           <img src={logo} alt="Company Logo" />
         </Link>
       </div>
-      <ul>
+      <div className="menu-icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <span>{isMenuOpen ? '✖' : '☰'}</span>
+      </div>
+      <div
+        className={`overlay ${isMenuOpen ? 'show' : ''}`}
+        onClick={() => setIsMenuOpen(false)}
+      ></div>
+      <ul className={isMenuOpen ? 'show' : ''}>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
 
         <li
           onMouseEnter={() => setIsSolutionsOpen(true)}
           onMouseLeave={() => setIsSolutionsOpen(false)}
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsSolutionsOpen(!isSolutionsOpen);
+            setIsSectorsOpen(false);
+            setIsServicesOpen(false);
+          }}
+          className={isSolutionsOpen ? 'showSubMenu' : ''}
         >
-          <Link to="/solutions">Solutions</Link>
+          <Link to="/solutions" style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <div className='pr-1'>Solutions</div><div> {isSolutionsOpen ? <FaChevronUp /> : <FaChevronDown />}</div>
+          </Link>
           {isSolutionsOpen && (
             <ul className={`submenu ${isDesktopOrLaptop ? 'submenu-fullwidth' : ''}`}>
               {solutionsSubMenuItems.map((item, index) => (
@@ -80,8 +101,17 @@ function Navbar() {
         <li
           onMouseEnter={() => setIsServicesOpen(true)}
           onMouseLeave={() => setIsServicesOpen(false)}
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsServicesOpen(!isServicesOpen);
+            setIsSolutionsOpen(false);
+            setIsSectorsOpen(false);
+          }}
+          className={isServicesOpen ? 'showSubMenu' : ''}
         >
-          <Link to="/services">Services</Link>
+          <Link to="/services" style={{ display: 'flex', justifyContent: 'space-between' }}>
+           <div className='pr-1'> Services</div><div> {isServicesOpen ? <FaChevronUp /> : <FaChevronDown />}</div>
+          </Link>
           {isServicesOpen && (
             <ul className={`submenu ${isDesktopOrLaptop ? 'submenu-fullwidth' : ''}`}>
               {servicesSubMenuItems.map((item, index) => (
@@ -94,8 +124,17 @@ function Navbar() {
         <li
           onMouseEnter={() => setIsSectorsOpen(true)}
           onMouseLeave={() => setIsSectorsOpen(false)}
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsSectorsOpen(!isSectorsOpen);
+            setIsSolutionsOpen(false);
+            setIsServicesOpen(false);
+          }}
+          className={isSectorsOpen ? 'showSubMenu' : ''}
         >
-          <Link to="/sectors">Sectors</Link>
+          <Link to="/sectors" style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <div className='pr-1'>Sectors</div><div> {isSectorsOpen ? <FaChevronUp /> : <FaChevronDown />}</div>
+          </Link>
           {isSectorsOpen && (
             <ul className={`submenu ${isDesktopOrLaptop ? 'submenu-fullwidth' : ''}`}>
               {sectorsSubMenuItems.map((item, index) => (
@@ -104,21 +143,6 @@ function Navbar() {
             </ul>
           )}
         </li>
-
-        {/* <li
-          onMouseEnter={() => setIsPartnersOpen(true)}
-          onMouseLeave={() => setIsPartnersOpen(false)}
-        >
-          <Link to="/partners">Partners</Link>
-          {isPartnersOpen && (
-            <ul className={`submenu ${isDesktopOrLaptop ? 'submenu-fullwidth' : ''}`}>
-              {partnersSubMenuItems.map((item, index) => (
-                <li key={index}><Link to={item.href}>{item.label}</Link></li>
-              ))}
-            </ul>
-          )}
-        </li> */}
-
         <li><Link to="/case-studies">Case Studies</Link></li>
         <li><Link to="/contact">Contact</Link></li>
       </ul>
