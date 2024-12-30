@@ -70,12 +70,17 @@
 }
 
 .partners-header h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: clamp(1.4238rem, 1.0921rem + 1.6585vw, 2.6469rem);
+    color: var(--textBluish);
+    font-weight: 600;
+    padding-bottom: 1em;
 }
 
 .partners-header p {
   font-size: 1rem;
   color: #555;
+}
+.partner-Images{
+  border-radius:.5rem .5rem 0rem 0rem;
+aspect-ratio: 4/2;
 }

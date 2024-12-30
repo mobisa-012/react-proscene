@@ -4,19 +4,19 @@ const SolutionsLayout = () => {
   return (
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <h2 className="font-bold tracking-tight text-gray-900 h2-solutions">
           Enter a world of solutions, designed 
           for your business
         </h2>
-        <p className="mt-4 text-lg text-gray-500 leading-relaxed text-center pt-3">
+        <p className="mt-1 text-lg leading-relaxed text-center pt-1 thin-weight">
           Cutting-edge cloud-based business management solutions to amplify operational efficiency, <br/>
           uncover new opportunities, stay agile in the rapidly changing market, and outperform competitors.
         </p>
       </div>
 
-      <div className="mt-12 grid sm:grid-cols-3 lg:grid-cols-5 mx-52 pb-5 pt-5 w-auto">
+      <div className="mt-12 grid sm:grid-cols-3 lg:grid-cols-4 pb-5 pt-5 w-auto">
         {/* AI */}
-        <div className="mx-4 border border-[#3c39eb] rounded-3xl p-6 text-center shadow-sm hover:shadow-lg">
+        <div className="mx-4 border border-[#3c39eb] rounded-3xl p-6 text-center shadow-sm hover:shadow-lg mb-4">
           <div className="flex justify-center mb-4">
             <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
               <span className="text-2xl font-bold">AvI</span>
@@ -29,7 +29,7 @@ const SolutionsLayout = () => {
         </div>
 
         {/* IT */}
-        <div className="mx-4 border border-[#a042ff] rounded-3xl p-6 text-center shadow-sm hover:shadow-lg">
+        <div className="mx-4 border border-[#a042ff] rounded-3xl p-6 text-center shadow-sm hover:shadow-lg mb-4">
           <div className="flex justify-center mb-4">
             <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
               <span className="text-2xl font-bold">IT</span>
@@ -42,7 +42,7 @@ const SolutionsLayout = () => {
         </div>
 
         {/* DM */}
-        <div className="mx-4 border border-[#00d2fb] rounded-3xl  p-6 text-center shadow-sm hover:shadow-lg">
+        <div className="mx-4 border border-[#00d2fb] rounded-3xl  p-6 text-center shadow-sm hover:shadow-lg mb-4">
           <div className="flex justify-center mb-4">
             <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center text-cyan-600">
               <span className="text-2xl font-bold">DM</span>
@@ -55,7 +55,7 @@ const SolutionsLayout = () => {
         </div>
 
         {/* CS */}
-        <div className="mx-4 border border-[#ff6663] rounded-3xl  p-6 text-center shadow-sm hover:shadow-lg">
+        <div className="mx-4 border border-[#ff6663] rounded-3xl  p-6 text-center shadow-sm hover:shadow-lg mb-4">
           <div className="flex justify-center mb-4">
             <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600">
               <span className="text-2xl font-bold">CS</span>
@@ -67,7 +67,7 @@ const SolutionsLayout = () => {
           </p>
         </div>
         {/* AS */}
-        <div className="mx-4 border border-[#13185e] rounded-3xl  p-6 text-center shadow-sm hover:shadow-lg">
+        {/* <div className="mx-4 border border-[#13185e] rounded-3xl  p-6 text-center shadow-sm hover:shadow-lg">
           <div className="flex justify-center mb-4">
             <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600">
               <span className="text-2xl font-bold">AS</span>
@@ -77,7 +77,7 @@ const SolutionsLayout = () => {
           <p className="mt-2 text-sm text-gray-600">
             Ace pedagogical management with Proscene SMIS.
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

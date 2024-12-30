@@ -15,17 +15,16 @@ function Home() {
         <div>
         <DriveGrowth/>
         </div>
+        <div className="home-section">
+        <LogoCarousel /> 
+        </div>
         <div>
         <SolutionsLayout/>
         </div>
 
-        <div className="home-section">
+        <div className="home-section mx-auto">
         <Partners/>
         </div> 
-
-        <div className="home-section">
-        <LogoCarousel /> 
-        </div>
 
         <div className="sector-section">
         <SectorCards />

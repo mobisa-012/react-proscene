@@ -19,7 +19,7 @@ const partnerData = [
 const Card = ({ logo, description, link }) => {
   return (
     <div className="card">
-      <img src={logo} alt="Logo" className="" />
+      <img src={logo} alt="Logo" className="partner-Images" />
       <p className="p-4">{description}</p>
       <a href={link} className="p-4 text-indigo-600 font-semibold text-center text-sm">More info</a>
     </div>
@@ -40,9 +40,9 @@ const Partners = () => {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto">
+    <div className="maxWidthContainer max-w-7xl mx-auto px-8">
     <div className="partners-header">
-        <h2>Trusted by the Best</h2>
+        <h2 className='h2-Partners'>Trusted by the Best</h2>
       </div>
     <div className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
     {partnerData.slice(0, visibleCards).map((card) => (
@@ -51,6 +51,7 @@ const Partners = () => {
           logo={card.logo}
           description={card.description}
           link={card.link}
+          className="px-3"
         />
       ))}
     </div>
