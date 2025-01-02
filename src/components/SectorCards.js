@@ -48,12 +48,8 @@ function SectorCards() {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto flex flex-row justify-between items-center gap-6 my-12">
-      <div className="bg-blue-100 rounded-full p-4" onClick={handlePreviousCard}>
-        <ArrowBackOutlinedIcon className="text-indigo-400" />
-      </div>
-
-      <div>
+    <div className="max-w-7xl flex flex-col justify-between items-center my-12" style={{marginInline:'1em'}}>
+      <div className='mx-auto mb-2'>
         <CardComponent
           title={cards[selectedCardIndex].title}
           description={cards[selectedCardIndex].description}
@@ -61,9 +57,13 @@ function SectorCards() {
           link= {cards[selectedCardIndex].link}
         />
       </div>
-
-      <div className="bg-blue-100 rounded-full p-4" onClick={handleNextCard}>
-        <ArrowForwardOutlinedIcon className = "text-indigo-400"/>
+      <div className='flex gap-2'>
+        <div className="bg-blue-100 rounded-full p-2" onClick={handlePreviousCard}>
+          <ArrowBackOutlinedIcon className="text-indigo-400" />
+        </div>
+        <div className="bg-blue-100 rounded-full p-2" onClick={handleNextCard}>
+          <ArrowForwardOutlinedIcon className = "text-indigo-400"/>
+        </div>
       </div>
     </div>
   );

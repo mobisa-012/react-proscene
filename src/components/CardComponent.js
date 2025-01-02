@@ -1,17 +1,22 @@
 import React from 'react';
+import '../global.css'
 
 function CardComponent({ title, description, imageUrl, link }) {
   return (
-    <div className="sector-card">
-      <div className="flex flex-col justify-between gap-3 flex-1">
-        <h2 className="font-bold text-indigo-700 text-2xl lg:text-5xl tracking-wide">{title}</h2>
-        <p className="font-normal text-black lg:w-[70%] sm:w-[80%] tracking-normal">{description}</p>
-        <a href={link} className="text-[#368cee] font-medium">Read More</a>
-      </div>
-      <div className="h-96 w-96 object-cover content-center">
-        <img src={imageUrl} alt={title} className="h-96 w-full content-center object-cover rounded-2xl" />
-      </div>
-    </div>
+    <div className="sector-card flex flex-col lg:flex-row items-center lg:items-start justify-between gap-6">
+  {/* Text Content */}
+  <div className="flex flex-col justify-between lg:w-1/2">
+    <h2 className="font-bold h2sectorcard" style={{lineHeight:'1.3'}}>{title}</h2>
+    <p className="font-normal lg:w-[90%] sm:w-[80%] mt-4" style={{color:'rgb(22, 33, 61)'}}>{description}</p>
+    <a href={link} className="text-[#368cee] font-medium mt-2">Read More</a>
+  </div>
+
+  {/* Image Content */}
+  <div className="h-96 lg:w-1/2">
+    <img src={imageUrl} alt={title} className="w-full h-full object-cover rounded-2xl" />
+  </div>
+</div>
+
   );
 }
 

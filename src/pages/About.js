@@ -1,8 +1,8 @@
 import React from "react";
-import futurefirst from '../components/assets/futurefirst.jpg';
-import harney from '../components/assets/harney.jpg';
+import futurefirst from '../components/assets/futurefirst.png';
+import harney from '../components/assets/harney.webp';
 import photo1 from '../components/assets/1.png';
-import icipe from '../components/assets/icipe.jpg';
+import icipe from '../components/assets/icipe-logo.png';
 import BookDemoToday from "../components/BookDemo.js";
 import Footer from "../components/Footer";
 

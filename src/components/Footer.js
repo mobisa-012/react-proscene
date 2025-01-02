@@ -34,7 +34,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <main className="main-container">
-                <div className="logo">
+                <div className="logo" style={{margin:'10px 60px 10px 10px'}}>
                     <Link to="/">
                         <img src={logo} alt="Company Logo" />
                     </Link>
@@ -42,7 +42,7 @@ const Footer = () => {
 
                 {/* Solutions Section */}
                 <div className="footer-section">
-                    <h3>Solutions</h3>
+                    <h3 className="h3footer">Solutions</h3>
                     {solutionsSubMenuItems.map(item => (
                         <Link key={item.href} to={item.href} className="footer-link">
                             {item.label}
@@ -81,7 +81,7 @@ const Footer = () => {
                 </div> */}
 
                 {/* Social Media To proscene*/}
-                <div className="social-icons">
+                <div className="social-icons flex">
                     <a href="https://www.facebook.com/proscenesystems" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
                     <a href="https://x.com/AudioVisualEA" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
                     <a href="https://www.linkedin.com/company/proscene-systems-ltd/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -91,9 +91,11 @@ const Footer = () => {
             {/* placing this here will make them go below the existing footer cntent */}
             {/* TODO: Figure how to make them a row */}
             <div className="legal-links">
-                <Link to="/terms-and-conditions" className="footer-link">Terms & Conditions</Link>
-                <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
-                <Copyright/>
+                <div className="flex gap-3 flex-col sm:flex-row">
+                    <Link to="/terms-and-conditions" className="footer-link" style={{color:'white'}}>Terms & Conditions</Link>
+                    <Link to="/privacy-policy" className="footer-link" style={{color:'white'}}>Privacy Policy</Link>
+                </div>
+                <div><Copyright/></div>
             </div>
         </div>
     );

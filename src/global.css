@@ -30,10 +30,22 @@
     color: var(--textBluish);
     font-weight: 600;
 }
+.h3solutions{
+    font-size: clamp(1.125rem, 1.0243rem + 0.5034vw, 1.4963rem);
+}
 
 /* partners components */
 .h2-partners{
     
+}
+/* sectorcard */
+.h2sectorcard{
+font-size: clamp(1.4238rem, 1.0921rem + 1.6585vw, 2.6469rem);
+color: var(--textBluish);
+}
+/* footer section */
+.h3footer{
+    font-weight: 600;
 }
 @media (max-width:39em) {
     .h1sizing{
