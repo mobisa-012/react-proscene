@@ -18,7 +18,7 @@ function BookDemoToday() {
             </svg>
             <div className="text-center z-[1] px-4 md:px-8">
                 <h1 className="font-bold text-white text-2xl md:text-3xl leading-tight mb-4">
-                    See how Proscene <br /> works for you
+                    See how Proscene works for you
                 </h1>
                 <button 
                 // onClick = {}
@@ -27,7 +27,7 @@ function BookDemoToday() {
                 </button>
             </div>
             <svg 
-                className="absolute h-[343px] right-[-30.27%] top-0 bottom-6 w-[910px]" 
+                className="absolute h-[343px] right-[-40.27%] top-0 bottom-6 w-[910px]" 
                 fill="none" 
                 xmlns="http://www.w3.org/2000/svg"
             >

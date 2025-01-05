@@ -25,15 +25,18 @@
 
 .footer-section h3 {
     color: white;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 1em;
 }
 
 .footer-link {
     color: #98A3BE;
     text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
     display: block;
-    margin: 5px 5px;
+    margin-bottom: 1.4em;
     transition: white 0.3s;
 }
 
@@ -54,8 +57,16 @@
 
 .legal-links {
     display: flex;
-    gap: 10px;
+    color: white !important;
     justify-content: space-around;
     align-items: center;
+}
+@media (max-width: 36em) {
+    .legal-links{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 1.5em;
+    }
 }
 
