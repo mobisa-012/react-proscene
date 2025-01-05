@@ -13,21 +13,24 @@ import panasonic from './assets/panasonic.jpg';
 import samsung from './assets/samsung.jpg';
 
 const LogoCarousel = () => {
-    const logos = [
-        {src: avaya, alt: 'Avaya',},
-        {src: barco, alt: 'Barco'},
-        {src: creston, alt: 'Creston'},
-        {src: epson, alt: 'Epson'},
-        {src: extron, alt: 'Extron'},
-        {src: LG, alt: 'LG'},
-        {src: lifesize, alt: 'Lifesize'},
-        {src: optoma, alt: 'Optoma'},
-        {src: panasonic, alt: 'Panasonic'},
-        {src: samsung, alt: 'Samsung'},
-    ];
+  const logos = [
+    { src: avaya, alt: 'Avaya' },
+    { src: barco, alt: 'Barco' },
+    { src: creston, alt: 'Creston' },
+    { src: epson, alt: 'Epson' },
+    { src: extron, alt: 'Extron' },
+    { src: LG, alt: 'LG' },
+    { src: lifesize, alt: 'Lifesize' },
+    { src: optoma, alt: 'Optoma' },
+    { src: panasonic, alt: 'Panasonic' },
+    { src: samsung, alt: 'Samsung' },
+  ];
 
-    return (
+  return (
     <div className="logo-carousel">
+      <h2 className="carousel-heading">
+      We partner with the best
+      </h2>
       <div className="carousel">
         <div className="carousel-content">
           {logos.map((logo, index) => (
@@ -44,6 +47,6 @@ const LogoCarousel = () => {
       </div>
     </div>
   );
-}
+};
 
-export default LogoCarousel
+export default LogoCarousel;
