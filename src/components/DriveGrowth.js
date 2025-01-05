@@ -19,7 +19,7 @@ function DriveGrowth () {
 
         <div class="relative md:w-1/2 flex items-center justify-center mt-8 md:mt-0">
             <img
-            src="https://www.priority-software.com/wp-content/uploads/2023/04/group-17441.png"
+            src="https://www.priority-software.com/wp-content/uploads/2023/04/group-17441.jpeg"
             alt="Analytics"
             class="rounded-lg shadow-lg"
             />
