@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import LogoCarousel from "../components/LogoCarousel";
 import SectorCards from "../components/SectorCards.js";
+import Moresection from "../components/Moresection.js";
 import './Home.css';
 import Partners from "../components/Partners.js";
 import BookDemoToday from "../components/BookDemo.js";
@@ -28,7 +29,10 @@ function Home() {
 
         <div className="sector-section">
         <SectorCards />
-        </div>        
+        </div>  
+        <div>
+            <Moresection />
+            </div>      
 
         <div className = "demo-section">
         <BookDemoToday/>

@@ -88,14 +88,20 @@ const Footer = () => {
                     <a href="https://www.instagram.com/proscenesystems/?__pwa=1#" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                 </div>                
             </main>
-            {/* placing this here will make them go below the existing footer cntent */}
-            {/* TODO: Figure how to make them a row */}
+            
             <div className="legal-links">
-                <div className="flex gap-3 flex-col sm:flex-row">
-                    <Link to="/terms-and-conditions" className="footer-link" style={{color:'white'}}>Terms & Conditions</Link>
-                    <Link to="/privacy-policy" className="footer-link" style={{color:'white'}}>Privacy Policy</Link>
+            <div className="logo" style={{margin:'10px 60px 10px 10px'}}>
+                    <Link to="/">
+                        <img src={logo} alt="Company Logo" />
+                    </Link>
                 </div>
-                <div><Copyright/></div>
+                <div className="flex justify-center flex-col sm:flex-row" style={{gap:'clamp(2rem, 1.9322rem + 0.339vw, 2.25rem)'}}>
+                    <div className="flex flex-col sm:flex-row" style={{gap:'clamp(2rem, 1.9322rem + 0.339vw, 2.25rem)'}}>
+                        <Link to="/terms-and-conditions" className="footer-link" style={{color:'white'}}>Terms & Conditions</Link>
+                        <Link to="/privacy-policy" className="footer-link" style={{color:'white'}}>Privacy Policy</Link>
+                    </div>
+                    <div><Copyright/></div>
+                </div>
             </div>
         </div>
     );

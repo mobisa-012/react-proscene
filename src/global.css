@@ -36,7 +36,10 @@
 
 /* partners components */
 .h2-partners{
-    
+    font-size: clamp(1.4238rem, 1.0921rem + 1.6585vw, 2.6469rem);
+  color: var(--textBluish);
+  font-weight: 600;
+  padding-bottom: 1em;
 }
 /* sectorcard */
 .h2sectorcard{
@@ -47,6 +50,10 @@ color: var(--textBluish);
 .h3footer{
     font-weight: 600;
 }
+/* drivegrowth section */
+/* .bg-growth{
+    background-image: url('/src/components/assets/home.svg');
+} */
 @media (max-width:39em) {
     .h1sizing{
         text-align: center;

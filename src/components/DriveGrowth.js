@@ -1,9 +1,10 @@
 import React from "react";
 import '../global.css';
+import homeSvg from './assets/home.svg';
 
 function DriveGrowth () {
     return (
-        <div className= "py-10 pb-5 maxWidthContainer">
+        <div className= " pb-5 maxWidthContainer">
         <div class="flex flex-col md:flex-row items-center justify-center p-8 bg-white">
         <div class="bg-[#3b37e6] py-16 text-white p-10 md:w-1/2 Br">
             <h1 className=" font-bold h1sizing">Drives your growth tomorrow.Fits your business today.Check.</h1>
@@ -18,10 +19,10 @@ function DriveGrowth () {
             </div>
         </div>
 
-        <div class="relative md:w-1/2 flex items-center justify-center mt-8 md:mt-0">
+        <div class="relative md:w-1/2 flex items-center justify-center mt-8 md:mt-0 bg-growth">
             <img
-            src="https://www.priority-software.com/wp-content/uploads/2023/04/group-17441.jpeg"
-            alt="Analytics"
+            src={homeSvg}
+            alt="home"
             class="rounded-lg shadow-lg"
             />
 

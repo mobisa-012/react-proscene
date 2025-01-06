@@ -58,8 +58,10 @@
 .legal-links {
     display: flex;
     color: white !important;
-    justify-content: space-around;
     align-items: center;
+}
+.legal-links>.logo{
+    visibility: hidden;
 }
 @media (max-width: 36em) {
     .legal-links{
