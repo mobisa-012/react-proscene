@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer";
 import BookDemoToday from "../components/BookDemo.js";
+import './Contact.css';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from 'react-icons/fa';
 
 const HelpSection = () => {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -18,12 +20,15 @@ const HelpSection = () => {
       // Handle form submission logic here
     }
   };
+  const handleClick = () => {
+    window.open("https://www.google.com/maps/dir/-1.31072,36.8017408/proscene+systems+ltd/@-1.3139321,36.6764244,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x182f1737f3e963d7:0xdc908ed52a11bc93!2m2!1d36.7015552!2d-1.30039?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D", "_blank"); 
+  }
 
   const renderForm = () => {
     switch (selectedOption) {
       case "sales":
         return (
-          <div className="bg-blue-100 p-10 px-11 rounded-lg shadow-md w-1/2 mx-auto">
+          <div className="bg-blue-100 p-10 px-11 rounded-lg shadow-md  mx-auto" style={{maxWidth:'800px', marginInline:'1em', margin:'0 auto'}}>
             <h2 className="text-xl font-bold text-blue-700 mb-4 text-center">
               Contact our sales expert
             </h2>
@@ -111,7 +116,7 @@ const HelpSection = () => {
         );
       case "representative":
         return (
-          <div className="bg-orange-100 p-6 rounded-lg shadow-md w-1/2 mx-auto">
+          <div className="bg-orange-100 p-6 rounded-lg shadow-md mx-auto " style={{maxWidth:'800px', marginInline:'1em', margin:'0 auto'}}>
             <h2 className="text-xl font-bold text-orange-700 mb-4 text-center">
               Speak to a Proscene representative
             </h2>
@@ -199,7 +204,7 @@ const HelpSection = () => {
         );
       case "partner":
         return (
-          <div className="bg-purple-100 p-6 rounded-lg shadow-md mx-auto w-1/2">
+          <div className="bg-purple-100 p-6 rounded-lg shadow-md mx-auto" style={{maxWidth:'800px', marginInline:'1em', margin:'0 auto'}}>
             <h2 className="text-xl font-bold text-purple-700 mb-4 text-center">
               Become a Proscene Partner
             </h2>
@@ -292,9 +297,9 @@ const HelpSection = () => {
 
   return (
     <div className="pt-12 p-0 pb-0">
-      <h1 className="text-5xl font-bold text-center mb-6">How can we help?</h1>
-      <p className="text-center text-3xl mb-6">Select an option below</p>
-      <div className="flex justify-center items-center space-x-8 mb-8">
+      <h1 className="contact-header text-center mb-6">How can we help?</h1>
+      <p className="text-center contact-choice mb-6">Select an option below</p>
+      <div className="flex flex-col sm:flex-row items-center gap-2 mb-8 justify-around mx-auto" style={{maxWidth:'1000px'}} >
         <div
           className={`flex flex-col items-center p-4 rounded-lg ${
             selectedOption === "sales" ? "bg-blue-200" : "bg-blue-100"
@@ -326,7 +331,7 @@ const HelpSection = () => {
           <span className="text-center">I’m an existing customer</span>
         </div>
         <div
-          className={`flex flex-col items-center p-4 rounded-lg ${
+          className={`flex flex-col items-center p-4 rounded-lg  ${
             selectedOption === "partner" ? "bg-purple-200" : "bg-purple-100"
           }`}
           onClick={() => setSelectedOption("partner")}
@@ -342,40 +347,50 @@ const HelpSection = () => {
       </div>
       <div>{renderForm()}</div>
       <div>
-      <h2 className="mt-10 text-center font-bold text-5xl mb-5">Contact Us</h2>
-      <p className="text-center text-3xl mb-6">Find us at</p>
+      <h2 className="mt-10 text-center contact-header mb-5">Contact Us</h2>
+      <p className="text-center contact-choice mb-6">Find us at</p>
       </div>
 
       {/* Contact us */}
-      <div className = "pb-7 pt-4  mx-auto bg-white">
-        <div className="max-w-xs mx-auto p-10 bg-white border border-blue-500 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-semibold text-black mb-2 pb-2">Headquarters</h2>
-        <p className="text-black text-lg font-semibold mb-2">Nairobi, Kenya</p>
-        <p className="text-gray-600 text-base mb-2">Karen Southern Bypass</p>
-        <div className="flex items-center text-blue-500 mb-2">
-          <span className="mr-2">📞</span>
-          <span className="text-lg font-semibold">Tel: +254713761269</span>
+      <div className="pb-7 pt-4 mx-auto bg-white mr-4 ml-4">
+      <div className=" mx-auto p-10 bg-white border border-blue-500 rounded-lg shadow-lg" style={{maxWidth:'600px'}}>
+        <div className="flex items-center mb-2">
+          <FaMapMarkedAlt className="mr-2 text-xl" />
+          <span className=" font-semibold text-gray-600">Nairobi Karen Southern Bypass, Kenya</span>
         </div>
-        <div className="flex items-center text-blue-500 mb-2">
-          <span className="mr-2">📩</span>
-          <span className="text-lg font-semibold">info@proscene.co.ke</span>
+        <div className="flex items-center mb-2">
+          <FaPhoneAlt className="mr-2 text-xl" />
+          <span className=" text-base text-gray-600">Tel: +254713761269</span>
         </div>
-        <a href="https://www.google.com/maps" className="text-blue-500 text-sm font-semibold hover:underline">
+        <div className="flex items-center mb-2">
+          <FaEnvelope className="mr-2 text-xl" />
+          <span className="text-gray-600 text-base">info@proscene.co.ke</span>
+        </div>
+        {/* <a
+          href="https://www.google.com/maps"
+          className="text-blue-500 text-sm text-base hover:underline"
+        >
           See directions &rarr;
-        </a>
+        </a> */}
+         <button
+      onClick={handleClick}
+      className="border mt-3 border-blue-500 text-blue-500 bg-transparent px-4 py-2 rounded-lg transition duration-1000 hover:bg-blue-500 hover:text-white"
+    >
+      See directions
+    </button>
       </div>
     </div>
 
     {/* email us */}
-    <div className="mx-auto p-14 bg-blue-50 px-20">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-0 p-12 justify-between pl-28 border border-blue-500 rounded-2xl">
-    <div className="pl-8 pr-6">
+    <div className="mx-auto pt-16 pb-16 pl-8 pr-8 bg-blue-50">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-0 justify-between border border-blue-500 rounded-2xl">
+    <div className="pl-8 pr-6 pt-8 pb-8">
       <h2 className="text-3xl font-bold text-purple-600">Our newsletter</h2>
       <p className="text-gray-600 mt-2">Sign up for our newsletter to receive updates straight to your inbox.</p>
       
       <div className="mt-4">
         <form onSubmit={handleSubmit}>
-          <div className="flex gap-3 mb-4">
+          <div className="flex flex-col sm:flex-row gap-3 mb-4">
             {/* Email Field */}
             <div className="w-full md:w-1/2">
               <label className="block text-gray-700 font-medium mb-2">
@@ -434,7 +449,7 @@ const HelpSection = () => {
 
 
     </div>
-    <div className="bg-white h-20 max-w-full"></div>
+    <div className=" max-w-full"></div>
       <BookDemoToday/>
       <Footer />
     </div>
