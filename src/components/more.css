@@ -30,7 +30,7 @@
     font-size: large;
     font-weight: 400;
     color: #16213d;
-    padding-inline: 4em;
+    padding-inline: 2em;
 }
 
 
@@ -129,5 +129,8 @@
         grid-column-start: 4;
         grid-row-start: 1;
         grid-row-end: 3;
+    }
+    .paragraph{
+        padding-inline: 4em;
     }
 }
