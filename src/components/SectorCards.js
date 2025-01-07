@@ -48,7 +48,7 @@ function SectorCards() {
   };
 
   return (
-    <div className="max-w-7xl flex flex-col justify-between items-center my-12" style={{marginInline:'1em'}}>
+    <div className="max-w-7xl flex flex-col justify-between items-center my-12" style={{marginInline:'20em'}}>
       <div className='mx-auto mb-2'>
         <CardComponent
           title={cards[selectedCardIndex].title}
