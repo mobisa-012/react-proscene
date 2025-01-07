@@ -66,7 +66,7 @@ function UCC() {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="bg-blue-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center"
+            className=" p-6 rounded-lg shadow-lg flex flex-col items-center text-center" style={{border:'1px solid rgb(165 243 252 )'}}
           >
             <div className="text-4xl mb-4">{feature.icon}</div>
             <h2 className="text-xl font-bold mb-2">{feature.title}</h2>

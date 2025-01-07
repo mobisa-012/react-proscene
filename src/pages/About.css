@@ -11,6 +11,10 @@
     margin-top: 40px;
     text-align: center;
 }
+.story-p{
+    color: #16213d;
+    font-size:  clamp(1.125rem, 1.0243rem + 0.5034vw, 1.4963rem);
+}
 
 .our-story-title {
     color: blue;
@@ -34,10 +38,7 @@
 .vision-title {
     -webkit-text-stroke: 1px #a142ff;
     color: #ecdeff;
-    font-size: 70px;
-    line-height: 84px;
-    width: 51.67%;
-    padding-right: 10px;
+    line-height: 1.1;
 }
 
 .vision-line {
@@ -49,7 +50,16 @@
 
 .vision-description {
     flex: 2;
-    text-align: left;
+}
+.innerCardImage{
+    background-image: url('/src/components/assets/legal.jpeg');
+    background-size: cover;
+}
+.shape-h3{
+    font-size: clamp(1.2656rem, 1.0692rem + 0.9822vw, 1.99rem);
+    text-align: center;
+    color: white;
+    font-weight: 700;
 }
 
 .diamond-section {
@@ -137,3 +147,4 @@
     border: 1px solid black;
     cursor: pointer;
 }
+
