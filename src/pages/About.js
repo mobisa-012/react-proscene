@@ -3,6 +3,8 @@ import legal from "../components/assets/legal.jpeg";
 import driveGrowthMask from "./driveGrowthMask.js";
 import BookDemoToday from "../components/BookDemo.js";
 import Footer from "../components/Footer";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import {useState} from "react";
 import "./About.css";
 
 const teamMembers = [
@@ -52,14 +54,15 @@ const TeamMemberCard = ({
 }) => (
   <div className="flex flex-col items-center py-10 mr-5 ml-5">
     <div
-      className="group relative w-64 h-64 rounded-2xl shadow-md overflow-hidden"
+      className="group relative w-64 h-64 rounded-2xl shadow-md overflow-hidden pp-5"
       style={{ border: `1px solid ${borderColor}`, backgroundColor }}
+      
     >
-      <div className="w-full h-full flex items-center justify-center">
+      <div className="w-full h-full flex items-center justify-center p-3">
         <img
           src={image}
           alt={name}
-          className="max-w-full max-h-full object-contain"
+          className="max-w-full max-h-full object-cover"
         />
       </div>
       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 bg-opacity-50">
@@ -80,6 +83,15 @@ const TeamMemberCard = ({
 );
 
 function About() {
+  const [visibleCount, setVisibleCount] = useState(4); // Number of team members initially visible
+
+  const showMore = () => {
+    setVisibleCount((prev) => prev + 4); // Increase the visible count by 4 each time
+  };
+  const showLess = () => {
+    setVisibleCount(4); // Reset to show only the initial 4 cards
+  };
+  const allVisible = visibleCount >= teamMembers.length;
   return (
     <div className="p-0">
       {/* We're in Business Section */}
@@ -99,7 +111,9 @@ function About() {
                 alt="Business Enhancement" 
             />
         </div> */}
+      <div>
       <driveGrowthMask />
+      </div>
 
       {/* Our Story Section */}
       <div className="w-full mx-auto flex flex-col justify-center items-center">
@@ -139,18 +153,18 @@ function About() {
       {/* diamond section */}
       <div className="relative bg-[#16213d] flex flex-col items-center justify-center overflow-hidden p-20">
         {/* Top Row */}
-        <div className="flex justify-center mb-6 transform -translate-y-12 relative lg:relative lg:bottom-[-9em]">
-          <div class="relative w-80 h-96 bg-cover bg-center rounded-lg shadow-lg overflow-hidden innerCardImage">
-            <div class="absolute bottom-0 left-0 w-[90%] m-4 bg-white bg-opacity-90 transition-all duration-300 ease-in-out h-16 hover:h-48 rounded-lg overflow-hidden">
-              <div class="flex items-center justify-center h-16 text-xl font-bold text-gray-800">
+        <div className="flex justify-center mb-6 transform -translate-y-12 relative lg:relative lg:bottom-[-5em]">
+          <div class="relative w-80 h-96 bg-cover bg-center rounded-lg shadow-lg overflow-hidden innerCardImage top-row"  style={{border:' 1px solid rgba(59,55,230,.9)'}}>
+            <div class="absolute bottom-0 left-0 w-[90%] m-4 bg-white bg-opacity-90 transition-all duration-300 ease-in-out h-16 hover:h-48 rounded-lg overflow-hidden" style={{backgroundColor:' rgba(59,55,230,.9)'}}>
+              <div class="flex items-center justify-center h-16 text-xl font-bold text-white" >
                 PHP
               </div>
 
               <div class="p-4 text-center">
-                <p class="text-gray-700 text-sm mb-4">
+                <p class="text-white text-sm mb-4">
                   PHP is the best language I know.
                 </p>
-                <button class="px-4 py-2 bg-purple-500 text-white text-sm rounded-lg shadow hover:bg-purple-600 transition duration-300">
+                <button class="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-white-600 transition duration-300">
                   Learn More
                 </button>
               </div>
@@ -158,18 +172,18 @@ function About() {
           </div>
         </div>
         {/* Middle Row */}
-        <div className="flex justify-between w-full mx-auto mb-6">
-        <div class="relative w-80 h-96 bg-cover bg-center rounded-lg shadow-lg overflow-hidden innerCardImage">
-  <div class="absolute bottom-0 left-0 w-[90%] m-4 bg-white bg-opacity-90 transition-all duration-300 ease-in-out h-48 md:h-16 md:hover:h-48 rounded-lg overflow-hidden">
-    <div class="flex items-center justify-center h-16 text-xl font-bold text-gray-800">
+        <div className="flex justify-between w-full mx-auto mb-6 middlerow">
+        <div class="relative w-80 h-96 bg-cover bg-center rounded-lg shadow-lg overflow-hidden innerCardImage"  style={{border:'1px solid rgba(85,187,249,.9)'}}>
+  <div class="absolute bottom-0 left-0 w-[90%] m-4 bg-opacity-90 transition-all duration-300 ease-in-out h-48 md:h-16 md:hover:h-48 rounded-lg overflow-hidden" style={{backgroundColor:'rgba(85,187,249,.9)'}}>
+    <div class="flex items-center justify-center h-16 text-xl font-bold text-white">
       PHP
     </div>
 
     <div class="p-4 text-center">
-      <p class="text-gray-700 text-sm mb-4">
+      <p class="text-white text-sm mb-4">
         PHP is the best language I know.
       </p>
-      <button class="px-4 py-2 bg-purple-500 text-white text-sm rounded-lg shadow hover:bg-purple-600 transition duration-300">
+      <button class="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-black-600 transition duration-300">
         Learn More
       </button>
     </div>
@@ -180,17 +194,17 @@ function About() {
             <h3 class="shape-h3">We shape around your business</h3>
           </div>
 
-          <div class="relative w-80 h-96 bg-cover bg-center rounded-lg shadow-lg overflow-hidden innerCardImage">
-  <div class="absolute bottom-0 left-0 w-[90%] m-4 bg-white bg-opacity-90 transition-all duration-300 ease-in-out h-48 md:h-16 md:hover:h-48 rounded-lg overflow-hidden">
-    <div class="flex items-center justify-center h-16 text-xl font-bold text-gray-800">
+          <div class="relative w-80 h-96 bg-cover bg-center rounded-lg shadow-lg overflow-hidden innerCardImage"  style={{border:'1px solid rgba(161,66,255,.9)'}}>
+  <div class="absolute bottom-0 left-0 w-[90%] m-4 bg-white bg-opacity-90 transition-all duration-300 ease-in-out h-48 md:h-16 md:hover:h-48 rounded-lg overflow-hidden" style={{backgroundColor:' rgba(161,66,255,.9)'}}>
+    <div class="flex items-center justify-center h-16 text-xl font-bold text-white">
       PHP
     </div>
 
     <div class="p-4 text-center">
-      <p class="text-gray-700 text-sm mb-4">
+      <p class="text-white text-sm mb-4">
         PHP is the best language I know.
       </p>
-      <button class="px-4 py-2 bg-purple-500 text-white text-sm rounded-lg shadow hover:bg-purple-600 transition duration-300">
+      <button class="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-white-600 transition duration-300">
         Learn More
       </button>
     </div>
@@ -201,17 +215,17 @@ function About() {
 
         {/* Bottom Row */}
         <div className="flex justify-center transform translate-y-0 relative lg:relative lg:bottom-32">
-        <div class="relative w-80 h-96 bg-cover bg-center rounded-lg shadow-lg overflow-hidden innerCardImage">
-  <div class="absolute bottom-0 left-0 w-[90%] m-4 bg-white bg-opacity-90 transition-all duration-300 ease-in-out h-48 md:h-16 md:hover:h-48 rounded-lg overflow-hidden">
-    <div class="flex items-center justify-center h-16 text-xl font-bold text-gray-800">
+        <div class="relative w-80 h-96 bg-cover bg-center rounded-lg shadow-lg overflow-hidden innerCardImage" style={{border:' 1px solid rgba(255,115,105,.9)'}}>
+  <div class="absolute bottom-0 left-0 w-[90%] m-4 bg-white bg-opacity-90 transition-all duration-300 ease-in-out h-48 md:h-16 md:hover:h-48 rounded-lg overflow-hidden" style={{backgroundColor:' rgba(255,115,105,.9)'}}>
+    <div class="flex items-center justify-center h-16 text-xl font-bold text-white">
       PHP
     </div>
 
     <div class="p-4 text-center">
-      <p class="text-gray-700 text-sm mb-4">
+      <p class="text-white text-sm mb-4">
         PHP is the best language I know.
       </p>
-      <button class="px-4 py-2 bg-purple-500 text-white text-sm rounded-lg shadow hover:bg-purple-600 transition duration-300">
+      <button class="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-white-600 transition duration-300">
         Learn More
       </button>
     </div>
@@ -222,16 +236,41 @@ function About() {
       </div>
 
       {/* our team */}
-      <div class="mx-auto p-10 flex flex-col items-center">
-        <div class="text-center lg:text-4xl sm:text-sm font-bold">
-          Our team means business
-        </div>
-        <div class="flex flex-row items-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {teamMembers.map((member) => (
-            <TeamMemberCard key={member.name} {...member} />
-          ))}
-        </div>
+      <div className="mx-auto p-10 flex flex-col items-center">
+      <div className="text-center team-title">
+        Our team means business
       </div>
+      <div className="flex flex-wrap justify-center gap-1">
+  {teamMembers.slice(0, visibleCount).map((member) => (
+    <TeamMemberCard key={member.name} {...member} />
+  ))}
+</div>
+
+      <div className="">
+        {allVisible ? (
+          <button
+            className="flex items-center text-blue-500 hover:text-blue-700"
+            onClick={showLess}
+          >
+            <span className="mr-2">Show Less</span>
+            <FiChevronUp className="h-5 w-5" />
+          </button>
+        ) : (
+          <button
+            className="flex items-center text-blue-500 hover:text-blue-700"
+            onClick={showMore}
+          >
+            <span className="mr-2">Show More</span>
+            <FiChevronDown className="h-5 w-5" />
+          </button>
+        )}
+        <button className=" mt-5 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
+        >
+  Join Us
+</button>
+
+      </div>
+    </div>
       <BookDemoToday />
       <Footer />
     </div>

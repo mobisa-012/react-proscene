@@ -73,6 +73,7 @@
     position: relative;
 }
 
+
 .diamond-center {
     position: absolute;
     color: white;
@@ -123,6 +124,12 @@
     border: none;
     cursor: pointer;
 }
+.team-title{
+    font-size: clamp(1.4238rem, 1.0921rem + 1.6585vw, 2.6469rem);
+  color: var(--textBluish);
+  font-weight: 600;
+  padding-bottom: 1em;
+}
 
 .card-hover-content {
     display: none;
@@ -147,4 +154,11 @@
     border: 1px solid black;
     cursor: pointer;
 }
-
+@media (max-width:36em) {
+    .middlerow{
+    flex-direction: column;
+    } 
+    .top-row{
+        display: none;
+    }
+}
