@@ -1,6 +1,6 @@
 import React from 'react'
 
-const driveGrowthMask = () => {
+const DriveGrowthMask = () => {
   return (
     <div>
             <h2>I am rendered</h2>
@@ -8,5 +8,5 @@ const driveGrowthMask = () => {
   )
 }
 
-export default driveGrowthMask
+export default DriveGrowthMask;
 console.log("DriveGrowthMask component rendered");
