@@ -1,6 +1,6 @@
 import React from "react";
 import legal from "../components/assets/legal.jpeg";
-import driveGrowthMask from "./driveGrowthMask.js";
+import DriveGrowthMask from "./driveGrowthMask.js";
 import BookDemoToday from "../components/BookDemo.js";
 import Footer from "../components/Footer";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
@@ -112,7 +112,7 @@ function About() {
             />
         </div> */}
       <div>
-      <driveGrowthMask />
+      <DriveGrowthMask />
       </div>
 
       {/* Our Story Section */}
