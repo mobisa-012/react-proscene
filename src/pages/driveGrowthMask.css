@@ -1,6 +1,9 @@
 .hero-image{
-    -webkit-mask-image: url('/src/components/assets/heroimage.svg');
+    height: 80svh;
+    -webkit-mask-image: url('/src/components/assets/blob\(3\).svg');
     -webkit-mask-size: cover;
-    mask-image: url('/src/components/assets/heroimage.svg');
-    mask-size: cover;
+    mask-image: url('/src/components/assets/blob\(3\).svg');
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
 }
