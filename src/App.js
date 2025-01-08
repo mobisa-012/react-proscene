@@ -37,6 +37,7 @@ import Avaya from "./pages/Avaya";
 import Kramer from "./pages/Kramer";
 import Vogel from "./pages/Vogel";
 import Extron from "./pages/Extron";
+import BookDemoPage from "./pages/BookDemoPage";
 
 function App() {
   return (
@@ -79,7 +80,8 @@ function App() {
       <Route path="/avaya" element = {<Avaya/>} />
       <Route path="/kramer" element = {<Kramer/>} />
       <Route path="/vogel" element = {<Vogel/>} />
-      <Route path="/extron" element = {<Extron/>} />      
+      <Route path="/extron" element = {<Extron/>} />
+      <Route path="/bookDemo" element = {<BookDemoPage/>} />  
     </Routes>
     {/* <Footer /> */}
     </Router>        
