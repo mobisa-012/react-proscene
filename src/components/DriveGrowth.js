@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "../global.css";
 import homeSvg from "./assets/home.svg";
+import { useNavigate } from "react-router-dom";
 
 function DriveGrowth() {
+    const navigate  = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate("/bookDemo");
+    }
+
     const swipeTexts = [
         "Amplify operational efficiency, discover new opportunities, and stay agile in the rapidly changing market.",
         "Streamline your processes and innovate faster to achieve measurable success.",
@@ -32,7 +39,8 @@ function DriveGrowth() {
                         {swipeTexts[currentIndex]}
                     </p>
                     <div className="button-Center">
-                        <button className="border border-white text-white py-2 px-6 rounded-2xl hover:bg-blue-700">
+                        <button className="border border-white text-white py-2 px-6 rounded-2xl hover:bg-blue-700"
+                        onClick={handleButtonClick}>
                             Schedule a demo
                         </button>
                     </div>
