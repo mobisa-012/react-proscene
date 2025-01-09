@@ -4,7 +4,6 @@ import leftbottomSvg from "../components/assets/leftbottom.svg";
 import supportjpg from "../components/assets/support.jpg";
 import { motion } from "framer-motion";
 
-
 function OnSiteSupport() {
     const swipeTexts = [
             "Amplify operational efficiency, discover new opportunities, and stay agile in the rapidly changing market.",

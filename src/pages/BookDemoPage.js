@@ -94,7 +94,7 @@ function BookDemo () {
             ></textarea>
             <p className="text-sm">
               By submitting this form you agree to our{" "}
-              <a href="#" className="underline">
+              <a href="/corporate" className="underline">
                 Terms & Conditions
               </a>.
             </p>
