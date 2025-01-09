@@ -1,9 +1,15 @@
 import React from "react";
+import SolutionThatWorkForYou from "../components/SolutionWork.js";
+import BookDemoToday from "../components/BookDemo";
+import Footer from "../components/Footer";
 
 function Solutions() {
     return(
-        <h1>
-        This is the solutiins page</h1>
+        <div className="">
+            <SolutionThatWorkForYou/>
+            <BookDemoToday/>
+            <Footer/>
+        </div>
     );
 }
 
