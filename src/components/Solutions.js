@@ -1,8 +1,30 @@
 import React from "react";
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-const SolutionsLayout = () => {
+import { useNavigate } from "react-router-dom";
+
+function SolutionsLayout (){
   const [isExpanded, setIsExpanded] = useState(false);
+  const navigate  = useNavigate();
+
+  const handleButtonClick = (solutionType) => {
+    switch (solutionType) {
+      case "AV":
+        navigate("/avIntegration");
+        break;
+      case "IT":
+        navigate("/interactiveTechnology");
+        break;
+      case "DM":
+        navigate("/digitalMedia");
+        break;
+      case "CS":
+        navigate("/collaborationSolutions");
+        break;
+      default:
+        break;
+    }
+  };
   return (
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="text-center">
@@ -56,7 +78,8 @@ const SolutionsLayout = () => {
         <p className="text-sm text-gray-600">
           Leverage advanced AV integration solutions for a seamless and efficient user experience.
         </p>
-        <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700">
+        <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700"
+        onClick={() => handleButtonClick("AV")}>
           View More
         </button>
       </div>
@@ -101,7 +124,8 @@ const SolutionsLayout = () => {
         <p className="text-sm text-gray-600">
           Seamlessly integrate cutting-edge retail management technologies for a true omnichannel experience.
         </p>
-        <button className="mt-4 px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700">
+        <button className="mt-4 px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700"
+        onClick={() => handleButtonClick("IT")}>
           View More
         </button>
       </div>
@@ -146,7 +170,8 @@ const SolutionsLayout = () => {
         <p className="text-sm text-gray-600">
           Discover innovative solutions for modern digital property management.
         </p>
-        <button className="mt-4 px-4 py-2 bg-cyan-600 text-white rounded-full hover:bg-cyan-700">
+        <button className="mt-4 px-4 py-2 bg-cyan-600 text-white rounded-full hover:bg-cyan-700"
+        onClick={() => handleButtonClick("DM")}>
           View More
         </button>
       </div>
@@ -191,7 +216,8 @@ const SolutionsLayout = () => {
         <p className="text-sm text-gray-600">
           Explore our advanced collaboration tools designed for efficiency.
         </p>
-        <button className="mt-4 px-4 py-2 bg-red-600 text-white rounded-full hover:bg-red-700">
+        <button className="mt-4 px-4 py-2 bg-red-600 text-white rounded-full hover:bg-red-700"
+        onClick={() => handleButtonClick("CS")}>
           View More
         </button>
       </div>
