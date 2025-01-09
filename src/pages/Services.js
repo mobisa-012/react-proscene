@@ -1,9 +1,16 @@
 import React from "react";
+import Footer from "../components/Footer";
+import SupportPackage from "../components/services-components/Support";
+import WhyProscene from "../components/services-components/WhyProscene";
+
 
 function Services() {
     return(
-        <h1>
-        This is the services page</h1>
+        <div className = "">
+        <WhyProscene />
+            <SupportPackage />            
+            <Footer />
+        </div>
     );
 }
 
