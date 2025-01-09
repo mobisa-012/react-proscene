@@ -11,3 +11,8 @@
     font-size: clamp(1.6019rem, 1.0817rem + 2.6008vw, 3.52rem);
     font-weight: 600;
    }
+   .onsitesubheads{
+font-size: clamp(1.4238rem, 1.0921rem + 1.6585vw, 2.6469rem);
+color: #16213d;
+font-weight: 600;
+   }

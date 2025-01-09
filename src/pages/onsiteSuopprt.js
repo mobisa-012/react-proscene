@@ -3,6 +3,7 @@ import './Onsitesupport.css'
 import leftbottomSvg from "../components/assets/leftbottom.svg";
 import supportjpg from "../components/assets/support.jpg";
 import { motion } from "framer-motion";
+import FAQ from "./Faq";
 
 function OnSiteSupport() {
     const swipeTexts = [
@@ -30,6 +31,44 @@ function OnSiteSupport() {
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         };
+        const [activeLink, setActiveLink] = useState("feature1");
+
+  const links = [
+    { id: "feature1", label: "Feature 1" },
+    { id: "feature2", label: "Feature 2" },
+    { id: "feature3", label: "Feature 3" },
+    { id: "feature4", label: "Feature 4" },
+    { id: "feature5", label: "Feature 5" },
+  ];
+
+  const content = {
+    feature1: {
+      title: "Feature 1 Title",
+      description: "Description for Feature 1.",
+      image: "https://via.placeholder.com/300",
+    },
+    feature2: {
+      title: "Feature 2 Title",
+      description: "Description for Feature 2.",
+      image: "https://via.placeholder.com/300",
+    },
+    feature3: {
+      title: "Feature 3 Title",
+      description: "Description for Feature 3.",
+      image: "https://via.placeholder.com/300",
+    },
+    feature4: {
+      title: "Feature 4 Title",
+      description: "Description for Feature 4.",
+      image: "https://via.placeholder.com/300",
+    },
+    feature5: {
+      title: "Feature 5 Title",
+      description: "Description for Feature 5.",
+      image: "https://via.placeholder.com/300",
+    },
+  };
+  
       
     return(
         <div>
@@ -154,7 +193,7 @@ function OnSiteSupport() {
       <div id="case-studies" className="bg-[#f3f6ff] flex justify-center items-center">
         
       <div className=" min-h-screen flex flex-col justify-center items-center p-6">
-      <h1 className="text-3xl font-bold mb-12">Proscene gives you a true competitive edge</h1>
+      <h1 className="onsitesubheads mb-12 text-center">Proscene gives you a true <br></br>competitive edge</h1>
 
       <div className="w-full max-w-7xl">
         {/* Row 1 */}
@@ -172,11 +211,11 @@ function OnSiteSupport() {
             className="bg-white shadow-xl rounded-lg p-6 flex flex-col items-center justify-center"
             variants={cardVariants}
           >
-            <div className="w-16 h-16 bg-gray-300 rounded-full mb-4 flex items-center justify-center">
+            <div className="w-16 h-16  rounded-full mb-4 flex items-center justify-center">
               <span className="text-xl text-gray-700">🎯</span>
             </div>
-            <h3 className="font-semibold text-lg">Card Title 1</h3>
-            <p className="text-gray-600 text-sm mt-2">Card Subtitle 1</p>
+            <h3 className="font-semibold text-lg">Tailored Solutions</h3>
+            <p className="text-gray-600 text-sm mt-2">On-site support allows technicians to address technical issues in real-time, minimizing downtime and disruptions during critical events or daily operations.</p>
           </motion.div>
 
           {/* Card 2 */}
@@ -184,11 +223,11 @@ function OnSiteSupport() {
             className="bg-white shadow-xl rounded-lg p-6 flex flex-col items-center justify-center"
             variants={cardVariants}
           >
-            <div className="w-16 h-16 bg-gray-300 rounded-full mb-4 flex items-center justify-center">
+            <div className="w-16 h-16  rounded-full mb-4 flex items-center justify-center">
               <span className="text-xl text-gray-700">🚀</span>
             </div>
-            <h3 className="font-semibold text-lg">Card Title 2</h3>
-            <p className="text-gray-600 text-sm mt-2">Card Subtitle 2</p>
+            <h3 className="font-semibold text-lg">Improved User Confidence</h3>
+            <p className="text-gray-600 text-sm mt-2">Having professionals on-site reassures staff and event organizers, providing confidence that any technical challenges will be swiftly resolved.</p>
           </motion.div>
 
           {/* Card 3 */}
@@ -196,11 +235,11 @@ function OnSiteSupport() {
             className="bg-white shadow-xl rounded-lg p-6 flex flex-col items-center justify-center"
             variants={cardVariants}
           >
-            <div className="w-16 h-16 bg-gray-300 rounded-full mb-4 flex items-center justify-center">
+            <div className="w-16 h-16  rounded-full mb-4 flex items-center justify-center">
               <span className="text-xl text-gray-700">⚡</span>
             </div>
-            <h3 className="font-semibold text-lg">Card Title 3</h3>
-            <p className="text-gray-600 text-sm mt-2">Card Subtitle 3</p>
+            <h3 className="font-semibold text-lg">Enhanced Communication</h3>
+            <p className="text-gray-600 text-sm mt-2">Face-to-face interactions improve clarity and allow your technicians to gather immediate feedback, which can lead to more effective troubleshooting and service customization.</p>
           </motion.div>
         </motion.div>
 
@@ -219,11 +258,11 @@ function OnSiteSupport() {
             className="bg-white shadow-xl rounded-lg p-6 flex flex-col items-center justify-center"
             variants={cardVariants}
           >
-            <div className="w-16 h-16 bg-gray-300 rounded-full mb-4 flex items-center justify-center">
+            <div className="w-16 h-16  rounded-full mb-4 flex items-center justify-center">
               <span className="text-xl text-gray-700">🎯</span>
             </div>
-            <h3 className="font-semibold text-lg">Card Title 4</h3>
-            <p className="text-gray-600 text-sm mt-2">Card Subtitle 4</p>
+            <h3 className="font-semibold text-lg">Cost Efficiency</h3>
+            <p className="text-gray-600 text-sm mt-2">While on-site support may seem like an added expense, it can save businesses money in the long run by preventing costly delays, errors, or the need to replace improperly used equipment.</p>
           </motion.div>
 
           {/* Card 5 */}
@@ -231,11 +270,11 @@ function OnSiteSupport() {
             className="bg-white shadow-xl rounded-lg p-6 flex flex-col items-center justify-center"
             variants={cardVariants}
           >
-            <div className="w-16 h-16 bg-gray-300 rounded-full mb-4 flex items-center justify-center">
+            <div className="w-16 h-16  rounded-full mb-4 flex items-center justify-center">
               <span className="text-xl text-gray-700">🚀</span>
             </div>
-            <h3 className="font-semibold text-lg">Card Title 5</h3>
-            <p className="text-gray-600 text-sm mt-2">Card Subtitle 5</p>
+            <h3 className="font-semibold text-lg">Immediate Problem Resolution</h3>
+            <p className="text-gray-600 text-sm mt-2">On-site support allows technicians to address technical issues in real-time, minimizing downtime and disruptions during critical events or daily operations.</p>
           </motion.div>
 
           {/* Card 6 */}
@@ -243,11 +282,11 @@ function OnSiteSupport() {
             className="bg-white shadow-xl rounded-lg p-6 flex flex-col items-center justify-center"
             variants={cardVariants}
           >
-            <div className="w-16 h-16 bg-gray-300 rounded-full mb-4 flex items-center justify-center">
+            <div className="w-16 h-16  rounded-full mb-4 flex items-center justify-center">
               <span className="text-xl text-gray-700">⚡</span>
             </div>
-            <h3 className="font-semibold text-lg">Card Title 6</h3>
-            <p className="text-gray-600 text-sm mt-2">Card Subtitle 6</p>
+            <h3 className="font-semibold text-lg">Enhanced Reliability</h3>
+            <p className="text-gray-600 text-sm mt-2">On-site support ensures that businesses can rely on expert assistance during high-stakes events like conferences, presentations, or product launches, where flawless AV performance is critical.</p>
           </motion.div>
         </motion.div>
       </div>
@@ -277,8 +316,54 @@ function OnSiteSupport() {
         </div>
       </div>
     </div>
-      <div id="faqs" className="h-screen bg-gray-400 flex justify-center items-center">
-        <h1 className="text-4xl font-bold">FAQs</h1>
+    <div className="p-4">
+      <h2 className="text-2xl font-bold mb-4">Key Features</h2>
+      {/* Links Row */}
+      <div className="relative overflow-hidden">
+        <div className="flex space-x-4 overflow-x-auto scrollbar-hide pb-1">
+          {links.map((link) => (
+            <button
+              key={link.id}
+              onClick={() => setActiveLink(link.id)}
+              className={`px-4 py-2 ${
+                activeLink === link.id
+                  ? "text-blue-500 border-b-2 border-blue-500"
+                  : "text-gray-700"
+              }`}
+            >
+              {link.label}
+            </button>
+          ))}
+        </div>
+        <div
+          className="absolute bottom-0 left-0 h-[2px] bg-blue-500 transition-transform"
+          style={{
+            width: "100%",
+            transform: `translateX(${
+              links.findIndex((link) => link.id === activeLink) * 100
+            }%)`,
+          }}
+        />
+      </div>
+      {/* Content Row */}
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-4 gap-4">
+        <div className="m-4">
+          <h3 className="text-xl font-semibold mb-2">
+            {content[activeLink].title}
+          </h3>
+          <p>{content[activeLink].description}</p>
+        </div>
+        <div className="m-4">
+          <img
+            src={content[activeLink].image}
+            alt={content[activeLink].title}
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      </div>
+    </div>
+      <div id="faqs" className=" flex justify-center items-center">
+        <FAQ />
       </div>
     </div>
         </div>
