@@ -11,9 +11,9 @@ function Casestudies() {
         <div className= "pt-10 pb-10">
         <h3 className="text-center text-2xl font-bold">Featured Case studies</h3>
         </div>
-        <div className="">
-        <FeaturedStudies/>
-        </div> 
+            <div className="">
+                <FeaturedStudies/>
+            </div> 
         <BookDemoToday/>
         <Footer/>
         </div>
