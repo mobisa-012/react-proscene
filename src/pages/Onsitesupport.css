@@ -1,0 +1,13 @@
+  /* .supportjpgback{
+    background-image: url('/src/components/assets/support.jpg');
+    height: 77vh;
+    border-radius: 4rem;
+    margin: 1em;
+    background-size: cover;
+  }
+   */
+   .bookdemotitle{
+    color: #16213d;
+    font-size: clamp(1.6019rem, 1.0817rem + 2.6008vw, 3.52rem);
+    font-weight: 600;
+   }
