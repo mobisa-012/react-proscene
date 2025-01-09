@@ -3,12 +3,13 @@ import "./more.css";
 import pinkIsh from './assets/pinkish.svg';
 import { useNavigate } from "react-router-dom";
 
-const more = () => {
-  const navigate = useNavigate
+function MoreSection () {
+  const navigate  = useNavigate();
   
   const handleButtonClick = () => {
       navigate("/bookDemo");
   }
+
   return (
     <div className="" style={{ marginBlock:'4em'}}>
       <div class="article">
@@ -73,4 +74,4 @@ const more = () => {
   );
 };
 
-export default more;
+export default MoreSection;
