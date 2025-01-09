@@ -1,7 +1,13 @@
 import React from 'react';
 import photo1 from '../components/assets/th.jpeg';
+import { useNavigate } from 'react-router-dom';
 
 function SolutionThatWorkForYou() {
+  const navigate  = useNavigate();
+  
+      const handleButtonClick = () => {
+          navigate("/bookDemo");
+      }
     return(
         <div className="bg-[#c7def7] py-16 px-6 w-full lg:max-w-full pt-20">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10">
@@ -15,7 +21,8 @@ function SolutionThatWorkForYou() {
               Accelerate your organization's growth with an agile, scalable, and
               open, cloud ERP platform.
             </p>
-            <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg">
+            <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg"
+            onClick={handleButtonClick}>
               Schedule a Demo
             </button>
           </div>

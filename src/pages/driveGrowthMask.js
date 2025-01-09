@@ -2,8 +2,14 @@ import React from 'react';
 import './driveGrowthMask.css';
 import Maskimage from '../components/assets/Maskimage.jpg';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const DriveGrowthMask = () => {
+function DriveGrowthMask  () {
+  const navigate  = useNavigate();
+  
+      const handleButtonClick = () => {
+          navigate("/bookDemo");
+      }
   const swipeTexts = [
     "Amplify operational efficiency, discover new opportunities, and stay agile in the rapidly changing market.",
     "Streamline your processes and innovate faster to achieve measurable success.",
@@ -32,7 +38,8 @@ useEffect(() => {
                         {swipeTexts[currentIndex]}
                     </p>
                     <div className="button-Center">
-                        <button className="border border-white text-white bg-blue-700 py-2 px-6 rounded-2xl hover:bg-blue-700">
+                        <button className="border border-white text-white bg-blue-700 py-2 px-6 rounded-2xl hover:bg-blue-700"
+                        onClick={handleButtonClick}>
                             Schedule a demo
                         </button>
                     </div>

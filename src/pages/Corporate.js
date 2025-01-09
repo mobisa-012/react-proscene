@@ -2,8 +2,14 @@ import React from 'react';
 import photo1 from '../components/assets/th.jpeg';
 import BookDemoToday from '../components/BookDemo';
 import Footer from '../components/Footer';
+import { useNavigate } from 'react-router-dom';
 
-const CorporateSolution = () => {
+function CorporateSolution (){
+  const navigate  = useNavigate();
+  
+      const handleButtonClick = () => {
+          navigate("/bookDemo");
+      }
   return (
     <div className ="">
     <div className="bg-[#0F172A] text-white flex flex-col lg:flex-row items-center lg:justify-evenly px-20 rounded-[80px] 
@@ -14,7 +20,8 @@ const CorporateSolution = () => {
           Streamline and automate your entire production, packaging, and
           distribution process with a comprehensive Proscene solutions.
         </p>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-xl">
+        <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-xl"
+        onClick={handleButtonClick}>
           Schedule a demo
         </button>
       </div>
