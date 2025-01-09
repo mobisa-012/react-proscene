@@ -31,7 +31,7 @@ const ServiceHero = () => {
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8">Four Ss design strategy</h2>
         <p className="text-lg mb-8">
-          AVI-SPL teams follow our Four Ss strategy when designing flexible solutions, ensuring they are simple, scalable, supportable, and secure.
+          Proscene teams follow our Four Ss strategy when designing flexible solutions, ensuring they are simple, scalable, supportable, and secure.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {fourSs.map((item, index) => (
