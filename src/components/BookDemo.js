@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function BookDemoToday() {
+    const navigate  = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate("/bookDemo");
+    }
     return (
         <div className="relative overflow-hidden w-full h-[343px] bg-[#3B37E6] flex justify-center items-center">
             <svg 
@@ -21,7 +27,7 @@ function BookDemoToday() {
                     See how Proscene works for you
                 </h1>
                 <button 
-                // onClick = {}
+                onClick = {handleButtonClick}
                 className="mt-5 px-8 py-3 bg-white text-black text-base font-bold rounded-2xl cursor-pointer leading-6 transition-all duration-300 hover:bg-gray-100 hover:scale-105">
                     Book a Demo Today
                 </button>
