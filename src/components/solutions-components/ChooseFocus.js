@@ -1,40 +1,76 @@
 import React from "react";
 
-function ChooseYourFocus () {
+function ChooseYourFocus() {
   const cards = [
     {
-      title: "Digitalize brick-and-mortar store experience",
+      title: "Seamless Home Theater Solutions",
       description:
-        "Adopt advanced and feature-rich mobile POS solutions to elevate customer experience and secure in-store operational efficiency",
-      icon: "📱",
+        "Transform your living space into a cinematic experience with cutting-edge audio and visual solutions tailored to your needs.",
+      icon: "🎥",
     },
     {
-      title: "Harmonize omnichannel commerce",
+      title: "Professional Audio Systems",
       description:
-        "Deliver a truly unified experience across all sales channels through a single, centralized commerce solution",
-      icon: "🔗",
+        "Elevate sound clarity and immersion with our high-performance audio solutions designed for homes, events, and studios.",
+      icon: "🎵",
     },
     {
-      title: "Simplify and unify end-to-end retail operations",
+      title: "Customized Visual Displays",
       description:
-        "Improve front-to-back retail operations, across all locations and sales channels with Priority’s single ERP and Retail Management Solution",
-      icon: "⚙️",
+        "Enhance your presentations and entertainment with bespoke visual displays, including 4K projectors and high-definition screens.",
+      icon: "📺",
+    },
+    {
+      title: "Integrated Smart Solutions",
+      description:
+        "Streamline your audiovisual setup with smart home integration, offering remote control and automation for effortless usability.",
+      icon: "🤖",
+    },
+    {
+      title: "Event Production Services",
+      description:
+        "Create unforgettable events with our professional-grade audiovisual equipment and technical support for sound and lighting.",
+      icon: "🎤",
+    },
+    {
+      title: "Corporate AV Solutions",
+      description:
+        "Enhance business meetings and conferences with state-of-the-art audiovisual technology, ensuring seamless collaboration.",
+      icon: "💼",
+    },
+    {
+      title: "Outdoor Entertainment Systems",
+      description:
+        "Take your entertainment outside with weather-resistant speakers and displays designed for outdoor spaces.",
+      icon: "🌟",
+    },
+    {
+      title: "Content Streaming Optimization",
+      description:
+        "Enjoy uninterrupted streaming with our advanced solutions for high-speed internet and optimized network performance.",
+      icon: "🌐",
+    },
+    {
+      title: "Virtual Reality Experiences",
+      description:
+        "Immerse yourself in cutting-edge virtual reality technology for gaming, training, and entertainment experiences.",
+      icon: "🕶️",
     },
   ];
 
   return (
-    <div className="bg-white py-4 place-content-center">
-      <h2 className="text-center text-2xl font-bold pb-5 text-[#081129] mb-8">
-        Choose your focus with a modular approach:
+    <div className="bg-gradient-to-b from-white via-blue-50 to-blue-100 pb-10">
+      <h2 className="text-center text-3xl font-extrabold text-[#081129] mb-10">
+        Choose Your Focus with a Modular Approach
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8 lg:px-20">
         {cards.map((card, index) => (
           <div
             key={index}
-            className="bg-white shadow-lg shadow-[#b2c6f8] rounded-lg p-8 mr-32 ml-32 text-center place-content-center"
+            className="bg-white shadow-xl rounded-lg p-8 text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:bg-blue-50"
           >
-            <div className="text-5xl mb-4 text-purple-500">{card.icon}</div>
-            <h3 className="text-lg py-5 font-semibold text-gray-800 mb-2">
+            <div className="text-6xl mb-4 text-purple-600">{card.icon}</div>
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">
               {card.title}
             </h3>
             <p className="text-gray-600">{card.description}</p>
@@ -43,6 +79,6 @@ function ChooseYourFocus () {
       </div>
     </div>
   );
-};
+}
 
-export default ChooseYourFocus ;
+export default ChooseYourFocus;
