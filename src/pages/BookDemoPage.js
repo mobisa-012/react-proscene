@@ -2,6 +2,18 @@ import React from "react";
 import Footer from "../components/Footer";
 
 function BookDemo () {
+  const countries = ["United States", "Kenya", "Canada", "Germany", "Australia"];
+  const roles = [
+    "Owner|President|CEO",
+    "CFO|Finance Director",
+    "CTO",
+    "CMO |Marketing",
+    "Other",
+    "Consultant",
+    "IT Director",
+    "COO|CIO",
+  ];
+
   return (
     <div className = "">
     <div className="flex items-center justify-center bg-gray-100">
@@ -58,19 +70,18 @@ function BookDemo () {
             />
             <select className="w-full p-3 rounded-md bg-white text-black">
               <option>Select your role</option>
-              <option>Owner|President|CEO</option>
-              <option>CFO|Finance Director</option>
-              <option>CTO</option>
-              <option>CMO |Marketing</option>
-              <option>Other</option>
-              <option>Consultant</option>
-              <option>IT Director</option>
-              <option>COO|CIO</option>
+                {roles.map((role,index) => (
+                  <option key = {index} value= {role}>
+                  {role}</option>
+                ))}
             </select>
             <select className="w-full p-3 rounded-md bg-white text-black">
-              <option>Country</option>
-              <option>Country 1</option>
-              <option>Country 2</option>
+              <option value="">Select Country</option>
+              {countries.map((country, index) => (
+                <option key={index} value={country}>
+                  {country}
+                </option>
+              ))}
             </select>
             <select className="w-full p-3 rounded-md bg-white text-black">
               <option>Interested in</option>
