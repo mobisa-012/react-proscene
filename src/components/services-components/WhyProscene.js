@@ -22,7 +22,7 @@ const WhyProscene = () => {
 
   return (
     <section className="bg-gray-100 py-16">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center">
+      <div className="container mx-auto max-w-7xl flex flex-col lg:flex-row items-center justify-center">
         <div className="lg:w-1/3 text-left mb-8 lg:mb-0 lg:px-12">
           <h2 className="text-3xl font-bold my-12 text-[#5ed0f9] inline-block align-middle">Why Partner with Proscene?</h2>
         </div>
