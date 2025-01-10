@@ -1,11 +1,4 @@
-  /* .supportjpgback{
-    background-image: url('/src/components/assets/support.jpg');
-    height: 77vh;
-    border-radius: 4rem;
-    margin: 1em;
-    background-size: cover;
-  }
-   */
+ 
    .bookdemotitle{
     color: #16213d;
     font-size: clamp(1.6019rem, 1.0817rem + 2.6008vw, 3.52rem);
@@ -15,4 +8,15 @@
 font-size: clamp(1.4238rem, 1.0921rem + 1.6585vw, 2.6469rem);
 color: #16213d;
 font-weight: 600;
+   }
+   .cardheaders{
+    font-size: clamp(1.125rem, 1.0243rem + 0.5034vw, 1.4963rem);
+    color: #16213d;
+   }
+   .iconsize{
+    font-size: 3em;
+   }
+   .featuresp{
+    font-size: clamp(1rem, 0.9661rem + 0.1695vw, 1.125rem);
+    color: #16213d;
    }
