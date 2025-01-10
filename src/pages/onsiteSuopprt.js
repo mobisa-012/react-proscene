@@ -4,6 +4,7 @@ import leftbottomSvg from "../components/assets/leftbottom.svg";
 import supportjpg from "../components/assets/support.jpg";
 import { motion } from "framer-motion";
 import FAQ from "./Faq";
+import Footer from '../components/Footer';
 
 function OnSiteSupport() {
   const swipeTexts = [
@@ -445,9 +446,10 @@ function OnSiteSupport() {
           </div>
         </div>
         <div id="faqs" className=" mt-9 pt-6 flex justify-center items-center">
-          <FAQ />
-        </div>
+          <FAQ />         
+        </div>        
       </div>
+      <Footer/>    
     </div>
   );
 }
