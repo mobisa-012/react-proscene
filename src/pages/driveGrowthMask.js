@@ -30,10 +30,10 @@ useEffect(() => {
 <div className=" maxWidthContainer">
             <div className="flex flex-col md:flex-row items-center justify-center bg-white">
                 <div className=" text-[] p-10 md:w-1/2 Br">
-                    <h1 className="font-bold h1sizing">
+                    <h1 className=" masktitle">
                          Fits your business today. Check.
                     </h1>
-                    <p className="text-lg mb-6">
+                    <p className="maskp mb-6">
                     {/* added 3 `line texts` that swipe automatically */}
                         {swipeTexts[currentIndex]}
                     </p>

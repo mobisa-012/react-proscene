@@ -58,8 +58,8 @@ function MoreSection () {
           
         </div>
         <div class="wrapper5 wrappers borderRadius">
-          <div class="maincontainer flex">
-          <section className="morePartners2  morePartnerspinkish center flex-col" style={{margin:'3em'}}>
+          <div class="maincontainer flex justify-center">
+          <section className="morePartners2  morePartnerspinkish center flex-col" style={{margin:'0 auto', maxWidth:'16em'}}>
               <h3>10 +</h3>
               <p>partners</p>
             </section>

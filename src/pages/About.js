@@ -94,23 +94,6 @@ function About() {
   const allVisible = visibleCount >= teamMembers.length;
   return (
     <div className="p-0">
-      {/* We're in Business Section */}
-      {/* <div className="p-6 w-full max-w-7xl mx-auto my-12 items-center bg-[#16213d] rounded-[50px] flex gap-4">
-            <div className="flex flex-col items-center gap-4">
-                <h1 className="py-8 px-6 mx-3 text-center text-white leading font-bold md:text-5xl sm:text-3xl">
-                    We're in the business of <br />
-                    enhancing your business
-                </h1>
-                <button className="bg-white text-black font-bold py-3 px-6 rounded-2xl hover:bg-blue-700 focus:outline-none">
-                    Learn More
-                </button>
-            </div>
-            <img 
-                className="rounded-[50px] max-w-full h-auto" 
-                src={harney}
-                alt="Business Enhancement" 
-            />
-        </div> */}
       <div>
       <DriveGrowthMask />
       </div>
