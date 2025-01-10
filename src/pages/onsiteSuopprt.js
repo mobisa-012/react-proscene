@@ -374,7 +374,7 @@ function OnSiteSupport() {
             </div>
           </div>
         </div>
-        <div className="max-w-[1100px] mx-auto bg-[#f3f6ff] border border-[#3b37e6] rounded-lg p-8" style={{marginBlock:'6em'}}>
+        <div className="max-w-[1100px] mx-auto bg-[#f3f6ff] border border-[#3b37e6] rounded-xl p-8" style={{marginBlock:'6em'}}>
           <div className="flex flex-col md:flex-row gap-4">
             {/* First Column */}
             <div className="flex-1 flex flex-col justify-center">
@@ -402,7 +402,7 @@ function OnSiteSupport() {
         <div className="p-4">
           <h2 className="text-center onsitesubheads font-bold mb-4">Key Features</h2>
           {/* Links Row */}
-          <div className="relative overflow-hidden">
+          <div className="relative overflow-hidden max-w-7xl mx-auto">
             <div className="flex space-x-4 overflow-x-auto scrollbar-hide pb-1 items-center px-32">
               {links.map((link) => (
                 <button
@@ -421,7 +421,7 @@ function OnSiteSupport() {
             <div
               className="absolute bottom-0 left-0 h-[2px] bg-blue-500 transition-transform"
               style={{
-                width: "100%",
+                // width: "100%",
                 transform: `translateX(${
                   links.findIndex((link) => link.id === activeLink) * 100
                 }%)`,
@@ -429,7 +429,7 @@ function OnSiteSupport() {
             />
           </div>
           {/* Content Row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 mt-4 gap-4 mx-32 px-40">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-32 px-40">
             <div className="m-4 flex justify-center flex-col">
               <h3 className="cardheaders font-semibold mb-2">
                 {content[activeLink].title}
@@ -445,7 +445,8 @@ function OnSiteSupport() {
             </div>
           </div>
         </div>
-        <div id="faqs" className=" mt-9 pt-6 flex justify-center items-center">
+        <div id="faqs" className="flex flex-col mt-9 pt-6 justify-center items-center pb-5">
+        <h3 className="onsitesubheads">Frequently Asked Questions</h3>
           <FAQ />         
         </div>        
       </div>
