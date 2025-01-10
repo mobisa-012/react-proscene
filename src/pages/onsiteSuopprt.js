@@ -403,7 +403,7 @@ function OnSiteSupport() {
           <h2 className="text-center onsitesubheads font-bold mb-4">Key Features</h2>
           {/* Links Row */}
           <div className="relative overflow-hidden">
-            <div className="flex space-x-4 overflow-x-auto scrollbar-hide pb-1">
+            <div className="flex space-x-4 overflow-x-auto scrollbar-hide pb-1 items-center px-32">
               {links.map((link) => (
                 <button
                   key={link.id}
@@ -429,7 +429,7 @@ function OnSiteSupport() {
             />
           </div>
           {/* Content Row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 mt-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 mt-4 gap-4 mx-32 px-40">
             <div className="m-4 flex justify-center flex-col">
               <h3 className="cardheaders font-semibold mb-2">
                 {content[activeLink].title}
@@ -440,7 +440,7 @@ function OnSiteSupport() {
               <img
                 src={content[activeLink].image}
                 alt={content[activeLink].title}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover rounded-2xl"
               />
             </div>
           </div>
