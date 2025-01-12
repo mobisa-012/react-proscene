@@ -429,7 +429,7 @@ function OnSiteSupport() {
             />
           </div>
           {/* Content Row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-32 px-40">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-32" style={{maxWidth:'1100px', margin:'0 auto'}}>
             <div className="m-4 flex justify-center flex-col">
               <h3 className="cardheaders font-semibold mb-2">
                 {content[activeLink].title}

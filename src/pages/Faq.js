@@ -44,7 +44,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto mt-8">
+    <div className="w-full mx-auto mt-8" style={{maxWidth:'1100px'}}>
       {faqs.map((faq, index) => (
         <FAQItem
           key={index}

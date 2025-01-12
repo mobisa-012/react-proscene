@@ -26,7 +26,7 @@ function SolutionsLayout (){
     }
   };
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8" style={{maxWidth:'1400px', margin:'0 auto'}}>
       <div className="text-center">
         <h2 className="font-bold tracking-tight text-gray-900 h2-solutions">
           Enter a world of solutions, designed 

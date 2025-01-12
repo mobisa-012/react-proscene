@@ -383,7 +383,7 @@ const HelpSection = () => {
 
     {/* email us */}
     <div className="mx-auto pt-16 pb-16 pl-8 pr-8 bg-blue-50">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-0 justify-between border border-blue-500 rounded-2xl">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-0 justify-between border border-blue-500 rounded-2xl" style={{maxWidth:'1100px', margin:'0 auto'}}>
     <div className="pl-8 pr-6 pt-8 pb-8">
       <h2 className="text-3xl font-bold text-purple-600">Our newsletter</h2>
       <p className="text-gray-600 mt-2">Sign up for our newsletter to receive updates straight to your inbox.</p>

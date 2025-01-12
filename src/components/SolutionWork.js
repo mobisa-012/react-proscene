@@ -1,5 +1,5 @@
 import React from 'react';
-import photo1 from '../components/assets/th.jpeg';
+import photo1 from '../components/assets/conference.webp';
 import { useNavigate } from 'react-router-dom';
 
 function SolutionThatWorkForYou() {
@@ -14,10 +14,10 @@ function SolutionThatWorkForYou() {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10">
         {/* Left Section: Text */}
         <div className="lg:w-1/2 text-center lg:text-left px-4">
-          <h1 className="text-indigo-600 font-bold text-sm sm:text-base md:text-lg mb-2">
+          <h1 className="font-bold text-[#3b37e6] mb-2" style={{fontSize:'clamp(1.4238rem, 1.0921rem + 1.6585vw, 2.6469rem)'}}>
             Where Proscene will help you thrive best
           </h1>
-          <h2 className="text-[#0F172A] font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 leading-snug">
+          <h2 className="text-[#16213d] mb-4" style={{fontSize: 'clamp(1.8019rem, 1.0209rem + 3.9051vw, 4.6819rem)', lineHeight:'1', fontWeight:'600'}}>
             Solutions that work for you. Not the other way around.
           </h2>
           <p className="text-[#334155] text-sm sm:text-base md:text-lg mb-6">
@@ -25,7 +25,7 @@ function SolutionThatWorkForYou() {
             open, cloud ERP platform.
           </p>
           <button
-            className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 sm:py-3 sm:px-6 rounded-lg"
+            className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 sm:py-3 sm:px-6 rounded-[15px]"
             onClick={handleButtonClick}
           >
             Schedule a Demo

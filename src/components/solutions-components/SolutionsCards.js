@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import coop from "../assets/coop.jpeg";
-import th from "../assets/th.jpeg";
+import th from "../assets/conference.webp";
 import mask from "../assets/Maskimage.jpg";
 import hc from "../assets/hc.jpeg";
 import legal from "../assets/legal.jpeg";

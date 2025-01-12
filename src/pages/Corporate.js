@@ -1,5 +1,5 @@
 import React from 'react';
-import photo1 from '../components/assets/th.jpeg';
+import photo1 from '../components/assets/conference.webp';
 import BookDemoToday from '../components/BookDemo';
 import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
