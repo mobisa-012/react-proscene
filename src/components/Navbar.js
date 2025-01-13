@@ -9,7 +9,11 @@ function Navbar() {
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
   const [isSectorsOpen, setIsSectorsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen((prev) => !prev);
+  };
 
   const closeAllDropdowns = () => {
     setIsSolutionsOpen(false);
@@ -58,95 +62,6 @@ function Navbar() {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1024px)" });
 
   return (
-    // <nav classNameName="navbar">
-    //   <div classNameName="logo">
-    //     <Link to="/">
-    //       <img src={logo} alt="Company Logo" />
-    //     </Link>
-    //   </div>
-    //   <div classNameName="menu-icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-    //     <span>{isMenuOpen ? '✖' : '☰'}</span>
-    //   </div>
-    //   <div
-    //     classNameName={`overlay ${isMenuOpen ? 'show' : ''}`}
-    //     onClick={() => setIsMenuOpen(false)}
-    //   ></div>
-    //   <ul classNameName={isMenuOpen ? 'show' : ''}>
-    //     <li><Link to="/">Home</Link></li>
-    //     <li><Link to="/about">About</Link></li>
-
-    //     <li
-    //       onMouseEnter={() => setIsSolutionsOpen(true)}
-    //       onMouseLeave={() => setIsSolutionsOpen(false)}
-    //       onClick={(e) => {
-    //         e.stopPropagation();
-    //         setIsSolutionsOpen(!isSolutionsOpen);
-    //         setIsSectorsOpen(false);
-    //         setIsServicesOpen(false);
-    //       }}
-    //       classNameName={isSolutionsOpen ? 'showSubMenu' : ''}
-    //     >
-    //       <Link to="/solutions" style={{ display: 'flex', justifyContent: 'space-between' }}>
-    //         <div classNameName='pr-1'>Solutions</div><div> {isSolutionsOpen ? <FaChevronUp /> : <FaChevronDown />}</div>
-    //       </Link>
-    //       {isSolutionsOpen && (
-    //         <ul classNameName={`submenu ${isDesktopOrLaptop ? 'submenu-fullwidth' : ''}`}>
-    //           {solutionsSubMenuItems.map((item, index) => (
-    //             <li key={index}><Link to={item.href}>{item.label}</Link></li>
-    //           ))}
-    //         </ul>
-    //       )}
-    //     </li>
-
-    //     <li
-    //       onMouseEnter={() => setIsServicesOpen(true)}
-    //       onMouseLeave={() => setIsServicesOpen(false)}
-    //       onClick={(e) => {
-    //         e.stopPropagation();
-    //         setIsServicesOpen(!isServicesOpen);
-    //         setIsSolutionsOpen(false);
-    //         setIsSectorsOpen(false);
-    //       }}
-    //       classNameName={isServicesOpen ? 'showSubMenu' : ''}
-    //     >
-    //       <Link to="/services" style={{ display: 'flex', justifyContent: 'space-between' }}>
-    //        <div classNameName='pr-1'> Services</div><div> {isServicesOpen ? <FaChevronUp /> : <FaChevronDown />}</div>
-    //       </Link>
-    //       {isServicesOpen && (
-    //         <ul classNameName={`submenu ${isDesktopOrLaptop ? 'submenu-fullwidth' : ''}`}>
-    //           {servicesSubMenuItems.map((item, index) => (
-    //             <li key={index}><Link to={item.href}>{item.label}</Link></li>
-    //           ))}
-    //         </ul>
-    //       )}
-    //     </li>
-
-    //     <li
-    //       onMouseEnter={() => setIsSectorsOpen(true)}
-    //       onMouseLeave={() => setIsSectorsOpen(false)}
-    //       onClick={(e) => {
-    //         e.stopPropagation();
-    //         setIsSectorsOpen(!isSectorsOpen);
-    //         setIsSolutionsOpen(false);
-    //         setIsServicesOpen(false);
-    //       }}
-    //       classNameName={isSectorsOpen ? 'showSubMenu' : ''}
-    //     >
-    //       <Link to="/sectors" style={{ display: 'flex', justifyContent: 'space-between' }}>
-    //       <div classNameName='pr-1'>Sectors</div><div> {isSectorsOpen ? <FaChevronUp /> : <FaChevronDown />}</div>
-    //       </Link>
-    //       {isSectorsOpen && (
-    //         <ul classNameName={`submenu ${isDesktopOrLaptop ? 'submenu-fullwidth' : ''}`}>
-    //           {sectorsSubMenuItems.map((item, index) => (
-    //             <li key={index}><Link to={item.href}>{item.label}</Link></li>
-    //           ))}
-    //         </ul>
-    //       )}
-    //     </li>
-    //     <li><Link to="/case-studies">Case Studies</Link></li>
-    //     <li><Link to="/contact">Contact</Link></li>
-    //   </ul>
-    // </nav>
     <header
       id="site-header"
       className="site-header js-site-header site-header__sticky
@@ -1682,6 +1597,7 @@ function Navbar() {
               aria-label="Mobile nenu"
               title="Mobile menu"
               data-role="mobile-menu-action"
+              onClick={toggleMobileMenu}
             >
               <span></span>
               <span></span>
@@ -1695,8 +1611,8 @@ function Navbar() {
         className="mobile-menu-overlay js-mobile-menu-overlay"
         data-role="mobile-menu-action"
       ></div>
-      <div id="mobile-menu" className="mobile-menu js-mobile-menu ">
-        {/* adding show to this class will bring the mobile into view */}
+      <div id="mobile-menu"
+      className={`mobile-menu js-mobile-menu ${isMobileMenuOpen ? "show" : ""}`}>
         <div className="mobile-menu__container">
           <nav className="mobile-menu__nav">
             <ul
@@ -1705,7 +1621,7 @@ function Navbar() {
             >
               <li
                 id="menu-item-20880"
-                className="mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20880"
+                className="mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20880 "
               >
                 {/* added active above */}
                 <a
