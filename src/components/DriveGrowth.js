@@ -45,7 +45,7 @@ function DriveGrowth() {
                         {swipeTexts[currentIndex]}
                     </p>
                     <div className="button-Center">
-                        <button className="border border-white text-white py-2 px-6 mx-10 rounded-2xl hover:bg-blue-700"
+                        <button className="border border-white text-white py-2 px-6 mx-10 mt-5 rounded-2xl hover:bg-white hover:text-[#3b37e6]"
                         onClick={handleButtonClick}>
                             Schedule a demo
                         </button>
