@@ -23,12 +23,12 @@ function BookDemoToday() {
                 />
             </svg>
             <div className="text-center z-[1] px-4 md:px-8">
-                <h1 className="font-bold text-white text-2xl md:text-3xl leading-tight mb-4">
-                    See how Proscene works for you
+                <h1 className="font-axioforma font-semibold tracking-wider text-white text-5xl leading-10 mt-10">
+                    See how Proscene works for <br/>you
                 </h1>
                 <button 
                 onClick = {handleButtonClick}
-                className="mt-5 px-8 py-3 bg-white text-black text-base font-bold rounded-2xl cursor-pointer leading-6 transition-all duration-300 hover:bg-gray-100 hover:scale-105">
+                className="mt-8 px-10 py-5 bg-white text-xl font-bold rounded-2xl cursor-pointer leading-6 transition-all duration-300 hover:bg-gray-100 hover:scale-105">
                     Book a Demo Today
                 </button>
             </div>
