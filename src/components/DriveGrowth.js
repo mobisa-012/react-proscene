@@ -18,8 +18,8 @@ function DriveGrowth() {
 
     const swipeTopics = [
         "Drives your growth tomorrow. Check.",
-        "Fits your business today. Check.",
-        "Be visible all seasons. Check."
+        "Fits your business everyday. Check.",
+        "Be visible through all seasons. Check."
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -37,15 +37,15 @@ function DriveGrowth() {
         <div className="pb-5 pt-10 maxWidthContainer">
             <div className="flex flex-col md:flex-row items-center justify-center p-8 bg-white min-h-40">
                 <div className="bg-[#3b37e6] py-16 text-white p-10 mb-10 mt-10 md:w-1/2 Br">
-                    <h1 className="leading-none font-axioforma mt-10 mx-10 mb-10 text-[75px]">
+                    <h1 className="font-bold h1sizing mx-4">
                         {swipeTopics[currentIndex]}
                     </h1>
-                    <p className="text-lg mx-10">
+                    <p className="text-lg mx-4" style={{fontWeight:'300'}}>
                     {/* added 3 `line texts` that swipe automatically */}
                         {swipeTexts[currentIndex]}
                     </p>
                     <div className="button-Center">
-                        <button className="border border-white text-white py-2 px-6 mx-10 mt-5 rounded-2xl hover:bg-white hover:text-[#3b37e6]"
+                        <button className="border border-white text-white mx-4 py-2 px-6 mt-5 rounded-2xl hover:bg-white hover:text-[#3b37e6]"
                         onClick={handleButtonClick}>
                             Schedule a demo
                         </button>
