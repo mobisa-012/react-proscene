@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import logo from "./assets/logo.png";
 import { useMediaQuery } from "react-responsive";
 import logoHome from './assets/logo.png';
 
@@ -75,13 +74,14 @@ function Navbar() {
      en    "
     >
       <div className="site-header__inner">
-        <div className="container site-header__container">
+        <div className="container site-header__container" style={{maxWidth: '1400px',
+  margin: '0 auto', paddingInline:'1em'}}>
           <div className="site-header__logo">
             <a
               href=""
               className="site-header__logo-link"
             >
-              <img className="style-svg site-header__logo-img" src={logoHome} width="152" height="38" alt="Proscene"></img>
+              <img className="style-svg site-header__logo-img" src={logoHome} style={{maxHeight:'35px', minHeight:'25px'}} alt="Proscene"></img>
             </a>
           </div>
 
@@ -93,7 +93,7 @@ function Navbar() {
               >
                 <li
                   id="menu-item-20758"
-                  className="mega-menu solutions menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"
+                  className="mega-menu solutions menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children active"
                 >
                   <a href="#">
                     <span>Solutions</span>
@@ -2397,7 +2397,9 @@ function Navbar() {
               </li>
               <li
                 id="menu-item-20957"
-                className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20957"
+                onClick={handleToggle}
+                className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20957 ${isActive ? "active" : ""}`}
+              
               >
                 <a
                   href=""
@@ -2408,7 +2410,13 @@ function Navbar() {
                 >
                   Partners<span className="sub-menu-toggle"></span>
                 </a>
-                <ul className="sub-menu">
+                <ul className={`sub-menu ${isActive ? "active" : ""}`}
+                 style={{
+                  maxHeight: isActive ? "241px" : "0px",
+                  overflow: "hidden",
+                  transition: "max-height 0.3s ease",
+                }}
+        onClick={handleToggle}>
                   <li
                     id="menu-item-20958"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20958"
