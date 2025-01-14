@@ -11,9 +11,15 @@ function DriveGrowth() {
     }
 
     const swipeTexts = [
-        "Amplify operational efficiency, discover new opportunities, and stay agile in the rapidly changing market.",
+        "Amplify operational efficiency, discover new opportunities, and stay agile.",
         "Streamline your processes and innovate faster to achieve measurable success.",
         "Empower your business with cutting-edge solutions tailored to your needs."
+    ];
+
+    const swipeTopics = [
+        "Drives your growth tomorrow. Check.",
+        "Fits your business today. Check.",
+        "Be visible all seasons. Check."
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,24 +28,24 @@ function DriveGrowth() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % swipeTexts.length);
-        }, 3000);
+        }, 2000);
 
         return () => clearInterval(interval);
     }, [swipeTexts.length]);
 
     return (
-        <div className="pb-5 maxWidthContainer">
+        <div className="pb-5 pt-10 maxWidthContainer">
             <div className="flex flex-col md:flex-row items-center justify-center p-8 bg-white">
                 <div className="bg-[#3b37e6] py-16 text-white p-10 md:w-1/2 Br">
-                    <h1 className="font-bold h1sizing">
-                        Drives your growth tomorrow. Fits your business today. Check.
+                    <h1 className="leading-none font-axioforma mt-10 mb-10 mx-10 text-[75px]">
+                        {swipeTopics[currentIndex]}
                     </h1>
-                    <p className="text-lg mb-6">
+                    <p className="text-lg mx-10">
                     {/* added 3 `line texts` that swipe automatically */}
                         {swipeTexts[currentIndex]}
                     </p>
                     <div className="button-Center">
-                        <button className="border border-white text-white py-2 px-6 rounded-2xl hover:bg-blue-700"
+                        <button className="border border-white text-white py-2 px-6 mx-10 rounded-2xl hover:bg-blue-700"
                         onClick={handleButtonClick}>
                             Schedule a demo
                         </button>
