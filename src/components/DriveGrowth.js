@@ -35,9 +35,9 @@ function DriveGrowth() {
 
     return (
         <div className="pb-5 pt-10 maxWidthContainer">
-            <div className="flex flex-col md:flex-row items-center justify-center p-8 bg-white">
-                <div className="bg-[#3b37e6] py-16 text-white p-10 md:w-1/2 Br">
-                    <h1 className="leading-none font-axioforma mt-10 mb-10 mx-10 text-[75px]">
+            <div className="flex flex-col md:flex-row items-center justify-center p-8 bg-white min-h-40">
+                <div className="bg-[#3b37e6] py-16 text-white p-10 mb-10 mt-10 md:w-1/2 Br">
+                    <h1 className="leading-none font-axioforma mt-10 mx-10 mb-10 text-[75px]">
                         {swipeTopics[currentIndex]}
                     </h1>
                     <p className="text-lg mx-10">
@@ -55,9 +55,9 @@ function DriveGrowth() {
                 <div className="relative md:w-1/2 flex items-center justify-center mt-8 md:mt-0 bg-growth">
                     <img src={homeSvg} alt="home" className="rounded-lg shadow-lg" />
 
-                    <div className="absolute -top-5 -right-5 w-32 h-32 bg-purple-200 rounded-lg"></div>
+                    {/* <div className="absolute -top-5 -right-5 w-32 h-32 bg-purple-200 rounded-lg"></div>
                     <div className="absolute -bottom-12 -left-8 w-32 h-16 bg-cyan-200 rounded-full"></div>
-                    <div className="absolute top-1/4 right-1/4 w-16 h-16 bg-red-300 rounded-lg"></div>
+                    <div className="absolute top-1/4 right-1/4 w-16 h-16 bg-red-300 rounded-lg"></div> */}
                 </div>
             </div>
         </div>
