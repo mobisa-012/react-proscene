@@ -17,7 +17,7 @@ function BookDemo () {
   return (
     <div className = "">
     <div className="flex items-center justify-center bg-gray-100">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 mt-14">
         {/* Left Section */}
         <div className="flex flex-col justify-center text-left p-6 space-y-6">
           <h1 className="text-4xl font-bold text-blue-600">Ready to take a closer look?</h1>
@@ -100,7 +100,7 @@ function BookDemo () {
             </p>
             <button
               type="submit"
-              className="w-1/2 flex justify-center bg-[#16213D] border hover:bg-white text-white hover:text-black py-3 rounded-xl font-medium">
+              className="w-1/2 flex max-w-7xl mx-auto justify-center bg-[#16213D] border hover:bg-white text-white hover:text-black py-3 rounded-xl font-medium">
               Submit
             </button>
           </form>
