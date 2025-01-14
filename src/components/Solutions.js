@@ -1,227 +1,136 @@
 import React from "react";
-import { useState } from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-function SolutionsLayout (){
-  const [isExpanded, setIsExpanded] = useState(false);
-  const navigate  = useNavigate();
+const Card = ({ title, description, icon, hoverColor, borderColor, hoverBgColor, navigateTo, buttonColor }) => {
+  const navigate = useNavigate();
 
-  const handleButtonClick = (solutionType) => {
-    switch (solutionType) {
-      case "AV":
-        navigate("/avIntegration");
-        break;
-      case "IT":
-        navigate("/interactiveTechnology");
-        break;
-      case "DM":
-        navigate("/digitalMedia");
-        break;
-      case "CS":
-        navigate("/collaborationSolutions");
-        break;
-      default:
-        break;
-    }
+  const handleNavigation = () => {
+    navigate(navigateTo);
   };
+
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8" style={{maxWidth:'1400px', margin:'0 auto'}}>
-      <div className="text-center">
-        <h2 className="font-bold tracking-tight text-gray-900 h2-solutions">
-          Enter a world of solutions, designed 
-          for your business
+    <div
+      className={`group relative pl-10 pr-10 pb-10 pt-6 border ${borderColor} border-opacity-100 rounded-3xl shadow-md hover:shadow-lg transition-transform duration-300 overflow-visible`}
+      style={{
+        backgroundColor: "transparent",
+      }}
+    >
+      {/* Card background on hover changes */}
+      <div
+        className="absolute inset-0 rounded-3xl transition-colors duration-300 opacity-0 group-hover:opacity-100"
+        style={{
+          zIndex: 0, // helps place the background color behind the content
+          backgroundColor: hoverBgColor,
+        }}
+      ></div>
+
+      {/* Icon, title, description */}
+      <div className="relative transition-transform duration-300 group-hover:-translate-y-6 z-10">
+        {/* Icon */}
+        <div
+          className={`w-12 h-12 mx-auto mb-4 transition-all duration-300 transform group-hover:-translate-y-16 group-hover:z-10 ${hoverColor}`}
+        >
+          {icon}
+        </div>
+
+        {/* Title */}
+        <h3 className="text-xl font-semibold text-center mb-2 transition-transform duration-300 group-hover:-translate-y-6">
+          {title}
+        </h3>
+
+        {/* Description */}
+        <p className="text-center text-gray-600 transition-transform duration-300 group-hover:-translate-y-6">
+          {description}
+        </p>
+      </div>
+
+      {/* Button */}
+      <div className="absolute bottom-4 left-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <button
+          className={`mx-auto block px-4 py-2 rounded-full text-white hover:bg-opacity-80 transition-colors duration-300`}
+          style={{
+            backgroundColor: buttonColor,
+          }}
+          onClick={handleNavigation}
+        >
+          More Info
+        </button>
+      </div>
+    </div>
+  );
+};
+
+const SolutionsLayout = () => {
+  return (
+    <div className="flex flex-col my-16 justify-center items-center max-w-7xl mx-auto">
+      {/* Title and Description Above Cards */}
+      <div className="text-center mb-8">
+        <h2 className="text-[20px] font-bold text-[#16213d] font-axioforma mb-[10px] ml-auto mr-auto">
+          Enter a world of solutions, designed for your business
         </h2>
-        <p className="mt-1 text-lg leading-relaxed text-center pt-1 thin-weight">
-          Cutting-edge cloud-based business management solutions to amplify operational efficiency, <br/>
-          uncover new opportunities, stay agile in the rapidly changing market, and outperform competitors.
+        <p className="text-[15px] text-[#343434]">
+          Cutting-edge cloud-based business management solutions to amplify operational efficiency, uncover new opportunities, <br/>stay agile in the rapidly changing market, and outperform competitors.
         </p>
       </div>
 
-      <div className="mt-12 grid sm:grid-cols-3 lg:grid-cols-4 pb-5 pt-5 w-auto">
-        {/* AI */}
-        <div
-      className="mx-2 border border-[#3c39eb] rounded-3xl p-6 text-center shadow-sm hover:shadow-lg mb-4 overflow-hidden transition-all duration-300 group"
-      onMouseEnter={() => {
-        if (window.innerWidth >= 768) setIsExpanded(true);
-      }}
-      onMouseLeave={() => {
-        if (window.innerWidth >= 768) setIsExpanded(false);
-      }}
-    >
-      <div className="flex justify-center mb-4">
-        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
-          <span className="text-2xl font-bold">AvI</span>
-        </div>
-      </div>
-      <h3 className="text-lg font-semibold text-blue-700 h3solutions">AV Integration</h3>
-      <p className="mt-2 text-sm text-gray-600">
-        Accelerate your organization’s growth with an agile, scalable, and intuitive platform.
-      </p>
-
-      {/* Arrow Button for Small Screens */}
-      <div className="md:hidden flex justify-center mt-4">
-        <button
-          onClick={() => setIsExpanded(!isExpanded)}
-          className="text-blue-600"
-        >
-          {isExpanded ? <FaChevronUp size={20} /> : <FaChevronDown size={20} />}
-        </button>
-      </div>
-
-      {/* Hidden Content */}
-      <div
-        className={`hidden-content mt-4 overflow-hidden transition-all duration-300 ease-in-out ${
-          isExpanded ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
-        <p className="text-sm text-gray-600">
-          Leverage advanced AV integration solutions for a seamless and efficient user experience.
-        </p>
-        <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700"
-        onClick={() => handleButtonClick("AV")}>
-          View More
-        </button>
-      </div>
-    </div>
-
-        {/* IT */}
-        <div
-      className="mx-2 border border-[#a042ff] rounded-3xl p-6 text-center shadow-sm hover:shadow-lg mb-4 overflow-hidden transition-all duration-300 group"
-      onMouseEnter={() => {
-        if (window.innerWidth >= 768) setIsExpanded(true);
-      }}
-      onMouseLeave={() => {
-        if (window.innerWidth >= 768) setIsExpanded(false);
-      }}
-    >
-      <div className="flex justify-center mb-4">
-        <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
-          <span className="text-2xl font-bold">IT</span>
-        </div>
-      </div>
-      <h3 className="text-lg font-semibold text-purple-700 h3solutions">Interactive Technology</h3>
-      <p className="mt-2 text-sm text-gray-600">
-        True Omnichannel, All-in-One Retail Management Solution.
-      </p>
-
-      {/* Arrow Button for Small Screens */}
-      <div className="md:hidden flex justify-center mt-4">
-        <button
-          onClick={() => setIsExpanded(!isExpanded)}
-          className="text-purple-600"
-        >
-          {isExpanded ? <FaChevronUp size={20} /> : <FaChevronDown size={20} />}
-        </button>
-      </div>
-
-      {/* Hidden Content */}
-      <div
-        className={`hidden-content mt-4 overflow-hidden transition-all duration-300 ease-in-out ${
-          isExpanded ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
-        <p className="text-sm text-gray-600">
-          Seamlessly integrate cutting-edge retail management technologies for a true omnichannel experience.
-        </p>
-        <button className="mt-4 px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700"
-        onClick={() => handleButtonClick("IT")}>
-          View More
-        </button>
-      </div>
-    </div>
-
-        {/* DM */}
-      <div
-      className="mx-2 border border-[#00d2fb] rounded-3xl p-6 text-center shadow-sm hover:shadow-lg mb-4 overflow-hidden transition-all duration-300 group"
-      onMouseEnter={() => {
-        if (window.innerWidth >= 768) setIsExpanded(true);
-      }}
-      onMouseLeave={() => {
-        if (window.innerWidth >= 768) setIsExpanded(false);
-      }}
-    >
-      <div className="flex justify-center mb-4">
-        <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center text-cyan-600">
-          <span className="text-2xl font-bold">DM</span>
-        </div>
-      </div>
-      <h3 className="text-lg font-semibold text-cyan-700 h3solutions">Digital Media</h3>
-      <p className="mt-2 text-sm text-gray-600">
-        Next-Gen Property Management Software.
-      </p>
-
-      {/* Arrow Button for Small Screens */}
-      <div className="md:hidden flex justify-center mt-4">
-        <button
-          onClick={() => setIsExpanded(!isExpanded)}
-          className="text-cyan-600"
-        >
-          {isExpanded ? <FaChevronUp size={20} /> : <FaChevronDown size={20} />}
-        </button>
-      </div>
-
-      {/* Hidden Content */}
-      <div
-        className={`hidden-content mt-4 overflow-hidden transition-all duration-300 ease-in-out ${
-          isExpanded ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
-        <p className="text-sm text-gray-600">
-          Discover innovative solutions for modern digital property management.
-        </p>
-        <button className="mt-4 px-4 py-2 bg-cyan-600 text-white rounded-full hover:bg-cyan-700"
-        onClick={() => handleButtonClick("DM")}>
-          View More
-        </button>
-      </div>
-    </div>
-
-        {/* CS */}
-        <div
-      className="mx-2 border border-[#ff6663] rounded-3xl p-6 text-center shadow-sm hover:shadow-lg mb-4 overflow-hidden transition-all duration-300 group"
-      onMouseEnter={() => {
-        if (window.innerWidth >= 768) setIsExpanded(true);
-      }}
-      onMouseLeave={() => {
-        if (window.innerWidth >= 768) setIsExpanded(false);
-      }}
-    >
-      <div className="flex justify-center mb-4">
-        <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600">
-          <span className="text-2xl font-bold">CS</span>
-        </div>
-      </div>
-      <h3 className="text-lg font-semibold text-red-700 h3solutions">Collaboration Solutions</h3>
-      <p className="mt-2 text-sm text-gray-600">
-        Ace pedagogical management with Proscene SMIS.
-      </p>
-
-      {/* Arrow Button for Small Screens */}
-      <div className="md:hidden flex justify-center mt-4">
-        <button
-          onClick={() => setIsExpanded(!isExpanded)}
-          className="text-red-600"
-        >
-          {isExpanded ? <FaChevronUp size={20} /> : <FaChevronDown size={20} />}
-        </button>
-      </div>
-
-      {/* Hidden Content */}
-      <div
-        className={`hidden-content mt-4 overflow-hidden transition-all duration-300 ease-in-out ${
-          isExpanded ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
-        <p className="text-sm text-gray-600">
-          Explore our advanced collaboration tools designed for efficiency.
-        </p>
-        <button className="mt-4 px-4 py-2 bg-red-600 text-white rounded-full hover:bg-red-700"
-        onClick={() => handleButtonClick("CS")}>
-          View More
-        </button>
-      </div>
-    </div>
+      {/* Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-8">
+        <Card
+          title="Interactive Technology"
+          description="Accelerate your organization’s growth."
+          icon={
+            <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
+              <span className="text-2xl font-bold">IT</span>
+            </div>
+          }
+          hoverColor="text-indigo-500"
+          borderColor="border-[#a042ff]"
+          hoverBgColor="#eaddff"
+          navigateTo="/interactiveTechnology"
+          buttonColor="#a042ff"
+        />
+        <Card
+          title="Audio Visual"
+          description="True Omnichannel, All-in-One Retail Management Solution."
+          icon={
+            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+              <span className="text-2xl font-bold">AvI</span>
+            </div>
+          }
+          hoverColor="text-purple-500"
+          borderColor="border-[#3c39eb]"
+          hoverBgColor="#d9e0ff"
+          navigateTo="/avIntegration"
+          buttonColor="#3c39eb"
+        />
+        <Card
+          title="Digital Media"
+          description="Next-Gen Property Management Software."
+          icon={
+            <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center text-cyan-600">
+              <span className="text-2xl font-bold">DM</span>
+            </div>
+          }
+          hoverColor="text-blue-500"
+          borderColor="border-[#00d2fb]"
+          hoverBgColor="#e0f7ff"
+          navigateTo="/digitalMedia"
+          buttonColor="#00d2fb"
+        />
+        <Card
+          title="Collaboration"
+          description="Ace pedagogical management with Priority SMIS."
+          icon={
+            <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600">
+              <span className="text-2xl font-bold">CS</span>
+            </div>
+          }
+          hoverColor="text-red-500"
+          borderColor="border-[#ff6663]"
+          hoverBgColor="#ffe5e5"
+          buttonColor="#ff6663"
+          navigateTo="/collaborationSolutions"
+        />
       </div>
     </div>
   );
