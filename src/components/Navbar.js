@@ -11,6 +11,12 @@ function Navbar() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(null);
+  const [isActive, setIsActive] = useState(false);
+
+  const handleToggle = () => {
+    setIsActive((prev) => !prev);
+  }
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
@@ -1621,7 +1627,8 @@ function Navbar() {
             >
               <li
                 id="menu-item-20880"
-                className="mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20880 "
+                onClick={handleToggle}
+                className={`mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20880  ${isActive ? "active" : ""}`}
               >
                 {/* added active above */}
                 <a
@@ -1632,7 +1639,13 @@ function Navbar() {
                 >
                   Solutions<span className="sub-menu-toggle"></span>
                 </a>
-                <ul className="sub-menu active">
+                <ul className={`sub-menu ${isActive ? "active" : ""}`}
+                 style={{
+                  maxHeight: isActive ? "241px" : "0px",
+                  overflow: "hidden",
+                  transition: "max-height 0.3s ease",
+                }}
+        onClick={handleToggle} >
                   <li
                     id="menu-item-20881"
                     className="style-blue menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20881 active"
@@ -2481,6 +2494,7 @@ function Navbar() {
                   className="nav__link"
                   data-role="show-sub-menu"
                   title=""
+                  
                 >
                   Partners<span className="sub-menu-toggle"></span>
                 </a>
