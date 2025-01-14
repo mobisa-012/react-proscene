@@ -12,6 +12,7 @@ const Footer = () => {
         { label: 'Digital Media', href: '/digitalMedia' },
         { label: 'Automation Solutions', href: '/automationSolutions' },
         { label: 'Interactive Technology', href: '/interactiveTechnology' },
+        {label: 'About', href: '/about'}
     ];
 
     const sectorsSubMenuItems = [
