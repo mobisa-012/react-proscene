@@ -12,7 +12,7 @@ import DriveGrowth from "../components/DriveGrowth.js";
 
 function Home() {
     return (
-        <div className="home-container">
+        <div className="home-container mt-20">
         <div>
         <DriveGrowth/>
         </div>
@@ -22,22 +22,16 @@ function Home() {
         <div>
         <SolutionsLayout/>
         </div>
-
         <div className="home-section mx-auto">
         <Partners/>
-        </div> 
-
+        </div>
         <div className="sector-section">
         <SectorCards />
         </div>  
-        <div>
-            <Moresection />
-            </div>      
-
+        <div><Moresection /></div>
         <div className = "demo-section">
         <BookDemoToday/>
-        </div> 
-        
+        </div>        
         <Footer />
         </div>
     );
