@@ -14,7 +14,7 @@ function StartYourJorney() {
       </h2>
       <button className="bg-purple-500 text-white font-medium px-6 py-3 rounded-full hover:bg-purple-600 transition"
       onClick={handleButtonClick}>
-        Learn more
+        Read More
       </button>
     </div>
   );
