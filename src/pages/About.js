@@ -6,100 +6,28 @@ import Footer from "../components/Footer";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import {useState} from "react";
 import "./About.css";
+import OurProjects from "../components/OurProjects.js";
+import VideoWithMask from "../components/VideoMask.js";
 
-const teamMembers = [
-  {
-    name: "Wilkins Michira",
-    image: legal,
-    borderColor: "#FF5733",
-    backgroundColor: "#FFE4C4",
-    linkedinUrl: "https://www.linkedin.com/in/wilkins-michira-2a724021/",
-  },
-  {
-    name: "Ninoy Kichari",
-    image: legal,
-    borderColor: "#3498DB",
-    backgroundColor: "#E0FFFF",
-    linkedinUrl: "https://www.linkedin.com/in/mobisa-kwamboka-a56691223/",
-  },
-  {
-    name: "Polland Onderi",
-    image: legal,
-    borderColor: "#2ECC71",
-    backgroundColor: "#F0FFF0",
-    linkedinUrl: "https://www.linkedin.com/in/polland-onderi-0123351b2/",
-  },
-  {
-    name: "Alice Johnson",
-    image: legal,
-    borderColor: "#9B59B6",
-    backgroundColor: "#F8F0E3",
-    linkedinUrl: "https://www.linkedin.com/in/mobisa-kwamboka-a56691223/",
-  },
-  {
-    name: "John Doe",
-    image: legal,
-    borderColor: "#F1C40F",
-    backgroundColor: "#FFF8DC",
-    linkedinUrl: "https://www.linkedin.com/in/mobisa-kwamboka-a56691223/",
-  },
-];
-
-const TeamMemberCard = ({
-  name,
-  image,
-  borderColor,
-  backgroundColor,
-  linkedinUrl,
-}) => (
-  <div className="flex flex-col items-center py-10 mr-5 ml-5">
-    <div
-      className="group relative w-64 h-64 rounded-2xl shadow-md overflow-hidden pp-5"
-      style={{ border: `1px solid ${borderColor}`, backgroundColor }}
-      
-    >
-      <div className="w-full h-full flex items-center justify-center p-3">
-        <img
-          src={image}
-          alt={name}
-          className="max-w-full max-h-full object-cover"
-        />
-      </div>
-      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 bg-opacity-50">
-        <a
-          href={linkedinUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700"
-        >
-          LinkedIn
-        </a>
-      </div>
-    </div>
-    <div className="text-center pt-4">
-      <h2 className="text-lg font-semibold">{name}</h2>
-    </div>
-  </div>
-);
 
 function About() {
-  const [visibleCount, setVisibleCount] = useState(4); // Number of team members initially visible
+  // const [visibleCount, setVisibleCount] = useState(4); // Number of team members initially visible
 
-  const showMore = () => {
-    setVisibleCount((prev) => prev + 4); // Increase the visible count by 4 each time
-  };
-  const showLess = () => {
-    setVisibleCount(4); // Reset to show only the initial 4 cards
-  };
-  const allVisible = visibleCount >= teamMembers.length;
+  // const showMore = () => {
+  //   setVisibleCount((prev) => prev + 4); // Increase the visible count by 4 each time
+  // };
+  // const showLess = () => {
+  //   setVisibleCount(4); // Reset to show only the initial 4 cards
+  // };
+  // const allVisible = visibleCount >= teamMembers.length;
   return (
     <div className="p-0">
       <div>
-      <DriveGrowthMask />
+      <VideoWithMask />
       </div>
 
       {/* Our Story Section */}
-      <div className="w-full mx-auto flex flex-col justify-center items-center">
+      <div className="w-full mx-auto mt-20 flex flex-col justify-center items-center">
         <h2 className="py-5 text-center ourstory text-[#D7F7FF] font-black text-3xl sm:text-5xl lg:text-[140px]">
           OUR STORY
         </h2>
@@ -219,7 +147,7 @@ function About() {
       </div>
 
       {/* our team */}
-      <div className="mx-auto p-10 flex flex-col items-center">
+      {/* <div className="mx-auto p-10 flex flex-col items-center">
       <div className="text-center team-title">
         Our team means business
       </div>
@@ -249,11 +177,12 @@ function About() {
         )}
         <button className=" mt-5 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
         >
-  Join Us
-</button>
+      Join Us
+    </button>
 
       </div>
-    </div>
+    </div> */}
+    <OurProjects/>
       <BookDemoToday />
       <Footer />
     </div>
