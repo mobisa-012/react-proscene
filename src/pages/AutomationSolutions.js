@@ -1,9 +1,13 @@
 import { React } from "react";
+import Footer from "../components/Footer";
+import BookDemoToday from "../components/BookDemo";
 
 function AutomationSolutions() {
     return(
-        <h1>
-        This is automationSolutions page</h1>
+        <div className=''>
+            <BookDemoToday/>
+            <Footer/>
+        </div>
     );
 }
 
