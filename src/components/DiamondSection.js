@@ -1,89 +1,133 @@
-import React from 'react';
+import React from "react";
+import hero from './assets/hero.jpg';
 
 function DiamondSection() {
-    return (
-        <div className="relative bg-[#16213d] flex flex-col items-center justify-center overflow-hidden p-20">
-        {/* Top Row */}
-        <div className="flex justify-center mb-6 transform -translate-y-12 relative lg:relative lg:bottom-[-5em]">
-          <div class="relative w-80 h-96 bg-cover bg-center rounded-lg shadow-lg overflow-hidden innerCardImage top-row"  style={{border:' 1px solid rgba(59,55,230,.9)'}}>
-            <div class="absolute bottom-0 left-0 w-[90%] m-4 bg-white bg-opacity-90 transition-all duration-300 ease-in-out h-16 hover:h-48 rounded-lg overflow-hidden" style={{backgroundColor:' rgba(59,55,230,.9)'}}>
-              <div class="flex items-center justify-center h-16 text-xl font-bold text-white" >
-                Hospitality Management
-              </div>
+  return (
+    <div className="relative bg-[#132042] flex flex-col items-center justify-center overflow-hidden py-20">
+      {/* Center Text */}
+      <h3 className="absolute text-3xl font-bold text-white text-center z-10">
+        We shape around <br />your business
+      </h3>
 
-              <div class="p-4 text-center">
-                <p class="text-white text-sm mb-4">
-                  Next-Gen property management software
-                </p>
-                <button class="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-white-600 transition duration-300">
-                  Read More
-                </button>
-              </div>
+      {/* Top Row */}
+      <div className="relative flex justify-center items-center mb-12">
+        <div
+          className="relative w-80 h-[500px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden z-20 group"
+          style={{
+            backgroundImage: `url(${hero})`,
+            border: "1px solid rgba(59, 55, 230, 0.9)",
+          }}
+        >
+          <div
+            className="absolute bottom-0 left-0 w-[90%] m-4 bg-white bg-opacity-90 transition-all duration-300 ease-in-out h-16 hover:h-48 rounded-lg overflow-hidden group-hover:h-48"
+            style={{ backgroundColor: "rgba(59, 55, 230, 0.9)" }}
+          >
+            <div className="flex items-center justify-center h-16 text-xl font-bold text-white">
+              Hospitality Management
             </div>
-          </div>
-        </div>
-        {/* Middle Row */}
-        <div className="flex justify-between w-full mx-auto mb-6 middlerow">
-          <div class="relative w-80 h-96 bg-cover bg-center rounded-lg shadow-lg overflow-hidden innerCardImage"  style={{border:'1px solid rgba(85,187,249,.9)'}}>
-            <div class="absolute bottom-0 left-0 w-[90%] m-4 bg-opacity-90 transition-all duration-300 ease-in-out h-48 md:h-16 md:hover:h-48 rounded-lg overflow-hidden" style={{backgroundColor:'rgba(85,187,249,.9)'}}>
-              <div class="flex items-center justify-center h-16 text-xl font-bold text-white">
-                PHP
-              </div>
 
-              <div class="p-4 text-center">
-                <p class="text-white text-sm mb-4">
-                  PHP is the best language I know.
-                </p>
-                <button class="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-black-600 transition duration-300">
-                  Read More
-                </button>
-              </div>
+            <div className="p-4 text-center hidden group-hover:block">
+              <p className="text-white text-sm mb-4">
+                Next-Gen property management software
+              </p>
+              <button className="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4">
+                Read More
+              </button>
             </div>
-        </div>
-
-        <div className="relative group w-80 h-80 flex justify-center items-center">
-          <h3 class="shape-h3">We shape around your business</h3>
-        </div>
-
-        <div class="relative w-80 h-96 bg-cover bg-center rounded-lg shadow-lg overflow-hidden innerCardImage"  style={{border:'1px solid rgba(161,66,255,.9)'}}>
-        <div class="absolute bottom-0 left-0 w-[90%] m-4 bg-white bg-opacity-90 transition-all duration-300 ease-in-out h-48 md:h-16 md:hover:h-48 rounded-lg overflow-hidden" style={{backgroundColor:' rgba(161,66,255,.9)'}}>
-          <div class="flex items-center justify-center h-16 text-xl font-bold text-white">
-            PHP
-          </div>
-
-          <div class="p-4 text-center">
-            <p class="text-white text-sm mb-4">
-              PHP is the best language I know.
-            </p>
-            <button class="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-white-600 transition duration-300">
-              Read More
-            </button>
           </div>
         </div>
       </div>
+
+      {/* Middle Row */}
+      <div className="relative flex justify-between w-full max-w-4xl mx-auto mb-12">
+        {/* Card 1 */}
+        <div
+          className="relative w-80 h-[500px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden group"
+          style={{
+            backgroundImage: `url(${hero})`,
+            border: "1px solid rgba(85, 187, 249, 0.9)",
+          }}
+        >
+          <div
+            className="absolute bottom-0 left-0 w-[90%] m-4 bg-opacity-90 transition-all duration-300 ease-in-out h-16 hover:h-48 rounded-lg overflow-hidden group-hover:h-48"
+            style={{ backgroundColor: "rgba(85, 187, 249, 0.9)" }}
+          >
+            <div className="flex items-center justify-center h-16 text-xl font-bold text-white">
+              PHP
+            </div>
+
+            <div className="p-4 text-center hidden group-hover:block">
+              <p className="text-white text-sm mb-4">
+                PHP is the best language I know.
+              </p>
+              <button className="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Empty Space for Text */}
+        <div className="w-80 h-96 flex items-center justify-center"></div>
+
+        {/* Card 2 */}
+        <div
+          className="relative w-80 h-[500px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden group"
+          style={{
+            backgroundImage: `url(${hero})`,
+            border: "1px solid rgba(161, 66, 255, 0.9)",
+          }}
+        >
+          <div
+            className="absolute bottom-0 left-0 w-[90%] m-4 bg-opacity-90 transition-all duration-300 ease-in-out h-16 hover:h-48 rounded-lg overflow-hidden group-hover:h-48"
+            style={{ backgroundColor: "rgba(161, 66, 255, 0.9)" }}
+          >
+            <div className="flex items-center justify-center h-16 text-xl font-bold text-white">
+              PHP
+            </div>
+
+            <div className="p-4 text-center hidden group-hover:block">
+              <p className="text-white text-sm mb-4">
+                PHP is the best language I know.
+              </p>
+              <button className="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Bottom Row */}
-        <div className="flex justify-center transform translate-y-0 relative lg:relative lg:bottom-32">
-        <div class="relative w-80 h-96 bg-cover bg-center rounded-lg shadow-lg overflow-hidden innerCardImage" style={{border:' 1px solid rgba(255,115,105,.9)'}}>
-        <div class="absolute bottom-0 left-0 w-[90%] m-4 bg-white bg-opacity-90 transition-all duration-300 ease-in-out h-48 md:h-16 md:hover:h-48 rounded-lg overflow-hidden" style={{backgroundColor:' rgba(255,115,105,.9)'}}>
-          <div class="flex items-center justify-center h-16 text-xl font-bold text-white">
-            PHP
-          </div>
-
-          <div class="p-4 text-center">
-            <p class="text-white text-sm mb-4">
-              PHP is the best language I know.
-            </p>
-            <button class="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-white-600 transition duration-300">
-              Read More
-            </button>
+      <div className="relative flex justify-center">
+        <div
+          className="relative w-80 h-[500px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden group"
+          style={{
+            backgroundImage: `url(${hero})`,
+            border: "1px solid rgba(255, 115, 105, 0.9)",
+          }}
+        >
+          <div
+            className="absolute bottom-0 left-0 w-[90%] m-4 bg-opacity-90 transition-all duration-300 ease-in-out h-16 hover:h-48 rounded-lg overflow-hidden group-hover:h-48"
+            style={{ backgroundColor: "rgba(255, 115, 105, 0.9)" }}
+          >
+            <div className="flex items-center justify-center h-16 text-xl font-bold text-white">
+              PHP
             </div>
-          </div>
+
+            <div className="p-4 text-center hidden group-hover:block">
+              <p className="text-white text-sm mb-4">
+                PHP is the best language I know.
+              </p>
+              <button className="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4">
+                Read More
+              </button>              
+            </div>
           </div>
         </div>
       </div>
-    );
+    </div>
+  );
 }
 
-export default DiamondSection
+export default DiamondSection;
