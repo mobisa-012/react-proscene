@@ -23,7 +23,7 @@ function About() {
   return (
     <div className="p-0">
       <div>
-      <VideoWithMask />
+      {/* <VideoWithMask /> */}
       </div>
 
       {/* Our Story Section */}
