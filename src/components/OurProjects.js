@@ -41,7 +41,7 @@ const Card = ({ title, description, image, hoverText, navigationLink }) => {
         <h3
           id={title}
           className={`text-xl font-medium font-axioforma transition-all duration-500 ${
-            isHovered ? 'text-7xl scale-110 ml-16' : 'text-xl scale-100'
+            isHovered ? 'text-7xl scale-110 ml-20' : 'text-xl scale-100'
           }`}
         >
           {title}
@@ -102,7 +102,7 @@ const OurProjects = () => {
   ];
 
   return (
-    <div className="min-h-screen mt-20">
+    <div className="min-h-screen pt-10">
       {/* Header Section */}
       <div className="text-center bg-white py-10">
         <h1 className="text-5xl sm:text-4xl font-bold text-navy-900 mb-6">
