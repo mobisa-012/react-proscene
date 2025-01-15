@@ -14,7 +14,7 @@ const Stats = () => {
   ];
 
   return (
-    <div className="bg-[#d8def8] py-16">
+    <div className="bg-[#d8def8] py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-4xl font-bold font-axioforma leading-relaxed tracking-tight text-[#00abfa] sm:text-4xl">
