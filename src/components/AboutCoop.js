@@ -1,5 +1,4 @@
 import React from "react";
-import hero from './assets/hero.jpg';
 
 const AboutCoop = () => {
   return (
