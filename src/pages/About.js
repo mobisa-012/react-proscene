@@ -51,9 +51,9 @@ function About() {
       </div>
 
       {/* diamond section */}
-      <DiamondSection/>
-      <Stats/>
+      <DiamondSection/>      
       <OurProjects/>
+      <Stats/>
       <BookDemoToday />
       <Footer />
     </div>
