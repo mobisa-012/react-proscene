@@ -28,9 +28,9 @@ const LogoCarousel = () => {
 
   return (
     <div className="logo-carousel">
-      <h2 className="carousel-heading">
+      {/* <h2 className="carousel-heading">
       We partner with the best
-      </h2>
+      </h2> */}
       <div className="carousel">
         <div className="carousel-content">
           {logos.map((logo, index) => (
