@@ -6,7 +6,7 @@ import FeaturedStudies from "../components/case-studies-components/featured_stud
 
 function Casestudies() {
     return(
-        <div className = ''>        
+        <div className = 'mt-20'>        
         <div className="py-12 px-4 sm:px-6 lg:px-8 bg-[#f3f6ff]">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
       {/* left side */}
