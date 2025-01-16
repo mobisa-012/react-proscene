@@ -80,7 +80,7 @@ const SolutionsLayout = () => {
           description="Accelerate your organization’s growth."
           icon={
             <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
-              <span className="text-2xl font-bold">IT</span>
+              <span className="text-3xl font-bold">📱</span>
             </div>
           }
           hoverColor="text-indigo-500"
@@ -94,7 +94,7 @@ const SolutionsLayout = () => {
           description="True Omnichannel, All-in-One Retail Management Solution."
           icon={
             <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
-              <span className="text-2xl font-bold">AvI</span>
+              <span className="text-3xl font-bold">🎥</span>
             </div>
           }
           hoverColor="text-purple-500"
@@ -108,7 +108,7 @@ const SolutionsLayout = () => {
           description="Next-Gen Property Management Software."
           icon={
             <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center text-cyan-600">
-              <span className="text-2xl font-bold">DM</span>
+              <span className="text-3xl font-bold">💻</span>
             </div>
           }
           hoverColor="text-blue-500"
@@ -118,19 +118,19 @@ const SolutionsLayout = () => {
           buttonColor="#00d2fb"
         />
         <Card
-          title="Collaboration"
-          description="Ace pedagogical management with Priority SMIS."
-          icon={
-            <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600">
-              <span className="text-2xl font-bold">CS</span>
-            </div>
-          }
-          hoverColor="text-red-500"
-          borderColor="border-[#ff6663]"
-          hoverBgColor="#ffe5e5"
-          buttonColor="#ff6663"
-          navigateTo="/collaborationSolutions"
-        />
+        title="Collaboration"
+        description="Ace pedagogical management with Proscene SMIS."
+        icon={
+          <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600">
+            <span className="text-3xl font-bold">🧑‍🤝‍🧑</span>
+          </div>
+        }
+        hoverColor="text-red-500"
+        borderColor="border-[#ff6663]"
+        hoverBgColor="#ffe5e5"
+        buttonColor="#ff6663"
+        navigateTo="/collaborationSolutions"
+      />
       </div>
     </div>
   );
