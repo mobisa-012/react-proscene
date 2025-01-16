@@ -3,18 +3,18 @@ import CountUp from 'react-countup';
 
 const Stats = () => {
   const statsData = [
-    { value: 2600, label: 'Associates' },
+    { value: 2500, label: 'Associates' },
     { value: 40, label: 'Locations Worldwide', suffix: '+' },
     { value: 30, label: 'Years In Business', suffix: '+' },
     { value: 1, label: 'Annual Revenue', suffix: 'B+' },
-    { value: 70, label: 'Fortune 100 Clients' },
-    { value: 3000, label: 'Projects A Year', suffix: '+' },
+    { value: 100, label: 'Fortune 100 Clients' },
+    { value: 4000, label: 'Projects A Year', suffix: '+' },
     { value: 94, label: 'Client Satisfaction (2024)', suffix: '%' },
     { value: 100, label: 'SMPTE ST 2110/ST 2022 Projects Delivered', suffix: '+' },
   ];
 
   return (
-    <div className="bg-[#d8def8] py-24">
+    <div className="bg-[#fff] py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-4xl font-bold font-axioforma leading-relaxed tracking-tight text-[#00abfa] sm:text-4xl">
