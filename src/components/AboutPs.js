@@ -16,8 +16,8 @@ const AboutPS= () => {
       {/* Hover Text */}
       <div
         className="absolute top-1/4 -left-full transform -translate-y-1/2 mt-10
-          text-white text-7xl tracking-wide leading-loose font-bold whitespace-nowrap transition-all duration-500 group-hover:left-10 mx-28 z-20">
-        Government Offices<br />Parastatal Offices
+          text-white text-7xl font-bold whitespace-nowrap transition-all duration-500 group-hover:left-10 mx-28 z-20">
+        Government Offices<br />Parastatal Offices <br/> National Assembly
       </div>
 
       <div
