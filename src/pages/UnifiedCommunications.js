@@ -52,7 +52,7 @@ function UCC() {
   const navigate  = useNavigate();
         
   const handleButtonClick = () => {
-      navigate("/bookUCCDemo");
+      navigate("/bookDemo");
   }
 
   const [currentIndex, setCurrentIndex] = useState(0);
