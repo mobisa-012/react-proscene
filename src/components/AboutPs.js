@@ -1,6 +1,6 @@
 import React from "react";
 
-const AboutCoop = () => {
+const AboutPS= () => {
   return (
     <div className="relative group w-full h-screen bg-[#fff] flex items-center justify-center">
       {/* Background Image with Overlay */}
@@ -16,13 +16,13 @@ const AboutCoop = () => {
       <div
         className="absolute top-1/4 -left-full transform -translate-y-1/2 mt-10
           text-white text-7xl tracking-wide leading-loose font-bold whitespace-nowrap transition-all duration-500 group-hover:left-10 mx-28 z-20">
-        Corporate<br />Offices
+        Government Offices<br />Parastatal Offices
       </div>
 
       <div
         className="absolute top-2/3 -left-full transform -translate-y-1/2 mt-11
           text-white text-5xl font-semibold whitespace-nowrap transition-all duration-500 group-hover:left-10 mx-28 z-20">
-        Mash & McLennan Companies
+        KICC Auditorium
       </div>
 
       <div
@@ -36,4 +36,4 @@ const AboutCoop = () => {
   );
 };
 
-export default AboutCoop;
+export default AboutPS;
