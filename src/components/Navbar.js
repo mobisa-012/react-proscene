@@ -466,7 +466,7 @@ function Navbar() {
                         >
                           <div className="block-area blue">
                             <div className="block-area-image">
-                              <a href="">
+                              <a href="/">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="160"
