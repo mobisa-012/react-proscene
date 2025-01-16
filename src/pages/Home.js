@@ -13,7 +13,7 @@ import Stats from "../components/StatsSection.js";
 
 function Home() {
     return (
-        <div className="home-container mt-20">
+        <div className="home-container">
         <div>
         <DriveGrowth/>
         </div>

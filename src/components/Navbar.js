@@ -11,6 +11,7 @@ function Navbar() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState(null);
   // const [activeMenu, setActiveMenu] = useState(null);
   const [isActive, setIsActive] = useState(false);
   const [activeMenu, setActiveMenu] = useState({});
@@ -19,6 +20,14 @@ function Navbar() {
   // const handleToggle = () => {
   //   setIsActive((prev) => !prev);
   // }
+  const handleMouseEnter = (tabId) => {
+    setActiveTab(tabId); // Set the active tab on hover
+  };
+  
+  const handleMouseLeave = () => {
+    setActiveTab(null); // Clear the active tab when the mouse leaves
+  };
+  
   const handleToggle = (id) => {
     setActiveMenu((prev) => ({
       ...prev,
@@ -469,21 +478,24 @@ function Navbar() {
                           </a>
                         </div>
                       </div>
-                      <div className="tab-header erp style-blue menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                      <div 
+                      className= 'tab-header erp style-blue menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children active'
+                      >
                         {/* active above */}
                         <a
                           href="/collaborationSolutions"
                           data-tab="20759"
+                          onClick={(e) => e.preventDefault()}
                         >
                           <span>Collaboration Solutions</span>
                         </a>
                       </div>
                       <div
                         id="tab-20759"
-                        className="tab-pane erp style-blue menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children active"
+                        className='tab-pane erp style-blue menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children active '
                       >
                         {/* active above */}
-                        <div className="sub-menu-wrapper">
+                        <div className="sub-menu-wrapper" >
                           <ul className="sub-menu">
                             <li
                               id="menu-item-20774"
@@ -492,8 +504,8 @@ function Navbar() {
                               <a href="#">
                                 <span>Products</span>
                               </a>
-                              <div className="sub-menu-wrapper">
-                                <ul className="sub-menu">
+                              <div className="sub-menu-wrapper active">
+                                <ul className="sub-menu active">
                                   <li
                                     id="menu-item-20761"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
