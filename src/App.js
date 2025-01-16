@@ -38,6 +38,7 @@ import Kramer from "./pages/Kramer";
 import Vogel from "./pages/Vogel";
 import Extron from "./pages/Extron";
 import BookDemoPage from "./pages/BookDemoPage";
+import Support from "./pages/Support";
 
 function App() {
   return (
@@ -81,7 +82,8 @@ function App() {
       <Route path="/kramer" element = {<Kramer/>} />
       <Route path="/vogel" element = {<Vogel/>} />
       <Route path="/extron" element = {<Extron/>} />
-      <Route path="/bookDemo" element = {<BookDemoPage/>} />  
+      <Route path="/bookDemo" element = {<BookDemoPage/>} /> 
+      <Route path = "/support" element = {<Support/>} />
     </Routes>
     {/* <Footer /> */}
     </Router>        
