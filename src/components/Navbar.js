@@ -86,7 +86,7 @@ function Navbar() {
   margin: '0 auto', paddingInline:'1em'}}>
           <div className="site-header__logo">
             <a
-              href=""
+              href="/"
               className="site-header__logo-link"
             >
               <img className="style-svg site-header__logo-img" src={logoHome} style={{maxHeight:'35px', minHeight:'25px'}} alt="Proscene"></img>
@@ -103,17 +103,17 @@ function Navbar() {
                   id="menu-item-20758"
                   className="mega-menu solutions menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children active"
                 >
-                  <a href="#">
+                  <a href="/">
                     <span>Solutions</span>
                   </a>
                   <div className="sub-menu-wrapper mega-menu-wrapper">
                     <ul className="sub-menu">
                       <div className="tab-header retail-management style-purple menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
                         <a
-                          href=""
+                          href="/avIntegration"
                           data-tab="20803"
                         >
-                          <span>Retail Management</span>
+                          <span>Audio Visual Integration</span>
                         </a>
                       </div>
                       <div
@@ -260,7 +260,7 @@ function Navbar() {
                                                 className="menu-item menu-item-type-post_type menu-item-object-page"
                                               >
                                                 <a href="">
-                                                  <span>Priority POS</span>
+                                                  <span>Proscene POS</span>
                                                 </a>
                                               </li>
                                               <li
@@ -313,7 +313,7 @@ function Navbar() {
                                           className="menu-item menu-item-type-post_type menu-item-object-page"
                                         >
                                           <a href="">
-                                            <span>Priority MyBranch</span>
+                                            <span>Proscene MyBranch</span>
                                           </a>
                                         </li>{" "}
                                       </ul>
@@ -488,7 +488,7 @@ function Navbar() {
                         </div>
                         <div className="banner purple">
                           <div className="banner-description">
-                            See how the Priority Retail Management Solution
+                            See how the Proscene Retail Management Solution
                             works for you
                           </div>
                           <a className="btn" href="/demo/">
@@ -499,10 +499,10 @@ function Navbar() {
                       <div className="tab-header erp style-blue menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
                         {/* active above */}
                         <a
-                          href=""
+                          href="/collaborationSolutions"
                           data-tab="20759"
                         >
-                          <span>ERP</span>
+                          <span>Collaboration Solutions</span>
                         </a>
                       </div>
                       <div
@@ -600,7 +600,7 @@ function Navbar() {
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
                                     <a href="">
-                                      <span>Priority Payments</span>
+                                      <span>Proscene Payments</span>
                                     </a>
                                   </li>
                                   <li
@@ -758,11 +758,11 @@ function Navbar() {
                         </div>
                         <div className="banner blue">
                           <div className="banner-description">
-                            See how Priority ERP works for you
+                            See how Proscene works for you
                           </div>
                           <a
-                            className="btn"
-                            href=""
+                            className="btn bg-[#3b37e6] text-white rounded-[15px] px-6 py-3 text-lg transition-all duration-300 hover:bg-[#16213d]"
+                            href="/bookDemo"
                           >
                             Book a demo
                           </a>
@@ -770,10 +770,10 @@ function Navbar() {
                       </div>
                       <div className="tab-header hospitality-management style-light-blue menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
                         <a
-                          href=""
+                          href="/digitalMedia"
                           data-tab="20822"
                         >
-                          <span>Hospitality Management</span>
+                          <span>Digital Media</span>
                         </a>
                       </div>
                       <div
@@ -948,7 +948,7 @@ function Navbar() {
                         </div>
                         <div className="banner light-blue">
                           <div className="banner-description">
-                            See how the Priority Hospitality Management Solution
+                            See how the Proscene Hospitality Management Solution
                             works for you
                           </div>
                           <a className="btn" href="/demo/">
@@ -958,10 +958,10 @@ function Navbar() {
                       </div>
                       <div className="tab-header school-management style-coral menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
                         <a
-                          href=""
+                          href="/automationSolutions"
                           data-tab="20831"
                         >
-                          <span>School Management</span>
+                          <span>Automation Solutions</span>
                         </a>
                       </div>
                       <div
@@ -976,17 +976,29 @@ function Navbar() {
                             >
                               <div className="block-area apricot">
                                 <div className="block-area-image">
-                                  {/* <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20281%20150'%3E%3C/svg%3E" className="menu-item-image" width="281" height="150" alt="" data-lazy-src="https://www.priority-software.com/wp-content/uploads/2024/03/10-reasons-for-choosing-priority-2-281x150.jpg"><noscript><img src="https://www.priority-software.com/wp-content/uploads/2024/03/10-reasons-for-choosing-priority-2-281x150.jpg" className="menu-item-image" width="281" height="150" alt=""></noscript> */}
+                                  <img 
+                                  src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20281%20150'%3E%3C/svg%3E" 
+                                  className="menu-item-image" 
+                                  width="281" 
+                                  height="150" 
+                                  alt="" data-lazy-src="https://www.priority-software.com/wp-content/uploads/2024/03/10-reasons-for-choosing-Proscene-2-281x150.jpg"/>
+                                  <noscript>
+                                  <img 
+                                  src="https://www.priority-software.com/wp-content/uploads/2024/03/10-reasons-for-choosing-Proscene-2-281x150.jpg" 
+                                  className="menu-item-image" 
+                                  width="281" 
+                                  height="150" 
+                                  alt="Proscene Logo"/></noscript>
                                 </div>
                                 <div className="item-content-area">
                                   <div className="item-content-area-title dark">
-                                    10 Reasons for choosing Priority
+                                    10 Reasons for choosing Proscene
                                   </div>
                                   <div className="item-content-area-description"></div>
                                   <div className="item-content-area-button">
                                     <a
-                                      href=""
-                                      className="btn blue"
+                                      href="/bookDemo"
+                                      className="btn blue bg-[#3b37e6] text-white rounded-[15px] px-6 py-3 text-lg transition-all duration-300 hover:bg-[#16213d]"
                                     >
                                       Read more
                                     </a>
@@ -1033,7 +1045,7 @@ function Navbar() {
                   className="parts-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"
                 >
                   <a href="">
-                    <span>Partners</span>
+                    <span>Sectors</span>
                   </a>
                   <div className="sub-menu-wrapper">
                     <ul className="sub-menu">
@@ -1044,20 +1056,29 @@ function Navbar() {
                         >
                           <div className="block-area blue custom-image">
                             <div className="block-image">
-                              {/* <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" className="menu-item-image" alt="" data-lazy-src="https://www.priority-software.com/wp-content/uploads/2024/12/tec-logo-170-130.jpg"><noscript><img src="https://www.priority-software.com/wp-content/uploads/2024/12/tec-logo-170-130.jpg" className="menu-item-image" alt=""></noscript> */}
+                              <img 
+                                src="https://www.priority-software.com/wp-content/uploads/2024/12/tec-logo-170-130.jpg" 
+                                className="menu-item-image" 
+                                alt="Proscene Logo"/>
+                              <noscript>
+                                <img 
+                                  src="https://www.priority-software.com/wp-content/uploads/2024/12/tec-logo-170-130.jpg" 
+                                  className="menu-item-image" 
+                                  alt="Proscene Logo"/>
+                              </noscript>
+
                             </div>
                             <div className="item-content-area">
                               <div className="item-content-area-title dark">
-                                Recognized as the top ERP Solution in the 2025
-                                TEC
+                                Recognized as the top Audio Visual Solution and Collaboraiton Partner in the 2024 TEC
                               </div>
                               <div className="item-content-area-description">
-                                Insight Report on ERP Solutions for SMBs
+                                Insight Report on Audio Visual Solutions for SMBs
                               </div>
                               <div className="item-content-area-button">
                                 <a
-                                  href=""
-                                  className="btn blue"
+                                  href="/bookDemo"
+                                  className="btn blue bg-[#3b37e6] text-white rounded-[15px] px-6 py-3 text-lg transition-all duration-300 hover:bg-[#16213d]"
                                 >
                                   Become a Partner
                                 </a>
@@ -1072,15 +1093,16 @@ function Navbar() {
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
                           <a
-                            href=""
+                            href="/corporate"
                             className="item-link"
                           >
                             <span className="item-title-area">
-                              <span className="item-title">Find a partner</span>
+                              <span className="item-title">Corporate</span>
                             </span>
                             <span className="item-content-area-title">
-                              Find the perfect ERP partner to help you unlock
-                              the full potential of your business
+                              Solutions designed to enhance communication, collaboration, 
+                              and productivity within businesses of all sizes, from small 
+                              enterprises to large corporations
                             </span>
                           </a>
                         </li>
@@ -1089,17 +1111,17 @@ function Navbar() {
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
                           <a
-                            href=""
+                            href="/education"
                             className="item-link"
                           >
                             <span className="item-title-area">
                               <span className="item-title">
-                                Become a partner
+                                Education
                               </span>
                             </span>
                             <span className="item-content-area-title">
-                              Grow your business by joining Priority's extensive
-                              Partner Network
+                              Technology and services that empower educators and students, 
+                              fostering engaging learning environments and improving educational outcomes
                             </span>
                           </a>
                         </li>
@@ -1108,17 +1130,17 @@ function Navbar() {
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
                           <a
-                            href=""
+                            href="/publicSector"
                             className="item-link"
                           >
                             <span className="item-title-area">
                               <span className="item-title">
-                                Technology partners
+                                Public Sector
                               </span>
                             </span>
                             <span className="item-content-area-title">
-                              Utilize Priority’s global reach and expertise to
-                              identify new opportunities
+                              Tailored solutions for government agencies and 
+                              public institutions to improve efficiency,transparency, and service delivery to citizens
                             </span>
                           </a>
                         </li>
@@ -1127,16 +1149,16 @@ function Navbar() {
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
                           <a
-                            href=""
+                            href="/healthcare"
                             className="item-link"
                           >
                             <span className="item-title-area">
-                              <span className="item-title">AWS partner</span>
+                              <span className="item-title">Healthcare</span>
                             </span>
                             <span className="item-content-area-title">
-                              Priority utilizes the AWS global network to
-                              dynamically allocate resources and optimize the
-                              system's performance
+                              Innovative technologies and services that support healthcare 
+                              providers in delivering better patient care, streamlining 
+                              operations, and improving healthcare outcomes
                             </span>
                           </a>
                         </li>
@@ -1145,17 +1167,17 @@ function Navbar() {
                           className="menu-item menu-item-type-custom menu-item-object-custom"
                         >
                           <a
-                            href=""
+                            href="/legalCollaboration"
                             className="item-link"
                           >
                             <span className="item-title-area">
                               <span className="item-title">
-                                Priority Market
+                                Legal Collaboration
                               </span>
                             </span>
                             <span className="item-content-area-title">
-                              Explore our network of technology partners and
-                              discover new solutions and API's
+                              Secure and efficient communication and collaboration platforms 
+                              designed specifically for the legal profession, facilitating seamless teamwork and client interaction.
                             </span>
                           </a>
                         </li>
@@ -1200,7 +1222,18 @@ function Navbar() {
                                     fill="#3B37E6"
                                   ></path>
                                 </svg>
-                                {/* <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20281%20150'%3E%3C/svg%3E" className="menu-item-image" width="281" height="150" alt="" data-lazy-src="https://www.priority-software.com/wp-content/uploads/2024/08/image-7-281x150.png"><noscript><img src="https://www.priority-software.com/wp-content/uploads/2024/08/image-7-281x150.png" className="menu-item-image" width="281" height="150" alt=""></noscript> */}
+                                <img 
+                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20281%20150'%3E%3C/svg%3E" 
+                                className="menu-item-image" 
+                                width="281" 
+                                height="150" 
+                                alt="" 
+                                data-lazy-src="https://www.priority-software.com/wp-content/uploads/2024/08/image-7-281x150.png"/>
+                                <noscript>
+                                <img 
+                                src="https://www.priority-software.com/wp-content/uploads/2024/08/image-7-281x150.png" 
+                                className="menu-item-image" width="281" height="150" alt=""/>
+                                </noscript>
                               </a>
                             </div>
                             <div className="item-content-area">
@@ -1211,8 +1244,8 @@ function Navbar() {
                               <div className="item-content-area-description"></div>
                               <div className="item-content-area-button">
                                 <a
-                                  href="https://hubs.ly/Q030WJ140"
-                                  className="btn blue"
+                                  href="/bookDemo"
+                                  className="btn blue bg-[#3b37e6] text-white rounded-[15px] px-6 py-3 text-lg transition-all duration-300 hover:bg-[#16213d]"
                                 >
                                   Read more
                                 </a>
@@ -1227,16 +1260,16 @@ function Navbar() {
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
                           <a
-                            href=""
+                            href="/about"
                             className="item-link"
                           >
                             <span className="item-title-area">
                               <span className="item-title">About us</span>
                             </span>
                             <span className="item-content-area-title">
-                              Priority specializes in providing organizations
-                              with cutting-edge cloud-based business management
-                              solutions.
+                              Proscene is a technology solutions provider offering cutting-edge 
+                              tools like audio-visual integration, collaboration systems, and 
+                              digital media to enhance productivity and efficiency.
                             </span>
                           </a>
                         </li>
@@ -1245,7 +1278,7 @@ function Navbar() {
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
                           <a
-                            href=""
+                            href="/case-studies"
                             className="item-link"
                           >
                             <span className="item-title-area">
@@ -1253,11 +1286,11 @@ function Navbar() {
                             </span>
                             <span className="item-content-area-title">
                               Real world examples of how forward-thinking
-                              businesses use Priority to improve and grow
+                              businesses use Proscene to improve and grow
                             </span>
                           </a>
                         </li>
-                        <li
+                        {/* <li
                           id="menu-item-20843"
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
@@ -1270,11 +1303,11 @@ function Navbar() {
                             </span>
                             <span className="item-content-area-title">
                               Join us at upcoming industry events to unlock new
-                              insights and see Priority live!{" "}
+                              insights and see Proscene live!{" "}
                             </span>
                           </a>
-                        </li>
-                        <li
+                        </li> */}
+                        {/* <li
                           id="menu-item-20846"
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
@@ -1290,8 +1323,8 @@ function Navbar() {
                               featured stories
                             </span>
                           </a>
-                        </li>
-                        <li
+                        </li> */}
+                        {/* <li
                           id="menu-item-20845"
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
@@ -1306,13 +1339,13 @@ function Navbar() {
                               Because great work starts with great people.
                             </span>
                           </a>
-                        </li>
+                        </li> */}
                         <li
                           id="menu-item-23000"
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
                           <a
-                            href=""
+                            href="/contact"
                             className="item-link"
                           >
                             <span className="item-title-area">
@@ -1333,7 +1366,7 @@ function Navbar() {
                   className="parts-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"
                 >
                   <a href="">
-                    <span>Resources</span>
+                    <span>Services</span>
                   </a>
                   <div className="sub-menu-wrapper">
                     <ul className="sub-menu">
@@ -1365,20 +1398,27 @@ function Navbar() {
                                     fill="#3B37E6"
                                   ></path>
                                 </svg>
-                                {/* <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20281%20150'%3E%3C/svg%3E" className="menu-item-image" width="281" height="150" alt="" data-lazy-src="https://www.priority-software.com/wp-content/uploads/2024/08/deep-dive-1-15082400-17-28-17still005-1-281x150.jpg"><noscript><img src="https://www.priority-software.com/wp-content/uploads/2024/08/deep-dive-1-15082400-17-28-17still005-1-281x150.jpg" className="menu-item-image" width="281" height="150" alt=""></noscript> */}
+                                <img 
+                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20281%20150'%3E%3C/svg%3E" 
+                                className="menu-item-image" width="281" height="150" alt="" 
+                                data-lazy-src="https://www.priority-software.com/wp-content/uploads/2024/08/deep-dive-1-15082400-17-28-17still005-1-281x150.jpg"/>
+                                <noscript>
+                                <img src="https://www.priority-software.com/wp-content/uploads/2024/08/deep-dive-1-15082400-17-28-17still005-1-281x150.jpg" 
+                                className="menu-item-image" width="281" height="150" alt=""/>
+                                </noscript>
                               </a>
                             </div>
                             <div className="item-content-area">
                               <div className="item-content-area-title purple">
-                                Priority ERP product tour
+                                Proscene product tour
                               </div>
                               <div className="item-content-area-description">
-                                Discover how Priority’s powerful features
+                                Discover how Proscene’s powerful features
                               </div>
                               <div className="item-content-area-button">
                                 <a
-                                  href=""
-                                  className="btn blue"
+                                  href="/bookDemo"
+                                  className="btn blue bg-[#3b37e6] text-white rounded-[15px] px-6 py-3 text-lg transition-all duration-300 hover:bg-[#16213d]"
                                 >
                                   Let's go
                                 </a>
@@ -1393,11 +1433,11 @@ function Navbar() {
                           className="menu-item menu-item-type-custom menu-item-object-custom"
                         >
                           <a
-                            href=""
+                            href="/unifiedCommunication"
                             className="item-link"
                           >
                             <span className="item-title-area">
-                              <span className="item-title">Articles</span>
+                              <span className="item-title">Unified Communications</span>
                             </span>
                             <span className="item-content-area-title">
                               Explore latest insights, trends, and updates in
@@ -1410,11 +1450,11 @@ function Navbar() {
                           className="menu-item menu-item-type-custom menu-item-object-custom"
                         >
                           <a
-                            href=""
+                            href="/trainingAndSupport"
                             className="item-link"
                           >
                             <span className="item-title-area">
-                              <span className="item-title">Brochures</span>
+                              <span className="item-title">Training & Support</span>
                             </span>
                             <span className="item-content-area-title">
                               Browse and view brochures for detailed information
@@ -1427,11 +1467,11 @@ function Navbar() {
                           className="menu-item menu-item-type-custom menu-item-object-custom"
                         >
                           <a
-                            href=""
+                            href="/onSiteSupport"
                             className="item-link"
                           >
                             <span className="item-title-area">
-                              <span className="item-title">Webinars</span>
+                              <span className="item-title">On Site Support</span>
                             </span>
                             <span className="item-content-area-title">
                               Tune in for in-depth knowledge, industry trends,
@@ -1444,11 +1484,11 @@ function Navbar() {
                           className="menu-item menu-item-type-custom menu-item-object-custom"
                         >
                           <a
-                            href=""
+                            href="/equipmentRepair"
                             className="item-link"
                           >
                             <span className="item-title-area">
-                              <span className="item-title">Videos</span>
+                              <span className="item-title">Equipment Repair</span>
                             </span>
                             <span className="item-content-area-title">
                               Browse our video library for product demos,
@@ -1461,11 +1501,11 @@ function Navbar() {
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
                           <a
-                            href=""
+                            href="/leasing"
                             className="item-link"
                           >
                             <span className="item-title-area">
-                              <span className="item-title">FAQ</span>
+                              <span className="item-title">Leasing</span>
                             </span>
                             <span className="item-content-area-title">
                               Commonly asked questions and answers to help you
@@ -1478,11 +1518,11 @@ function Navbar() {
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
                           <a
-                            href=""
+                            href="/videoConferenceRental"
                             className="item-link"
                           >
                             <span className="item-title-area">
-                              <span className="item-title">Blog</span>
+                              <span className="item-title">Video Conference Rental</span>
                             </span>
                             <span className="item-content-area-title">
                               Dive into in-depth blog posts for unique
@@ -1498,7 +1538,7 @@ function Navbar() {
                   id="menu-item-20853"
                   className="menu-item menu-item-type-custom menu-item-object-custom"
                 >
-                  <a href="">
+                  <a href="/support">
                     <span>Support</span>
                   </a>
                 </li>
@@ -1508,7 +1548,7 @@ function Navbar() {
 
             <div className="site-header__button-wrapper">
               <a
-                href=""
+                href="/bookDemo"
                 className="site-header__button"
               >
                 Get a Demo
@@ -1682,7 +1722,7 @@ function Navbar() {
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20891"
                             >
                               <a href="">
-                                Priority Payments
+                                Proscene Payments
                               </a>
                             </li>
                             <li
@@ -1973,7 +2013,7 @@ function Navbar() {
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-27053"
                             >
                               <a href="">
-                                Priority MyBranch
+                                Proscene MyBranch
                               </a>
                             </li>
                             <li
@@ -1999,7 +2039,7 @@ function Navbar() {
                                     className="nav__link"
                                     title=""
                                   >
-                                    Priority POS
+                                    Proscene POS
                                   </a>
                                 </li>
                                 <li
@@ -2057,7 +2097,7 @@ function Navbar() {
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-27777"
                             >
                               <a href="">
-                                Priority MyBranch
+                                Proscene MyBranch
                               </a>
                             </li>
                             <li
@@ -2474,7 +2514,7 @@ function Navbar() {
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-20962"
                   >
                     <a href="">
-                      Priority Market
+                      Proscene Market
                     </a>
                   </li>
                 </ul>
@@ -2487,7 +2527,7 @@ function Navbar() {
   }`}
               >
                 <a
-                  href=""
+                  href="/about"
                   className="nav__link"
                   data-role="show-sub-menu"
                   title=""
@@ -2496,18 +2536,18 @@ function Navbar() {
                   Company<span className="sub-menu-toggle"></span>
                 </a>
                 <ul className={`sub-menu ${
-      activeMenu["menu-item-20963"] ? "active" : ""
-    }`}
-    style={{
-      maxHeight: activeMenu["menu-item-20963"] ? "241px" : "0px",
-      overflow: "hidden",
-      transition: "max-height 0.3s ease",
-    }}>
+                      activeMenu["menu-item-20963"] ? "active" : ""
+                    }`}
+                    style={{
+                      maxHeight: activeMenu["menu-item-20963"] ? "241px" : "0px",
+                      overflow: "hidden",
+                      transition: "max-height 0.3s ease",
+                    }}>
                   <li
                     id="menu-item-20964"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20964"
                   >
-                    <a href="">
+                    <a href="/about">
                       About us
                     </a>
                   </li>
@@ -2515,7 +2555,7 @@ function Navbar() {
                     id="menu-item-20965"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20965"
                   >
-                    <a href="">
+                    <a href="/case-studies">
                       Case studies
                     </a>
                   </li>
