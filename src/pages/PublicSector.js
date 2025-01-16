@@ -1,7 +1,7 @@
 import { React } from "react";
 import Footer from "../components/Footer";
 import BookDemoToday from "../components/BookDemo";
-import AboutCoop from "../components/AboutCoop";
+import AboutPS from "../components/AboutPs";
 import CoopNav from "../components/CoopNav";
 import StrategyDesign from "../components/StrategyDesign";
 import Stats from "../components/StatsSection";
@@ -14,7 +14,7 @@ function PublicSector() {
     }
     return (
         <div className="">
-        <AboutCoop/>
+        <AboutPS/>
         <CoopNav/>
         <div className="flex flex-col items-center max-w-7xl py-28 bg-white mx-auto">
             <h2 className="text-center text-5xl mb-20 text-[#001e62] font-axioforma font-semibold tracking-wider">We help you</h2>
