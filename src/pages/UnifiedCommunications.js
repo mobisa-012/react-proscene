@@ -1,83 +1,171 @@
-import React from "react";
-import BookDemoToday from "../components/BookDemo";
-import Footer from "../components/Footer";
-import LogoCarousel from "../components/LogoCarousel";
-import UCCHeader from "../components/UCC_header";
-
-
-const features = [
-  {
-    title: "Interoperability",
-    description:
-      "Today's workforce wants flexibility and a choice of tools. True interoperability means using any UCC platform and accessing all functions without compromising the end-user experience.",
-    icon: "🛠️", // Replace with appropriate icons
-  },
-  {
-    title: "Voice integration",
-    description:
-      "Enable team and contact center voice communication through UCC platforms with headsets, Teams phones, Webex Calling, Zoom Phones, Google Workspace, or multi-platform headsets and phones.",
-    icon: "🎙️",
-  },
-  {
-    title: "User experience",
-    description:
-      "Start the training process early, before you launch new platforms and upgrade meeting rooms. Ensuring that users are comfortable with new technology will boost adoption.",
-    icon: "👥",
-  },
-  {
-    title: "Licensing",
-    description:
-      "Manage licensing and permissions, monitor profiles, and shut down inactive accounts.",
-    icon: "🔑",
-  },
-  {
-    title: "Security",
-    description:
-      "Manage access to UCC platforms and device access to the cloud and on-prem systems and files. Also, protect end users by ensuring conversations, data, and files are shared securely.",
-    icon: "🔒",
-  },
-  {
-    title: "Management and optimization",
-    description:
-      "Ensure access to UCC platforms and provide 24/7 user support. Monitor device, platform, and room usage to optimize your system and user experience continually.",
-    icon: "📊",
-  },
-];
+import React, { useEffect, useState } from "react";
+import uccImage from "../components/assets/sup.jpg";
+import leftbottomSvg from "../components/assets/leftbottom.svg";
+import FAQ from "./Faq";
+import Footer from '../components/Footer';
+import { useNavigate } from 'react-router-dom';
+import uccjpg from "../components/assets/sup.jpg";
+import SupportMaintain from "../components/Support&Maintain";
 
 function UCC() {
+  const swipeTexts = [
+    "Transform your business with efficient Unified Communications solutions.",
+    "Seamless communication for improved collaboration and productivity.",
+    "Upgrade your team’s communication experience with UCC services.",
+  ];
+
+  const [activeLink, setActiveLink] = useState("feature1");
+
+  const content = {
+    feature1: {
+      title: "Unified Voice Solutions",
+      description: "Enable seamless voice communication across multiple platforms with integrated solutions.",
+      image: uccjpg,
+    },
+    feature2: {
+      title: "Team Collaboration Tools",
+      description: "Equip your teams with tools that enhance collaboration and productivity, no matter where they are.",
+      image: uccjpg,
+    },
+    feature3: {
+      title: "Video Conferencing",
+      description: "Transform virtual meetings with high-quality video conferencing services, improving remote work connectivity.",
+      image: "https://t3.ftcdn.net/jpg/04/57/11/78/360_F_457117809_CqpzPLXiHCtMkaYdPz1cdJHx0uqtF0mu.jpg",
+    },
+    feature4: {
+      title: "Cloud Communication",
+      description: "Harness the power of the cloud for flexible and scalable communication solutions across your organization.",
+      image: uccImage,
+    },
+    feature5: {
+      title: "Mobile Integration",
+      description: "Enable seamless communication through mobile devices, allowing your team to stay connected anytime, anywhere.",
+      image: uccImage,
+    },
+    feature6: {
+      title: "24/7 Support",
+      description: "Ensure uninterrupted communication with our round-the-clock support services for your UCC systems.",
+      image: uccImage,
+    },
+  };
+
+  const navigate  = useNavigate();
+        
+  const handleButtonClick = () => {
+      navigate("/bookUCCDemo");
+  }
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % swipeTexts.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [swipeTexts.length]);
+
+  const links = [
+    { id: "feature1", label: "Voice Solutions" },
+    { id: "feature2", label: "Collaboration Tools" },
+    { id: "feature3", label: "Video Conferencing" },
+    { id: "feature4", label: "Cloud Communication" },
+    { id: "feature5", label: "Mobile Integration" },
+    { id: "feature6", label: "24/7 Support" },
+  ];
+
   return (
-    <div className = ''>
-    <UCCHeader/>
-    <div className="bg-[#16213D] text-white py-10 px-4">
-      <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-3xl font-bold mb-4">
-          Proscene's global UCC deployment
-        </h1>
-        <p className="mb-8">
-          After decades of deploying communications platforms for our customers
-          across the globe, Proscene developed a roadmap to successful global
-          UCC deployment. We focus on: interoperability, voice integration,
-          user experience, licensing, security, and management and
-          optimization. Involve our team early in your transformation process to
-          ensure success.
-        </p>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-        {features.map((feature, index) => (
-          <div
-            key={index}
-            className=" p-6 rounded-lg shadow-lg flex flex-col items-center text-center" style={{border:'1px solid rgb(165 243 252 )'}}
-          >
-            <div className="text-4xl mb-4">{feature.icon}</div>
-            <h2 className="text-xl font-bold mb-2">{feature.title}</h2>
-            <p className="text-sm">{feature.description}</p>
+    <div>
+      <div className="pb-5 maxWidthContainer">
+        <div className="flex flex-col md:flex-row items-center justify-center p-8 bg-white mt-24">
+          <div className="bg-[#3b37e6] py-16 text-white p-10 md:w-1/2 Br">
+            <h1 className="font-bold h1sizing">Unified Communications Solutions</h1>
+            <p className="text-lg mb-6">{swipeTexts[currentIndex]}</p>
+            <div className="button-Center">
+              <button className="border border-white text-white py-2 px-6 rounded-2xl hover:bg-blue-700"
+              onClick={handleButtonClick}>
+                Contact us
+              </button>
+            </div>
           </div>
-        ))}
+          <div className="relative md:w-1/2 flex items-center justify-center mt-8 md:mt-0 bg-growth">
+            <img
+              src={uccjpg}
+              alt="home"
+              className="ml-10 shadow-lg"
+              style={{ borderRadius: "2em" }}
+            />
+            <img
+              src={leftbottomSvg}
+              alt="home"
+              className="absolute -bottom-2 left-4 w-40"
+              style={{ zIndex: "999" }}
+            />
+            <div className="absolute -top-5 -right-5 w-32 h-32 bg-purple-200 rounded-lg"></div>
+            <div className="absolute top-1/4 right-1/4 w-16 h-16 bg-red-300 rounded-lg"></div>
+          </div>
+        </div>
       </div>
-    </div>
-    <LogoCarousel/>
-    <BookDemoToday/>
-    <Footer/>
+
+      {/* key feature */}
+      <div className="p-4">
+        <h2 className="text-center onsitesubheads font-bold mb-4">Key Features</h2>
+        {/* Links Row */}
+        <div className="relative overflow-hidden max-w-7xl mx-auto">
+          <div className="flex space-x-4 overflow-x-auto scrollbar-hide pb-1 items-center px-32">
+            {links.map((link) => (
+              <button
+                key={link.id}
+                onClick={() => setActiveLink(link.id)}
+                className={`px-4 py-2 ${activeLink === link.id ? "text-blue-500 border-b-2 border-blue-500" : "text-gray-700"}`}
+              >
+                {link.label}
+              </button>
+            ))}
+          </div>
+          <div
+            className="absolute bottom-0 left-0 h-[2px] bg-blue-500 transition-transform"
+            style={{
+              transform: `translateX(${links.findIndex((link) => link.id === activeLink) * 100}%)`,
+            }}
+          />
+        </div>
+        {/* Content Row */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-32" style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <div className="m-4 flex justify-center flex-col">
+            <h3 className="cardheaders font-semibold mb-2">
+              {content[activeLink].title}
+            </h3>
+            <p className="featuresp">{content[activeLink].description}</p>
+          </div>
+          <div className="m-4">
+            <img
+              src={content[activeLink].image}
+              alt={content[activeLink].title}
+              className="w-full h-auto object-cover rounded-2xl"
+            />
+          </div>
+        </div>
+      </div>
+        
+      <div id="faq-section" className="pt-9 pb-9">
+        <FAQ />
+      </div>
+      <SupportMaintain/>
+
+      {/* experience await */}
+      <div className="bg-gradient-to-r from-[#e0f2f7] via-[#f0f9ff] to-[#e0f2f7] py-24 flex flex-col items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-8 leading-tight">
+            Your Unified Communications <br/>Solution Awaits
+          </h1>
+          <button className="bg-[#16213D] hover:bg-[#00abfa] hover:text-black text-white font-bold py-4 px-8 rounded-full transition duration-300"
+          onClick={handleButtonClick}>
+            Speak With An Expert
+          </button>
+        </div>
+      </div>    
+
+      <Footer />
     </div>
   );
 }
