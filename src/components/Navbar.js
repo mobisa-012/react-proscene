@@ -48,33 +48,6 @@ function Navbar() {
     };
   }, []);
 
-  const solutionsSubMenuItems = [
-    { label: "Audio Visual Integration", href: "/avIntegration" },
-    { label: "Collaboration Solutions", href: "/collaborationSolutions" },
-    { label: "Digital Media", href: "/digitalMedia" },
-    { label: "Automation Solutions", href: "/automationSolutions" },
-    { label: "Interactive Technology", href: "/interactiveTechnology" },
-  ];
-
-  const sectorsSubMenuItems = [
-    { label: "Corporate", href: "/corporate" },
-    { label: "Education", href: "/education" },
-    { label: "Public Sector", href: "/publicSector" },
-    { label: "Healthcare", href: "/healthcare" },
-    { label: "Legal Collaboration", href: "/legalCollaboration" },
-  ];
-
-  const servicesSubMenuItems = [
-    { label: "Unified Communications", href: "/unifiedCommunications" },
-    { label: "Training and Support", href: "/trainingAndSupport" },
-    { label: "On-site Support", href: "/onSiteSupport" },
-    { label: "Equipment Repair", href: "/equipmentRepair" },
-    { label: "Leasing", href: "/leasing" },
-    { label: "Video Conference Rental", href: "/videoConferenceRental" },
-  ];
-
-  const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1024px)" });
-
   return (
     <header
       id="site-header"
@@ -1433,7 +1406,7 @@ function Navbar() {
                           className="menu-item menu-item-type-custom menu-item-object-custom"
                         >
                           <a
-                            href="/unifiedCommunication"
+                            href="/unifiedCommunications"
                             className="item-link"
                           >
                             <span className="item-title-area">
