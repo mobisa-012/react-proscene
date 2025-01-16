@@ -153,9 +153,10 @@ function EquipmentRepair() {
         </div>
       </div>
         
-      <div id="faq-section" className="pt-9 pb-9">
-        <FAQ />
-      </div>
+      <div id="faqs" className="flex flex-col mt-9 pt-6 justify-center items-center pb-5">
+        <h3 className="onsitesubheads">Frequently Asked Questions</h3>
+          <FAQ />         
+        </div> 
       <SupportMaintain/>
 
       {/* experience await */}
