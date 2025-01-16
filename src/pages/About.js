@@ -7,7 +7,6 @@ import Stats from "../components/StatsSection.js";
 import AboutHero from "../components/AboutHero.js";
 import DiamondSection from "../components/DiamondSection.js";
 
-
 function About() {
   return (
     <div className="p-0">
