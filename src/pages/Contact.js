@@ -116,7 +116,7 @@ const HelpSection = () => {
         );
       case "representative":
         return (
-          <div className="bg-orange-100 p-6 rounded-lg shadow-md mx-auto " style={{maxWidth:'800px', marginInline:'1em', margin:'0 auto'}}>
+          <div className="bg-orange-100 p-6 rounded-lg shadow-md mx-auto" style={{maxWidth:'800px', marginInline:'1em', margin:'0 auto'}}>
             <h2 className="text-xl font-bold text-orange-700 mb-4 text-center">
               Speak to a Proscene representative
             </h2>
@@ -296,7 +296,7 @@ const HelpSection = () => {
   };
 
   return (
-    <div className="pt-12 p-0 pb-0">
+    <div className="pt-12 p-0 pb-0 mt-20">
       <h1 className="contact-header text-center mb-6">How can we help?</h1>
       <p className="text-center contact-choice mb-6">Select an option below</p>
       <div className="flex flex-col sm:flex-row items-center gap-2 mb-8 justify-around mx-auto" style={{maxWidth:'1000px'}} >
@@ -442,7 +442,7 @@ const HelpSection = () => {
       <img
         src="https://www.priority-software.com/wp-content/uploads/2023/04/group-17441.png"
         alt="Illustration"
-        className="w-full max-w-xs mx-auto rounded-lg"
+        className="w-full max-w-xs mx-auto rounded-lg my-8"
       />
     </div>
     </div>
