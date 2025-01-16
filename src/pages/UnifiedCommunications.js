@@ -5,7 +5,7 @@ import FAQ from "./Faq";
 import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
 import uccjpg from "../components/assets/sup.jpg";
-import SupportMaintain from "../components/Support&Maintain";
+import SupportMaintain from "../components/SupportMaintain";
 
 function UCC() {
   const swipeTexts = [
