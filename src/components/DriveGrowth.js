@@ -40,7 +40,7 @@ function DriveGrowth() {
     }, [swipeTexts.length]);
 
     return (
-        <div className="pb-5 pt-10 maxWidthContainer">
+        <div className="pb-5  maxWidthContainer" style={{paddingTop:'clamp(1.8019rem, 1.0209rem + 3.9051vw, 4.6819rem)'}}>
             <div className="flex flex-col md:flex-row items-center justify-center p-3 bg-white min-h-40">
                 <div className="bg-[#3b37e6] py-16 text-white sm:p-10 p-5 mb-10 mt-10 md:w-1/2 Br">
                     {/* Content with fixed height and scroll for overflow */}
