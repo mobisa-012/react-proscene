@@ -146,14 +146,6 @@ function UCC() {
           </div>
         </div>
       </div>
-        
-      <div id="faqs" className="flex flex-col mt-9 pt-6 justify-center items-center pb-5">
-        <h3 className="onsitesubheads">Frequently Asked Questions</h3>
-          <FAQ />         
-        </div> 
-      <SupportMaintain/>
-
-      {/* experience await */}
       <div className="bg-gradient-to-r from-[#e0f2f7] via-[#f0f9ff] to-[#e0f2f7] py-24 flex flex-col items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-8 leading-tight">
@@ -164,8 +156,13 @@ function UCC() {
             Speak With An Expert
           </button>
         </div>
-      </div>    
-
+      </div>
+      <SupportMaintain/>
+        
+      <div id="faqs" className="flex flex-col mt-9 pt-6 justify-center items-center pb-5">
+        <h3 className="onsitesubheads">Frequently Asked Questions</h3>
+          <FAQ />         
+        </div> 
       <Footer />
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../global.css";
 import homeSvg from "./assets/home.svg";
 import { useNavigate } from "react-router-dom";
@@ -13,36 +13,41 @@ function DriveGrowth() {
     const swipeTexts = [
         "Amplify operational efficiency, discover new opportunities, and stay agile.",
         "Streamline your processes and innovate faster to achieve measurable success.",
-        "Empower your business with cutting-edge solutions tailored to your needs.",
+        // "Empower your business with cutting-edge solutions tailored to your needs.",
     ];
 
     const swipeTopics = [
         "Drives your growth tomorrow. Check.",
-        "Fits your business everyday. Check.",
-        "Be visible through all seasons. Check.",
+        "Fits your business each day, everyday. Check.",
+        "Be felt, be visible through all the seasons. Check.",
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isAnimating, setIsAnimating] = useState(false);
 
-    
+    const containerHeight = 300; // Set a maximum height (adjust as needed)
+
     useEffect(() => {
         const interval = setInterval(() => {
             setIsAnimating(true);
             setTimeout(() => {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % swipeTexts.length);
                 setIsAnimating(false);
-            }, 100); 
-        }, 9000); 
+            }, 500); // Match this to the animation duration
+        }, 9000);
 
         return () => clearInterval(interval);
     }, [swipeTexts.length]);
 
     return (
         <div className="pb-5 pt-10 maxWidthContainer">
-            <div className="flex flex-col md:flex-row items-center justify-center p-8 bg-white min-h-40">
-                <div className="bg-[#3b37e6] py-16 text-white p-10 mb-10 mt-10 md:w-1/2 Br">
-                    <div className="overflow-hidden relative">
+            <div className="flex flex-col md:flex-row items-center justify-center p-3 bg-white min-h-40">
+                <div className="bg-[#3b37e6] py-16 text-white sm:p-10 p-5 mb-10 mt-10 md:w-1/2 Br">
+                    {/* Content with fixed height and scroll for overflow */}
+                    <div
+                        className="overflow-hidden relative"
+                        style={{ maxHeight: `${containerHeight}px`, overflow: "hidden" }}
+                    >
                         <h1
                             className={`font-bold h1sizing mx-4 transition-transform duration-500 transform ${
                                 isAnimating ? "-translate-x-full" : "translate-x-0"
@@ -51,9 +56,12 @@ function DriveGrowth() {
                             {swipeTopics[currentIndex]}
                         </h1>
                     </div>
-                    <div className="overflow-hidden relative">
+                    <div
+                        className="overflow-hidden relative"
+                        style={{ maxHeight: `${containerHeight}px`, overflow: "hidden" }}
+                    >
                         <p
-                            className={`text-lg mx-4 transition-transform duration-500 transform ${
+                            className={`text-center md:text-left text-lg mx-4 transition-transform duration-500 transform ${
                                 isAnimating ? "-translate-x-full" : "translate-x-0"
                             }`}
                             style={{ fontWeight: "300" }}

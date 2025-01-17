@@ -15,30 +15,30 @@ function BookDemo () {
   ];
 
   return (
-    <div className = "">
+    <div className = "" style={{marginBlock:"clamp(1.4238rem, 1.0921rem + 1.6585vw, 2.6469rem)"}}>
     <div className="flex items-center justify-center bg-gray-100">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 mt-14">
         {/* Left Section */}
         <div className="flex flex-col justify-center text-left p-6 space-y-6">
-          <h1 className="text-4xl font-bold text-blue-600">Ready to take a closer look?</h1>
+          <h1 className="text-4xl font-bold text-[#3b37e6]">Ready to take a closer look?</h1>
           <ul className="space-y-4 text-lg">
             <li className="flex items-center">
-              <span className="w-4 h-4 rounded-full bg-red-400 inline-block mr-2"></span>
-              Watch Proscene in action
+              <span className=" rounded-full bg-red-400 inline-block mr-2" style={{width:'.8em', aspectRatio:'1'}}></span>
+              Watch Proscene in action. See how we help you grow
             </li>
             <li className="flex items-center">
-              <span className="w-4 h-4 rounded-full bg-purple-400 inline-block mr-2"></span>
+              <span className=" rounded-full bg-purple-400  inline-block mr-2" style={{width:'.8em', aspectRatio:'1'}}></span>
               Flexible, scalable solutions powered by innovative technology
             </li>
             <li className="flex items-center">
-              <span className="w-4 h-4 rounded-full bg-blue-400 inline-block mr-2"></span>
+              <span className="rounded-full bg-blue-400 inline-block mr-2" style={{width:'.8em', aspectRatio:'1'}}></span>
               Business management solutions tailored to your needs
             </li>
           </ul>
         </div>
 
         {/* Right Section */}
-        <div className="bg-[#16213D] text-white p-20 h-auto flex flex-col items-center justify-center">
+        <div className="bg-[#16213D] text-white p-5 mb-2 mx-3 rounded-[12px] h-auto flex flex-col items-center justify-center">
           <h2 className="text-2xl font-semibold mb-6">Book a Demo</h2>
           <form className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

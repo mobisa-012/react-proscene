@@ -8,9 +8,9 @@ function BookDemoToday() {
         navigate("/bookDemo");
     }
     return (
-        <div className="relative overflow-hidden w-full h-[343px] bg-[#3B37E6] flex justify-center items-center">
+        <div className="relative overflow-hidden w-full py-[4em] bg-[#3B37E6] flex justify-center items-center">
             <svg 
-                className="absolute h-[343px] left-[-15.27%] top-0 w-[910px]" 
+                className="absolute h-[433px] left-[-15.27%] top-0 w-[910px]" 
                 fill="none" 
                 xmlns="http://www.w3.org/2000/svg"
             >
@@ -33,7 +33,7 @@ function BookDemoToday() {
                 </button>
             </div>
             <svg 
-                className="absolute h-[343px] right-[-40.27%] top-0 bottom-6 w-[910px]" 
+                className="absolute h-[403px] right-[-40.27%] top-0 bottom-6 w-[910px]" 
                 fill="none" 
                 xmlns="http://www.w3.org/2000/svg"
             >
