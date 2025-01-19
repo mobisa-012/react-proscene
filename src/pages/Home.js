@@ -17,6 +17,9 @@ function Home() {
         <div>
         <DriveGrowth/>
         </div>
+        <div>
+        <Stats/>
+        </div>
         <div className="home-section" style={{marginBottom:'clamp(1.5rem, 1.4492rem + 1.9542vw, 3.6875rem)'}}>
         <LogoCarousel /> 
         </div>
@@ -30,7 +33,7 @@ function Home() {
         <SectorCards />
         </div>  
         <div><Moresection /></div>
-        <div className=""><Stats/></div>
+        {/* <div className=""><Stats/></div> */}
         <div className = "demo-section">
         <BookDemoToday/>
         </div>        
