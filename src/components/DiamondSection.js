@@ -1,6 +1,9 @@
 import React from "react";
-import hero from './assets/hero.jpg';
 import { useNavigate } from "react-router-dom";
+import av from './assets/audiovisual.webp';
+import cs from './assets/collaborativesolutions.webp';
+import as from './assets/Automationsolutions.jpg';
+import dm from './assets/digitalmedia.jpg';
 
 function DiamondSection() {
   const navigate = useNavigate();
@@ -29,7 +32,7 @@ function DiamondSection() {
         <div
           className="relative w-80 h-[500px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden z-20 group"
           style={{
-            backgroundImage: `url(${hero})`,
+            backgroundImage: `url(${av})`,
             border: "1px solid rgba(59, 55, 230, 0.9)",
           }}
         >
@@ -60,7 +63,7 @@ function DiamondSection() {
         <div
           className="relative w-80 h-[500px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden group"
           style={{
-            backgroundImage: `url(${hero})`,
+            backgroundImage: `url(${cs})`,
             border: "1px solid rgba(85, 187, 249, 0.9)",
           }}
         >
@@ -91,7 +94,7 @@ function DiamondSection() {
         <div
           className="relative w-80 h-[500px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden group"
           style={{
-            backgroundImage: `url(${hero})`,
+            backgroundImage: `url(${as})`,
             border: "1px solid rgba(161, 66, 255, 0.9)",
           }}
         >
@@ -121,7 +124,7 @@ function DiamondSection() {
         <div
           className="relative w-80 h-[500px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden group"
           style={{
-            backgroundImage: `url(${hero})`,
+            backgroundImage: `url(${dm})`,
             border: "1px solid rgba(255, 115, 105, 0.9)",
           }}
         >
