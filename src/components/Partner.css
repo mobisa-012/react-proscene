@@ -11,7 +11,7 @@
 
 .partner-card {
   background-color: white;
-  box-shadow: 0 4px 8px rgba(102, 94, 214, 0.3);
+  box-shadow: 1px 1px 1px 1px rgba(102, 94, 214, 0.3);
   width: calc(25% - 8px);  /* Adjust as necessary for desired card width */
   padding: 12px;
   border-radius: 12px;

@@ -19,10 +19,9 @@ const partnerData = [
 
 const Card = ({ logo, description, link }) => {
   return (
-    <div className="card">
+    <div className="card hover:shadow-lg transition-shadow duration-300">
       <div><img src={logo} style={{width:'60%', aspectRatio:'3/1', margin:'1em'}} alt="Logo" className="partner-Images" /></div>
       <p className="p-4" style={{color:'#16213d', fontSize:'400'}}>{description}</p>
-      {/* <a href={link} className="p-4 text-indigo-600 font-semibold text-center text-sm">More info</a> */}
     </div>
   );
 };
@@ -41,7 +40,7 @@ const Partners = () => {
   };
 
   return (
-    <div className="maxWidthContainer max-w-7xl mx-auto px-8">
+    <div className=" max-w-7xl mx-auto px-3">
     <div className="partners-header">
         <h2 className='h2-Partners'>Trusted by the best</h2>
       </div>

@@ -86,7 +86,7 @@ const Card = ({ title, description, icon, hoverColor, borderColor, hoverBgColor,
 
 const SolutionsLayout = () => {
   return (
-    <div className="flex flex-col my-16 justify-center items-center max-w-7xl mx-auto">
+    <div className="flex flex-col my-16 justify-center items-center maxWidthContainer mx-auto">
       {/* Title and Description Above Cards */}
       <div className="text-center mb-8">
         <h2 className="text-[20px] font-bold text-[#16213d] font-axioforma mb-[10px] ml-auto mr-auto">
