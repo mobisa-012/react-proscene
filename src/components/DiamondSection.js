@@ -1,7 +1,22 @@
 import React from "react";
 import hero from './assets/hero.jpg';
+import { useNavigate } from "react-router-dom";
 
 function DiamondSection() {
+  const navigate = useNavigate();
+
+  const handleButtonClickAV=() =>{
+    navigate('/avIntegration')
+  };
+  const handleButtonClickCS=() =>{
+    navigate('/collaborationSolutions')
+  };
+  const handleButtonClickDM=() =>{
+    navigate('/digitalMedia')
+  };
+  const handleButtonClickAS=() =>{
+    navigate('/automationSolutions')
+  };
   return (
     <div className="relative bg-[#132042] flex flex-col items-center justify-center overflow-hidden py-20">
       {/* Center Text */}
@@ -23,14 +38,15 @@ function DiamondSection() {
             style={{ backgroundColor: "rgba(59, 55, 230, 0.9)" }}
           >
             <div className="flex items-center justify-center h-16 text-xl font-bold text-white">
-              Hospitality Management
+              Audio Visual Integration
             </div>
 
             <div className="p-4 text-center hidden group-hover:block">
               <p className="text-white text-sm mb-4">
                 Next-Gen property management software
               </p>
-              <button className="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4">
+              <button className="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4"
+              onClick={handleButtonClickAV}>
                 Read More
               </button>
             </div>
@@ -53,14 +69,15 @@ function DiamondSection() {
             style={{ backgroundColor: "rgba(85, 187, 249, 0.9)" }}
           >
             <div className="flex items-center justify-center h-16 text-xl font-bold text-white">
-              PHP
+              Collaboration
             </div>
 
             <div className="p-4 text-center hidden group-hover:block">
               <p className="text-white text-sm mb-4">
                 PHP is the best language I know.
               </p>
-              <button className="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4">
+              <button className="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4"
+              onClick={handleButtonClickCS}>
                 Read More
               </button>
             </div>
@@ -83,14 +100,15 @@ function DiamondSection() {
             style={{ backgroundColor: "rgba(161, 66, 255, 0.9)" }}
           >
             <div className="flex items-center justify-center h-16 text-xl font-bold text-white">
-              PHP
+              Automation Solutions
             </div>
 
             <div className="p-4 text-center hidden group-hover:block">
               <p className="text-white text-sm mb-4">
                 PHP is the best language I know.
               </p>
-              <button className="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4">
+              <button className="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4"
+              onClick={handleButtonClickAS}>
                 Read More
               </button>
             </div>
@@ -112,14 +130,15 @@ function DiamondSection() {
             style={{ backgroundColor: "rgba(255, 115, 105, 0.9)" }}
           >
             <div className="flex items-center justify-center h-16 text-xl font-bold text-white">
-              PHP
+              Digital Media
             </div>
 
             <div className="p-4 text-center hidden group-hover:block">
               <p className="text-white text-sm mb-4">
                 PHP is the best language I know.
               </p>
-              <button className="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4">
+              <button className="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4"
+              onClick={handleButtonClickDM}>
                 Read More
               </button>              
             </div>
