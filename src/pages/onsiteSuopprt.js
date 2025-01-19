@@ -5,6 +5,7 @@ import supportjpg from "../components/assets/support.jpg";
 import { motion } from "framer-motion";
 import FAQ from "./Faq";
 import Footer from '../components/Footer';
+import BookDemoToday from '../components/BookDemo';
 
 function OnSiteSupport() {
   const swipeTexts = [
@@ -450,6 +451,7 @@ function OnSiteSupport() {
           <FAQ />         
         </div>        
       </div>
+      <BookDemoToday/>
       <Footer/>    
     </div>
   );
