@@ -19,7 +19,7 @@ const partnerData = [
 
 const Card = ({ logo, description, link }) => {
   return (
-    <div className="card hover:shadow-lg transition-shadow duration-300">
+    <div className="card hover:shadow-[0_4px_6px_rgba(0,0,0,0.1)] transition-shadow duration-300 rounded-[17px]">
       <div><img src={logo} style={{width:'60%', aspectRatio:'3/1', margin:'1em'}} alt="Logo" className="partner-Images" /></div>
       <p className="p-4" style={{color:'#16213d', fontSize:'400'}}>{description}</p>
     </div>
