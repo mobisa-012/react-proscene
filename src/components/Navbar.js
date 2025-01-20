@@ -752,6 +752,7 @@ function Navbar() {
                                     </a>
                                   </li>{" "}
                                 </ul>
+                                {/* <img src={logoHome} alt="Industries" /> */}
                               </div>
                             </li>{" "}
                           </ul>
