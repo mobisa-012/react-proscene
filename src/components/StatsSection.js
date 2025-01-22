@@ -53,17 +53,21 @@ const Stats = () => {
 
        
         <div className="flex justify-center items-center">
+        <div 
+          className="relative w-[450px] h-[450px] rounded-full border-4 border-red-500 overflow-hidden"
+        >
           <iframe
             width="100%"
-            height="315"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Replace with our video URL
+            height="100%"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Replace with your video URL
             title="Video Example"
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            className='rounded-[15px]'
+            className="absolute inset-0 w-full h-full"
           ></iframe>
         </div>
+      </div>
       </div>
     </div>
       </div>
