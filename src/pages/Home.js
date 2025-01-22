@@ -9,6 +9,7 @@ import BookDemoToday from "../components/BookDemo.js";
 import SolutionsLayout from "../components/Solutions";
 import DriveGrowth from "../components/DriveGrowth.js";
 import Stats from "../components/StatsSection.js";
+import TestimonialCarousel from "../components/testimonials.js";
 
 
 function Home() {
@@ -33,7 +34,9 @@ function Home() {
         <SectorCards />
         </div>  
         <div><Moresection /></div>
-        {/* <div className=""><Stats/></div> */}
+        <div className="">
+        <TestimonialCarousel/>
+        </div>
         <div className = "demo-section">
         <BookDemoToday/>
         </div>        
