@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './LogoCarousel.css';
 import avaya from './assets/avaya.jpg';
@@ -13,6 +13,8 @@ import panasonic from './assets/panasonic.jpg';
 import samsung from './assets/samsung.jpg';
 
 const LogoCarousel = () => {
+  const carouselRef = useRef(null);
+
   const logos = [
     { src: avaya, alt: 'Avaya' },
     { src: barco, alt: 'Barco' },
@@ -26,21 +28,65 @@ const LogoCarousel = () => {
     { src: samsung, alt: 'Samsung' },
   ];
 
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    let scrollInterval;
+
+    const startScrolling = () => {
+      scrollInterval = setInterval(() => {
+        if (carousel) {
+          carousel.scrollLeft += 1;
+        }
+      }, 20);
+    };
+
+    const stopScrolling = () => {
+      clearInterval(scrollInterval);
+    };
+
+    startScrolling();
+
+    return () => clearInterval(scrollInterval);
+  }, []);
+
+  const handleMouseEnter = () => {
+    const carousel = carouselRef.current;
+    if (carousel) {
+      carousel.style.animationPlayState = 'paused';
+    }
+  };
+
+  const handleMouseLeave = () => {
+    const carousel = carouselRef.current;
+    if (carousel) {
+      carousel.style.animationPlayState = 'running';
+    }
+  };
+
   return (
     <div className="logo-carousel">
-      {/* <h2 className="carousel-heading">
-      We partner with the best
-      </h2> */}
-      <div className="carousel">
-        <div className="carousel-content">
+      <div className="carousel" ref={carouselRef}>
+        <div
+          className="carousel-content"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           {logos.map((logo, index) => (
             <div key={index} className="carousel-item">
-              <img src={logo.src} alt={logo.alt} />
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                className="logo"
+              />
             </div>
           ))}
           {logos.map((logo, index) => (
             <div key={`duplicate-${index}`} className="carousel-item">
-              <img src={logo.src} alt={logo.alt} />
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                className="logo"
+              />
             </div>
           ))}
         </div>
