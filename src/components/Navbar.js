@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-// import { Link } from "react-router-dom";
-// import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { useMediaQuery } from "react-responsive";
 import logoHome from './assets/logo.png';
+import solutionsimg from './assets/adi.jpeg';
 
 function Navbar() {
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
@@ -517,7 +516,7 @@ function Navbar() {
                               className="columns-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"
                             >
                               <a href="#">
-                                <span>Products</span>
+                                <span>Spaces</span>
                               </a>
                               <div className="sub-menu-wrapper">
                                 <ul className="sub-menu">
@@ -1045,22 +1044,21 @@ function Navbar() {
                         >
                           <div className="block-area blue custom-image">
                             <div className="block-image">
-                              {/* <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" className="menu-item-image" alt="" data-lazy-src="https://www.priority-software.com/wp-content/uploads/2024/12/tec-logo-170-130.jpg"><noscript><img src="https://www.priority-software.com/wp-content/uploads/2024/12/tec-logo-170-130.jpg" className="menu-item-image" alt=""></noscript> */}
+                              <img src={solutionsimg} className="menu-item-image" alt="" data-lazy-src=""></img>
                             </div>
                             <div className="item-content-area">
                               <div className="item-content-area-title dark">
-                                Recognized as the top AV Solution in the 2025
-                                TEC
+                                Recognized as the top AV Solution in 2025
                               </div>
                               <div className="item-content-area-description">
                                 Insight Report on AV Solutions for SMBs
                               </div>
                               <div className="item-content-area-button">
                                 <a
-                                  href="/corporate"
-                                  className="btn blue"
+                                  href="/contact"
+                                  className="btn blue p-2"
                                 >
-                                  Corporate
+                                  Contact us
                                 </a>
                               </div>
                             </div>
