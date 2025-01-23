@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
-const Card = ({ title, description, icon, hoverColor, borderColor, hoverBgColor, navigateTo, buttonColor }) => {
+const Card = ({ title, description, icon, hoverColor, borderColor, hoverBgColor, navigateTo, buttonColor, titleColor }) => {
   const navigate = useNavigate();
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -34,19 +34,19 @@ const Card = ({ title, description, icon, hoverColor, borderColor, hoverBgColor,
       <div className="relative transition-transform duration-300 group-hover:-translate-y-1 z-10">
   {/* Icon */}
   <div
-    className={`w-12 h-12 mx-auto mb-4 transition-all duration-300 transform group-hover:-translate-y-12 group-hover:z-10 ${hoverColor}`}
+    className={`w-12 h-12 mb-4 transition-all duration-300 transform group-hover:-translate-y-12 group-hover:z-10 ${hoverColor}`}
   >
     {icon}
   </div>
 
   {/* Title */}
-  <h3 className="text-xl font-semibold text-center mb-2 transition-transform duration-300 group-hover:-translate-y-6">
+  <h3 className=" font-semibold  mb-2 transition-transform duration-300 group-hover:-translate-y-6"  style={{fontSize:'clamp(1.2656rem, 1.0692rem + 0.9822vw, 1.79rem)', color:titleColor,}}>
     {title}
   </h3>
 
   {/* Description */}
   <p
-    className={`text-center text-gray-600 transition-transform duration-300 group-hover:-translate-y-6 block`}
+    className={` text-gray-600 transition-transform duration-300 group-hover:-translate-y-6 block`}
   >
     {description}
   </p>
@@ -66,7 +66,7 @@ const Card = ({ title, description, icon, hoverColor, borderColor, hoverBgColor,
 
       {/* Button */}
       <div
-        className={`absolute bottom-4 left-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
+        className={`absolute bottom-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
           isExpanded ? "block sm:block" : "sm:block"
         }`}
       >
@@ -110,6 +110,7 @@ const SolutionsLayout = () => {
           hoverColor="text-indigo-500"
           borderColor="border-[#a042ff]"
           hoverBgColor="#eaddff"
+          titleColor="#a042ff"
           navigateTo="/interactiveTechnology"
           buttonColor="#a042ff"
         />
@@ -124,6 +125,7 @@ const SolutionsLayout = () => {
           hoverColor="text-purple-500"
           borderColor="border-[#3c39eb]"
           hoverBgColor="#d9e0ff"
+          titleColor="#3c39eb"
           navigateTo="/avIntegration"
           buttonColor="#3c39eb"
         />
@@ -138,6 +140,7 @@ const SolutionsLayout = () => {
           hoverColor="text-blue-500"
           borderColor="border-[#00d2fb]"
           hoverBgColor="#e0f7ff"
+          titleColor="#00d2fb"
           navigateTo="/digitalMedia"
           buttonColor="#00d2fb"
         />
@@ -152,6 +155,7 @@ const SolutionsLayout = () => {
           hoverColor="text-red-500"
           borderColor="border-[#ff6663]"
           hoverBgColor="#ffe5e5"
+          titleColor="#ff6663"
           buttonColor="#ff6663"
           navigateTo="/collaborationSolutions"
         />

@@ -91,19 +91,19 @@ const Footer = () => {
                 </div>                
             </main>
             
-            <div className="legal-links max-w-7xl mx-auto">
+            <div className="legal-links max-w-7xl mx-auto ">
                 <div className="logo" style={{margin:'10px 60px 10px 10px'}}>
                     <Link to="/">
                         <img src={avixamember} alt="Avixa Logo" />
                     </Link>
                 </div>                
-                <div className="flex justify-center flex-col sm:flex-row" style={{gap:'clamp(2rem, 1.9322rem + 0.339vw, 2.25rem)'}}>
+                <div className="flex flex-col sm:flex-row w-full" style={{justifyContent:'space-between' ,gap:'clamp(2rem, 1.9322rem + 0.339vw, 2.25rem)'}}>
                 
                     <div className="flex flex-col sm:flex-row" style={{gap:'clamp(2rem, 1.9322rem + 0.339vw, 2.25rem)'}}>
                         <Link to="/terms-and-conditions" className="footer-link" style={{color:'white'}}>Terms & Conditions</Link>
                         <Link to="/privacy-policy" className="footer-link" style={{color:'white'}}>Privacy Policy</Link>
                     </div>
-                    <div><Copyright/></div>
+                    <div className="mr-5"><Copyright/></div>
                 </div>
             </div>
         </div>

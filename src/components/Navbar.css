@@ -209,7 +209,7 @@
 }
 .site-header__menu > .menu-item.mega-menu > .sub-menu-wrapper:before,
 .site-header__menu > .menu-item.parts-menu > .sub-menu-wrapper:before {
-  background-color: #e3eeff;
+  /* background-color: #e3eeff; */
   border-radius: 0 0 40px 40px;
   bottom: 0;
   content: "";
