@@ -11,15 +11,15 @@ function Support() {
         };
     
         const swipeTexts = [
-            "Amplify operational efficiency, discover new opportunities, and stay agile.",
-            "Streamline your processes and innovate faster to achieve measurable success.",
+            "Optimize your workflows and accelerate growth to achieve impactful results.",
+            "Enhance productivity, embrace innovation, and adapt seamlessly to change..",
             // "Empower your business with cutting-edge solutions tailored to your needs.",
         ];
     
         const swipeTopics = [
-            "Drives your growth tomorrow. Check.",
-            "Fits your business each day, everyday. Check.",
-            "Be felt, be visible through all the seasons. Check.",
+            "How can we help?Coming soon.",
+            "Help all day, everyday. Coming soon.",
+            // "Be felt, be visible through all the seasons. Check.",
         ];
     
         const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,20 +40,6 @@ function Support() {
         }, [swipeTexts.length]);
     
     return (
-//         <div className="flex items-center flex-col justify-center h-screen bg-gray-100">
-//             <h1 className="text-4xl font-bold text-gray-800">
-//                 COMING SOON
-//             </h1>
-//             <div className="flex items-center justify-center mt-8">
-//             <a
-//   className="btn bg-[#3b37e6] text-white rounded-[15px] px-5 py-2 text-lg border border-transparent transition-all duration-300 hover:bg-[#fff] hover:text-[#3b37e6] hover:border-[#3b37e6]"
-//   href="/contact"
-// >
-//   Contact us
-// </a>
-
-//             </div>
-//         </div>
 <div className="pb-5  maxWidthContainer" style={{paddingTop:'clamp(1.8019rem, 1.0209rem + 3.9051vw, 4.6819rem)'}}>
             <div className="flex flex-col md:flex-row items-center justify-center p-3 bg-white min-h-40">
                 <div className="bg-[#3b37e6] py-16 text-white sm:p-10 p-5 mb-10 mt-10 md:w-1/2 Br">
@@ -88,7 +74,7 @@ function Support() {
                             className="border border-white text-white mx-4 py-2 px-6 mt-5 rounded-2xl hover:bg-white hover:text-[#3b37e6]"
                             onClick={handleButtonClick}
                         >
-                            Schedule a demo
+                            contact us
                         </button>
                     </div>
                 </div>
