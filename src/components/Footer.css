@@ -60,9 +60,9 @@
     color: white !important;
     align-items: center;
 }
-.legal-links>.logo{
+/* .legal-links>.logo{
     visibility: hidden;
-}
+} */
 @media (max-width: 36em) {
     .legal-links{
         display: flex;

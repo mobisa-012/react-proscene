@@ -97,16 +97,7 @@ const Stats = () => {
               </div>
             ))}
           </div>
-          <div className="text-center mt-[8rem]">
-            <h2
-              className="text-4xl font-bold font-axioforma leading-relaxed tracking-tight text-[#55bbf9]"
-              style={{
-                fontSize: 'clamp(1.4238rem, 1.0921rem + 1.6585vw, 2.6469rem)',
-              }}
-            >
-              GLOBAL PERFORMANCE, <br /> LOCAL PRESENCE
-            </h2>
-          </div>
+          
         </div>
       </div>
     </div>

@@ -78,7 +78,7 @@ const TestimonialCarousel = () => {
 
       {/* Content */}
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white px-4">
-        <h2 className="text-5xl lg:text-7xl font-bold mb-4 absolute top-1/3 max-w-7xl mx-auto">
+        <h2 className=" font-bold mb-4 absolute top-1/3 max-w-7xl mx-auto" style={{fontSize: 'clamp(1.8019rem, 1.0209rem + 3.9051vw, 4.6819rem)', lineHeight:'1'}}>
           {testimonials[currentIndex].quote}
         </h2>
         <p className="text-lg font-semibold absolute bottom-40">{testimonials[currentIndex].author}</p>

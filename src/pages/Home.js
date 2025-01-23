@@ -21,19 +21,29 @@ function Home() {
         <div>
         <Stats/>
         </div>
-        <div className="home-section" style={{marginBottom:'clamp(1.5rem, 1.4492rem + 1.9542vw, 3.6875rem)'}}>
-        <LogoCarousel /> 
-        </div>
-        <div>
+        <div className="my-[4rem]">
         <SolutionsLayout/>
         </div>
         <div className="home-section mx-auto" style={{marginBlock:'clamp(1.5rem, 2.9915rem + 2.5424vw, 5.375rem)'}}>
         <Partners/>
         </div>
+        <div className="home-section" style={{marginBottom:'clamp(1.5rem, 1.4492rem + 1.9542vw, 3.6875rem)'}}>
+        <LogoCarousel /> 
+        </div>
         <div className="sector-section maxWidthContainer">
         <SectorCards />
         </div>  
-        <div><Moresection /></div>
+        {/* <div><Moresection /></div> */}
+        <div className="text-center my-[6rem]">
+            <h2
+              className="text-4xl font-bold font-axioforma leading-relaxed tracking-tight text-[#55bbf9]"
+              style={{
+                fontSize: 'clamp(1.4238rem, 1.0921rem + 1.6585vw, 2.6469rem)',
+              }}
+            >
+              GLOBAL PERFORMANCE, <br /> LOCAL PRESENCE
+            </h2>
+          </div>
         <div className="">
         <TestimonialCarousel/>
         </div>

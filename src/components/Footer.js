@@ -1,6 +1,7 @@
 import React from "react";
 import './Footer.css';
 import logo from './assets/log.png';
+import avixamember from './assets/avixamember.png';
 import { Link } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Copyright from "./Copyright";
@@ -93,7 +94,7 @@ const Footer = () => {
             <div className="legal-links max-w-7xl mx-auto">
                 <div className="logo" style={{margin:'10px 60px 10px 10px'}}>
                     <Link to="/">
-                        <img src={logo} alt="Company Logo" />
+                        <img src={avixamember} alt="Avixa Logo" />
                     </Link>
                 </div>                
                 <div className="flex justify-center flex-col sm:flex-row" style={{gap:'clamp(2rem, 1.9322rem + 0.339vw, 2.25rem)'}}>
