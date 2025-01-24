@@ -1044,7 +1044,7 @@ function Navbar() {
                         >
                           <div className="block-area blue custom-image">
                             <div className="block-image">
-                              <img src={solutionsimg} className="menu-item-image" alt="" data-lazy-src=""></img>
+                              <img src={solutionsimg} className="menu-item-image" style={{borderRadius:'10px'}} alt="" data-lazy-src=""></img>
                             </div>
                             <div className="item-content-area">
                               <div className="item-content-area-title dark">
@@ -1178,7 +1178,7 @@ function Navbar() {
                         >
                           <div className="block-area blue">
                             <div className="block-area-image">
-                              <a href="https://hubs.ly/Q030WJ140">
+                              <a href="/case-studies">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="160"
@@ -1199,19 +1199,19 @@ function Navbar() {
                                     fill="#3B37E6"
                                   ></path>
                                 </svg>
-                                {/* <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20281%20150'%3E%3C/svg%3E" className="menu-item-image" width="281" height="150" alt="" data-lazy-src="https://www.priority-software.com/wp-content/uploads/2024/08/image-7-281x150.png"><noscript><img src="https://www.priority-software.com/wp-content/uploads/2024/08/image-7-281x150.png" className="menu-item-image" width="281" height="150" alt=""></noscript> */}
+                                <img src={solutionsimg} className="menu-item-image" style={{borderRadius:'10px'}} alt="" data-lazy-src=""></img>
                               </a>
                             </div>
                             <div className="item-content-area">
                               <div className="item-content-area-title dark">
-                                Gevasol B.V. transformed their operational
+                                See how K24 transformed their operational
                                 efficiency and control
                               </div>
                               <div className="item-content-area-description"></div>
                               <div className="item-content-area-button">
                                 <a
                                   href="/bookDemo"
-                                  className="btn blue"
+                                  className="btn blue p-2"
                                 >
                                   Want to know more?
                                 </a>
@@ -1343,7 +1343,7 @@ function Navbar() {
                         >
                           <div className="block-area blue">
                             <div className="block-area-image">
-                              <a href="">
+                              <a href="/bookDemo">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="160"
@@ -1364,20 +1364,20 @@ function Navbar() {
                                     fill="#3B37E6"
                                   ></path>
                                 </svg>
-                                {/* <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20281%20150'%3E%3C/svg%3E" className="menu-item-image" width="281" height="150" alt="" data-lazy-src="https://www.priority-software.com/wp-content/uploads/2024/08/deep-dive-1-15082400-17-28-17still005-1-281x150.jpg"><noscript><img src="https://www.priority-software.com/wp-content/uploads/2024/08/deep-dive-1-15082400-17-28-17still005-1-281x150.jpg" className="menu-item-image" width="281" height="150" alt=""></noscript> */}
+                                <img src={solutionsimg} className="menu-item-image" style={{borderRadius:'10px'}} alt="" data-lazy-src=""></img>
                               </a>
                             </div>
                             <div className="item-content-area">
                               <div className="item-content-area-title purple">
-                                Priority ERP product tour
+                                Proscene product tour
                               </div>
                               <div className="item-content-area-description">
-                                Discover how Priority’s powerful features
+                                Discover how Proscene’s powerful features
                               </div>
                               <div className="item-content-area-button">
                                 <a
-                                  href=""
-                                  className="btn blue"
+                                  href="/bookDemo"
+                                  className="btn blue p-2"
                                 >
                                   Let's go
                                 </a>

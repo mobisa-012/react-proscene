@@ -41,7 +41,7 @@ const Stats = () => {
     
         <div className="flex flex-col justify-center">
           <h2 className="maxwidthcontainer" style={{fontSize:'clamp(1.8019rem, 1.0209rem + 3.9051vw, 4.6819rem)', fontWeight:'700', color:'#16213d', lineHeight:'1'}}>
-            We are  <span className="text-[#55bbf9]"> <br />Proscene</span>
+            We are  <span className="text-[#3b37e6]"> <br />Proscene</span>
           </h2>
           <p className="mt-8"  style={{fontSize:'clamp(1.2656rem, 1.0692rem + 0.9822vw, 1.99rem)',color:'#16213d'}}>
             We are building a world a world without boundaries - where every experience transcends the technology that enables it.

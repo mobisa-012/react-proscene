@@ -91,7 +91,7 @@ function AVIntegrations() {
       <div className="pb-5 maxWidthContainer">
         <div className="flex flex-col mt-20 md:flex-row items-center justify-center p-8 bg-white">
           <div
-            className="bg-blue-800 py-16 text-white p-10 md:w-1/2 Br"
+            className="bg-[#3b37e6] py-16 text-white p-10 md:w-1/2 Br"
             style={{ height: "100%" }}
           >
             <h1 className="font-bold h1sizing">
@@ -100,7 +100,7 @@ function AVIntegrations() {
             <p className="text-lg mb-6">{swipeTexts[currentIndex]}</p>
             <div className="button-Center">
               <button
-                className="border border-white text-white py-2 px-6 rounded-2xl hover:bg-red-700"
+                className="border bg-[#3b37e6] border-white text-white py-2 px-6 rounded-2xl hover:bg-red-700"
                 onClick={handleButtonClick}
               >
                 Book a Demo
@@ -146,7 +146,7 @@ function AVIntegrations() {
             ))}
           </div>
           <div
-            className="absolute bottom-0 left-0 h-[2px] bg-blue-800 transition-transform"
+            className="absolute bottom-0 left-0 h-[2px] transition-transform"
             style={{
               transform: `translateX(${
                 links.findIndex((link) => link.id === activeLink) * 100
@@ -173,7 +173,8 @@ function AVIntegrations() {
           </div>
         </div>
       </div>
-
+      <SupportMaintain />
+      <Stats />
       <div
         id="faqs"
         className="flex flex-col mt-9 pt-6 justify-center items-center pb-5"
@@ -181,8 +182,6 @@ function AVIntegrations() {
         <h3 className="onsitesubheads">Frequently Asked Questions</h3>
         <FAQ />
       </div>
-      <SupportMaintain />
-      <Stats />
       <BookDemoToday />
       <Footer />
     </div>

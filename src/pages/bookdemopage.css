@@ -1,32 +1,9 @@
-/* @import 'src/themes.scss'; */
-/* clamp(1.2656rem, 1.0692rem + 0.9822vw, 1.99rem):clamp(1.2656rem, 1.0692rem + 0.9822vw, 1.99rem);
-clamp(1rem, 1.0661rem + 0.5695vw, 1.65rem): clamp(1rem, 1.0661rem + 0.5695vw, 1.65rem);
-clamp(1rem, 0.9661rem + 0.1695vw, 1.125rem):clamp(1rem, 0.9661rem + 0.1695vw, 1.125rem); */
-/* .loader {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #a142ff;
-    color: blue;
-    text-transform: uppercase;
-    padding: 1em;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    z-index: 1000;
-} */
+
 .icon1 >*{
     font-size: 1.7em;
     margin-right: 1em;
     color: #a142ff;
 }
-/* main{
-    width: 100%;
-    padding-top: 5em;
-    background-color: blue;
-    padding-block: 6rem;
-} */
 .login-main-container{
     display: flex;
     padding-bottom:5em;
@@ -50,21 +27,6 @@ clamp(1rem, 0.9661rem + 0.1695vw, 1.125rem):clamp(1rem, 0.9661rem + 0.1695vw, 1.
     border-radius: 10px;
 
 }
-:is(button){
-    background-color: blue;
-    padding-block: .6em;
-    outline: transparent;
-    border-radius: 10px;
-    margin-top: .6rem;
-    color: #a142ff;
-}
-:is(button:hover){
-    background-color: #fff;
-    color: red;
-}
-.alert{
-    color: red;
-}
 .form{
     display: flex;
     flex-direction: column;
@@ -85,7 +47,7 @@ clamp(1rem, 0.9661rem + 0.1695vw, 1.125rem):clamp(1rem, 0.9661rem + 0.1695vw, 1.
     font-size: clamp(1.2656rem, 1.0692rem + 0.9822vw, 1.99rem);
     color: #a142ff;
 }
-h3{
+.h3-bookdemopage{
     font-size: clamp(1rem, 1.0661rem + 0.5695vw, 1.65rem);
     font-weight: 700;
     background-image: linear-gradient(to right,#a142ff 50%,transparent 50%);

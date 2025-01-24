@@ -61,7 +61,7 @@ function BookDemo () {
         <div key={index} className="flex pt-7">
           <div className='flex justify-center icon1' style={{alignItems:'center'}}>{icon}</div>
           <div className="icon-side-words">
-            <h3>{title}</h3>
+            <h3 className='h3-bookdemopage'>{title}</h3>
             <p>{description}</p>
           </div>
         </div>
