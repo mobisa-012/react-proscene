@@ -2,14 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Axioforma';
-  src: url('./components/assets/fonts/axiforma-regular.woff2') format('woff2'),
-       url('./components/assets/fonts/axiforma-regular.woff') format('woff'),
-       url('./components/assets/fonts/axiforma-regular.eot') format('eot');
-  font-weight: 400;
-  font-style: normal;
-}
+
 
 @layer components {
     .card {

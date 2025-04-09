@@ -351,7 +351,6 @@
   > .menu-item
   > a
   span {
-  font-family: Axiforma;
   font-size: 18px;
   letter-spacing: -0.03em;
   line-height: 20px;
@@ -457,7 +456,6 @@
   > a {
   color: #16213d;
   display: block;
-  font-family: Axiforma;
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
@@ -1016,7 +1014,6 @@
   color: #16213d;
   display: -ms-flexbox;
   display: flex;
-  font-family: Axiforma;
   font-size: 14px;
   font-weight: 300;
   gap: 8px;
@@ -1461,7 +1458,6 @@
   border-radius: 6px;
   display: -ms-flexbox;
   display: flex;
-  font-family: Axiforma;
   font-size: 14px;
   font-weight: 300;
   gap: 8px;
@@ -2022,7 +2018,6 @@
   border-radius: 6px;
   display: -ms-flexbox;
   display: flex;
-  font-family: Axiforma;
   font-size: 14px;
   font-weight: 300;
   gap: 8px;
@@ -2975,7 +2970,6 @@
   border-radius: 6px;
   display: -ms-flexbox;
   display: flex;
-  font-family: Axiforma;
   font-size: 14px;
   font-weight: 300;
   gap: 8px;
@@ -3430,7 +3424,6 @@
   padding: 17px 32px;
 }
 .site-header .tab-pane .banner-description {
-  font-family: Axiforma;
   font-size: 24px;
   font-weight: 600;
   letter-spacing: -0.72px;
@@ -3450,7 +3443,6 @@
 }
 .site-header .tab-pane .one-row .item-content-area-title {
   color: #16213d;
-  font-family: Axiforma;
   font-size: 16px;
   font-weight: 600;
   line-height: 18px;
@@ -3536,7 +3528,6 @@
 }
 .site-header .block-area .item-content-area-title {
   color: #16213d;
-  font-family: Axiforma;
   font-size: 18px;
   font-weight: 600;
   line-height: 20px;
@@ -3559,7 +3550,6 @@
 }
 .site-header .block-area .item-content-area-description {
   color: rgba(22, 33, 61, 0.8);
-  font-family: Open Sans;
   font-size: 14px;
   font-weight: 300;
   line-height: 18px;
@@ -3632,7 +3622,6 @@
 }
 .site-header .other-items-wrapper .item-title-area .item-title {
   color: #16213d;
-  font-family: Axiforma Book;
   font-size: 16px;
   font-weight: 300;
   line-height: 18px;
@@ -3663,7 +3652,6 @@
 .site-header .other-items-wrapper .item-content-area-title {
   color: rgba(22, 33, 61, 0.8);
   display: block;
-  font-family: Open Sans;
   font-size: 14px;
   font-weight: 300;
   line-height: 18px;
@@ -4119,7 +4107,6 @@
   border-radius: 10px;
   display: -ms-flexbox;
   display: flex;
-  font-family: Axiforma;
   font-size: 14px;
   font-weight: 600;
   height: 54px;
@@ -4420,7 +4407,6 @@
   > .fixed-menu-wrapper
   .menu-item-parent-link {
   display: block;
-  font-family: Axiforma;
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;

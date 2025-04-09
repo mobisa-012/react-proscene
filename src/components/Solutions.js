@@ -89,7 +89,7 @@ const SolutionsLayout = () => {
     <div className="flex flex-col my-16 justify-center items-center maxWidthContainer mx-auto">
       {/* Title and Description Above Cards */}
       <div className="text-center mb-8">
-        <h2 className="text-[20px] font-bold text-[#16213d] font-axioforma mb-[10px] ml-auto mr-auto">
+        <h2 className="text-[20px] font-bold text-[#16213d] mb-[10px] ml-auto mr-auto">
           Enter a world of solutions, designed for your business
         </h2>
         <p className="text-[15px] text-[#343434]">

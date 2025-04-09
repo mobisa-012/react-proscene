@@ -40,7 +40,7 @@ const Card = ({ title, description, image, hoverText, navigationLink }) => {
       >
         <h3
           id={title}
-          className={`text-xl font-medium font-axioforma transition-all duration-500 ${
+          className={`text-xl font-medium transition-all duration-500 ${
             isHovered ? 'text-7xl scale-110 ml-20' : 'text-xl scale-100'
           }`}
         >

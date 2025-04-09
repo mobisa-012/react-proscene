@@ -36,7 +36,7 @@ function Home() {
         {/* <div><Moresection /></div> */}
         <div className="text-center my-[6rem]">
             <h2
-              className="text-4xl font-bold font-axioforma leading-relaxed tracking-tight text-[#55bbf9]"
+              className="text-4xl font-bold leading-relaxed tracking-tight text-[#55bbf9]"
               style={{
                 fontSize: 'clamp(1.4238rem, 1.0921rem + 1.6585vw, 2.6469rem)',
               }}

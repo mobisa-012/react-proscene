@@ -17,8 +17,8 @@ function LegalCollaboration() {
         <AboutLegal/>
         <CoopNav/>
         <div className="flex flex-col items-center max-w-7xl py-28 bg-white mx-auto">
-            <h2 className="text-center text-5xl mb-20 text-[#001e62] font-axioforma font-semibold tracking-wider">We help you</h2>
-            <h2 className="text-center text-[#00abfa] font-extrabold text-7xl font-axioforma tracking-widest">WORK WITHOUT BORDERS</h2>
+            <h2 className="text-center text-5xl mb-20 text-[#001e62] font-semibold tracking-wider">We help you</h2>
+            <h2 className="text-center text-[#00abfa] font-extrabold text-7xl  tracking-widest">WORK WITHOUT BORDERS</h2>
         </div>
         <StrategyDesign/>
         <Stats/>
