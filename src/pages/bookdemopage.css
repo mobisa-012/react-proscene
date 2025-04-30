@@ -2,7 +2,7 @@
 .icon1 >*{
     font-size: 1.7em;
     margin-right: 1em;
-    color: #a142ff;
+    /* color: #a142ff; */
 }
 .login-main-container{
     display: flex;

@@ -761,7 +761,7 @@ function Navbar() {
                             See how Proscene works for you
                           </div>
                           <a
-                            className="btn"
+                            className="btn" style={{backgroundColor: '#4f46e5', padding:'.7em', color: '#fff', borderRadius:'10px'}}
                             href="/bookDemo"
                           >
                             Book a demo
