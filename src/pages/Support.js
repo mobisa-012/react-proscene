@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect} from "react";
 import "../global.css";
 import homeSvg from "../components/assets/help.webp";
 import { useNavigate } from "react-router-dom";
