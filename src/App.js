@@ -39,6 +39,9 @@ import Vogel from "./pages/Vogel";
 import Extron from "./pages/Extron";
 import BookDemoPage from "./pages/BookDemoPage";
 import Support from "./pages/Support";
+import RoomBasedAV from "./components/AvIntegration-components/RoomBasedAV";
+import DigitalSignage from "./components/AvIntegration-components/DigitalSignage";
+import DisplaySystems from "./components/AvIntegration-components/DisplaySystems";
 
 function App() {
   return (
@@ -53,6 +56,9 @@ function App() {
       <Route path="/case-studies" element={<Casestudies />} />      
       <Route path="/partners" element={<Partners />} />
       <Route path="/contact" element={<Contact />} />
+       <Route path="/RoomBasedAV" element={<RoomBasedAV />} />
+       <Route path="/DigitalSignage" element={<DigitalSignage />} />
+       <Route path="/DisplaySystems" element={<DisplaySystems />} />
       {/* Submenus pages */}
       <Route path="/avIntegration" element={<AVIntegrations />} />
       <Route path="/collaborationSolutions" element={<CollaborationSolutions />} />

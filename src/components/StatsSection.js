@@ -54,18 +54,9 @@ const Stats = () => {
        
         <div className="flex justify-center items-center">
         <div 
-          className="relative w-[450px] h-[450px] rounded-full border-4 border-red-500 overflow-hidden"
+          className="relative w-[450px] h-[450px] rounded-xl border-4 border-white-500 overflow-hidden"
         >
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Replace with your video URL
-            title="Video Example"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="absolute inset-0 w-full h-full"
-          ></iframe>
+          <iframe width="916" height="515" src="https://www.youtube.com/embed/Txv2PRYQA6Q" title="5 Must Have Interactive Display In 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
       </div>

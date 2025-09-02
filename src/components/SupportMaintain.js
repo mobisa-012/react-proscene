@@ -1,5 +1,5 @@
 import React from 'react';
-import sup from './assets/sup.jpg';
+import sup from './assets/nera-offices-london-2-1200x847.jpg';
 
 const SupportMaintain = () => {
   return (
@@ -19,17 +19,18 @@ const SupportMaintain = () => {
         <div className="lg:w-1/2 space-y-10 ml-[1em] sm:ml-[2em]">
           <h2 className="text-[] font-bold text-2xl">SUPPORT & MAINTAIN</h2>
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            Sideline support you can count on
+            Support you can count on
           </h1>
-          <p className="text-lg">
-            Sports teams can’t perform without managers or support staff. And the same goes for the 
-            technology that powers an arena experience. At Diversified, we offer end-to-end management 
+          <p className="text-lg mb-4">
+            At Proscene, we offer end-to-end management 
             and support for every solution we design, configure and integrate. Winning, after all, is 
             about more than the starting line-up. It’s about lasting performance.
           </p>
-          <button className="bg-[#3b37e6] border hover:bg-white hover:text-[#3b37e6] text-white font-medium px-6 py-3 rounded-[20px]">
-            Lease Equipemt Now
-          </button>
+          <div>
+            <a className="bg-[#3b37e6] border hover:bg-white hover:text-[#3b37e6] text-white font-medium px-6 py-3 mt-4 rounded-[20px]" href="/contact">
+              contact our team
+            </a>
+          </div>
         </div>
 
        

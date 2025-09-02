@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { useMediaQuery } from "react-responsive";
-import logoHome from './assets/logo.png';
-import solutionsimg from './assets/adi.jpeg';
+import logoHome from "./assets/logo.png";
+import solutionsimg from "./assets/adi.jpeg";
 
 function Navbar() {
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
@@ -13,7 +14,6 @@ function Navbar() {
   // const [activeMenu, setActiveMenu] = useState(null);
   const [isActive, setIsActive] = useState(false);
   const [activeMenu, setActiveMenu] = useState({});
-
 
   // const handleToggle = () => {
   //   setIsActive((prev) => !prev);
@@ -81,14 +81,18 @@ function Navbar() {
      en    "
     >
       <div className="site-header__inner">
-        <div className="container site-header__container" style={{maxWidth: '1400px',
-  margin: '0 auto', paddingInline:'1em'}}>
+        <div
+          className="container site-header__container"
+          style={{ maxWidth: "1400px", margin: "0 auto", paddingInline: "1em" }}
+        >
           <div className="site-header__logo">
-            <a
-              href="/"
-              className="site-header__logo-link"
-            >
-              <img className="style-svg site-header__logo-img" src={logoHome} style={{maxHeight:'35px', minHeight:'25px'}} alt="Proscene"></img>
+            <a href="/" className="site-header__logo-link">
+              <img
+                className="style-svg site-header__logo-img"
+                src={logoHome}
+                style={{ maxHeight: "35px", minHeight: "25px" }}
+                alt="Proscene"
+              ></img>
             </a>
           </div>
 
@@ -108,10 +112,7 @@ function Navbar() {
                   <div className="sub-menu-wrapper mega-menu-wrapper">
                     <ul className="sub-menu">
                       <div className="tab-header retail-management style-purple menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                        <a
-                          href="/avIntegration"
-                          data-tab="20803"
-                        >
+                        <a href="/avIntegration" data-tab="20803">
                           <span>Audio Visual Integration</span>
                         </a>
                       </div>
@@ -487,8 +488,7 @@ function Navbar() {
                         </div>
                         <div className="banner purple">
                           <div className="banner-description">
-                            See how Proscene AV Solutions
-                            works for you
+                            See how Proscene AV Solutions works for you
                           </div>
                           <a className="btn" href="/bookDemo">
                             Book a demo
@@ -497,10 +497,7 @@ function Navbar() {
                       </div>
                       <div className="tab-header erp style-blue menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
                         {/* active above */}
-                        <a
-                          href="/collaborationSolutions"
-                          data-tab="20759"
-                        >
+                        <a href="/collaborationSolutions" data-tab="20759">
                           <span>Collaboration Solutions</span>
                         </a>
                       </div>
@@ -524,9 +521,10 @@ function Navbar() {
                                     id="menu-item-20761"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
-                                    <a href="">
+                                    <a href="/RoomBasedAV">
                                       <span>
-                                        Analytics and Business Insights
+                                        Room-based AV (conference rooms,
+                                        classrooms, auditoriums)
                                       </span>
                                     </a>
                                   </li>
@@ -534,16 +532,20 @@ function Navbar() {
                                     id="menu-item-31540"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
-                                    <a href="">
-                                      <span>Cloud ERP</span>
+                                    <a href="/DigitalSignage">
+                                      <span>
+                                        Digital signage and wayfinding
+                                      </span>
                                     </a>
                                   </li>
                                   <li
                                     id="menu-item-20763"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
-                                    <a href="">
-                                      <span>CRM and Sales</span>
+                                    <a href="DisplaySystems">
+                                      <span>
+                                        Display systems and audio reinforcement
+                                      </span>
                                     </a>
                                   </li>
                                   <li
@@ -551,7 +553,7 @@ function Navbar() {
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
                                     <a href="">
-                                      <span>Equipment Rental</span>
+                                      <span>Microsoft Teams / Zoom Rooms</span>
                                     </a>
                                   </li>
                                   <li
@@ -559,7 +561,7 @@ function Navbar() {
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
                                     <a href="">
-                                      <span>Financial Management</span>
+                                      <span>Hybrid meeting solutions</span>
                                     </a>
                                   </li>
                                   <li
@@ -567,7 +569,7 @@ function Navbar() {
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
                                     <a href="">
-                                      <span>Human Resources Management</span>
+                                      <span>Wireless presentation systems</span>
                                     </a>
                                   </li>
                                   <li
@@ -575,7 +577,7 @@ function Navbar() {
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
                                     <a href="">
-                                      <span>Mobile ERP</span>
+                                      <span>IPTV</span>
                                     </a>
                                   </li>
                                   <li
@@ -583,7 +585,7 @@ function Navbar() {
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
                                     <a href="">
-                                      <span>Project Management</span>
+                                      <span>Video walls & LED displays</span>
                                     </a>
                                   </li>
                                   <li
@@ -591,7 +593,9 @@ function Navbar() {
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
                                     <a href="">
-                                      <span>Portal Generator</span>
+                                      <span>
+                                        Interactive kiosks and screens
+                                      </span>
                                     </a>
                                   </li>
                                   <li
@@ -599,7 +603,7 @@ function Navbar() {
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
                                     <a href="">
-                                      <span>Priority Payments</span>
+                                      <span>Room scheduling systems</span>
                                     </a>
                                   </li>
                                   <li
@@ -607,7 +611,7 @@ function Navbar() {
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
                                     <a href="">
-                                      <span>Supply Chain Management</span>
+                                      <span>Touch panel control</span>
                                     </a>
                                   </li>
                                   <li
@@ -615,7 +619,10 @@ function Navbar() {
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
                                     <a href="">
-                                      <span>Warehouse Management</span>
+                                      <span>
+                                        Building-wide AV automation (via
+                                        Crestron, Extron)
+                                      </span>
                                     </a>
                                   </li>
                                   <li
@@ -634,124 +641,34 @@ function Navbar() {
                               className="columns-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"
                             >
                               <a href="#">
-                                <span>Industries</span>
+                                <span>Proscene</span>
                               </a>
-                              <div className="sub-menu-wrapper">
-                                <ul className="sub-menu">
-                                  <li
-                                    id="menu-item-20760"
-                                    className="menu-item menu-item-type-post_type menu-item-object-page"
-                                  >
-                                    <a href="">
-                                      <span>Agriculture</span>
+                              <div className="block-area blue custom-image">
+                                <div className="block-image">
+                                  <img
+                                    src={solutionsimg}
+                                    className="menu-item-image"
+                                    style={{
+                                      borderRadius: "10px",
+                                      maxHeight: "200px",
+                                    }}
+                                    alt=""
+                                    data-lazy-src=""
+                                  ></img>
+                                </div>
+                                <div className="item-content-area">
+                                  <div className="item-content-area-title dark">
+                                    Certified for your AV Solution in 2025
+                                  </div>
+                                  <div className="item-content-area-description">
+                                    Insight Report on AV Solutions.
+                                  </div>
+                                  <div className="item-content-area-button">
+                                    <a href="/contact" className="btn blue p-2">
+                                      See certifications
                                     </a>
-                                  </li>
-                                  <li
-                                    id="menu-item-20762"
-                                    className="menu-item menu-item-type-post_type menu-item-object-page"
-                                  >
-                                    <a href="">
-                                      <span>Construction</span>
-                                    </a>
-                                  </li>
-                                  <li
-                                    id="menu-item-20764"
-                                    className="menu-item menu-item-type-post_type menu-item-object-page"
-                                  >
-                                    <a href="">
-                                      <span>Electronics</span>
-                                    </a>
-                                  </li>
-                                  <li
-                                    id="menu-item-20767"
-                                    className="menu-item menu-item-type-post_type menu-item-object-page"
-                                  >
-                                    <a href="">
-                                      <span>Financial Services</span>
-                                    </a>
-                                  </li>
-                                  <li
-                                    id="menu-item-20768"
-                                    className="menu-item menu-item-type-post_type menu-item-object-page"
-                                  >
-                                    <a href="">
-                                      <span>Healthcare</span>
-                                    </a>
-                                  </li>
-                                  <li
-                                    id="menu-item-20771"
-                                    className="menu-item menu-item-type-post_type menu-item-object-page"
-                                  >
-                                    <a href="">
-                                      <span>Manufacturing</span>
-                                    </a>
-                                  </li>
-                                  <li
-                                    id="menu-item-20772"
-                                    className="menu-item menu-item-type-post_type menu-item-object-page"
-                                  >
-                                    <a href="">
-                                      <span>Medical Devices</span>
-                                    </a>
-                                  </li>
-                                  <li
-                                    id="menu-item-20781"
-                                    className="menu-item menu-item-type-post_type menu-item-object-page"
-                                  >
-                                    <a href="">
-                                      <span>Municipalities</span>
-                                    </a>
-                                  </li>
-                                  <li
-                                    id="menu-item-20782"
-                                    className="menu-item menu-item-type-post_type menu-item-object-page"
-                                  >
-                                    <a href="">
-                                      <span>Nonprofits</span>
-                                    </a>
-                                  </li>
-                                  <li
-                                    id="menu-item-20783"
-                                    className="menu-item menu-item-type-post_type menu-item-object-page"
-                                  >
-                                    <a href="">
-                                      <span>Pharmaceutical</span>
-                                    </a>
-                                  </li>
-                                  <li
-                                    id="menu-item-20784"
-                                    className="menu-item menu-item-type-post_type menu-item-object-page"
-                                  >
-                                    <a href="">
-                                      <span>Professional Services</span>
-                                    </a>
-                                  </li>
-                                  <li
-                                    id="menu-item-20785"
-                                    className="menu-item menu-item-type-post_type menu-item-object-page"
-                                  >
-                                    <a href="">
-                                      <span>Retail</span>
-                                    </a>
-                                  </li>
-                                  <li
-                                    id="menu-item-20786"
-                                    className="menu-item menu-item-type-post_type menu-item-object-page"
-                                  >
-                                    <a href="">
-                                      <span>Software and Technology</span>
-                                    </a>
-                                  </li>
-                                  <li
-                                    id="menu-item-20787"
-                                    className="menu-item menu-item-type-post_type menu-item-object-page"
-                                  >
-                                    <a href="">
-                                      <span>Wholesale & Distribution</span>
-                                    </a>
-                                  </li>{" "}
-                                </ul>
-                                {/* <img src={logoHome} alt="Industries" /> */}
+                                  </div>
+                                </div>
                               </div>
                             </li>{" "}
                           </ul>
@@ -761,7 +678,13 @@ function Navbar() {
                             See how Proscene works for you
                           </div>
                           <a
-                            className="btn" style={{backgroundColor: '#4f46e5', padding:'.7em', color: '#fff', borderRadius:'10px'}}
+                            className="btn"
+                            style={{
+                              backgroundColor: "#4f46e5",
+                              padding: ".7em",
+                              color: "#fff",
+                              borderRadius: "10px",
+                            }}
                             href="/bookDemo"
                           >
                             Book a demo
@@ -769,10 +692,7 @@ function Navbar() {
                         </div>
                       </div>
                       <div className="tab-header hospitality-management style-light-blue menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                        <a
-                          href="/digitalMedia"
-                          data-tab="20822"
-                        >
+                        <a href="/digitalMedia" data-tab="20822">
                           <span>Digital Media</span>
                         </a>
                       </div>
@@ -948,8 +868,7 @@ function Navbar() {
                         </div>
                         <div className="banner light-blue">
                           <div className="banner-description">
-                            See how the Proscene Solution
-                            works for you
+                            See how the Proscene Solution works for you
                           </div>
                           <a className="btn" href="/bookDemo">
                             Book a demo
@@ -957,13 +876,10 @@ function Navbar() {
                         </div>
                       </div>
                       <div className="tab-header school-management style-coral menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                        <a
-                          href="/automationSolutions"
-                          data-tab="20831"
-                        >
+                        <a href="/automationSolutions" data-tab="20831">
                           <span>Automation Solutions</span>
                         </a>
-                      </div>                      
+                      </div>
                       <div
                         id="tab-20831"
                         className="tab-pane school-management style-coral menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"
@@ -984,10 +900,7 @@ function Navbar() {
                                   </div>
                                   <div className="item-content-area-description"></div>
                                   <div className="item-content-area-button">
-                                    <a
-                                      href=""
-                                      className="btn blue"
-                                    >
+                                    <a href="" className="btn blue">
                                       Read more
                                     </a>
                                   </div>
@@ -1044,7 +957,13 @@ function Navbar() {
                         >
                           <div className="block-area blue custom-image">
                             <div className="block-image">
-                              <img src={solutionsimg} className="menu-item-image" style={{borderRadius:'10px'}} alt="" data-lazy-src=""></img>
+                              <img
+                                src={solutionsimg}
+                                className="menu-item-image"
+                                style={{ borderRadius: "10px" }}
+                                alt=""
+                                data-lazy-src=""
+                              ></img>
                             </div>
                             <div className="item-content-area">
                               <div className="item-content-area-title dark">
@@ -1054,10 +973,7 @@ function Navbar() {
                                 Insight Report on AV Solutions for SMBs
                               </div>
                               <div className="item-content-area-button">
-                                <a
-                                  href="/contact"
-                                  className="btn blue p-2"
-                                >
+                                <a href="/contact" className="btn blue p-2">
                                   Contact us
                                 </a>
                               </div>
@@ -1070,10 +986,7 @@ function Navbar() {
                           id="menu-item-33327"
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
-                          <a
-                            href="/corporate"
-                            className="item-link"
-                          >
+                          <a href="/corporate" className="item-link">
                             <span className="item-title-area">
                               <span className="item-title">Corporate</span>
                             </span>
@@ -1087,14 +1000,9 @@ function Navbar() {
                           id="menu-item-20837"
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
-                          <a
-                            href="/education"
-                            className="item-link"
-                          >
+                          <a href="/education" className="item-link">
                             <span className="item-title-area">
-                              <span className="item-title">
-                                Education
-                              </span>
+                              <span className="item-title">Education</span>
                             </span>
                             <span className="item-content-area-title">
                               Grow your business by joining Priority's extensive
@@ -1106,14 +1014,9 @@ function Navbar() {
                           id="menu-item-20838"
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
-                          <a
-                            href="/publicSector"
-                            className="item-link"
-                          >
+                          <a href="/publicSector" className="item-link">
                             <span className="item-title-area">
-                              <span className="item-title">
-                                Public Sector
-                              </span>
+                              <span className="item-title">Public Sector</span>
                             </span>
                             <span className="item-content-area-title">
                               Utilize Priority’s global reach and expertise to
@@ -1125,10 +1028,7 @@ function Navbar() {
                           id="menu-item-20839"
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
-                          <a
-                            href="/healthcare"
-                            className="item-link"
-                          >
+                          <a href="/healthcare" className="item-link">
                             <span className="item-title-area">
                               <span className="item-title">Healthcare</span>
                             </span>
@@ -1143,10 +1043,7 @@ function Navbar() {
                           id="menu-item-20840"
                           className="menu-item menu-item-type-custom menu-item-object-custom"
                         >
-                          <a
-                            href="/legalCollaboration"
-                            className="item-link"
-                          >
+                          <a href="/legalCollaboration" className="item-link">
                             <span className="item-title-area">
                               <span className="item-title">
                                 Legal Collaboration
@@ -1199,7 +1096,13 @@ function Navbar() {
                                     fill="#3B37E6"
                                   ></path>
                                 </svg>
-                                <img src={solutionsimg} className="menu-item-image" style={{borderRadius:'10px'}} alt="" data-lazy-src=""></img>
+                                <img
+                                  src={solutionsimg}
+                                  className="menu-item-image"
+                                  style={{ borderRadius: "10px" }}
+                                  alt=""
+                                  data-lazy-src=""
+                                ></img>
                               </a>
                             </div>
                             <div className="item-content-area">
@@ -1209,10 +1112,7 @@ function Navbar() {
                               </div>
                               <div className="item-content-area-description"></div>
                               <div className="item-content-area-button">
-                                <a
-                                  href="/bookDemo"
-                                  className="btn blue p-2"
-                                >
+                                <a href="/bookDemo" className="btn blue p-2">
                                   Want to know more?
                                 </a>
                               </div>
@@ -1225,10 +1125,7 @@ function Navbar() {
                           id="menu-item-20844"
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
-                          <a
-                            href="/about"
-                            className="item-link"
-                          >
+                          <a href="/about" className="item-link">
                             <span className="item-title-area">
                               <span className="item-title">About us</span>
                             </span>
@@ -1243,10 +1140,7 @@ function Navbar() {
                           id="menu-item-20842"
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
-                          <a
-                            href="/case-studies"
-                            className="item-link"
-                          >
+                          <a href="/case-studies" className="item-link">
                             <span className="item-title-area">
                               <span className="item-title">Case studies</span>
                             </span>
@@ -1260,7 +1154,7 @@ function Navbar() {
                           id="menu-item-20843"
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         > */}
-                          {/* <a
+                        {/* <a
                             href=""
                             className="item-link"
                           >
@@ -1310,10 +1204,7 @@ function Navbar() {
                           id="menu-item-23000"
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
-                          <a
-                            href="/contact"
-                            className="item-link"
-                          >
+                          <a href="/contact" className="item-link">
                             <span className="item-title-area">
                               <span className="item-title">Contact us</span>
                             </span>
@@ -1364,7 +1255,13 @@ function Navbar() {
                                     fill="#3B37E6"
                                   ></path>
                                 </svg>
-                                <img src={solutionsimg} className="menu-item-image" style={{borderRadius:'10px'}} alt="" data-lazy-src=""></img>
+                                <img
+                                  src={solutionsimg}
+                                  className="menu-item-image"
+                                  style={{ borderRadius: "10px" }}
+                                  alt=""
+                                  data-lazy-src=""
+                                ></img>
                               </a>
                             </div>
                             <div className="item-content-area">
@@ -1375,10 +1272,7 @@ function Navbar() {
                                 Discover how Proscene’s powerful features
                               </div>
                               <div className="item-content-area-button">
-                                <a
-                                  href="/bookDemo"
-                                  className="btn blue p-2"
-                                >
+                                <a href="/bookDemo" className="btn blue p-2">
                                   Let's go
                                 </a>
                               </div>
@@ -1396,7 +1290,9 @@ function Navbar() {
                             className="item-link"
                           >
                             <span className="item-title-area">
-                              <span className="item-title">Unified Communications</span>
+                              <span className="item-title">
+                                Unified Communications
+                              </span>
                             </span>
                             <span className="item-content-area-title">
                               Explore latest insights, trends, and updates in
@@ -1408,12 +1304,11 @@ function Navbar() {
                           id="menu-item-20850"
                           className="menu-item menu-item-type-custom menu-item-object-custom"
                         >
-                          <a
-                            href="/trainingAndSupport"
-                            className="item-link"
-                          >
+                          <a href="/trainingAndSupport" className="item-link">
                             <span className="item-title-area">
-                              <span className="item-title">Training And Support</span>
+                              <span className="item-title">
+                                Training And Support
+                              </span>
                             </span>
                             <span className="item-content-area-title">
                               Browse and view brochures for detailed information
@@ -1425,12 +1320,11 @@ function Navbar() {
                           id="menu-item-20851"
                           className="menu-item menu-item-type-custom menu-item-object-custom"
                         >
-                          <a
-                            href="/onSiteSupport"
-                            className="item-link"
-                          >
+                          <a href="/onSiteSupport" className="item-link">
                             <span className="item-title-area">
-                              <span className="item-title">On-Site Support</span>
+                              <span className="item-title">
+                                On-Site Support
+                              </span>
                             </span>
                             <span className="item-content-area-title">
                               Tune in for in-depth knowledge, industry trends,
@@ -1442,12 +1336,11 @@ function Navbar() {
                           id="menu-item-20852"
                           className="menu-item menu-item-type-custom menu-item-object-custom"
                         >
-                          <a
-                            href="/equipmentRepair"
-                            className="item-link"
-                          >
+                          <a href="/equipmentRepair" className="item-link">
                             <span className="item-title-area">
-                              <span className="item-title">Equipment Repair</span>
+                              <span className="item-title">
+                                Equipment Repair
+                              </span>
                             </span>
                             <span className="item-content-area-title">
                               Browse our video library for product demos,
@@ -1459,10 +1352,7 @@ function Navbar() {
                           id="menu-item-20848"
                           className="menu-item menu-item-type-post_type menu-item-object-page"
                         >
-                          <a
-                            href="/leasing"
-                            className="item-link"
-                          >
+                          <a href="/leasing" className="item-link">
                             <span className="item-title-area">
                               <span className="item-title">Leasing</span>
                             </span>
@@ -1481,7 +1371,9 @@ function Navbar() {
                             className="item-link"
                           >
                             <span className="item-title-area">
-                              <span className="item-title">Video Conference Rental</span>
+                              <span className="item-title">
+                                Video Conference Rental
+                              </span>
                             </span>
                             <span className="item-content-area-title">
                               Dive into in-depth blog posts for unique
@@ -1503,13 +1395,9 @@ function Navbar() {
                 </li>
               </ul>
             </nav>
-            
 
             <div className="site-header__button-wrapper">
-              <a
-                href="/bookDemo"
-                className="site-header__button"
-              >
+              <a href="/bookDemo" className="site-header__button">
                 Get a Demo
               </a>
             </div>
@@ -1536,8 +1424,12 @@ function Navbar() {
         className="mobile-menu-overlay js-mobile-menu-overlay"
         data-role="mobile-menu-action"
       ></div>
-      <div id="mobile-menu"
-      className={`mobile-menu js-mobile-menu ${isMobileMenuOpen ? "show" : ""}`}>
+      <div
+        id="mobile-menu"
+        className={`mobile-menu js-mobile-menu ${
+          isMobileMenuOpen ? "show" : ""
+        }`}
+      >
         <div className="mobile-menu__container">
           <nav className="mobile-menu__nav">
             <ul
@@ -1547,9 +1439,9 @@ function Navbar() {
               <li
                 id="menu-item-20880"
                 onClick={() => handleToggle("menu-item-20880")}
-  className={`mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20880 ${
-    activeMenu["menu-item-20880"] ? "active" : ""
-  }`}
+                className={`mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20880 ${
+                  activeMenu["menu-item-20880"] ? "active" : ""
+                }`}
               >
                 {/* added active above */}
                 <a
@@ -1561,23 +1453,22 @@ function Navbar() {
                 >
                   Solutions<span className="sub-menu-toggle"></span>
                 </a>
-                <ul className={`sub-menu ${
-      activeMenu["menu-item-20880"] ? "active" : ""
-    }`}
-    style={{
-      maxHeight: activeMenu["menu-item-20880"] ? "241px" : "0px",
-      overflow: "hidden",
-      transition: "max-height 0.3s ease",
-    }}
-    onClick={() => handleToggle("menu-item-20880")} >
+                <ul
+                  className={`sub-menu ${
+                    activeMenu["menu-item-20880"] ? "active" : ""
+                  }`}
+                  style={{
+                    maxHeight: activeMenu["menu-item-20880"] ? "241px" : "0px",
+                    overflow: "hidden",
+                    transition: "max-height 0.3s ease",
+                  }}
+                  onClick={() => handleToggle("menu-item-20880")}
+                >
                   <li
                     id="menu-item-20881"
                     className="style-blue menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20881 active"
                   >
-                    <a
-                      href=""
-                      data-role="sub-mega-menu-action"
-                    >
+                    <a href="" data-role="sub-mega-menu-action">
                       ERP
                     </a>
                     <div className="fixed-menu-wrapper js-fixed-menu-wrapper">
@@ -1588,10 +1479,7 @@ function Navbar() {
                         >
                           Solutions
                         </button>
-                        <a
-                          href=""
-                          className="menu-item-parent-link"
-                        >
+                        <a href="" className="menu-item-parent-link">
                           ERP
                         </a>{" "}
                         <li
@@ -1608,105 +1496,79 @@ function Navbar() {
                               id="menu-item-20883"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20883"
                             >
-                              <a href="">
-                                Analytics and Business Insights
-                              </a>
+                              <a href="">Analytics and Business Insights</a>
                             </li>
                             <li
                               id="menu-item-31544"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-31544"
                             >
-                              <a href="">
-                                Cloud ERP
-                              </a>
+                              <a href="">Cloud ERP</a>
                             </li>
                             <li
                               id="menu-item-20884"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20884"
                             >
-                              <a href="">
-                                CRM and Sales
-                              </a>
+                              <a href="">CRM and Sales</a>
                             </li>
                             <li
                               id="menu-item-20885"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20885"
                             >
-                              <a href="">
-                                Equipment Rental
-                              </a>
+                              <a href="">Equipment Rental</a>
                             </li>
                             <li
                               id="menu-item-20886"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20886"
                             >
-                              <a href="">
-                                Financial Management
-                              </a>
+                              <a href="">Financial Management</a>
                             </li>
                             <li
                               id="menu-item-20887"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20887"
                             >
-                              <a href="">
-                                Human Resources Management
-                              </a>
+                              <a href="">Human Resources Management</a>
                             </li>
                             <li
                               id="menu-item-20888"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20888"
                             >
-                              <a href="">
-                                Mobile ERP
-                              </a>
+                              <a href="">Mobile ERP</a>
                             </li>
                             <li
                               id="menu-item-20889"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20889"
                             >
-                              <a href="">
-                                Project Management
-                              </a>
+                              <a href="">Project Management</a>
                             </li>
                             <li
                               id="menu-item-20890"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20890"
                             >
-                              <a href="">
-                                Portal Generator
-                              </a>
+                              <a href="">Portal Generator</a>
                             </li>
                             <li
                               id="menu-item-20891"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20891"
                             >
-                              <a href="">
-                                Priority Payments
-                              </a>
+                              <a href="">Priority Payments</a>
                             </li>
                             <li
                               id="menu-item-20892"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20892"
                             >
-                              <a href="">
-                                Supply Chain Management
-                              </a>
+                              <a href="">Supply Chain Management</a>
                             </li>
                             <li
                               id="menu-item-20893"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20893"
                             >
-                              <a href="">
-                                Warehouse management
-                              </a>
+                              <a href="">Warehouse management</a>
                             </li>
                             <li
                               id="menu-item-20894"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20894"
                             >
-                              <a href="">
-                                Localizations
-                              </a>
+                              <a href="">Localizations</a>
                             </li>
                           </ul>
                         </li>
@@ -1720,113 +1582,85 @@ function Navbar() {
                               id="menu-item-20896"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20896"
                             >
-                              <a href="">
-                                Agriculture
-                              </a>
+                              <a href="">Agriculture</a>
                             </li>
                             <li
                               id="menu-item-20897"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20897"
                             >
-                              <a href="">
-                                Construction
-                              </a>
+                              <a href="">Construction</a>
                             </li>
                             <li
                               id="menu-item-20898"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20898"
                             >
-                              <a href="">
-                                Electronics
-                              </a>
+                              <a href="">Electronics</a>
                             </li>
                             <li
                               id="menu-item-20899"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20899"
                             >
-                              <a href="">
-                                Financial Services
-                              </a>
+                              <a href="">Financial Services</a>
                             </li>
                             <li
                               id="menu-item-20900"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20900"
                             >
-                              <a href="">
-                                Healthcare
-                              </a>
+                              <a href="">Healthcare</a>
                             </li>
                             <li
                               id="menu-item-20901"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20901"
                             >
-                              <a href="">
-                                Manufacturing
-                              </a>
+                              <a href="">Manufacturing</a>
                             </li>
                             <li
                               id="menu-item-20902"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20902"
                             >
-                              <a href="">
-                                Medical Devices
-                              </a>
+                              <a href="">Medical Devices</a>
                             </li>
                             <li
                               id="menu-item-20903"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20903"
                             >
-                              <a href="">
-                                Municipalities
-                              </a>
+                              <a href="">Municipalities</a>
                             </li>
                             <li
                               id="menu-item-20904"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20904"
                             >
-                              <a href="">
-                                Nonprofits
-                              </a>
+                              <a href="">Nonprofits</a>
                             </li>
                             <li
                               id="menu-item-20905"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20905"
                             >
-                              <a href="">
-                                Pharmaceutical
-                              </a>
+                              <a href="">Pharmaceutical</a>
                             </li>
                             <li
                               id="menu-item-20906"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20906"
                             >
-                              <a href="">
-                                Professional Services
-                              </a>
+                              <a href="">Professional Services</a>
                             </li>
                             <li
                               id="menu-item-20907"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20907"
                             >
-                              <a href="">
-                                Retail
-                              </a>
+                              <a href="">Retail</a>
                             </li>
                             <li
                               id="menu-item-20908"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20908"
                             >
-                              <a href="">
-                                Software and Technology
-                              </a>
+                              <a href="">Software and Technology</a>
                             </li>
                             <li
                               id="menu-item-20909"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20909"
                             >
-                              <a href="">
-                                Wholesale & Distribution
-                              </a>
+                              <a href="">Wholesale & Distribution</a>
                             </li>
                           </ul>
                         </li>
@@ -1837,10 +1671,7 @@ function Navbar() {
                     id="menu-item-20910"
                     className="style-purple menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20910"
                   >
-                    <a
-                      href=""
-                      data-role="sub-mega-menu-action"
-                    >
+                    <a href="" data-role="sub-mega-menu-action">
                       Retail ManagementTrue omnichannel experience
                     </a>
                     <div className="fixed-menu-wrapper js-fixed-menu-wrapper">
@@ -1851,10 +1682,7 @@ function Navbar() {
                         >
                           Solutions
                         </button>
-                        <a
-                          href=""
-                          className="menu-item-parent-link"
-                        >
+                        <a href="" className="menu-item-parent-link">
                           Retail ManagementTrue omnichannel experience
                         </a>{" "}
                         <li
@@ -1867,9 +1695,7 @@ function Navbar() {
                               id="menu-item-20912"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20912"
                             >
-                              <a href="">
-                                Customer loyalty management
-                              </a>
+                              <a href="">Customer loyalty management</a>
                             </li>
                             <li
                               id="menu-item-20913"
@@ -1889,11 +1715,7 @@ function Navbar() {
                                   id="menu-item-20914"
                                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20914"
                                 >
-                                  <a
-                                    href=""
-                                    className="nav__link"
-                                    title=""
-                                  >
+                                  <a href="" className="nav__link" title="">
                                     OneCore Full Cart Mode
                                   </a>
                                 </li>
@@ -1903,9 +1725,7 @@ function Navbar() {
                               id="menu-item-20915"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20915"
                             >
-                              <a href="">
-                                Gift Card Management
-                              </a>
+                              <a href="">Gift Card Management</a>
                             </li>
                             <li
                               id="menu-item-20916"
@@ -1925,11 +1745,7 @@ function Navbar() {
                                   id="menu-item-20917"
                                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20917"
                                 >
-                                  <a
-                                    href=""
-                                    className="nav__link"
-                                    title=""
-                                  >
+                                  <a href="" className="nav__link" title="">
                                     Inventory control
                                   </a>
                                 </li>
@@ -1937,11 +1753,7 @@ function Navbar() {
                                   id="menu-item-20918"
                                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20918"
                                 >
-                                  <a
-                                    href=""
-                                    className="nav__link"
-                                    title=""
-                                  >
+                                  <a href="" className="nav__link" title="">
                                     Purchasing
                                   </a>
                                 </li>
@@ -1949,11 +1761,7 @@ function Navbar() {
                                   id="menu-item-20919"
                                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20919"
                                 >
-                                  <a
-                                    href=""
-                                    className="nav__link"
-                                    title=""
-                                  >
+                                  <a href="" className="nav__link" title="">
                                     Omnichannel CRM
                                   </a>
                                 </li>
@@ -1963,17 +1771,13 @@ function Navbar() {
                               id="menu-item-20920"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20920"
                             >
-                              <a href="">
-                                Order Management
-                              </a>
+                              <a href="">Order Management</a>
                             </li>
                             <li
                               id="menu-item-27053"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-27053"
                             >
-                              <a href="">
-                                Priority MyBranch
-                              </a>
+                              <a href="">Priority MyBranch</a>
                             </li>
                             <li
                               id="menu-item-20921"
@@ -1993,11 +1797,7 @@ function Navbar() {
                                   id="menu-item-20922"
                                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20922"
                                 >
-                                  <a
-                                    href=""
-                                    className="nav__link"
-                                    title=""
-                                  >
+                                  <a href="" className="nav__link" title="">
                                     Priority POS
                                   </a>
                                 </li>
@@ -2005,11 +1805,7 @@ function Navbar() {
                                   id="menu-item-20923"
                                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20923"
                                 >
-                                  <a
-                                    href=""
-                                    className="nav__link"
-                                    title=""
-                                  >
+                                  <a href="" className="nav__link" title="">
                                     TPOS
                                   </a>
                                 </li>
@@ -2017,11 +1813,7 @@ function Navbar() {
                                   id="menu-item-20924"
                                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20924"
                                 >
-                                  <a
-                                    href=""
-                                    className="nav__link"
-                                    title=""
-                                  >
+                                  <a href="" className="nav__link" title="">
                                     QPOS
                                   </a>
                                 </li>
@@ -2029,11 +1821,7 @@ function Navbar() {
                                   id="menu-item-20925"
                                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20925"
                                 >
-                                  <a
-                                    href=""
-                                    className="nav__link"
-                                    title=""
-                                  >
+                                  <a href="" className="nav__link" title="">
                                     Self Service Kiosk
                                   </a>
                                 </li>
@@ -2041,11 +1829,7 @@ function Navbar() {
                                   id="menu-item-20926"
                                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20926"
                                 >
-                                  <a
-                                    href=""
-                                    className="nav__link"
-                                    title=""
-                                  >
+                                  <a href="" className="nav__link" title="">
                                     Mobile Back Office
                                   </a>
                                 </li>
@@ -2055,25 +1839,19 @@ function Navbar() {
                               id="menu-item-27777"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-27777"
                             >
-                              <a href="">
-                                Priority MyBranch
-                              </a>
+                              <a href="">Priority MyBranch</a>
                             </li>
                             <li
                               id="menu-item-20927"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20927"
                             >
-                              <a href="">
-                                Replenishment
-                              </a>
+                              <a href="">Replenishment</a>
                             </li>
                             <li
                               id="menu-item-20928"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20928"
                             >
-                              <a href="">
-                                Retail ERP Software
-                              </a>
+                              <a href="">Retail ERP Software</a>
                             </li>
                           </ul>
                         </li>
@@ -2087,17 +1865,13 @@ function Navbar() {
                               id="menu-item-20930"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20930"
                             >
-                              <a href="">
-                                Apparel & Footwear
-                              </a>
+                              <a href="">Apparel & Footwear</a>
                             </li>
                             <li
                               id="menu-item-20931"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20931"
                             >
-                              <a href="">
-                                Bookstores & Record shops
-                              </a>
+                              <a href="">Bookstores & Record shops</a>
                             </li>
                             <li
                               id="menu-item-20932"
@@ -2112,41 +1886,31 @@ function Navbar() {
                               id="menu-item-20933"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20933"
                             >
-                              <a href="">
-                                Cellular, Electronics & Computers
-                              </a>
+                              <a href="">Cellular, Electronics & Computers</a>
                             </li>
                             <li
                               id="menu-item-20934"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20934"
                             >
-                              <a href="">
-                                Convenience Stores
-                              </a>
+                              <a href="">Convenience Stores</a>
                             </li>
                             <li
                               id="menu-item-20935"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20935"
                             >
-                              <a href="">
-                                Cosmetics
-                              </a>
+                              <a href="">Cosmetics</a>
                             </li>
                             <li
                               id="menu-item-20936"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20936"
                             >
-                              <a href="">
-                                Duty Free
-                              </a>
+                              <a href="">Duty Free</a>
                             </li>
                             <li
                               id="menu-item-20937"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20937"
                             >
-                              <a href="">
-                                Furniture & Home Decor
-                              </a>
+                              <a href="">Furniture & Home Decor</a>
                             </li>
                             <li
                               id="menu-item-20938"
@@ -2160,41 +1924,31 @@ function Navbar() {
                               id="menu-item-20939"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20939"
                             >
-                              <a href="">
-                                Jewelry
-                              </a>
+                              <a href="">Jewelry</a>
                             </li>
                             <li
                               id="menu-item-20940"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20940"
                             >
-                              <a href="">
-                                Liquor / Spirits / Tobacco
-                              </a>
+                              <a href="">Liquor / Spirits / Tobacco</a>
                             </li>
                             <li
                               id="menu-item-20941"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20941"
                             >
-                              <a href="">
-                                Office supplies & general retail
-                              </a>
+                              <a href="">Office supplies & general retail</a>
                             </li>
                             <li
                               id="menu-item-20942"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20942"
                             >
-                              <a href="">
-                                Pet and Animal Supplies
-                              </a>
+                              <a href="">Pet and Animal Supplies</a>
                             </li>
                             <li
                               id="menu-item-20943"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20943"
                             >
-                              <a href="">
-                                Sporting Goods
-                              </a>
+                              <a href="">Sporting Goods</a>
                             </li>
                           </ul>
                         </li>
@@ -2205,10 +1959,7 @@ function Navbar() {
                     id="menu-item-20944"
                     className="style-light-blue menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20944"
                   >
-                    <a
-                      href=""
-                      data-role="sub-mega-menu-action"
-                    >
+                    <a href="" data-role="sub-mega-menu-action">
                       Hospitality Management
                     </a>
                     <div className="fixed-menu-wrapper js-fixed-menu-wrapper">
@@ -2219,10 +1970,7 @@ function Navbar() {
                         >
                           Solutions
                         </button>
-                        <a
-                          href=""
-                          className="menu-item-parent-link"
-                        >
+                        <a href="" className="menu-item-parent-link">
                           Hospitality Management
                         </a>{" "}
                         <li
@@ -2235,57 +1983,43 @@ function Navbar() {
                               id="menu-item-20946"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20946"
                             >
-                              <a href="">
-                                Optima PMS
-                              </a>
+                              <a href="">Optima PMS</a>
                             </li>
                             <li
                               id="menu-item-20947"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20947"
                             >
-                              <a href="">
-                                Optima Cloud PMS
-                              </a>
+                              <a href="">Optima Cloud PMS</a>
                             </li>
                             <li
                               id="menu-item-20949"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20949"
                             >
-                              <a href="">
-                                Channel Manager
-                              </a>
+                              <a href="">Channel Manager</a>
                             </li>
                             <li
                               id="menu-item-24801"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-24801"
                             >
-                              <a href="">
-                                Optima CRM
-                              </a>
+                              <a href="">Optima CRM</a>
                             </li>
                             <li
                               id="menu-item-24800"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-24800"
                             >
-                              <a href="">
-                                Optima POS
-                              </a>
+                              <a href="">Optima POS</a>
                             </li>
                             <li
                               id="menu-item-20948"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20948"
                             >
-                              <a href="">
-                                Optima Marketplace
-                              </a>
+                              <a href="">Optima Marketplace</a>
                             </li>
                             <li
                               id="menu-item-26836"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-26836"
                             >
-                              <a href="">
-                                Optima Event Management
-                              </a>
+                              <a href="">Optima Event Management</a>
                             </li>
                           </ul>
                         </li>
@@ -2299,57 +2033,43 @@ function Navbar() {
                               id="menu-item-24796"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-24796"
                             >
-                              <a href="">
-                                Boutique hotels management
-                              </a>
+                              <a href="">Boutique hotels management</a>
                             </li>
                             <li
                               id="menu-item-24797"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-24797"
                             >
-                              <a href="">
-                                Business hotels management
-                              </a>
+                              <a href="">Business hotels management</a>
                             </li>
                             <li
                               id="menu-item-26835"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-26835"
                             >
-                              <a href="">
-                                Hostels management
-                              </a>
+                              <a href="">Hostels management</a>
                             </li>
                             <li
                               id="menu-item-20952"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20952"
                             >
-                              <a href="">
-                                Hotel chains and groups management
-                              </a>
+                              <a href="">Hotel chains and groups management</a>
                             </li>
                             <li
                               id="menu-item-20951"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20951"
                             >
-                              <a href="">
-                                Independent hotels management
-                              </a>
+                              <a href="">Independent hotels management</a>
                             </li>
                             <li
                               id="menu-item-24799"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-24799"
                             >
-                              <a href="">
-                                Resorts management
-                              </a>
+                              <a href="">Resorts management</a>
                             </li>
                             <li
                               id="menu-item-28924"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-28924"
                             >
-                              <a href="">
-                                Vacation resorts
-                              </a>
+                              <a href="">Vacation resorts</a>
                             </li>
                           </ul>
                         </li>
@@ -2360,10 +2080,7 @@ function Navbar() {
                     id="menu-item-20953"
                     className="style-coral menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20953"
                   >
-                    <a
-                      href=""
-                      data-role="sub-mega-menu-action"
-                    >
+                    <a href="" data-role="sub-mega-menu-action">
                       School Management
                     </a>
                     <div className="fixed-menu-wrapper js-fixed-menu-wrapper">
@@ -2374,10 +2091,7 @@ function Navbar() {
                         >
                           Solutions
                         </button>
-                        <a
-                          href=""
-                          className="menu-item-parent-link"
-                        >
+                        <a href="" className="menu-item-parent-link">
                           School Management
                         </a>{" "}
                         <li
@@ -2390,17 +2104,13 @@ function Navbar() {
                               id="menu-item-20955"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20955"
                             >
-                              <a href="">
-                                Teachers
-                              </a>
+                              <a href="">Teachers</a>
                             </li>
                             <li
                               id="menu-item-20956"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20956"
                             >
-                              <a href="">
-                                Students and Parents
-                              </a>
+                              <a href="">Students and Parents</a>
                             </li>
                           </ul>
                         </li>
@@ -2412,9 +2122,9 @@ function Navbar() {
               <li
                 id="menu-item-20957"
                 onClick={() => handleToggle("menu-item-20957")}
-  className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20957 ${
-    activeMenu["menu-item-20957"] ? "active" : ""
-  }`}
+                className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20957 ${
+                  activeMenu["menu-item-20957"] ? "active" : ""
+                }`}
               >
                 <a
                   href=""
@@ -2425,65 +2135,55 @@ function Navbar() {
                 >
                   Partners<span className="sub-menu-toggle"></span>
                 </a>
-                <ul 
-                className={`sub-menu ${
-                  activeMenu["menu-item-20957"] ? "active" : ""
-                }`}
-                style={{
-                  maxHeight: activeMenu["menu-item-20957"] ? "241px" : "0px",
-                  overflow: "hidden",
-                  transition: "max-height 0.3s ease",
-                }}
-                onClick={() => handleToggle("menu-item-20957")}
+                <ul
+                  className={`sub-menu ${
+                    activeMenu["menu-item-20957"] ? "active" : ""
+                  }`}
+                  style={{
+                    maxHeight: activeMenu["menu-item-20957"] ? "241px" : "0px",
+                    overflow: "hidden",
+                    transition: "max-height 0.3s ease",
+                  }}
+                  onClick={() => handleToggle("menu-item-20957")}
                 >
                   <li
                     id="menu-item-20958"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20958"
                   >
-                    <a href="">
-                      Hospitality marketplace
-                    </a>
+                    <a href="">Hospitality marketplace</a>
                   </li>
                   <li
                     id="menu-item-20959"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20959"
                   >
-                    <a href="">
-                      Become a partner
-                    </a>
+                    <a href="">Become a partner</a>
                   </li>
                   <li
                     id="menu-item-20960"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20960"
                   >
-                    <a href="">
-                      Technology partners
-                    </a>
+                    <a href="">Technology partners</a>
                   </li>
                   <li
                     id="menu-item-20961"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20961"
                   >
-                    <a href="">
-                      AWS partner
-                    </a>
+                    <a href="">AWS partner</a>
                   </li>
                   <li
                     id="menu-item-20962"
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-20962"
                   >
-                    <a href="">
-                      Priority Market
-                    </a>
+                    <a href="">Priority Market</a>
                   </li>
                 </ul>
               </li>
               <li
                 id="menu-item-20963"
                 onClick={() => handleToggle("menu-item-20963")}
-  className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20963 ${
-    activeMenu["menu-item-20963"] ? "active" : ""
-  }`}
+                className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20963 ${
+                  activeMenu["menu-item-20963"] ? "active" : ""
+                }`}
               >
                 <a
                   href=""
@@ -2494,37 +2194,33 @@ function Navbar() {
                 >
                   Company<span className="sub-menu-toggle"></span>
                 </a>
-                <ul className={`sub-menu ${
-      activeMenu["menu-item-20963"] ? "active" : ""
-    }`}
-    style={{
-      maxHeight: activeMenu["menu-item-20963"] ? "241px" : "0px",
-      overflow: "hidden",
-      transition: "max-height 0.3s ease",
-    }}>
+                <ul
+                  className={`sub-menu ${
+                    activeMenu["menu-item-20963"] ? "active" : ""
+                  }`}
+                  style={{
+                    maxHeight: activeMenu["menu-item-20963"] ? "241px" : "0px",
+                    overflow: "hidden",
+                    transition: "max-height 0.3s ease",
+                  }}
+                >
                   <li
                     id="menu-item-20964"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20964"
                   >
-                    <a href="">
-                      About us
-                    </a>
+                    <a href="">About us</a>
                   </li>
                   <li
                     id="menu-item-20965"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20965"
                   >
-                    <a href="">
-                      Case studies
-                    </a>
+                    <a href="">Case studies</a>
                   </li>
                   <li
                     id="menu-item-20966"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20966"
                   >
-                    <a href="">
-                      Events
-                    </a>
+                    <a href="">Events</a>
                   </li>
                   <li
                     id="menu-item-20967"
@@ -2536,83 +2232,71 @@ function Navbar() {
                     id="menu-item-20968"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20968"
                   >
-                    <a href="">
-                      Careers
-                    </a>
+                    <a href="">Careers</a>
                   </li>
                   <li
                     id="menu-item-26837"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-26837"
                   >
-                    <a href="">
-                      Contact us
-                    </a>
+                    <a href="">Contact us</a>
                   </li>
                 </ul>
               </li>
               <li
                 id="menu-item-20969"
                 onClick={() => handleToggle("menu-item-20969")}
-  className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20969 ${
-    activeMenu["menu-item-20969"] ? "active" : ""
-  }`}
+                className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20969 ${
+                  activeMenu["menu-item-20969"] ? "active" : ""
+                }`}
               >
                 <a
                   href=""
                   className="nav__link"
                   data-role="show-sub-menu"
                   title=""
-                  onClick={(e) => e.preventDefault()} 
+                  onClick={(e) => e.preventDefault()}
                 >
                   Resources<span className="sub-menu-toggle"></span>
                 </a>
-                <ul className={`sub-menu ${
-      activeMenu["menu-item-20969"] ? "active" : ""
-    }`}
-    style={{
-      maxHeight: activeMenu["menu-item-20969"] ? "241px" : "0px",
-      overflow: "hidden",
-      transition: "max-height 0.3s ease",
-    }}>
+                <ul
+                  className={`sub-menu ${
+                    activeMenu["menu-item-20969"] ? "active" : ""
+                  }`}
+                  style={{
+                    maxHeight: activeMenu["menu-item-20969"] ? "241px" : "0px",
+                    overflow: "hidden",
+                    transition: "max-height 0.3s ease",
+                  }}
+                >
                   <li
                     id="menu-item-20970"
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-20970"
                   >
-                    <a href="">
-                      Articles
-                    </a>
+                    <a href="">Articles</a>
                   </li>
                   <li
                     id="menu-item-20971"
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-20971"
                   >
-                    <a href="">
-                      Brochures
-                    </a>
+                    <a href="">Brochures</a>
                   </li>
                   <li
                     id="menu-item-26843"
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-26843"
                   >
-                    <a href="">
-                      Webinars
-                    </a>
+                    <a href="">Webinars</a>
                   </li>
                   <li
                     id="menu-item-20973"
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-20973"
                   >
-                    <a href="">
-                      Videos
-                    </a>
+                    <a href="">Videos</a>
                   </li>
                   <li
                     id="menu-item-20974"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20974"
                   >
-                    <a href="">
-                      FAQ
-                    </a>
+                    <a href="">FAQ</a>
                   </li>
                   <li
                     id="menu-item-20975"
@@ -2630,10 +2314,7 @@ function Navbar() {
               </li>
             </ul>
           </nav>
-          <a
-            href=""
-            className="mobile-menu__button"
-          >
+          <a href="" className="mobile-menu__button">
             Get a Demo
           </a>{" "}
         </div>

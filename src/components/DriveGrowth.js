@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../global.css";
-import homeSvg from "./assets/home.svg";
+import homeimg from "./assets/confidential-global-tech-company-offices-penang-2-1200x751-compact.jpg";
 import { useNavigate } from "react-router-dom";
+import { BorderAllRounded } from "@mui/icons-material";
 
 function DriveGrowth() {
     const navigate = useNavigate();
@@ -11,15 +12,15 @@ function DriveGrowth() {
     };
 
     const swipeTexts = [
-        "Amplify operational efficiency, discover new opportunities, and stay agile.",
-        "Streamline your processes and innovate faster to achieve measurable success.",
+        "Fits your business each day, everyday. Check.",
+        "Drives your growth tomorrow. Check. ",
         // "Empower your business with cutting-edge solutions tailored to your needs.",
     ];
 
     const swipeTopics = [
-        "Drives your growth tomorrow. Check.",
-        "Fits your business each day, everyday. Check.",
-        "Be felt, be visible through all the seasons. Check.",
+        "Transforming Meeting Spaces with Innovative Audio-Visual Solutions",
+        "Digitally Transforming How We Work, Learn and Live",
+        // "Be felt, be visible through all the seasons. Check.",
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -74,13 +75,13 @@ function DriveGrowth() {
                             className="border bg-[#3b37e6] border-white text-white mx-4 py-2 px-6 mt-5 rounded-2xl hover:bg-white hover:text-[#3b37e6]"
                             onClick={handleButtonClick}
                         >
-                            Schedule a demo
+                            Contact Our Team
                         </button>
                     </div>
                 </div>
 
-                <div className="relative md:w-1/2 flex items-center justify-center mt-8 md:mt-0 bg-growth">
-                    <img src={homeSvg} alt="home" className="rounded-lg shadow-lg" />
+                <div className="relative md:w-1/2 flex items-center justify-center mt-8 md:mt-0 bg-growth lg:pl-5">
+                    <img src={homeimg} alt="home" className="rounded-[65px] shadow-lg"/>
                 </div>
             </div>
         </div>

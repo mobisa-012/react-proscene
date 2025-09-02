@@ -1,74 +1,352 @@
+
 .footer {
     background-color: #16213D;
     color: grey;
-    padding: 30px;
-    /* left: 40px; */
+    padding: 30px 20px;
+    width: 100%;
 }
-
-.logo img {
-  max-width: 100%;
-  height: auto; 
-  width: 150px;
-  align-items: center;
-}
-
+/* Main Container */
 .footer .main-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
+/* Logo Section */
+.footer-logo-section {
+    margin-bottom: 30px;
+}
+
+.footer-logo-link {
+    display: inline-block;
+}
+
+.footer-logo {
+    max-width: 150px;
+    height: auto;
+    width: 100%;
+}
+
+/* Content Grid - Responsive Layout */
+.footer-content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Footer Sections */
 .footer-section {
-    flex: 1;
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-.footer-section h3 {
+.footer-heading {
     color: white;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 600;
     line-height: 20px;
-    margin-bottom: 1em;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .footer-link {
     color: #98A3BE;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 20px;
-    display: block;
-    margin-bottom: 1.4em;
-    transition: white 0.3s;
+    transition: color 0.3s ease;
 }
 
 .footer-link:hover {
     color: white;
 }
 
-.social-icons a {
-    color: grey;
-    font-size: 24px;
-    margin: 0 10px;
-    transition: color 0.3s;
+/* Social Media Section */
+.footer-social-section {
+    grid-column: span 1;
 }
 
-.social-icons a:hover {
+.social-icons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    color: #98A3BE;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon:hover {
     color: white;
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Bottom Legal Section */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.avixa-logo-section {
+    flex-shrink: 0;
+}
+
+.avixa-logo-link {
+    display: inline-block;
+}
+
+.avixa-logo {
+    max-width: 120px;
+    height: auto;
+    width: 100%;
+}
+
+.legal-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .legal-links {
     display: flex;
-    color: white !important;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.legal-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.legal-link:hover {
+    color: #98A3BE;
+}
+
+.copyright-section {
+    color: #98A3BE;
+    font-size: 14px;
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .footer {
+        padding: 25px 15px;
+    }
+    
+    .footer .main-container {
+        padding: 0 15px;
+    }
+    
+    .footer-content-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+    
+    .footer-heading {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-link {
+        font-size: 13px;
+    }
+    
+    .social-icons {
+        gap: 12px;
+    }
+    
+    .social-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+    
+    .footer-bottom-content {
+        padding: 0 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .legal-section {
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .legal-links {
+        gap: 20px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 10px;
+    }
+    
+    .footer .main-container {
+        padding: 0 10px;
+    }
+    
+    .footer-logo-section {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    .footer-content-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-links {
+        align-items: center;
+    }
+    
+    .footer-heading {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-link {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+    
+    .social-icons {
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    
+    .social-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+    }
+    
+    .footer-bottom {
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+    
+    .footer-bottom-content {
+        padding: 0 10px;
+        text-align: center;
+    }
+    
+    .avixa-logo-section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .legal-section {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .legal-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .legal-link {
+        padding: 5px 0;
+    }
+    
+    .copyright-section {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 320px) {
+    .footer {
+        padding: 15px 8px;
+    }
+    
+    .footer .main-container {
+        padding: 0 8px;
+    }
+    
+    .footer-content-grid {
+        gap: 20px;
+    }
+    
+    .footer-heading {
+        font-size: 15px;
+    }
+    
+    .footer-link {
+        font-size: 13px;
+    }
+    
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .footer-bottom-content {
+        padding: 0 8px;
+    }
+}
+
+/* Legacy class support for existing styles */
+.logo img {
+    max-width: 100%;
+    height: auto; 
+    width: 150px;
     align-items: center;
 }
-/* .legal-links>.logo{
-    visibility: hidden;
-} */
-@media (max-width: 36em) {
-    .legal-links{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        margin-top: 1.5em;
-    }
+
+.h3footer {
+    /* color: white; */
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 1em;
 }
 
