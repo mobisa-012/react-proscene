@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import ubs from './assets/ubs.jpeg';
 
 const AboutHC = () => {
     const navigate  = useNavigate();
@@ -13,7 +14,7 @@ const AboutHC = () => {
        {/* color overlay */}
       <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
       <img
-        src="https://onediversified.com/hubfs/Hero%20Images/By%20Space/Hero%20By%20Space_Corporate%20Office_Marsh%20McLennan%20Companies.jpg"
+        src="ubs"
         alt="Background"
         className="w-full h-full object-cover z-0"
       />

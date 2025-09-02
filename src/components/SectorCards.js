@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import CardComponent from './CardComponent';
-import hc from './assets/hc.jpeg';
+import hc from './assets/Medical.jpg';
 import legal from './assets/legal.jpeg';
-import ed from './assets/ed.jpeg';
-import coop from './assets/coop.jpeg';
-import ps from './assets/ps.jpeg';
+import ed from './assets/Education.jpg';
+import coop from './assets/indeed-offices.jpg';
+import ps from './assets/bigscreen.jpg';
 import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
 import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
 

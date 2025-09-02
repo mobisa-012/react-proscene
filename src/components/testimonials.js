@@ -1,25 +1,32 @@
 import React, { useState, useEffect } from "react";
 import adi from './assets/adi.jpeg';
-import st from './assets/st.jpeg';
+import st from './assets/Boardroom1.png';
+import church from './assets/church.jpg';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const testimonials = [
   {
     quote:
-      `"The Comcast Technology Center enables our team to leverage innovative technologies in our storytelling."`,
-    author: "Ric Harris, President and General Manager, NBC10 and Telemundo62",
+      `"System works flawlessly across all meeting rooms."`,
+    author: "Microsoft",
     image: adi
   },
   {
     quote:
-      `"This is another powerful quote about leveraging innovative technologies."`,
-    author: "Jane Doe, Chief Technology Officer, TechCorp",
+      `"Exceeded expectations—technically and on schedule.`,
+    author: "DMS",
     image: "https://onediversified.com/hubfs/Oracle_Park_2021.jpg",
   },
   {
     quote:
-      `"The innovative technologies here are a game changer for storytelling."`,
-    author: "John Smith, Head of Creative, MediaHouse",
+      `"Proscene delivered a spiritual and technical transformation."`,
+    author: "Ridgeways Baptist",
+    image: church
+  },
+  {
+    quote:
+      `"AV made our trainings sharper, clearer, and more inclusive."`,
+    author: "ICIPE",
     image: st
   },
 ];

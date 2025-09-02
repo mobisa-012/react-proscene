@@ -3,7 +3,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import coop from "../assets/coop.jpeg";
 import th from "../assets/conference.webp";
 import mask from "../assets/Maskimage.jpg";
-import hc from "../assets/hc.jpeg";
+import hc from "../assets/Medical.jpg";
 import legal from "../assets/legal.jpeg";
 import { useNavigate } from "react-router-dom";  // Import useNavigate
 

@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
 import './Partner.css';
-import futurefirst from './assets/futurefirst.png';
+import safaricom from './assets/safaricom.png';
 import harney from './assets/harney.webp';
-import icipe from './assets/icipe-logo.png';
-import mediamax from './assets/mediamax.png';
-import ridge from './assets/baptist.jpg';
-import supaloaf from './assets/supaloaf.jpg';
+import cocacola from './assets/cocacola.png';
+import NCBA from './assets/NCBA2.png';
+import DHL from './assets/DHL.png';
+import UON from './assets/UON.jpg';
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 
 const partnerData = [
-  { id: 1, logo: harney , description: 'Coulson Harney and Co Advocates a member of Bowman and Gilfillian is a large and well-established Law firm', link: '#loadMore1' },
-  { id: 2, logo: icipe, description: 'International Centre of Insect Physiology and Ecology wanted to improve their video communication between Nairobi and there remote centre in Mbita, Nyanza Province.', link: '#loadMore2' },
-  { id: 3, logo:  futurefirst, description: 'Future’s first is a global Company that deals in international stocks. The branch , based in Nairobi needed an Audio Visual system that integrates the video.', link: '#loadMore3' },
-  { id: 4, logo: ridge, description: 'Ridgeways Baptist Church needed a video system for their new worship facility. Currently, they have been using two portable projectors in the church.', link: '#loadMore4' },
-  { id: 5, logo: mediamax, description: 'When Communication Authority embarked on migrating everyone to digital platform, it became necessary for one of Kenya’s largest meda houses to upgrade.', link: '#loadMore5' },
-  { id: 6, logo: supaloaf, description: 'In an Industry that spans in more than 25 acres, security is a major concern. Mini Group installed there new CCTV system in there Kangundo Road office.', link: '#loadMore6' },
+  { id: 1, logo: harney , description: 'Proscene gave us courtroom-grade clarity in our boardrooms. The technology is discreet, secure, and intuitive—our clients immediately notice the professionalism it adds.', link: '#loadMore1' },
+  { id: 2, logo: cocacola, description: 'I can confidently say the Proscene team transformed our meeting and event spaces. The audio and visuals are world-class, and they’ve made collaboration effortless for us.', link: '#loadMore2' },
+  { id: 3, logo:  safaricom, description: 'I highly recommend their solutions. Our boardrooms and training suites run smoothly, the systems are reliable, and our teams connect with customers better than ever.', link: '#loadMore3' },
+  { id: 4, logo: DHL, description: 'They modernized our control rooms and warehouses seamlessly. Communication is clear, downtime is minimal, and the scalable design supports our fast-paced logistics operations perfectly.', link: '#loadMore4' },
+  { id: 5, logo: NCBA, description: 'With the Proscene AV setup, our hybrid meetings are smooth and feel in-person. The rollout was easy, and their support has been consistently excellent.', link: '#loadMore5' },
+  { id: 6, logo: UON, description: 'Our lecture halls and hybrid classrooms were upgraded without disruption. Faculty finds the systems simple, and students benefit from clear visuals and audio everywhere.', link: '#loadMore6' },
 ];
 
 const Card = ({ logo, description, link }) => {

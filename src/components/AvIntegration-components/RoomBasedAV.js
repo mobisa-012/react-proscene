@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import leftbottomSvg from "../assets/leftbottom.svg";
+// import leftbottomSvg from "../assets/leftbottom.svg";
 import digitalMediaJpg from "../assets/itau-private-bank-offices-bogota-6-1200x800.jpg";
 import BookDemo from "../../pages/BookDemoPage";
 import Footer from "../Footer";
@@ -76,7 +76,7 @@ function RoomBasedAV() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-[#3b37e6] to-blue-800 text-white overflow-hidden">
+      <div className="relative bg-gradient-to-br mt-9 from-[#3b37e6] to-blue-800 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
