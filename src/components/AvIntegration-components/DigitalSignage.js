@@ -10,6 +10,9 @@ function DigitalSignage() {
   const handleButtonClick = () => {
     navigate("/bookDemo");
   };
+  const sendtoStudypage = () => {
+    navigate("/case-studies-av");
+  };
 
   const [activeFeature, setActiveFeature] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -71,14 +74,14 @@ function DigitalSignage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-purple-600 via-[#3b37e6] to-blue-600 text-white overflow-hidden">
+      <div className="relative  bg-blue-600 text-white overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-black opacity-20"></div>
-          <div className="absolute top-20 left-20 w-32 h-32 bg-yellow-400 rounded-full opacity-10 animate-pulse"></div>
+          <div className="absolute top-20 left-20 w-32 h-32 bg-[#b062ff] rounded-full opacity-10 animate-pulse"></div>
           <div className="absolute bottom-20 right-20 w-24 h-24 bg-pink-400 rounded-full opacity-15 animate-bounce"></div>
         </div>
         
-        <div className="relative max-w-7xl mx-auto px-4 py-20">
+        <div className="relative max-w-7xl mx-auto px-4 py-20 mt-5">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="inline-block px-6 py-3 bg-white bg-opacity-20 rounded-full text-sm font-medium backdrop-blur-sm">
@@ -86,7 +89,7 @@ function DigitalSignage() {
               </div>
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                 Captivate, Inform,
-                <span className="block bg-gradient-to-r from-yellow-300 to-pink-300 bg-clip-text text-transparent">
+                <span className="block ">
                   Navigate
                 </span>
               </h1>
@@ -96,18 +99,18 @@ function DigitalSignage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={handleButtonClick}
-                  className="bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 px-8 py-4 rounded-2xl font-bold hover:from-yellow-300 hover:to-orange-300 transition-all duration-300 transform hover:scale-105"
+                  className="bg-white text-gray-900 px-8 py-4 rounded-2xl font-bold hover:from-[#b062ff] hover:to-[#00d2fb] transition-all duration-300 transform hover:scale-105"
                 >
                   See It In Action
                 </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-[#3b37e6] transition-all duration-300">
+                <button  className="border-2 border-white text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-[#3b37e6] transition-all duration-300">
                   Explore Solutions
                 </button>
               </div>
             </div>
             
             <div className="relative">
-              <div className="relative z-10 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+              <div className="relative z-10 transform hover:rotate-0 transition-transform duration-500">
                 <img
                   src={digitalMediaJpg}
                   alt="Digital Signage Display"
@@ -116,7 +119,7 @@ function DigitalSignage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-600 to-transparent opacity-30 rounded-3xl"></div>
               </div>
               <div className="absolute -top-8 -right-8 w-40 h-40 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full opacity-20 animate-spin-slow"></div>
-              <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-full opacity-25"></div>
+              <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-[#b062ff] to-[#00d2fb] rounded-full opacity-25"></div>
             </div>
           </div>
         </div>
@@ -180,7 +183,7 @@ function DigitalSignage() {
                   </p>
                 </div>
               </div>
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-yellow-400 rounded-full opacity-30 animate-bounce"></div>
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-[#b062ff] rounded-full opacity-30 animate-bounce"></div>
             </div>
           </div>
         </div>
@@ -294,7 +297,7 @@ function DigitalSignage() {
                 >
                   Request Demo
                 </button>
-                <button className="border-2 border-[#3b37e6] text-[#3b37e6] px-8 py-3 rounded-2xl font-semibold hover:bg-[#3b37e6] hover:text-white transition-colors duration-300">
+                <button onClick={sendtoStudypage} className="border-2 border-[#3b37e6] text-[#3b37e6] px-8 py-3 rounded-2xl font-semibold hover:bg-[#3b37e6] hover:text-white transition-colors duration-300">
                   View Case Studies
                 </button>
               </div>

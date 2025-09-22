@@ -42,6 +42,7 @@ import Support from "./pages/Support";
 import RoomBasedAV from "./components/AvIntegration-components/RoomBasedAV";
 import DigitalSignage from "./components/AvIntegration-components/DigitalSignage";
 import DisplaySystems from "./components/AvIntegration-components/DisplaySystems";
+import CaseStudiesAV from "./components/case-studies-components/CasestudiesAV";
 
 function App() {
   return (
@@ -90,6 +91,7 @@ function App() {
       <Route path="/extron" element = {<Extron/>} />
       <Route path="/bookDemo" element = {<BookDemoPage/>} /> 
       <Route path = "/support" element = {<Support/>} />
+      <Route path="/case-studies-av" element = {<CaseStudiesAV/>} />
     </Routes>
     {/* <Footer /> */}
     </Router>        

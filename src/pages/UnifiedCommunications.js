@@ -151,7 +151,7 @@ function UCC() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-8 leading-tight">
             Your Unified Communications <br/>Solution Awaits
           </h1>
-          <button className="bg-[#16213D] hover:bg-[#00abfa] hover:text-black text-white font-bold py-4 px-8 rounded-full transition duration-300"
+          <button className="bg-blue-600 hover:bg-white hover:border-blue-600 hover:text-blue-600 text-white font-bold py-4 px-8 rounded-full transition duration-300"
           onClick={handleButtonClick}>
             Speak With An Expert
           </button>

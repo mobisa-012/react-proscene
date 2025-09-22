@@ -98,9 +98,6 @@ function RoomBasedAV() {
                 >
                   Schedule Consultation
                 </button>
-                <button className="border-2 border-white text-white px-8 py-3 rounded-2xl font-semibold hover:bg-white hover:text-[#3b37e6] transition-colors duration-300">
-                  View Portfolio
-                </button>
               </div>
             </div>
             <div className="relative">
@@ -307,7 +304,6 @@ function RoomBasedAV() {
       </div>
 
       <BookDemo />
-      <Footer />
     </div>
   );
 }

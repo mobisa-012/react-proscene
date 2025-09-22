@@ -9,7 +9,7 @@ const StrategyDesign = () => {
     }
 
   return (
-    <div className="bg-gradient-to-r from-[#001e62] to-[#10069f] min-h-screen flex items-center justify-center py-20">
+    <div className="bg-blue-800 min-h-screen flex items-center justify-center py-20">
       <div className="mx-32 px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         {/* Text Content */}
         <div>

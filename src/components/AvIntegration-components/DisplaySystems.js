@@ -93,7 +93,7 @@ function DisplayAudio() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-gray-900 via-[#3b37e6] to-black text-white overflow-hidden">
+      <div className="relative bg-blue-600 text-white overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-50"></div>
           {/* Animated sound waves */}
@@ -107,12 +107,12 @@ function DisplayAudio() {
         <div className="relative max-w-7xl mx-auto px-4 py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
-              <div className="inline-block px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 rounded-full text-sm font-bold">
+              <div className="inline-block px-6 py-3 bg-white text-gray-900 rounded-full text-sm font-bold">
                 Display Systems & Audio Reinforcement
               </div>
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                 Crystal Clear
-                <span className="block bg-gradient-to-r  via-orange-400 to-red-400 bg-clip-text text-transparent">
+                <span className="block bg-white bg-clip-text text-transparent">
                   Visuals & Sound
                 </span>
               </h1>
@@ -147,12 +147,9 @@ function DisplayAudio() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={handleButtonClick}
-                  className="bg-gradient-to-r to-orange-400 text-gray-900 px-8 py-4 rounded-2xl font-bold  hover:to-orange-300 transition-all duration-300 transform hover:scale-105"
+                  className="bg-white text-gray-900 px-8 py-4 rounded-2xl font-bold  hover:to-orange-300 transition-all duration-300 transform hover:scale-105"
                 >
                   Experience the Difference
-                </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-[#3b37e6] transition-all duration-300">
-                  Technical Specs
                 </button>
               </div>
             </div>
@@ -382,7 +379,7 @@ function DisplayAudio() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Ready to Elevate Your
-            <span className="text-yellow-400"> AV Experience?</span>
+            <span className="text-white-400"> AV Experience?</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Let our experts design and install a display and audio system that delivers exceptional performance and reliability for your specific needs.
@@ -391,7 +388,7 @@ function DisplayAudio() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               onClick={handleButtonClick}
-              className="bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 px-8 py-4 rounded-2xl font-bold hover:from-yellow-300 hover:to-orange-300 transition-all duration-300 transform hover:scale-105"
+              className="bg-white text-gray-900 px-8 py-4 rounded-2xl font-bold hover:from-yellow-300 hover:to-orange-300 transition-all duration-300 transform hover:scale-105"
             >
               Schedule System Demo
             </button>

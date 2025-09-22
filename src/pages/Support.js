@@ -74,7 +74,7 @@ function Support() {
                         </div>
                         <div className="button-Center">
                             <button
-                                className="border bg-[#3b37e6] border-white text-white mx-4 py-2 px-6 mt-5 rounded-2xl hover:bg-white hover:text-[#3b37e6]"
+                                className="border bg-[#3b37e6] border-white text-white mx-4 py-3 px-8 mt-5 rounded-2xl hover:bg-white hover:text-[#3b37e6]"
                                 onClick={handleButtonClick}
                             >
                                 contact us
