@@ -1,0 +1,220 @@
+{
+  "caseStudies": [
+    {
+      "id": "strathmore-university",
+      "title": "Strathmore University",
+      "subtitle": "Empowering Learning Through Smart Campus Technology",
+      "industry": "Education",
+      "location": "Nairobi, Kenya",
+      "projectDate": "2024",
+      "heroImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1",
+      "challenge": "Strathmore University sought to modernize its lecture halls and digital learning environments to support hybrid education and seamless collaboration. The goal was to enhance the student learning experience through technology-driven classrooms that could be centrally managed while maintaining academic excellence and sustainability.",
+      "solution": "Proscene implemented an AV-over-IP infrastructure across lecture halls and innovation hubs. The solution integrated wireless presentation systems, professional video conferencing tools, and centralized control panels for easy classroom management. The system supports real-time lectures, remote participation, and cloud-based learning applications.",
+      "results": [
+        { "metric": "60+", "description": "Smart Classrooms Installed" },
+        { "metric": "35%", "description": "Reduced Operational Costs" },
+        { "metric": "99.9%", "description": "System Uptime" },
+        { "metric": "100%", "description": "Faculty Training Completed" }
+      ],
+      "keyFeatures": [
+        {
+          "title": "Centralized AV Control",
+          "description": "Allows IT administrators to manage all classrooms remotely through a single dashboard with real-time analytics."
+        },
+        {
+          "title": "Hybrid Learning Integration",
+          "description": "Supports both in-person and remote teaching via HD video conferencing and live content sharing."
+        },
+        {
+          "title": "Wireless Presentation Systems",
+          "description": "Enables instructors and students to present effortlessly from any device."
+        },
+        {
+          "title": "Energy-Efficient Systems",
+          "description": "Optimized display and lighting systems that contribute to Strathmore’s green campus initiative."
+        }
+      ],
+      "technologies": [
+        "AV-over-IP Systems",
+        "Wireless Presentation",
+        "4K Video Displays",
+        "Cloud Classroom Management",
+        "Video Conferencing Tools",
+        "Smart Lighting Integration"
+      ],
+      "testimonial": {
+        "quote": "The transformation has made our teaching experience more interactive and accessible. Our hybrid learning capabilities now truly reflect the excellence Strathmore is known for.",
+        "author": "Head of IT",
+        "position": "Deputy Vice Chancellor, Strathmore University"
+      },
+      "gallery": [
+        "https://images.unsplash.com/photo-1606761568499-6d2451b23c55",
+        "https://images.unsplash.com/photo-1556761175-5973dc0f32e7",
+        "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b",
+        "https://images.unsplash.com/photo-1596495577886-d920f1fb7238"
+      ]
+    },
+    {
+      "id": "safaricom-headquarters",
+      "title": "Safaricom Headquarters",
+      "subtitle": "Driving Collaboration and Innovation Through Smart Workplace Solutions",
+      "industry": "Technology",
+      "location": "Nairobi, Kenya",
+      "projectDate": "2024",
+      "heroImage": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+      "challenge": "Safaricom needed to enhance their collaborative workspaces across their headquarters and regional offices. The company required advanced conferencing systems to support hybrid work, data-driven room utilization, and consistent technology standards across 100+ spaces.",
+      "solution": "Proscene delivered a unified workplace technology ecosystem integrating one-touch conferencing, AI-driven cameras, and analytics dashboards. The new solution standardizes meeting experiences across all Safaricom offices, ensuring seamless connectivity between local teams and international partners.",
+      "results": [
+        { "metric": "100+", "description": "Rooms Equipped" },
+        { "metric": "90%", "description": "User Satisfaction" },
+        { "metric": "65%", "description": "Increase in Meeting Efficiency" },
+        { "metric": "80%", "description": "Reduction in IT Tickets" }
+      ],
+      "keyFeatures": [
+        {
+          "title": "AI-Powered Cameras",
+          "description": "Automatic participant tracking and intelligent framing for immersive video meetings."
+        },
+        {
+          "title": "One-Touch Conferencing",
+          "description": "Instantly join Teams, Zoom, or WebEx meetings from any meeting room."
+        },
+        {
+          "title": "Real-Time Analytics",
+          "description": "Monitor workspace utilization and technology performance to improve efficiency."
+        },
+        {
+          "title": "Wireless Collaboration",
+          "description": "Secure, cable-free content sharing across all connected devices."
+        }
+      ],
+      "technologies": [
+        "AI-Tracking Cameras",
+        "Beamforming Microphones",
+        "Room Scheduling Panels",
+        "Cloud Management Systems",
+        "Wireless Presentation",
+        "Environmental Sensors"
+      ],
+      "testimonial": {
+        "quote": "This upgrade has transformed how our teams connect and innovate. The seamless video experience has strengthened collaboration across departments and regions.",
+        "author": "Head of IT",
+        "position": "Chairman, Safaricom PLC"
+      },
+      "gallery": [
+        "https://images.unsplash.com/photo-1596496050760-3c8f8c5a3c7f",
+        "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7",
+        "https://images.unsplash.com/photo-1587613865763-4b8b0b87e3d0",
+        "https://images.unsplash.com/photo-1553877522-43269d4ea984"
+      ]
+    },
+    {
+      "id": "boma-hotels",
+      "title": "Boma Hotels",
+      "subtitle": "Enhancing Guest Experience Through Smart Hospitality Solutions",
+      "industry": "Hospitality",
+      "location": "Nairobi, Kenya",
+      "projectDate": "2023",
+      "heroImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
+      "challenge": "Boma Hotels wanted to upgrade guest experience by introducing interactive entertainment systems, smart room control, and digital conference facilities across its properties. The goal was to combine luxury and technology for both business and leisure guests.",
+      "solution": "Proscene implemented an integrated hospitality AV system featuring smart TVs, in-room tablets, and digital signage across public areas. Conference halls were upgraded with HD conferencing systems and intuitive touch control panels to enhance event hosting.",
+      "results": [
+        { "metric": "250+", "description": "Smart Rooms Deployed" },
+        { "metric": "40%", "description": "Increase in Guest Satisfaction" },
+        { "metric": "30%", "description": "Energy Savings" },
+        { "metric": "95%", "description": "Conference Facility Utilization" }
+      ],
+      "keyFeatures": [
+        {
+          "title": "Smart Room Controls",
+          "description": "Guests can manage lighting, temperature, and entertainment through in-room tablets."
+        },
+        {
+          "title": "Digital Conference Solutions",
+          "description": "Fully equipped meeting rooms with HD video conferencing and wireless presentation support."
+        },
+        {
+          "title": "Interactive Entertainment",
+          "description": "Guests enjoy HD streaming, hotel services, and virtual concierge features directly from smart TVs."
+        },
+        {
+          "title": "Energy Management",
+          "description": "Smart systems automatically adjust lighting and climate to reduce energy usage."
+        }
+      ],
+      "technologies": [
+        "Smart TVs",
+        "In-Room Tablets",
+        "HD Conferencing Systems",
+        "Digital Signage",
+        "AV-over-IP Infrastructure",
+        "Energy Management Systems"
+      ],
+      "testimonial": {
+        "quote": "Our guests love the personalized experience. From smart controls to immersive conferences, the upgrade has elevated Boma Hotels to new standards of comfort and innovation.",
+        "author": "Maryanne Nderitu",
+        "position": "General Manager, Boma Hotels"
+      },
+      "gallery": [
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b",
+        "https://images.unsplash.com/photo-1501117716987-c8e2a9cefc6f",
+        "https://images.unsplash.com/photo-1590490359683-952f8fae4a5f"
+      ]
+    },
+    {
+      "id": "sbm-bank-kenya",
+      "title": "SBM Bank Kenya",
+      "subtitle": "Boardroom & Collaboration Upgrade for Digital Transformation",
+      "industry": "Financial Services",
+      "location": "Nairobi, Kenya",
+      "projectDate": "2024",
+      "heroImage": "https://lh3.googleusercontent.com/pw/AP1GczN6DpymCbISDHowe3TdJ1M5pkuyT006G65D-p0E5siVqp1ku47Z_sbZL-6BSxdFfylHH6FXKscUpoYhmWAGbCQAr7koWkiAna7GuaXoOfojW6-aAo9uBSw4jFmFo5HzdoncxudZPQ2_RwC-7zFmsDzM=w1371-h914-s-no?authuser=0",
+      "challenge": "SBM Bank's rapid expansion required modernized boardroom and meeting technology to support hybrid collaboration, executive decision-making, and digital transformation goals. Outdated systems limited productivity and international coordination.",
+      "solution": "Proscene transformed SBM’s executive spaces with integrated video conferencing, beamforming microphones, PTZ cameras, and wireless presentation systems. Crestron touch panels now offer one-touch control for lighting, conferencing, and scheduling — all integrated with Google Workspace and Teams.",
+      "results": [
+        { "metric": "100%", "description": "Meeting Room Uptime" },
+        { "metric": "75%", "description": "Reduction in Setup Time" },
+        { "metric": "90%", "description": "Executive Satisfaction Rate" },
+        { "metric": "3x", "description": "Increase in Hybrid Meetings" }
+      ],
+      "keyFeatures": [
+        {
+          "title": "Effortless Hybrid Collaboration",
+          "description": "Executives now engage with remote stakeholders through seamless, high-quality video and audio sessions."
+        },
+        {
+          "title": "One-Touch Meeting Control",
+          "description": "Crestron touch panels provide simple, unified control of AV systems, lighting, and scheduling."
+        },
+        {
+          "title": "Wireless Presentation",
+          "description": "Cable-free screen sharing from any device enhances flexibility and professionalism."
+        },
+        {
+          "title": "Secure, Scalable Infrastructure",
+          "description": "AV-over-IP systems designed to meet banking security standards and scalability needs."
+        }
+      ],
+      "technologies": [
+        "Large-Format LED Displays",
+        "PTZ Cameras",
+        "Beamforming Microphones",
+        "Wireless Presentation Units",
+        "Crestron Control Panels",
+        "Zoom & Teams Integration"
+      ],
+      "testimonial": {
+        "quote": "Our collaboration spaces are now world-class. Meetings start instantly, and connectivity issues are a thing of the past.",
+        "author": "Head of IT",
+        "position": "SBM Bank Kenya"
+      },
+      "gallery": [
+        "https://lh3.googleusercontent.com/pw/AP1GczOqfJCWZxmdKLXQQx3EUDK2GHFo0WltpsJd0s0Cm6_wt-CaTBaoHl4ECt5fm3CvUhe34lSLMGHnPCwjerS4obG37o7fUg4P9mTgKGvhtb_hRl1V1HtAOaFMOWs5_9czjUr55Dtd6XMnbs4UwxY_e7CF=w1371-h914-s-no?authuser=0",
+        "https://lh3.googleusercontent.com/pw/AP1GczN6DpymCbISDHowe3TdJ1M5pkuyT006G65D-p0E5siVqp1ku47Z_sbZL-6BSxdFfylHH6FXKscUpoYhmWAGbCQAr7koWkiAna7GuaXoOfojW6-aAo9uBSw4jFmFo5HzdoncxudZPQ2_RwC-7zFmsDzM=w1371-h914-s-no?authuser=0",
+        "https://lh3.googleusercontent.com/pw/AP1GczOza81HXsmqI3K4JtCaTZbHEUJVY4UvdQKJEYyI9nUqDT69rcjQ2RfLi9a5XH4JxQHWeNk_sDgzhJ9hFogSKs4PX8h1dJ3_Do1PZbkTpu9d6xfchKIdC9dR4J3sN8w1ueZxssP0XKy1SzKWehnV1dSw=w1371-h914-s-no?authuser=0",
+        "https://lh3.googleusercontent.com/pw/AP1GczN6DpymCbISDHowe3TdJ1M5pkuyT006G65D-p0E5siVqp1ku47Z_sbZL-6BSxdFfylHH6FXKscUpoYhmWAGbCQAr7koWkiAna7GuaXoOfojW6-aAo9uBSw4jFmFo5HzdoncxudZPQ2_RwC-7zFmsDzM=w1371-h914-s-no?authuser=0"
+      ]
+    }
+  ]
+}

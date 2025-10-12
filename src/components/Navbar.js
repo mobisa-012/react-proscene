@@ -1076,26 +1076,6 @@ function Navbar() {
                           <div className="block-area blue">
                             <div className="block-area-image">
                               <a href="/case-studies">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="160"
-                                  height="160"
-                                  viewBox="0 0 160 160"
-                                  fill="none"
-                                >
-                                  <circle
-                                    cx="80"
-                                    cy="80"
-                                    r="79.5"
-                                    fill="#E3EEFF"
-                                    fill-opacity="0.8"
-                                    stroke="#3B37E6"
-                                  ></circle>
-                                  <path
-                                    d="M114 76.5359C116.667 78.0755 116.667 81.9245 114 83.4641L66 111.177C63.3333 112.717 60 110.792 60 107.713L60 52.2872C60 49.208 63.3333 47.2835 66 48.8231L114 76.5359Z"
-                                    fill="#3B37E6"
-                                  ></path>
-                                </svg>
                                 <img
                                   src={solutionsimg}
                                   className="menu-item-image"
@@ -1235,26 +1215,7 @@ function Navbar() {
                           <div className="block-area blue">
                             <div className="block-area-image">
                               <a href="/bookDemo">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="160"
-                                  height="160"
-                                  viewBox="0 0 160 160"
-                                  fill="none"
-                                >
-                                  <circle
-                                    cx="80"
-                                    cy="80"
-                                    r="79.5"
-                                    fill="#E3EEFF"
-                                    fill-opacity="0.8"
-                                    stroke="#3B37E6"
-                                  ></circle>
-                                  <path
-                                    d="M114 76.5359C116.667 78.0755 116.667 81.9245 114 83.4641L66 111.177C63.3333 112.717 60 110.792 60 107.713L60 52.2872C60 49.208 63.3333 47.2835 66 48.8231L114 76.5359Z"
-                                    fill="#3B37E6"
-                                  ></path>
-                                </svg>
+                                
                                 <img
                                   src={solutionsimg}
                                   className="menu-item-image"
@@ -1266,14 +1227,19 @@ function Navbar() {
                             </div>
                             <div className="item-content-area">
                               <div className="item-content-area-title purple">
-                                Proscene product tour
+                                Proscene periodical
                               </div>
                               <div className="item-content-area-description">
-                                Discover how Proscene’s powerful features
+                                Download our brochure today
                               </div>
                               <div className="item-content-area-button">
-                                <a href="/bookDemo" className="btn blue p-2">
-                                  Let's go
+                                <a 
+                                href="/data/profile.pdf" 
+    download="Proscene_Company_Profile.pdf"
+    className="btn blue p-2"
+    target="_blank"
+    rel="noopener noreferrer">
+                                  Download now
                                 </a>
                               </div>
                             </div>

@@ -43,6 +43,8 @@ import RoomBasedAV from "./components/AvIntegration-components/RoomBasedAV";
 import DigitalSignage from "./components/AvIntegration-components/DigitalSignage";
 import DisplaySystems from "./components/AvIntegration-components/DisplaySystems";
 import CaseStudiesAV from "./components/case-studies-components/CasestudiesAV";
+import CaseStudiesListPage from "./components/CaseStudiesListPage";
+import CaseStudyPage from "./components/CaseStudyPage";
 
 function App() {
   return (
@@ -54,7 +56,7 @@ function App() {
       <Route path="/services" element={<Services />} />
       <Route path="/sectors" element={<Sectors />} />
       <Route path="/solutions" element={<Solutions />} />
-      <Route path="/case-studies" element={<Casestudies />} />      
+      {/* <Route path="/case-studies" element={<Casestudies />} />       */}
       <Route path="/partners" element={<Partners />} />
       <Route path="/contact" element={<Contact />} />
        <Route path="/RoomBasedAV" element={<RoomBasedAV />} />
@@ -92,6 +94,8 @@ function App() {
       <Route path="/bookDemo" element = {<BookDemoPage/>} /> 
       <Route path = "/support" element = {<Support/>} />
       <Route path="/case-studies-av" element = {<CaseStudiesAV/>} />
+       <Route path="/case-studies" element={<CaseStudiesListPage />} />
+        <Route path="/case-studies/:id" element={<CaseStudyPage />} />
     </Routes>
     {/* <Footer /> */}
     </Router>        
