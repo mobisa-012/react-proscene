@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ubs from './assets/ubs.jpeg';
+import ubs from './assets/ubs.jpg';
 
 const Card = ({ title, description, image, hoverText, navigationLink }) => {
   const [isHovered, setIsHovered] = useState(false);

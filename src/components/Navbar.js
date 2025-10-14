@@ -552,7 +552,7 @@ function Navbar() {
                                     id="menu-item-20765"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
-                                    <a href="/">
+                                    <a href="/teams-and-zoom-rooms">
                                       <span>Microsoft Teams / Zoom Rooms</span>
                                     </a>
                                   </li>
@@ -560,7 +560,7 @@ function Navbar() {
                                     id="menu-item-20766"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
-                                    <a href="/">
+                                    <a href="/hybrid-solutions">
                                       <span>Hybrid meeting solutions</span>
                                     </a>
                                   </li>
@@ -568,7 +568,7 @@ function Navbar() {
                                     id="menu-item-20769"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
-                                    <a href="/">
+                                    <a href="/wireless-presentation-systems">
                                       <span>Wireless presentation systems</span>
                                     </a>
                                   </li>
@@ -576,7 +576,7 @@ function Navbar() {
                                     id="menu-item-20773"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
-                                    <a href="/">
+                                    <a href="/iptv">
                                       <span>IPTV</span>
                                     </a>
                                   </li>
@@ -584,7 +584,7 @@ function Navbar() {
                                     id="menu-item-20776"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
-                                    <a href="/">
+                                    <a href="/video-walls-and-LED-systems">
                                       <span>Video walls & LED displays</span>
                                     </a>
                                   </li>
@@ -592,7 +592,7 @@ function Navbar() {
                                     id="menu-item-20777"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
-                                    <a href="/">
+                                    <a href="/interactive-kiosk-and-screens">
                                       <span>
                                         Interactive kiosks and screens
                                       </span>
@@ -602,7 +602,7 @@ function Navbar() {
                                     id="menu-item-20778"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
-                                    <a href="/">
+                                    <a href="/room-scheduling-systems">
                                       <span>Room scheduling systems</span>
                                     </a>
                                   </li>
@@ -610,7 +610,7 @@ function Navbar() {
                                     id="menu-item-20779"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
-                                    <a href="/">
+                                    <a href="/touch-panel-control">
                                       <span>Touch panel control</span>
                                     </a>
                                   </li>
@@ -618,7 +618,7 @@ function Navbar() {
                                     id="menu-item-20780"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
-                                    <a href="/">
+                                    <a href="/av-automation">
                                       <span>
                                         Building-wide AV automation (via
                                         Crestron, Extron)
@@ -629,7 +629,7 @@ function Navbar() {
                                     id="menu-item-20770"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
-                                    <a href="/">
+                                    <a href="/localizations">
                                       <span>Localizations</span>
                                     </a>
                                   </li>{" "}
@@ -664,7 +664,7 @@ function Navbar() {
                                     Insight Report on AV Solutions.
                                   </div>
                                   <div className="item-content-area-button">
-                                    <a href="/contact" className="btn blue p-2">
+                                    <a href="/certifications" className="btn blue p-2">
                                       See certifications
                                     </a>
                                   </div>
@@ -1087,13 +1087,13 @@ function Navbar() {
                             </div>
                             <div className="item-content-area">
                               <div className="item-content-area-title dark">
-                                See how K24 transformed their operational
+                                Experience how K24 and other Organizations transformed their operational
                                 efficiency and control
                               </div>
                               <div className="item-content-area-description"></div>
                               <div className="item-content-area-button">
-                                <a href="/bookDemo" className="btn blue p-2">
-                                  Want to know more?
+                                <a href="/gallery" className="btn blue p-2">
+                                  Visit Gallery
                                 </a>
                               </div>
                             </div>
@@ -1130,56 +1130,6 @@ function Navbar() {
                             </span>
                           </a>
                         </li>
-                        {/* <li
-                          id="menu-item-20843"
-                          className="menu-item menu-item-type-post_type menu-item-object-page"
-                        > */}
-                        {/* <a
-                            href=""
-                            className="item-link"
-                          >
-                            <span className="item-title-area">
-                              <span className="item-title">Events</span>
-                            </span>
-                            <span className="item-content-area-title">
-                              Join us at upcoming industry events to unlock new
-                              insights and see Priority live!{" "}
-                            </span>
-                          </a> */}
-                        {/* </li> */}
-                        {/* <li
-                          id="menu-item-20846"
-                          className="menu-item menu-item-type-post_type menu-item-object-page"
-                        >
-                          <a
-                            href=""
-                            className="item-link"
-                          >
-                            <span className="item-title-area">
-                              <span className="item-title">News</span>
-                            </span>
-                            <span className="item-content-area-title">
-                              Latest company updates, announcements, and
-                              featured stories
-                            </span>
-                          </a>
-                        </li> */}
-                        {/* <li
-                          id="menu-item-20845"
-                          className="menu-item menu-item-type-post_type menu-item-object-page"
-                        >
-                          <a
-                            href=""
-                            className="item-link"
-                          >
-                            <span className="item-title-area">
-                              <span className="item-title">Careers</span>
-                            </span>
-                            <span className="item-content-area-title">
-                              Because great work starts with great people.
-                            </span>
-                          </a>
-                        </li> */}
                         <li
                           id="menu-item-23000"
                           className="menu-item menu-item-type-post_type menu-item-object-page"
@@ -1391,898 +1341,350 @@ function Navbar() {
         data-role="mobile-menu-action"
       ></div>
       <div
-        id="mobile-menu"
-        className={`mobile-menu js-mobile-menu ${
-          isMobileMenuOpen ? "show" : ""
-        }`}
+  id="mobile-menu"
+  className={`mobile-menu js-mobile-menu ${
+    isMobileMenuOpen ? "show" : ""
+  }`}
+>
+  <div className="mobile-menu__container">
+    <nav className="mobile-menu__nav">
+      <ul
+        id="menu-mobile-en"
+        className="mobile-menu__menu sub-menu js-menu-wrapper"
       >
-        <div className="mobile-menu__container">
-          <nav className="mobile-menu__nav">
-            <ul
-              id="menu-mobile-en"
-              className="mobile-menu__menu sub-menu js-menu-wrapper"
+        {/* Solutions Menu */}
+        <li
+          id="mobile-menu-item-solutions"
+          onClick={() => handleToggle("solutions")}
+          className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ${
+            activeMenu["solutions"] ? "active" : ""
+          }`}
+        >
+          <a
+            href="/solutions"
+            className="nav__link"
+            onClick={(e) => e.preventDefault()}
+          >
+            Solutions<span className="sub-menu-toggle"></span>
+          </a>
+          <ul
+            className={`sub-menu ${
+              activeMenu["solutions"] ? "active" : ""
+            }`}
+            style={{
+              maxHeight: activeMenu["solutions"] ? "1500px" : "0px",
+              overflow: "hidden",
+              transition: "max-height 0.3s ease",
+            }}
+          >
+            {/* Audio Visual Integration */}
+            <li
+              className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleToggle("avIntegration");
+              }}
             >
-              <li
-                id="menu-item-20880"
-                onClick={() => handleToggle("menu-item-20880")}
-                className={`mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20880 ${
-                  activeMenu["menu-item-20880"] ? "active" : ""
+              <a href="/avIntegration" onClick={(e) => e.preventDefault()}>
+                AV Integration
+              </a>
+              <ul
+                className={`sub-menu ${
+                  activeMenu["avIntegration"] ? "active" : ""
                 }`}
+                style={{
+                  maxHeight: activeMenu["avIntegration"] ? "300px" : "0px",
+                  overflow: "hidden",
+                  transition: "max-height 0.3s ease",
+                }}
               >
-                {/* added active above */}
-                <a
-                  href="/"
-                  className="nav__link"
-                  data-role="show-sub-menu"
-                  title=""
-                  onClick={(e) => e.preventDefault()}
-                >
-                  Solutions<span className="sub-menu-toggle"></span>
-                </a>
-                <ul
-                  className={`sub-menu ${
-                    activeMenu["menu-item-20880"] ? "active" : ""
-                  }`}
-                  style={{
-                    maxHeight: activeMenu["menu-item-20880"] ? "241px" : "0px",
-                    overflow: "hidden",
-                    transition: "max-height 0.3s ease",
-                  }}
-                  onClick={() => handleToggle("menu-item-20880")}
-                >
-                  <li
-                    id="menu-item-20881"
-                    className="style-blue menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20881 active"
-                  >
-                    <a href="/" data-role="sub-mega-menu-action">
-                      ERP
-                    </a>
-                    <div className="fixed-menu-wrapper js-fixed-menu-wrapper">
-                      <ul className="sub-menu">
-                        <button
-                          className="return-back"
-                          data-role="sub-mega-menu-action"
-                        >
-                          Solutions
-                        </button>
-                        <a href="/" className="menu-item-parent-link">
-                          ERP
-                        </a>{" "}
-                        <li
-                          id="menu-item-20882"
-                          className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20882"
-                        >
-                          <a href="/">Products</a>
-                          <ul
-                            className="sub-menu "
-                          >
-                            <li
-                              id="menu-item-20883"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20883"
-                            >
-                              <a href="/">Analytics and Business Insights</a>
-                            </li>
-                            <li
-                              id="menu-item-31544"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-31544"
-                            >
-                              <a href="/">Cloud ERP</a>
-                            </li>
-                            <li
-                              id="menu-item-20884"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20884"
-                            >
-                              <a href="/">CRM and Sales</a>
-                            </li>
-                            <li
-                              id="menu-item-20885"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20885"
-                            >
-                              <a href="/">Equipment Rental</a>
-                            </li>
-                            <li
-                              id="menu-item-20886"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20886"
-                            >
-                              <a href="/">Financial Management</a>
-                            </li>
-                            <li
-                              id="menu-item-20887"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20887"
-                            >
-                              <a href="/">Human Resources Management</a>
-                            </li>
-                            <li
-                              id="menu-item-20888"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20888"
-                            >
-                              <a href="/">Mobile ERP</a>
-                            </li>
-                            <li
-                              id="menu-item-20889"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20889"
-                            >
-                              <a href="/">Project Management</a>
-                            </li>
-                            <li
-                              id="menu-item-20890"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20890"
-                            >
-                              <a href="/">Portal Generator</a>
-                            </li>
-                            <li
-                              id="menu-item-20891"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20891"
-                            >
-                              <a href="/">Priority Payments</a>
-                            </li>
-                            <li
-                              id="menu-item-20892"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20892"
-                            >
-                              <a href="/">Supply Chain Management</a>
-                            </li>
-                            <li
-                              id="menu-item-20893"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20893"
-                            >
-                              <a href="/">Warehouse management</a>
-                            </li>
-                            <li
-                              id="menu-item-20894"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20894"
-                            >
-                              <a href="/">Localizations</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li
-                          id="menu-item-20895"
-                          className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20895"
-                        >
-                          <a href="/">Industries</a>
-                          <ul className="sub-menu">
-                            <li
-                              id="menu-item-20896"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20896"
-                            >
-                              <a href="/">Agriculture</a>
-                            </li>
-                            <li
-                              id="menu-item-20897"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20897"
-                            >
-                              <a href="/">Construction</a>
-                            </li>
-                            <li
-                              id="menu-item-20898"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20898"
-                            >
-                              <a href="/">Electronics</a>
-                            </li>
-                            <li
-                              id="menu-item-20899"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20899"
-                            >
-                              <a href="/">Financial Services</a>
-                            </li>
-                            <li
-                              id="menu-item-20900"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20900"
-                            >
-                              <a href="/">Healthcare</a>
-                            </li>
-                            <li
-                              id="menu-item-20901"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20901"
-                            >
-                              <a href="/">Manufacturing</a>
-                            </li>
-                            <li
-                              id="menu-item-20902"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20902"
-                            >
-                              <a href="/">Medical Devices</a>
-                            </li>
-                            <li
-                              id="menu-item-20903"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20903"
-                            >
-                              <a href="/">Municipalities</a>
-                            </li>
-                            <li
-                              id="menu-item-20904"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20904"
-                            >
-                              <a href="/">Nonprofits</a>
-                            </li>
-                            <li
-                              id="menu-item-20905"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20905"
-                            >
-                              <a href="/">Pharmaceutical</a>
-                            </li>
-                            <li
-                              id="menu-item-20906"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20906"
-                            >
-                              <a href="/">Professional Services</a>
-                            </li>
-                            <li
-                              id="menu-item-20907"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20907"
-                            >
-                              <a href="/">Retail</a>
-                            </li>
-                            <li
-                              id="menu-item-20908"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20908"
-                            >
-                              <a href="/">Software and Technology</a>
-                            </li>
-                            <li
-                              id="menu-item-20909"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20909"
-                            >
-                              <a href="/">Wholesale & Distribution</a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li
-                    id="menu-item-20910"
-                    className="style-purple menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20910"
-                  >
-                    <a href="/" data-role="sub-mega-menu-action">
-                      Retail ManagementTrue omnichannel experience
-                    </a>
-                    <div className="fixed-menu-wrapper js-fixed-menu-wrapper">
-                      <ul className="sub-menu">
-                        <button
-                          className="return-back"
-                          data-role="sub-mega-menu-action"
-                        >
-                          Solutions
-                        </button>
-                        <a href="/" className="menu-item-parent-link">
-                          Retail ManagementTrue omnichannel experience
-                        </a>{" "}
-                        <li
-                          id="menu-item-20911"
-                          className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20911"
-                        >
-                          <a href="/">Products</a>
-                          <ul className="sub-menu">
-                            <li
-                              id="menu-item-20912"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20912"
-                            >
-                              <a href="/">Customer loyalty management</a>
-                            </li>
-                            <li
-                              id="menu-item-20913"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20913"
-                            >
-                              <a
-                                href="/"
-                                className="nav__link"
-                                data-role="show-sub-menu"
-                                title=""
-                              >
-                                E-commerce
-                                <span className="sub-menu-toggle"></span>
-                              </a>
-                              <ul className="sub-menu">
-                                <li
-                                  id="menu-item-20914"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20914"
-                                >
-                                  <a href="/" className="nav__link" title="">
-                                    OneCore Full Cart Mode
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li
-                              id="menu-item-20915"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20915"
-                            >
-                              <a href="/">Gift Card Management</a>
-                            </li>
-                            <li
-                              id="menu-item-20916"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20916"
-                            >
-                              <a
-                                href="/"
-                                className="nav__link"
-                                data-role="show-sub-menu"
-                                title=""
-                              >
-                                Head Office
-                                <span className="sub-menu-toggle"></span>
-                              </a>
-                              <ul className="sub-menu">
-                                <li
-                                  id="menu-item-20917"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20917"
-                                >
-                                  <a href="/" className="nav__link" title="">
-                                    Inventory control
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-20918"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20918"
-                                >
-                                  <a href="/" className="nav__link" title="">
-                                    Purchasing
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-20919"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20919"
-                                >
-                                  <a href="/" className="nav__link" title="">
-                                    Omnichannel CRM
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li
-                              id="menu-item-20920"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20920"
-                            >
-                              <a href="/">Order Management</a>
-                            </li>
-                            <li
-                              id="menu-item-27053"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-27053"
-                            >
-                              <a href="/">Priority MyBranch</a>
-                            </li>
-                            <li
-                              id="menu-item-20921"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20921"
-                            >
-                              <a
-                                href="/"
-                                className="nav__link"
-                                data-role="show-sub-menu"
-                                title=""
-                              >
-                                POS & Back Office
-                                <span className="sub-menu-toggle"></span>
-                              </a>
-                              <ul className="sub-menu">
-                                <li
-                                  id="menu-item-20922"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20922"
-                                >
-                                  <a href="/" className="nav__link" title="">
-                                    Priority POS
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-20923"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20923"
-                                >
-                                  <a href="/" className="nav__link" title="">
-                                    TPOS
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-20924"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20924"
-                                >
-                                  <a href="/" className="nav__link" title="">
-                                    QPOS
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-20925"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20925"
-                                >
-                                  <a href="/" className="nav__link" title="">
-                                    Self Service Kiosk
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-20926"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20926"
-                                >
-                                  <a href="/" className="nav__link" title="">
-                                    Mobile Back Office
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li
-                              id="menu-item-27777"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-27777"
-                            >
-                              <a href="/">Priority MyBranch</a>
-                            </li>
-                            <li
-                              id="menu-item-20927"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20927"
-                            >
-                              <a href="/">Replenishment</a>
-                            </li>
-                            <li
-                              id="menu-item-20928"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20928"
-                            >
-                              <a href="/">Retail ERP Software</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li
-                          id="menu-item-20929"
-                          className="two-columns menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20929"
-                        >
-                          <a href="/">Categories</a>
-                          <ul className="sub-menu">
-                            <li
-                              id="menu-item-20930"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20930"
-                            >
-                              <a href="/">Apparel & Footwear</a>
-                            </li>
-                            <li
-                              id="menu-item-20931"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20931"
-                            >
-                              <a href="/">Bookstores & Record shops</a>
-                            </li>
-                            <li
-                              id="menu-item-20932"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20932"
-                            >
-                              <a href="/">
-                                Building Material, Garden Equipment, and
-                                Hardware
-                              </a>
-                            </li>
-                            <li
-                              id="menu-item-20933"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20933"
-                            >
-                              <a href="/">Cellular, Electronics & Computers</a>
-                            </li>
-                            <li
-                              id="menu-item-20934"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20934"
-                            >
-                              <a href="/">Convenience Stores</a>
-                            </li>
-                            <li
-                              id="menu-item-20935"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20935"
-                            >
-                              <a href="/">Cosmetics</a>
-                            </li>
-                            <li
-                              id="menu-item-20936"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20936"
-                            >
-                              <a href="/">Duty Free</a>
-                            </li>
-                            <li
-                              id="menu-item-20937"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20937"
-                            >
-                              <a href="/">Furniture & Home Decor</a>
-                            </li>
-                            <li
-                              id="menu-item-20938"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20938"
-                            >
-                              <a href="/">
-                                Electrical Appliances & Lighting Showrooms
-                              </a>
-                            </li>
-                            <li
-                              id="menu-item-20939"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20939"
-                            >
-                              <a href="/">Jewelry</a>
-                            </li>
-                            <li
-                              id="menu-item-20940"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20940"
-                            >
-                              <a href="/">Liquor / Spirits / Tobacco</a>
-                            </li>
-                            <li
-                              id="menu-item-20941"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20941"
-                            >
-                              <a href="/">Office supplies & general retail</a>
-                            </li>
-                            <li
-                              id="menu-item-20942"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20942"
-                            >
-                              <a href="/">Pet and Animal Supplies</a>
-                            </li>
-                            <li
-                              id="menu-item-20943"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20943"
-                            >
-                              <a href="/">Sporting Goods</a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li
-                    id="menu-item-20944"
-                    className="style-light-blue menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20944"
-                  >
-                    <a href="/" data-role="sub-mega-menu-action">
-                      Hospitality Management
-                    </a>
-                    <div className="fixed-menu-wrapper js-fixed-menu-wrapper">
-                      <ul className="sub-menu">
-                        <button
-                          className="return-back"
-                          data-role="sub-mega-menu-action"
-                        >
-                          Solutions
-                        </button>
-                        <a href="/" className="menu-item-parent-link">
-                          Hospitality Management
-                        </a>{" "}
-                        <li
-                          id="menu-item-20945"
-                          className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20945"
-                        >
-                          <a href="/">Products</a>
-                          <ul className="sub-menu">
-                            <li
-                              id="menu-item-20946"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20946"
-                            >
-                              <a href="/">Optima PMS</a>
-                            </li>
-                            <li
-                              id="menu-item-20947"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20947"
-                            >
-                              <a href="/">Optima Cloud PMS</a>
-                            </li>
-                            <li
-                              id="menu-item-20949"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20949"
-                            >
-                              <a href="/">Channel Manager</a>
-                            </li>
-                            <li
-                              id="menu-item-24801"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-24801"
-                            >
-                              <a href="/">Optima CRM</a>
-                            </li>
-                            <li
-                              id="menu-item-24800"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-24800"
-                            >
-                              <a href="/">Optima POS</a>
-                            </li>
-                            <li
-                              id="menu-item-20948"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20948"
-                            >
-                              <a href="/">Optima Marketplace</a>
-                            </li>
-                            <li
-                              id="menu-item-26836"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-26836"
-                            >
-                              <a href="/">Optima Event Management</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li
-                          id="menu-item-20950"
-                          className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20950"
-                        >
-                          <a href="/">Categories</a>
-                          <ul className="sub-menu">
-                            <li
-                              id="menu-item-24796"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-24796"
-                            >
-                              <a href="/">Boutique hotels management</a>
-                            </li>
-                            <li
-                              id="menu-item-24797"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-24797"
-                            >
-                              <a href="/">Business hotels management</a>
-                            </li>
-                            <li
-                              id="menu-item-26835"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-26835"
-                            >
-                              <a href="/">Hostels management</a>
-                            </li>
-                            <li
-                              id="menu-item-20952"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20952"
-                            >
-                              <a href="/">Hotel chains and groups management</a>
-                            </li>
-                            <li
-                              id="menu-item-20951"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20951"
-                            >
-                              <a href="/">Independent hotels management</a>
-                            </li>
-                            <li
-                              id="menu-item-24799"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-24799"
-                            >
-                              <a href="/">Resorts management</a>
-                            </li>
-                            <li
-                              id="menu-item-28924"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-28924"
-                            >
-                              <a href="/">Vacation resorts</a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li
-                    id="menu-item-20953"
-                    className="style-coral menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20953"
-                  >
-                    <a href="/" data-role="sub-mega-menu-action">
-                      School Management
-                    </a>
-                    <div className="fixed-menu-wrapper js-fixed-menu-wrapper">
-                      <ul className="sub-menu">
-                        <button
-                          className="return-back"
-                          data-role="sub-mega-menu-action"
-                        >
-                          Solutions
-                        </button>
-                        <a href="/" className="menu-item-parent-link">
-                          School Management
-                        </a>{" "}
-                        <li
-                          id="menu-item-20954"
-                          className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20954"
-                        >
-                          <a href="/">Categories</a>
-                          <ul className="sub-menu">
-                            <li
-                              id="menu-item-20955"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20955"
-                            >
-                              <a href="/">Teachers</a>
-                            </li>
-                            <li
-                              id="menu-item-20956"
-                              className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20956"
-                            >
-                              <a href="/">Students and Parents</a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li
-                id="menu-item-20957"
-                onClick={() => handleToggle("menu-item-20957")}
-                className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20957 ${
-                  activeMenu["menu-item-20957"] ? "active" : ""
+                <li className="menu-item">
+                  <a href="/RoomBasedAV">Room-based AV</a>
+                </li>
+                <li className="menu-item">
+                  <a href="/DigitalSignage">Digital Signage</a>
+                </li>
+                <li className="menu-item">
+                  <a href="/DisplaySystems">Display Systems</a>
+                </li>
+              </ul>
+            </li>
+
+            {/* Collaboration Solutions */}
+            <li
+              className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleToggle("collaborationSolutions");
+              }}
+            >
+              <a href="/collaborationSolutions" onClick={(e) => e.preventDefault()}>
+                Collaboration
+              </a>
+              <ul
+                className={`sub-menu ${
+                  activeMenu["collaborationSolutions"] ? "active" : ""
                 }`}
+                style={{
+                  maxHeight: activeMenu["collaborationSolutions"] ? "400px" : "0px",
+                  overflow: "hidden",
+                  transition: "max-height 0.3s ease",
+                }}
               >
-                <a
-                  href="/"
-                  className="nav__link"
-                  data-role="show-sub-menu"
-                  title=""
-                  onClick={(e) => e.preventDefault()}
-                >
-                  Partners<span className="sub-menu-toggle"></span>
-                </a>
-                <ul
-                  className={`sub-menu ${
-                    activeMenu["menu-item-20957"] ? "active" : ""
-                  }`}
-                  style={{
-                    maxHeight: activeMenu["menu-item-20957"] ? "241px" : "0px",
-                    overflow: "hidden",
-                    transition: "max-height 0.3s ease",
-                  }}
-                  onClick={() => handleToggle("menu-item-20957")}
-                >
-                  <li
-                    id="menu-item-20958"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20958"
-                  >
-                    <a href="/">Hospitality marketplace</a>
-                  </li>
-                  <li
-                    id="menu-item-20959"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20959"
-                  >
-                    <a href="/">Become a partner</a>
-                  </li>
-                  <li
-                    id="menu-item-20960"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20960"
-                  >
-                    <a href="/">Technology partners</a>
-                  </li>
-                  <li
-                    id="menu-item-20961"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20961"
-                  >
-                    <a href="/">AWS partner</a>
-                  </li>
-                  <li
-                    id="menu-item-20962"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-20962"
-                  >
-                    <a href="/">Priority Market</a>
-                  </li>
-                </ul>
-              </li>
-              <li
-                id="menu-item-20963"
-                onClick={() => handleToggle("menu-item-20963")}
-                className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20963 ${
-                  activeMenu["menu-item-20963"] ? "active" : ""
+                <li className="menu-item">
+                  <a href="/teams-and-zoom-rooms">Teams & Zoom</a>
+                </li>
+                <li className="menu-item">
+                  <a href="/hybrid-solutions">Hybrid Meetings</a>
+                </li>
+                <li className="menu-item">
+                  <a href="/wireless-presentation-systems">Wireless Systems</a>
+                </li>
+                <li className="menu-item">
+                  <div className="mobile-menu-banner">
+                    <div className="banner-content">
+                      <div className="banner-title">Certified for your AV Solution in 2025</div>
+                      <div className="banner-description">Insight Report on AV Solutions.</div>
+                      <a href="/certifications" className="btn-mobile">See certifications</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            {/* Digital Media */}
+            <li
+              className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleToggle("digitalMedia");
+              }}
+            >
+              <a href="/digitalMedia" onClick={(e) => e.preventDefault()}>
+                Digital Media
+              </a>
+              <ul
+                className={`sub-menu ${
+                  activeMenu["digitalMedia"] ? "active" : ""
                 }`}
+                style={{
+                  maxHeight: activeMenu["digitalMedia"] ? "300px" : "0px",
+                  overflow: "hidden",
+                  transition: "max-height 0.3s ease",
+                }}
               >
-                <a
-                  href="/"
-                  className="nav__link"
-                  data-role="show-sub-menu"
-                  title=""
-                  onClick={(e) => e.preventDefault()}
-                >
-                  Company<span className="sub-menu-toggle"></span>
-                </a>
-                <ul
-                  className={`sub-menu ${
-                    activeMenu["menu-item-20963"] ? "active" : ""
-                  }`}
-                  style={{
-                    maxHeight: activeMenu["menu-item-20963"] ? "241px" : "0px",
-                    overflow: "hidden",
-                    transition: "max-height 0.3s ease",
-                  }}
-                >
-                  <li
-                    id="menu-item-20964"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20964"
-                  >
-                    <a href="/">About us</a>
-                  </li>
-                  <li
-                    id="menu-item-20965"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20965"
-                  >
-                    <a href="/">Case studies</a>
-                  </li>
-                  <li
-                    id="menu-item-20966"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20966"
-                  >
-                    <a href="/">Events</a>
-                  </li>
-                  <li
-                    id="menu-item-20967"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20967"
-                  >
-                    <a href="/">News</a>
-                  </li>
-                  <li
-                    id="menu-item-20968"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20968"
-                  >
-                    <a href="/">Careers</a>
-                  </li>
-                  <li
-                    id="menu-item-26837"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-26837"
-                  >
-                    <a href="/">Contact us</a>
-                  </li>
-                </ul>
-              </li>
-              <li
-                id="menu-item-20969"
-                onClick={() => handleToggle("menu-item-20969")}
-                className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20969 ${
-                  activeMenu["menu-item-20969"] ? "active" : ""
+                <li className="menu-item">
+                  <a href="/iptv">IPTV</a>
+                </li>
+                <li className="menu-item">
+                  <a href="/video-walls-and-LED-systems">Video Walls</a>
+                </li>
+                <li className="menu-item">
+                  <a href="/interactive-kiosk-and-screens">Interactive Kiosks</a>
+                </li>
+              </ul>
+            </li>
+
+            {/* Automation Solutions */}
+            <li
+              className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleToggle("automationSolutions");
+              }}
+            >
+              <a href="/automationSolutions" onClick={(e) => e.preventDefault()}>
+                Automation
+              </a>
+              <ul
+                className={`sub-menu ${
+                  activeMenu["automationSolutions"] ? "active" : ""
                 }`}
+                style={{
+                  maxHeight: activeMenu["automationSolutions"] ? "300px" : "0px",
+                  overflow: "hidden",
+                  transition: "max-height 0.3s ease",
+                }}
               >
-                <a
-                  href="/"
-                  className="nav__link"
-                  data-role="show-sub-menu"
-                  title=""
-                  onClick={(e) => e.preventDefault()}
-                >
-                  Resources<span className="sub-menu-toggle"></span>
-                </a>
-                <ul
-                  className={`sub-menu ${
-                    activeMenu["menu-item-20969"] ? "active" : ""
-                  }`}
-                  style={{
-                    maxHeight: activeMenu["menu-item-20969"] ? "241px" : "0px",
-                    overflow: "hidden",
-                    transition: "max-height 0.3s ease",
-                  }}
-                >
-                  <li
-                    id="menu-item-20970"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-20970"
-                  >
-                    <a href="/">Articles</a>
-                  </li>
-                  <li
-                    id="menu-item-20971"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-20971"
-                  >
-                    <a href="/">Brochures</a>
-                  </li>
-                  <li
-                    id="menu-item-26843"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-26843"
-                  >
-                    <a href="/">Webinars</a>
-                  </li>
-                  <li
-                    id="menu-item-20973"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-20973"
-                  >
-                    <a href="/">Videos</a>
-                  </li>
-                  <li
-                    id="menu-item-20974"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20974"
-                  >
-                    <a href="/">FAQ</a>
-                  </li>
-                  <li
-                    id="menu-item-20975"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20975"
-                  >
-                    <a href="/">Blog</a>
-                  </li>
-                </ul>
-              </li>
+                <li className="menu-item">
+                  <a href="/room-scheduling-systems">Room Scheduling</a>
+                </li>
+                <li className="menu-item">
+                  <a href="/touch-panel-control">Touch Control</a>
+                </li>
+                <li className="menu-item">
+                  <a href="/av-automation">Building Automation</a>
+                </li>
+              </ul>
+            </li>
+
+            {/* Interactive Technology */}
+            <li className="menu-item">
+              <a href="/interactiveTechnology">Interactive Tech</a>
+            </li>
+          </ul>
+        </li>
+
+        {/* Sectors Menu */}
+        <li
+          id="mobile-menu-item-sectors"
+          onClick={() => handleToggle("sectors")}
+          className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ${
+            activeMenu["sectors"] ? "active" : ""
+          }`}
+        >
+          <a
+            href="/sectors"
+            className="nav__link"
+            onClick={(e) => e.preventDefault()}
+          >
+            Sectors<span className="sub-menu-toggle"></span>
+          </a>
+          <ul
+            className={`sub-menu ${
+              activeMenu["sectors"] ? "active" : ""
+            }`}
+            style={{
+              maxHeight: activeMenu["sectors"] ? "600px" : "0px",
+              overflow: "hidden",
+              transition: "max-height 0.3s ease",
+            }}
+          >
+            <li className="menu-item">
+              <div className="mobile-menu-banner">
+                <div className="banner-content">
+                  <div className="banner-title">Recognized as the top AV Solution in 2025</div>
+                  <div className="banner-description">Insight Report on AV Solutions for SMBs</div>
+                  <a href="/contact" className="btn-mobile">Contact us</a>
+                </div>
+              </div>
+            </li>
+            {sectorsSubMenuItems.map((item, index) => (
               <li
-                id="menu-item-20976"
-                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-20976"
+                key={index}
+                className="menu-item menu-item-type-custom menu-item-object-custom"
               >
-                <a href="/">Support</a>
+                <a href={item.href}>
+                  <span className="item-title">{item.label}</span>
+                </a>
               </li>
-            </ul>
-          </nav>
-          <a href="/" className="mobile-menu__button">
-            Get a Demo
-          </a>{" "}
-        </div>
-      </div>
+            ))}
+          </ul>
+        </li>
+
+        {/* Company Menu */}
+        <li
+          id="mobile-menu-item-company"
+          onClick={() => handleToggle("company")}
+          className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ${
+            activeMenu["company"] ? "active" : ""
+          }`}
+        >
+          <a
+            href="/company"
+            className="nav__link"
+            onClick={(e) => e.preventDefault()}
+          >
+            Company<span className="sub-menu-toggle"></span>
+          </a>
+          <ul
+            className={`sub-menu ${
+              activeMenu["company"] ? "active" : ""
+            }`}
+            style={{
+              maxHeight: activeMenu["company"] ? "500px" : "0px",
+              overflow: "hidden",
+              transition: "max-height 0.3s ease",
+            }}
+          >
+            <li className="menu-item">
+              <div className="mobile-menu-banner">
+                <div className="banner-content">
+                  <div className="banner-title">See how we transformed operational efficiency</div>
+                  <a href="/gallery" className="btn-mobile">Visit Gallery</a>
+                </div>
+              </div>
+            </li>
+            <li className="menu-item">
+              <a href="/about">About Us</a>
+            </li>
+            <li className="menu-item">
+              <a href="/case-studies">Case Studies</a>
+            </li>
+            <li className="menu-item">
+              <a href="/contact">Contact</a>
+            </li>
+          </ul>
+        </li>
+
+        {/* Services Menu */}
+        <li
+          id="mobile-menu-item-services"
+          onClick={() => handleToggle("services")}
+          className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ${
+            activeMenu["services"] ? "active" : ""
+          }`}
+        >
+          <a
+            href="/services"
+            className="nav__link"
+            onClick={(e) => e.preventDefault()}
+          >
+            Services<span className="sub-menu-toggle"></span>
+          </a>
+          <ul
+            className={`sub-menu ${
+              activeMenu["services"] ? "active" : ""
+            }`}
+            style={{
+              maxHeight: activeMenu["services"] ? "700px" : "0px",
+              overflow: "hidden",
+              transition: "max-height 0.3s ease",
+            }}
+          >
+            <li className="menu-item">
+              <div className="mobile-menu-banner">
+                <div className="banner-content">
+                  <div className="banner-title">Proscene periodical</div>
+                  <div className="banner-description">Download our brochure today</div>
+                  <a 
+                    href="/data/profile.pdf" 
+                    download="Proscene_Company_Profile.pdf"
+                    className="btn-mobile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Download now
+                  </a>
+                </div>
+              </div>
+            </li>
+            {servicesSubMenuItems.map((item, index) => (
+              <li
+                key={index}
+                className="menu-item menu-item-type-custom menu-item-object-custom"
+              >
+                <a href={item.href}>
+                  <span className="item-title">{item.label}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </li>
+
+        {/* Support Menu */}
+        <li className="menu-item menu-item-type-custom menu-item-object-custom">
+          <a href="/support">Support</a>
+        </li>
+      </ul>
+    </nav>
+
+    {/* Demo Button */}
+    <a href="/bookDemo" className="mobile-menu__button">
+      Get Demo
+    </a>
+  </div>
+</div>
     </header>
   );
 }

@@ -76,35 +76,34 @@ function TrainingAndSupport() {
   return (
     <div>
       <div className="pb-5 maxWidthContainer">
-        <div className="flex flex-col md:flex-row items-center justify-center p-8 bg-white mt-24">
-          <div className="bg-[#3b37e6] py-16 text-white p-10 md:w-1/2 Br">
-            <h1 className="font-bold h1sizing">Training and Support Made Easy</h1>
-            <p className="text-lg mb-6">{swipeTexts[currentIndex]}</p>
-            <div className="button-Center">
-              <button className="border border-white text-white py-2 px-6 rounded-2xl hover:bg-blue-700"
-              onClick={handleButtonClick}>
-                Contact us
-              </button>
-            </div>
-          </div>
-          <div className="relative md:w-1/2 flex items-center justify-center mt-8 md:mt-0 bg-growth">
-            <img
-              src={supportjpg}
-              alt="home"
-              className="ml-10 shadow-lg"
-              style={{ borderRadius: "2em" }}
-            />
-            <img
-              src={leftbottomSvg}
-              alt="home"
-              className="absolute -bottom-2 left-4 w-40"
-              style={{ zIndex: "999" }}
-            />
-
-            <div className="absolute -top-5 -right-5 w-32 h-32 bg-purple-200 rounded-lg"></div>
-            <div className="absolute top-1/4 right-1/4 w-16 h-16 bg-red-300 rounded-lg"></div>
-          </div>
-        </div>
+        <div className="max-w-7xl mx-auto px-4 py-20 mt-24">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+    <div className="bg-[#3b37e6] text-white p-10 Br flex flex-col justify-center space-y-8">
+      <h1 className="font-bold h1sizing">Training and Support Made Easy</h1>
+      <p className="text-lg mb-6">{swipeTexts[currentIndex]}</p>
+      <div className="flex flex-col sm:flex-row gap-4">
+        <button 
+          onClick={handleButtonClick}
+          className="bg-white text-gray-900 px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+        >
+          Contact us
+        </button>
+      </div>
+    </div>
+    
+    <div className="relative flex items-center justify-center">
+      <div className="relative w-full">
+        <div className="absolute -top-8 -right-8 w-40 h-40 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full opacity-20 animate-pulse"></div>
+        <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-[#b062ff] to-[#00d2fb] rounded-full opacity-25 animate-bounce"></div>
+        <img
+          src={`${process.env.PUBLIC_URL}/training.avif`}
+          alt="Training and Support"
+          className="relative z-10 w-full h-auto Br shadow-2xl"
+        />
+      </div>
+    </div>
+  </div>
+</div>
       </div>
 
       {/* key feature */}

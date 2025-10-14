@@ -6,8 +6,15 @@ import { motion } from "framer-motion";
 import FAQ from "./Faq";
 import Footer from '../components/Footer';
 import BookDemoToday from '../components/BookDemo';
+import { useNavigate } from 'react-router-dom';
+
+
 
 function OnSiteSupport() {
+  const navigate  = useNavigate();
+   const handleButtonClick = () => {
+      navigate("/bookDemo");
+  }
   const swipeTexts = [
     "Amplify operational efficiency, discover new opportunities, and stay agile in the rapidly changing market.",
     "Streamline your processes and innovate faster to achieve measurable success.",
@@ -22,7 +29,6 @@ function OnSiteSupport() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // te texts swipe evry 3seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % swipeTexts.length);
@@ -30,10 +36,12 @@ function OnSiteSupport() {
 
     return () => clearInterval(interval);
   }, [swipeTexts.length]);
+
   const cardVariants = {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0 },
   };
+
   const [activeLink, setActiveLink] = useState("feature1");
 
   const links = [
@@ -81,53 +89,47 @@ function OnSiteSupport() {
   return (
     <div>
       <div className="pb-5 maxWidthContainer">
-        <div className="flex flex-col md:flex-row items-center justify-center p-8 bg-white mt-24">
-          <div
-            className="bg-[#3b37e6] py-16 text-white p-10 md:w-1/2 Br"
-            style={{ height: "100%" }}
-          >
-            <h1 className="font-bold h1sizing">
-              Need assistance? Support made easy.
-            </h1>
-            <p className="text-lg mb-6">
-              {/* added 3 `line texts` that swipe automatically */}
-              {swipeTexts[currentIndex]}
-            </p>
-            <div className="button-Center">
-              <button className="border border-white text-white py-2 px-6 rounded-2xl hover:bg-blue-700">
-                Contact us
-              </button>
+        <div className="max-w-7xl mx-auto px-4 py-20 mt-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+            <div className="bg-[#3b37e6] text-white p-10 Br flex flex-col justify-center space-y-8">
+              <h1 className="font-bold h1sizing">
+                Support made easy.
+              </h1>
+              <p className="text-lg mb-6">
+                {swipeTexts[currentIndex]}
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button 
+                  className="bg-white text-gray-900 px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+                >
+                  Contact us
+                </button>
+              </div>
             </div>
-          </div>
-
-          <div className="relative md:w-1/2 flex items-center justify-center mt-8 md:mt-0 bg-growth">
-            <img
-              src={supportjpg}
-              alt="home"
-              className=" ml-10 shadow-lg"
-              style={{ borderRadius: "2em" }}
-            />
-            <img
-              src={leftbottomSvg}
-              alt="home"
-              className="absolute -bottom-2   left-4 w-40"
-              style={{ zIndex: "999" }}
-            />
-
-            <div className="absolute -top-5 -right-5 w-32 h-32 bg-purple-200 rounded-lg"></div>
-            {/* <div className="absolute -bottom-12 -left-8 w-32 h-16 bg-cyan-200 rounded-full"></div> */}
-            <div className="absolute top-1/4 right-1/4 w-16 h-16 bg-red-300 rounded-lg"></div>
+            
+            <div className="relative flex items-center justify-center">
+              <div className="relative w-full">
+                <div className="absolute -top-8 -right-8 w-40 h-40 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full opacity-20 animate-pulse"></div>
+                <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-[#b062ff] to-[#00d2fb] rounded-full opacity-25 animate-bounce"></div>
+                <img
+                  src={`${process.env.PUBLIC_URL}/support.jpg`}
+                  alt="On-Site Support"
+                  className="relative z-10 w-full h-auto Br shadow-2xl"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
       <div>
         {/* Button Row */}
-        <div className="flex justify-center items-center bg-white">
-          <div className="flex flex-wrap justify-center space-x-4 max-w-[800px]">
+        <div className="flex justify-center items-center bg-white py-4">
+          <div className="flex flex-wrap justify-center gap-4 max-w-[800px] px-4">
             {[
               { text: "Competitive edge", id: "competitive-edge" },
               { text: "Key features", id: "key-features" },
-              { text: "Case studies", id: "case-studies" },
+              // { text: "Case studies", id: "case-studies" },
               { text: "FAQs", id: "faqs" },
             ].map((button, index) => (
               <button
@@ -147,86 +149,81 @@ function OnSiteSupport() {
           id="competitive-edge"
           className="pt-9 pb-9 flex justify-center items-center"
         >
-          <div className="flex flex-wrap items-center justify-center md:justify-between max-w-[1200px] mx-auto p-4">
-            {/* First Column */}
-            <div className="md:w-1/2 w-full p-4">
-              <h1 className="text-2xl md:text-4xl font-bold text-gray-800">
-                Support That Powers Your Vision
-              </h1>
-              <p className="mt-4 text-gray-600">
-                At ProScene, we understand that exceptional support is the
-                foundation of success in the audio-visual industry. Our
-                dedicated team is here to ensure your systems perform
-                flawlessly, offering timely troubleshooting, regular
-                maintenance, and expert guidance. Whether it’s resolving a
-                technical glitch or providing on-site assistance, our commitment
-                is to keep your projects running smoothly. Reliable support
-                means your business can focus on delivering unforgettable
-                experiences while we handle the details. Together, we make your
-                vision a reality.
-              </p>
-            </div>
+          <div className="max-w-[1200px] mx-auto p-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              {/* First Column */}
+              <div className="w-full">
+                <h1 className="text-2xl md:text-4xl font-bold text-gray-800">
+                  Support That Powers Your Vision
+                </h1>
+                <p className="mt-4 text-gray-600">
+                  At ProScene, we understand that exceptional support is the
+                  foundation of success in the audio-visual industry. Our
+                  dedicated team is here to ensure your systems perform
+                  flawlessly, offering timely troubleshooting, regular
+                  maintenance, and expert guidance. Whether it's resolving a
+                  technical glitch or providing on-site assistance, our commitment
+                  is to keep your projects running smoothly. Reliable support
+                  means your business can focus on delivering unforgettable
+                  experiences while we handle the details. Together, we make your
+                  vision a reality.
+                </p>
+              </div>
 
-            {/* Second Column */}
-            <div className="md:w-1/2 w-full relative flex justify-end items-center p-4">
-              {/* Divs Container */}
-              <div className="flex flex-end">
-                {/* First Div */}
-                <div
-                  // className="absolute"
-                  style={{
-                    backgroundColor: "#ecdeff",
-                    border: "1px solid #3b37e6",
-                    borderRadius: "46px",
-                    height: "334px",
-                    marginRight: "1em",
-                    width: "170px",
-                    right: "-8px",
-                    top: "0",
-                  }}
-                ></div>
+              {/* Second Column - Decorative Design */}
+              <div className="w-full relative h-[334px] hidden md:block">
+                <div className="relative w-full h-full flex justify-end">
+                  <div
+                    className="absolute"
+                    style={{
+                      backgroundColor: "#ecdeff",
+                      border: "1px solid #3b37e6",
+                      borderRadius: "46px",
+                      height: "334px",
+                      width: "170px",
+                      right: "0",
+                      top: "0",
+                    }}
+                  ></div>
 
-                {/* Second Div */}
-                <div
-                  // className="absolute"
-                  style={{
-                    backgroundColor: "#3b37e6",
-                    border: "1px solid #ecdeff",
-                    borderRadius: "46px",
-                    height: "334px",
-                    width: "170px",
-                    right: "189px",
-                    top: "0",
-                  }}
-                ></div>
+                  <div
+                    className="absolute"
+                    style={{
+                      backgroundColor: "#3b37e6",
+                      border: "1px solid #ecdeff",
+                      borderRadius: "46px",
+                      height: "334px",
+                      width: "170px",
+                      right: "180px",
+                      top: "0",
+                    }}
+                  ></div>
 
-                {/* Last Div */}
-                <div
-                  className="absolute"
-                  style={{
-                    height: "259px",
-                    backgroundPosition:"center",
-                    backgroundImage: `url('https://eaog2nkqckp.exactdn.com/wp-content/uploads/2024/06/2.-Featured-blog-_-closing-deals.webp?strip=all&lossy=1&ssl=1')`,
-                    borderRadius: "46px",
-                    //   marginInline:'1em',
-                    width: "422px",
-                    left: "30px",
-                    top: "45px",
-                    position: "absolute",
-                    zIndex: 20,
-                  }}
-                >
-                  {" "}
+                  <div
+                    className="absolute"
+                    style={{
+                      height: "259px",
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                      backgroundImage: `url('https://eaog2nkqckp.exactdn.com/wp-content/uploads/2024/06/2.-Featured-blog-_-closing-deals.webp?strip=all&lossy=1&ssl=1')`,
+                      borderRadius: "46px",
+                      width: "422px",
+                      left: "0",
+                      top: "45px",
+                      zIndex: 20,
+                    }}
+                  ></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div
           id="key-features"
           className="pt-9 pb-9 flex justify-center items-center"
         >
-          <div className="max-w-[1100px] w-full mx-auto my-4 pt-12 pb-14 bg-[#e3eeff] border border-[#3b37e6] rounded-3xl">
+          <div className="max-w-[1100px] w-full mx-auto my-4 pt-12 pb-14 bg-[#e3eeff] border border-[#3b37e6] rounded-3xl px-4">
             <h1 className="text-center bookdemotitle">
               See how Proscene works for you
             </h1>
@@ -235,11 +232,12 @@ function OnSiteSupport() {
             </button>
           </div>
         </div>
+
         <div
           id="case-studies"
           className="bg-[#f3f6ff] flex justify-center items-center"
         >
-          <div className=" min-h-screen flex flex-col justify-center items-center p-6">
+          <div className="min-h-screen flex flex-col justify-center items-center p-6">
             <h1 className="onsitesubheads mb-12 text-center">
               Proscene gives you a true <br></br>competitive edge
             </h1>
@@ -251,16 +249,15 @@ function OnSiteSupport() {
                 initial="hidden"
                 whileInView="visible"
                 transition={{
-                  staggerChildren: 0.3, // Stagger delay for children (cards)
+                  staggerChildren: 0.3,
                 }}
                 viewport={{ once: true, amount: 0.2 }}
               >
-                {/* Card 1 */}
                 <motion.div
                   className="bg-white shadow-xl rounded-lg p-6 flex flex-col items-center justify-center"
                   variants={cardVariants}
                 >
-                  <div className="w-16 h-16  rounded-full mb-4 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full mb-4 flex items-center justify-center">
                     <span className="iconsize text-gray-700">🎯</span>
                   </div>
                   <h3 className="cardheaders text-lg">Tailored Solutions</h3>
@@ -271,12 +268,11 @@ function OnSiteSupport() {
                   </p>
                 </motion.div>
 
-                {/* Card 2 */}
                 <motion.div
                   className="bg-white shadow-xl rounded-lg p-6 flex flex-col items-center justify-center"
                   variants={cardVariants}
                 >
-                  <div className="w-16 h-16  rounded-full mb-4 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full mb-4 flex items-center justify-center">
                     <span className="iconsize text-gray-700">🚀</span>
                   </div>
                   <h3 className="cardheaders text-lg">
@@ -289,12 +285,11 @@ function OnSiteSupport() {
                   </p>
                 </motion.div>
 
-                {/* Card 3 */}
                 <motion.div
                   className="bg-white shadow-xl rounded-lg p-6 flex flex-col items-center justify-center"
                   variants={cardVariants}
                 >
-                  <div className="w-16 h-16  rounded-full mb-4 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full mb-4 flex items-center justify-center">
                     <span className="iconsize text-gray-700">⚡</span>
                   </div>
                   <h3 className="cardheaders text-lg">
@@ -308,22 +303,21 @@ function OnSiteSupport() {
                 </motion.div>
               </motion.div>
 
-              {/* Row 2 (same as Row 1) */}
+              {/* Row 2 */}
               <motion.div
                 className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12"
                 initial="hidden"
                 whileInView="visible"
                 transition={{
-                  staggerChildren: 0.3, // Stagger delay for children (cards)
+                  staggerChildren: 0.3,
                 }}
                 viewport={{ once: true, amount: 0.2 }}
               >
-                {/* Card 4 */}
                 <motion.div
                   className="bg-white shadow-xl rounded-lg p-6 flex flex-col items-center justify-center"
                   variants={cardVariants}
                 >
-                  <div className="w-16 h-16  rounded-full mb-4 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full mb-4 flex items-center justify-center">
                     <span className="iconsize text-gray-700">💵</span>
                   </div>
                   <h3 className="cardheaders text-lg">Cost Efficiency</h3>
@@ -335,12 +329,11 @@ function OnSiteSupport() {
                   </p>
                 </motion.div>
 
-                {/* Card 5 */}
                 <motion.div
                   className="bg-white shadow-xl rounded-lg p-6 flex flex-col items-center justify-center"
                   variants={cardVariants}
                 >
-                  <div className="w-16 h-16  rounded-full mb-4 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full mb-4 flex items-center justify-center">
                     <span className="iconsize text-gray-700">⌛</span>
                   </div>
                   <h3 className="cardheaders text-lg">
@@ -353,12 +346,11 @@ function OnSiteSupport() {
                   </p>
                 </motion.div>
 
-                {/* Card 6 */}
                 <motion.div
                   className="bg-white shadow-xl rounded-lg p-6 flex flex-col items-center justify-center"
                   variants={cardVariants}
                 >
-                  <div className="w-16 h-16  rounded-full mb-4 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full mb-4 flex items-center justify-center">
                     <span className="iconsize text-gray-700">👌</span>
                   </div>
                   <h3 className="cardheaders text-lg">
@@ -375,41 +367,140 @@ function OnSiteSupport() {
             </div>
           </div>
         </div>
-        <div className="max-w-[1100px] mx-auto bg-[#f3f6ff] border border-[#3b37e6] rounded-xl p-8" style={{marginBlock:'6em'}}>
-          <div className="flex flex-col md:flex-row gap-4">
+
+        {/* Training & Support Services Section */}
+        <div className="py-16 px-4 bg-white">
+          <div className="max-w-[1100px] mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                Comprehensive Training & Support
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Empower your team with the knowledge and skills they need to succeed
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Onboarding Staff */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 hover:shadow-xl transition-shadow duration-300">
+                <div className="w-16 h-16 bg-[#3b37e6] rounded-full flex items-center justify-center mb-6">
+                  <span className="text-3xl">👥</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">
+                  Onboarding Staff
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Seamless integration of new team members with comprehensive onboarding programs tailored to your organization's needs.
+                </p>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start">
+                    <span className="text-[#3b37e6] mr-2">•</span>
+                    <span>Customized orientation sessions</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#3b37e6] mr-2">•</span>
+                    <span>Hands-on equipment training</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#3b37e6] mr-2">•</span>
+                    <span>Role-specific skill development</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Ongoing User Training */}
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 hover:shadow-xl transition-shadow duration-300">
+                <div className="w-16 h-16 bg-[#3b37e6] rounded-full flex items-center justify-center mb-6">
+                  <span className="text-3xl">🎓</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">
+                  Ongoing User Training
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Continuous learning opportunities to keep your team up-to-date with the latest technologies and best practices.
+                </p>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start">
+                    <span className="text-[#3b37e6] mr-2">•</span>
+                    <span>Regular workshops and webinars</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#3b37e6] mr-2">•</span>
+                    <span>Advanced feature training</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#3b37e6] mr-2">•</span>
+                    <span>Performance optimization tips</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Documentation */}
+              <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 hover:shadow-xl transition-shadow duration-300">
+                <div className="w-16 h-16 bg-[#3b37e6] rounded-full flex items-center justify-center mb-6">
+                  <span className="text-3xl">📚</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">
+                  Documentation
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Comprehensive resources and guides to support your team's independent learning and problem-solving.
+                </p>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start">
+                    <span className="text-[#3b37e6] mr-2">•</span>
+                    <span>Detailed user manuals</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#3b37e6] mr-2">•</span>
+                    <span>Quick reference guides</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#3b37e6] mr-2">•</span>
+                    <span>Video tutorials and demos</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-[1100px] mx-auto bg-[#f3f6ff] border border-[#3b37e6] rounded-xl p-6 md:p-8 mx-4" style={{marginBlock:'6em'}}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* First Column */}
-            <div className="flex-1 flex flex-col justify-center">
-              <p className="text-lg text-gray-700 mb-4">
+            <div className="flex flex-col justify-center">
+              <p className="text-base md:text-lg text-gray-700 mb-4">
                 Schedule a no-obligation call with one of our experts to get
                 expert advice on how Proscene can help streamline your
                 operations.
               </p>
               <div>
-                <button className="bg-[#3b37e6] text-white px-6 py-2 rounded-[15px] hover:bg-[#16213d] transition-colors">
-                  Click Me
+                <button onClick={handleButtonClick} className="bg-[#3b37e6] text-white px-6 py-2 rounded-[15px] hover:bg-[#16213d] transition-colors">
+                  Contact us
                 </button>
               </div>
             </div>
             {/* Second Column */}
-            <div className="flex-1">
+            <div className="w-full h-64 md:h-auto">
               <img
                 src="https://uschamber-co.imgix.net/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fco-assets%2Fassets%2Fimages%2Fsales-rep-qualities.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.6428&fp-y=0.3549&h=415&q=88&w=622&s=2a6f11b6479804c632085126c0ecf0fc"
-                alt="Placeholder"
+                alt="Expert consultation"
                 className="w-full h-full object-cover rounded-md"
               />
             </div>
           </div>
         </div>
-        <div className="p-4">
+
+        <div className="p-4 md:p-8">
           <h2 className="text-center onsitesubheads font-bold mb-4">Key Features</h2>
           {/* Links Row */}
           <div className="relative overflow-hidden max-w-7xl mx-auto">
-            <div className="flex space-x-4 overflow-x-auto scrollbar-hide pb-1 items-center px-32">
+            <div className="flex space-x-4 overflow-x-auto scrollbar-hide pb-1 items-center px-4 md:px-32">
               {links.map((link) => (
                 <button
                   key={link.id}
                   onClick={() => setActiveLink(link.id)}
-                  className={`px-4 py-2 ${
+                  className={`px-4 py-2 whitespace-nowrap ${
                     activeLink === link.id
                       ? "text-blue-500 border-b-2 border-blue-500"
                       : "text-gray-700"
@@ -422,7 +513,6 @@ function OnSiteSupport() {
             <div
               className="absolute bottom-0 left-0 h-[2px] bg-blue-500 transition-transform"
               style={{
-                // width: "100%",
                 transform: `translateX(${
                   links.findIndex((link) => link.id === activeLink) * 100
                 }%)`,
@@ -430,14 +520,14 @@ function OnSiteSupport() {
             />
           </div>
           {/* Content Row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-32" style={{maxWidth:'1100px', margin:'0 auto'}}>
-            <div className="m-4 flex justify-center flex-col">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1100px] mx-auto px-4 md:px-8">
+            <div className="flex justify-center flex-col">
               <h3 className="cardheaders font-semibold mb-2">
                 {content[activeLink].title}
               </h3>
               <p className="featuresp">{content[activeLink].description}</p>
             </div>
-            <div className="m-4">
+            <div>
               <img
                 src={content[activeLink].image}
                 alt={content[activeLink].title}
@@ -446,8 +536,9 @@ function OnSiteSupport() {
             </div>
           </div>
         </div>
-        <div id="faqs" className="flex flex-col mt-9 pt-6 justify-center items-center pb-5">
-        <h3 className="onsitesubheads">Frequently Asked Questions</h3>
+
+        <div id="faqs" className="flex flex-col mt-9 pt-6 justify-center items-center pb-5 px-4">
+          <h3 className="onsitesubheads">Frequently Asked Questions</h3>
           <FAQ />         
         </div>        
       </div>

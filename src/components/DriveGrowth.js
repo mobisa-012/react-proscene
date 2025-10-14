@@ -80,7 +80,7 @@ function DriveGrowth() {
                     </div>
                 </div>
 
-                <div className="relative md:w-1/2 flex items-center justify-center mt-8 md:mt-0 bg-growth lg:pl-5">
+                <div className="relative md:w-1/2 flex items-center justify-center  md:mt-0 bg-growth lg:pl-5">
                     <img src={homeimg} alt="home" className="rounded-[65px] shadow-lg"/>
                 </div>
             </div>

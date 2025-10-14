@@ -99,7 +99,7 @@ function BookDemo() {
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
             Get the Resources
-            <span className="block text-yellow-300">You Need</span>
+            <span className="block ">You Need</span>
           </h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Experience how Proscene can transform your workspace. Book a personalized demo or connect with our expert team.

@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import Sectors from './pages/Sectors';
 import Casestudies from './pages/Casestudies';
 import Contact from './pages/Contact';
+import Certifications from './components/Certifications';
 import Partners from './pages/Partners';
 import Solutions from './pages/Solutions';
 import AVIntegrations from "./pages/AVIntegration";
@@ -45,6 +46,19 @@ import DisplaySystems from "./components/AvIntegration-components/DisplaySystems
 import CaseStudiesAV from "./components/case-studies-components/CasestudiesAV";
 import CaseStudiesListPage from "./components/CaseStudiesListPage";
 import CaseStudyPage from "./components/CaseStudyPage";
+import PrivacyPolicy from "./components/Privacypolicy";
+import Termsandconditions from "./components/Termsandconditions";
+import Gallery from "./components/Gallery";
+import Hybridsolutions from "./components/Hybridsolutions";
+import VideowallsandLEDdisplays from "./components/VideowallsandLEDdisplays";
+import WirelessPresentationSystems from "./components/Wirelesspresentationsystems";
+import Teamsandzoomrooms from "./components/Teamsandzoomrooms";
+import RoomScheduling from "./components/Roomschedulingsystems";
+import Interactivekiosk from "./components/Interactivekiosk";
+import Localizations from "./components/Localizations";
+import TouchPanelControl from "./components/TouchPanelControl";
+import IPTV from "./components/iptv";
+import Avautomation from "./components/Avautomation";
 
 function App() {
   return (
@@ -93,9 +107,24 @@ function App() {
       <Route path="/extron" element = {<Extron/>} />
       <Route path="/bookDemo" element = {<BookDemoPage/>} /> 
       <Route path = "/support" element = {<Support/>} />
+      <Route path="/certifications" element={<Certifications />} />
       <Route path="/case-studies-av" element = {<CaseStudiesAV/>} />
        <Route path="/case-studies" element={<CaseStudiesListPage />} />
         <Route path="/case-studies/:id" element={<CaseStudyPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+        <Route path="/terms" element={<Termsandconditions/>} />
+        <Route path="/gallery" element={<Gallery/>} />
+        <Route path="/teams-and-zoom-rooms" element={<Teamsandzoomrooms/>} />
+        <Route path="/hybrid-solutions" element={<Hybridsolutions/>} />
+        <Route path="/wireless-presentation-systems" element={<WirelessPresentationSystems/>} />
+        <Route path="video-walls-and-LED-systems" element={<VideowallsandLEDdisplays/>} />
+        <Route path="/room-scheduling-systems" element={<RoomScheduling/>} />
+        <Route path="/touch-panel-control" element={<TouchPanelControl/>} />
+        <Route path="/interactive-kiosk-and-screens" element={<Interactivekiosk/>} />
+        <Route path="/iptv" element={<IPTV/>} />
+        <Route path="/localizations" element={<Localizations/>} />
+        <Route path="/av-automation" element={<Avautomation/>} />
+        <Route path="*" element={<h1 className="text-center mt-5">404 Not Found</h1>} />
     </Routes>
     {/* <Footer /> */}
     </Router>        

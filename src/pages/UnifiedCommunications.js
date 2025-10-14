@@ -76,37 +76,103 @@ function UCC() {
   return (
     <div>
       <div className="pb-5 maxWidthContainer">
-        <div className="flex flex-col md:flex-row items-center justify-center p-8 bg-white mt-24">
-          <div className="bg-[#3b37e6] py-16 text-white p-10 md:w-1/2 Br">
-            <h1 className="font-bold h1sizing">Unified Communications Solutions</h1>
-            <p className="text-lg mb-6">{swipeTexts[currentIndex]}</p>
-            <div className="button-Center">
-              <button className="border border-white text-white py-2 px-6 rounded-2xl hover:bg-blue-700"
-              onClick={handleButtonClick}>
-                Contact us
-              </button>
-            </div>
-          </div>
-          <div className="relative md:w-1/2 flex items-center justify-center mt-8 md:mt-0 bg-growth">
-            <img
-              src={uccjpg}
-              alt="home"
-              className="ml-10 shadow-lg"
-              style={{ borderRadius: "2em" }}
-            />
-            <img
-              src={leftbottomSvg}
-              alt="home"
-              className="absolute -bottom-2 left-4 w-40"
-              style={{ zIndex: "999" }}
-            />
-            <div className="absolute -top-5 -right-5 w-32 h-32 bg-purple-200 rounded-lg"></div>
-            <div className="absolute top-1/4 right-1/4 w-16 h-16 bg-red-300 rounded-lg"></div>
-          </div>
-        </div>
+        <div className="max-w-7xl mx-auto px-4 py-20 mt-24">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+    <div className="bg-[#3b37e6] text-white p-10 Br flex flex-col justify-center space-y-8">
+      <h1 className="font-bold h1sizing">Unified Communications Solutions</h1>
+      <p className="text-lg mb-6">{swipeTexts[currentIndex]}</p>
+      <div className="flex flex-col sm:flex-row gap-4">
+        <button 
+          onClick={handleButtonClick}
+          className="bg-white text-gray-900 px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+        >
+          Contact us
+        </button>
+      </div>
+    </div>
+    
+    <div className="relative flex items-center justify-center">
+      <div className="relative w-full">
+        <div className="absolute -top-8 -right-8 w-40 h-40 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full opacity-20 animate-pulse"></div>
+        <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-[#b062ff] to-[#00d2fb] rounded-full opacity-25 animate-bounce"></div>
+        <img
+          src={uccjpg}
+          alt="Unified Communications"
+          className="relative z-10 w-full h-auto Br shadow-2xl"
+        />
+      </div>
+    </div>
+  </div>
+</div>
       </div>
 
       {/* key feature */}
+      
+         {/* New Integration Platforms Section */}
+      <div className="py-16 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#001e62] mb-4">
+              Seamless Platform Integrations
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Connect your favorite collaboration tools with our unified communications solutions
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {[
+              { name: "Microsoft Teams", logo: "💼", desc: "Full integration with Teams meetings and collaboration" },
+              { name: "Zoom", logo: "📹", desc: "Seamless Zoom room integration and interoperability" },
+              { name: "Google Meet", logo: "🔍", desc: "Google Workspace integration for unified workflows" },
+              { name: "Cisco Webex", logo: "🕸️", desc: "Enterprise-grade Webex integration solutions" },
+            ].map((platform, index) => (
+              <div key={index} className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+                <div className="text-4xl mb-4">{platform.logo}</div>
+                <h3 className="font-bold text-[#001e62] mb-2">{platform.name}</h3>
+                <p className="text-gray-600 text-sm">{platform.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      
+        {/* AV + IT Convergence Section */}
+      <div className="py-16 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#001e62] mb-6">
+                AV + IT Convergence
+              </h2>
+              <p className="text-lg text-gray-600 mb-6">
+                Unify your audiovisual and IT infrastructure for streamlined operations, reduced complexity, and enhanced user experiences.
+              </p>
+              <div className="space-y-4">
+                {[
+                  "Unified network infrastructure for AV and IT systems",
+                  "Centralized management and monitoring",
+                  "Enhanced security across all communication platforms",
+                  "Scalable solutions that grow with your business",
+                  "Reduced total cost of ownership"
+                ].map((benefit, index) => (
+                  <div key={index} className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-[#00abfa] rounded-full"></div>
+                    <span className="text-gray-700">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8">
+              <img
+                src={uccImage}
+                alt="AV IT Convergence"
+                className="w-full h-auto rounded-xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="p-4">
         <h2 className="text-center onsitesubheads font-bold mb-4">Key Features</h2>
         {/* Links Row */}
