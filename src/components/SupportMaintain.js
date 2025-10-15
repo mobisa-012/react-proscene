@@ -6,7 +6,7 @@ const SupportMaintain = () => {
     <div className="bg-[#3b37e6] text-white py-16">
       <div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col lg:flex-row items-center">
          {/* Image Section */}
-         <div className="lg:w-1/2 mt-10 lg:mt-0 ml-10">
+         <div className="lg:w-1/2 mt-10 lg:mt-0 ml-5">
           <div className="relative">
             <img
               src={sup}

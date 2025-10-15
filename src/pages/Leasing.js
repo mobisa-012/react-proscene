@@ -75,26 +75,33 @@ function Leasing() {
 
   return (
     <div>
+      {/* Hero Section */}
       <div className="pb-5 maxWidthContainer">
-        <div className="max-w-7xl mx-auto px-4 py-20 mt-24">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-            <div className="bg-[#3b37e6] text-white p-10 Br flex flex-col justify-center space-y-8">
-              <h1 className="font-bold h1sizing">Lease Equipment Effortlessly</h1>
-              <p className="text-lg mb-6">{swipeTexts[currentIndex]}</p>
-              <div className="flex flex-col sm:flex-row gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-16 md:py-20 mt-16 sm:mt-20 md:mt-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-stretch">
+            {/* Text Content */}
+            <div className="bg-[#3b37e6] text-white p-6 sm:p-8 md:p-10 Br flex flex-col justify-center space-y-4 sm:space-y-6 md:space-y-8 ">
+              <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
+                Lease Equipment Effortlessly
+              </h1>
+              <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6">
+                {swipeTexts[currentIndex]}
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <button 
                   onClick={handleButtonClick}
-                  className="bg-white text-gray-900 px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+                  className="bg-white text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
                 >
                   Contact us
                 </button>
               </div>
             </div>
             
-            <div className="relative flex items-center justify-center">
+            {/* Image */}
+            <div className="relative flex items-center justify-center min-h-[250px] sm:min-h-[300px] md:min-h-[400px]">
               <div className="relative w-full">
-                <div className="absolute -top-8 -right-8 w-40 h-40 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full opacity-20 animate-pulse"></div>
-                <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-[#b062ff] to-[#00d2fb] rounded-full opacity-25 animate-bounce"></div>
+                <div className="absolute -top-4 sm:-top-8 -right-4 sm:-right-8 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full opacity-20 animate-pulse"></div>
+                <div className="absolute -bottom-4 sm:-bottom-8 -left-4 sm:-left-8 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 bg-gradient-to-br from-[#b062ff] to-[#00d2fb] rounded-full opacity-25 animate-bounce"></div>
                 <img
                   src={`${process.env.PUBLIC_URL}/leasing.webp`}
                   alt="Equipment Leasing"
@@ -106,74 +113,77 @@ function Leasing() {
         </div>
       </div>
 
-      {/* key feature */}
-      <div className="p-4 md:p-8">
-        <h2 className="text-center onsitesubheads font-bold mb-4">Key Features</h2>
+      {/* Key Features Section */}
+      <div className="p-4 sm:p-6 md:p-8">
+        <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 px-4">
+          Key Features
+        </h2>
+        
         {/* Links Row */}
-        <div className="relative overflow-hidden max-w-7xl mx-auto">
-          <div className="flex space-x-4 overflow-x-auto scrollbar-hide pb-1 items-center px-4 md:px-32">
+        <div className="relative overflow-hidden max-w-7xl mx-auto mb-6 sm:mb-8">
+          <div className="flex space-x-2 sm:space-x-4 overflow-x-auto scrollbar-hide pb-2 items-center px-2 sm:px-4 md:px-8 lg:px-32">
             {links.map((link) => (
               <button
                 key={link.id}
                 onClick={() => setActiveLink(link.id)}
-                className={`px-4 py-2 whitespace-nowrap ${
+                className={`px-3 sm:px-4 py-2 whitespace-nowrap text-sm sm:text-base transition-colors ${
                   activeLink === link.id
-                    ? "text-blue-500 border-b-2 border-blue-500"
-                    : "text-gray-700"
+                    ? "text-blue-500 border-b-2 border-blue-500 font-semibold"
+                    : "text-gray-700 hover:text-blue-400"
                 }`}
               >
                 {link.label}
               </button>
             ))}
           </div>
-          <div
-            className="absolute bottom-0 left-0 h-[2px] bg-blue-500 transition-transform"
-            style={{
-              transform: `translateX(${
-                links.findIndex((link) => link.id === activeLink) * 100
-              }%)`,
-            }}
-          />
         </div>
+        
         {/* Content Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1100px] mx-auto px-4 md:px-8">
-          <div className="flex justify-center flex-col">
-            <h3 className="cardheaders font-semibold mb-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-[1100px] mx-auto px-4 sm:px-6 md:px-8">
+          <div className="flex justify-center flex-col ">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-3 sm:mb-4">
               {content[activeLink].title}
             </h3>
-            <p className="featuresp">{content[activeLink].description}</p>
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+              {content[activeLink].description}
+            </p>
           </div>
-          <div>
+          <div className="">
             <img
               src={content[activeLink].image}
               alt={content[activeLink].title}
-              className="w-full h-auto object-cover rounded-2xl"
+              className="w-full h-auto object-cover rounded-2xl shadow-lg"
             />
           </div>
         </div>
-      </div>  
+      </div>
+      
       <SupportMaintain/> 
 
-      {/* experience await */}
-      <div className="bg-gradient-to-r from-[#e0f2f7] via-[#f0f9ff] to-[#e0f2f7] py-24 flex flex-col items-center justify-center px-4">
-        <div className="text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-8 leading-tight">
+      {/* Experience Awaits Section */}
+      <div className="bg-gradient-to-r from-[#e0f2f7] via-[#f0f9ff] to-[#e0f2f7] py-12 sm:py-16 md:py-20 lg:py-24 flex flex-col items-center justify-center px-4 sm:px-6">
+        <div className="text-center max-w-4xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-6 sm:mb-8 leading-tight">
             Your New <br />
             Experience Awaits
           </h1>
-          <button className="bg-[#16213D] hover:bg-[#00abfa] hover:text-black text-white font-bold py-4 px-8 rounded-full transition duration-300"
-          onClick={handleButtonClick}>
+          <button 
+            className="bg-[#16213D] hover:bg-[#00abfa] hover:text-black text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full transition duration-300 text-sm sm:text-base"
+            onClick={handleButtonClick}
+          >
             Speak With An Expert
           </button>
         </div>
       </div>    
 
-      <div id="faqs" className="flex flex-col mt-9 pt-6 justify-center items-center pb-5 px-4">
-        <h3 className="onsitesubheads">Frequently Asked Questions</h3>
+      {/* FAQ Section */}
+      <div id="faqs" className="flex flex-col mt-6 sm:mt-9 pt-4 sm:pt-6 justify-center items-center pb-5 px-4 sm:px-6">
+        <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 sm:mb-8">
+          Frequently Asked Questions
+        </h3>
         <FAQ />         
       </div> 
 
-        
       <Footer />
     </div>
   );
