@@ -12,29 +12,34 @@ function SectorCards() {
   const [selectedCardIndex, setSelectedCardIndex] = useState(0);
 
   const cards = [
-    { image: coop, 
+    { 
+      image: coop, 
       title: 'Find out how Proscene empowers Corporate businesses with cutting-edge solutions', 
-      description: "Find seamless integration of display, distribution, and control systems, designed to elevate your business experience and boost productivity with Proscene's top-tier solutions.", 
+      description: "Find seamless integration of display, distribution, and control systems, designed to elevate your business experience and boost productivity with Proscene&apos;s top-tier solutions.", 
       link: '/corporate',
     },
-    { image: ed, 
-      title: 'Find the perfect solution for Education with Proscene’s innovative technologies', 
-      description: "Unlock dynamic learning environments with tailored solutions that inspire and engage students and teachers, enhancing the educational experience with Proscene's expertise.", 
+    { 
+      image: ed, 
+      title: 'Find the perfect solution for Education with Proscene&apos;s innovative technologies', 
+      description: "Unlock dynamic learning environments with tailored solutions that inspire and engage students and teachers, enhancing the educational experience with Proscene&apos;s expertise.", 
       link: '/education' ,
     },
-    { image: ps, 
+    { 
+      image: ps, 
       title: 'Find out how Proscene transforms Public Sector operations with advanced tech', 
-      description: 'Revolutionize public service delivery with Proscene’s advanced audiovisual solutions, streamlining operations and improving communication across government sectors.', 
+      description: 'Revolutionize public service delivery with Proscene&apos;s advanced audiovisual solutions, streamlining operations and improving communication across government sectors.', 
       link: '/publicSector' ,
     },
-    { image: hc, 
-      title: 'Find the future of Healthcare with Proscene’s collaboration tools', 
-      description: 'Enhance patient care and medical collaboration across East Africa with Proscene’s state-of-the-art telehealth solutions and telemedicine tools.',
+    { 
+      image: hc, 
+      title: 'Find the future of Healthcare with Proscene&apos;s collaboration tools', 
+      description: 'Enhance patient care and medical collaboration across East Africa with Proscene&apos;s state-of-the-art telehealth solutions and telemedicine tools.',
       link: '/healthcare',
     },
-    { image: legal, 
+    { 
+      image: legal, 
       title: 'Find out how Proscene enhances Legal Collaboration with seamless technology', 
-      description: 'Transform the way legal professionals collaborate with Proscene’s cutting-edge telepresence solutions, enabling effective consultation and saving time on travel', 
+      description: 'Transform the way legal professionals collaborate with Proscene&apos;s cutting-edge telepresence solutions, enabling effective consultation and saving time on travel', 
       link: '/legalCollaboration' ,
     },
   ];
@@ -58,11 +63,17 @@ function SectorCards() {
         />
       </div>
       <div className='flex gap-2'>
-        <div className="bg-blue-100 rounded-full p-2" onClick={handlePreviousCard}>
-          <ArrowBackOutlinedIcon className="text-indigo-400" />
+        <div 
+          className="bg-[#ff4e00] rounded-full p-2 cursor-pointer hover:bg-[#16213d] transition-colors duration-300" 
+          onClick={handlePreviousCard}
+        >
+          <ArrowBackOutlinedIcon className="text-white" />
         </div>
-        <div className="bg-blue-100 rounded-full p-2" onClick={handleNextCard}>
-          <ArrowForwardOutlinedIcon className = "text-indigo-400"/>
+        <div 
+          className="bg-[#ff4e00] rounded-full p-2 cursor-pointer hover:bg-[#16213d] transition-colors duration-300" 
+          onClick={handleNextCard}
+        >
+          <ArrowForwardOutlinedIcon className="text-white"/>
         </div>
       </div>
     </div>

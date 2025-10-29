@@ -101,62 +101,62 @@ const SolutionsLayout = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-8">
         <Card
           title="Interactive Technology"
-          description="Accelerate your organization’s growth."
+          description="Accelerate your organization's growth."
           icon={
-            <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
+            <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-[#ff4e00]">
               <span className="text-3xl font-bold">📱</span>
             </div>
           }
-          hoverColor="text-indigo-500"
-          borderColor="border-[#a042ff]"
-          hoverBgColor="#eaddff"
-          titleColor="#a042ff"
+          hoverColor="text-[#ff4e00]"
+          borderColor="border-[#ff4e00]"
+          hoverBgColor="#fff0e6"
+          titleColor="#ff4e00"
           navigateTo="/interactiveTechnology"
-          buttonColor="#a042ff"
+          buttonColor="#ff4e00"
         />
         <Card
           title="Audio Visual"
           description="True Omnichannel, All-in-One Retail Management Solution."
           icon={
-            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-[#16213d]">
               <span className="text-3xl font-bold">🎥</span>
             </div>
           }
-          hoverColor="text-purple-500"
-          borderColor="border-[#3c39eb]"
-          hoverBgColor="#d9e0ff"
-          titleColor="#3c39eb"
+          hoverColor="text-[#16213d]"
+          borderColor="border-[#16213d]"
+          hoverBgColor="#e6e9f0"
+          titleColor="#16213d"
           navigateTo="/avIntegration"
-          buttonColor="#3c39eb"
+          buttonColor="#16213d"
         />
         <Card
           title="Digital Media"
           description="Next-Gen Property Management Software."
           icon={
-            <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center text-cyan-600">
+            <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-[#ff4e00]">
               <span className="text-3xl font-bold">💻</span>
             </div>
           }
-          hoverColor="text-blue-500"
-          borderColor="border-[#00d2fb]"
-          hoverBgColor="#e0f7ff"
-          titleColor="#00d2fb"
+          hoverColor="text-[#ff4e00]"
+          borderColor="border-[#ff4e00]"
+          hoverBgColor="#fff0e6"
+          titleColor="#ff4e00"
           navigateTo="/digitalMedia"
-          buttonColor="#00d2fb"
+          buttonColor="#ff4e00"
         />
         <Card
           title="Collaboration"
           description="Ace pedagogical management with Proscene SMIS."
           icon={
-            <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600">
+            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-[#16213d]">
               <span className="text-3xl font-bold">🧑‍🤝‍🧑</span>
             </div>
           }
-          hoverColor="text-red-500"
-          borderColor="border-[#ff6663]"
-          hoverBgColor="#ffe5e5"
-          titleColor="#ff6663"
-          buttonColor="#ff6663"
+          hoverColor="text-[#16213d]"
+          borderColor="border-[#16213d]"
+          hoverBgColor="#e6e9f0"
+          titleColor="#16213d"
+          buttonColor="#16213d"
           navigateTo="/collaborationSolutions"
         />
       </div>

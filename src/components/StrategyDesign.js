@@ -9,7 +9,7 @@ const StrategyDesign = () => {
     }
 
     return (
-        <div className="bg-blue-800 min-h-screen flex items-center justify-center py-8 md:py-12 lg:py-20 px-4 sm:px-6 lg:px-8">
+        <div className="bg-[#ff4e00] min-h-screen flex items-center justify-center py-8 md:py-12 lg:py-20 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-14 items-center">
                 {/* Text Content */}
                 <div className="order-2 lg:order-1 text-center lg:text-left">
@@ -29,7 +29,7 @@ const StrategyDesign = () => {
                         in the most impactful way—uniting teams through a common purpose.
                     </p>
                     <button 
-                        className="border border-white hover:bg-white text-white hover:text-black mt-6 md:mt-10 lg:mt-14 font-bold py-3 px-6 md:py-4 md:px-8 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
+                        className="border border-white hover:bg-white text-white hover:text-[#ff4e00] mt-6 md:mt-10 lg:mt-14 font-bold py-3 px-6 md:py-4 md:px-8 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
                         onClick={handleButtonClick}
                     >
                         Book a Demo

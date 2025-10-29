@@ -15,7 +15,7 @@ function BuildingWideAutomation() {
       name: "Crestron Automation",
       tagline: "Enterprise-Grade Building Control",
       icon: "🔷",
-      color: "from-blue-600 to-blue-800",
+      color: "from-[#ff4e00] to-[#e54600]",
       features: [
         { icon: "🏢", title: "Complete Ecosystem", desc: "End-to-end control solutions for entire buildings" },
         { icon: "🔌", title: "Deep Integration", desc: "Seamless integration with HVAC, lighting, security" },
@@ -33,7 +33,7 @@ function BuildingWideAutomation() {
       name: "Extron Automation",
       tagline: "Reliable, Standardized Control Solutions",
       icon: "⚡",
-      color: "from-purple-600 to-indigo-700",
+      color: "from-[#ff4e00] to-[#e54600]",
       features: [
         { icon: "🎯", title: "Consistent Performance", desc: "Proven reliability across all system components" },
         { icon: "🔧", title: "Easy Management", desc: "Global Configurator for streamlined deployment" },
@@ -118,7 +118,7 @@ function BuildingWideAutomation() {
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Building-Wide AV Automation
             </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-orange-100 max-w-3xl mx-auto leading-relaxed">
               Accelerate your organization's growth with unified control systems that transform how people work, learn, and collaborate.
             </p>
 
@@ -127,7 +127,7 @@ function BuildingWideAutomation() {
                 onClick={() => setActiveTab("crestron")}
                 className={`px-8 py-4 rounded-2xl font-bold transition-all duration-300 ${
                   activeTab === "crestron"
-                    ? "bg-white text-blue-600 shadow-xl scale-105"
+                    ? "bg-white text-[#ff4e00] shadow-xl scale-105"
                     : "bg-white bg-opacity-20 text-white hover:bg-opacity-30"
                 }`}
               >
@@ -137,7 +137,7 @@ function BuildingWideAutomation() {
                 onClick={() => setActiveTab("extron")}
                 className={`px-8 py-4 rounded-2xl font-bold transition-all duration-300 ${
                   activeTab === "extron"
-                    ? "bg-white text-purple-600 shadow-xl scale-105"
+                    ? "bg-white text-[#ff4e00] shadow-xl scale-105"
                     : "bg-white bg-opacity-20 text-white hover:bg-opacity-30"
                 }`}
               >
@@ -152,10 +152,10 @@ function BuildingWideAutomation() {
       <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-white text-sm font-medium mb-4">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
               Digital Media
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
               {current.name}
             </h2>
             <p className="text-xl text-gray-600">{current.tagline}</p>
@@ -165,7 +165,7 @@ function BuildingWideAutomation() {
             {current.features.map((feature, index) => (
               <div key={index} className="bg-white p-6 rounded-2xl shadow-lg text-center">
                 <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{feature.title}</h3>
+                <h3 className="text-lg font-bold text-[#16213d] mb-2">{feature.title}</h3>
                 <p className="text-gray-600 text-sm">{feature.desc}</p>
               </div>
             ))}
@@ -173,13 +173,13 @@ function BuildingWideAutomation() {
 
           {/* Benefits Section */}
           <div className="bg-white rounded-3xl p-8 shadow-xl">
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+            <h3 className="text-2xl font-bold text-[#16213d] mb-8 text-center">
               Why Choose {current.name.split(' ')[0]}?
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {current.benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-6 h-6 bg-gradient-to-br from-[#ff4e00] to-[#e54600] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white text-sm">✓</span>
                   </div>
                   <p className="text-gray-700 text-lg">{benefit}</p>
@@ -194,28 +194,28 @@ function BuildingWideAutomation() {
       <div className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-white text-sm font-medium mb-4">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
               Audio Visual
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-6">
               True Omnichannel Building Automation
             </h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Automation Areas</h3>
+              <h3 className="text-2xl font-bold text-[#16213d] mb-6">Automation Areas</h3>
               <div className="space-y-6">
                 {automationAreas.map((area, index) => (
-                  <div key={index} className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-6">
+                  <div key={index} className="bg-gradient-to-br from-gray-50 to-orange-50 rounded-2xl p-6">
                     <div className="flex items-start space-x-4">
                       <div className="text-3xl flex-shrink-0">{area.icon}</div>
                       <div className="flex-1">
-                        <h4 className="font-bold text-gray-900 mb-2">{area.area}</h4>
+                        <h4 className="font-bold text-[#16213d] mb-2">{area.area}</h4>
                         <div className="grid grid-cols-2 gap-2 mb-3">
                           {area.systems.map((system, i) => (
                             <div key={i} className="flex items-center space-x-1">
-                              <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+                              <div className="w-1.5 h-1.5 bg-[#ff4e00] rounded-full"></div>
                               <span className="text-gray-600 text-sm">{system}</span>
                             </div>
                           ))}
@@ -231,18 +231,18 @@ function BuildingWideAutomation() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">System Integration</h3>
+              <h3 className="text-2xl font-bold text-[#16213d] mb-6">System Integration</h3>
               <div className="space-y-6">
                 {integrationFeatures.map((integration, index) => (
                   <div key={index} className="bg-white border border-gray-200 rounded-2xl p-6">
                     <div className="flex items-center space-x-3 mb-4">
                       <div className="text-2xl">{integration.icon}</div>
-                      <h4 className="font-bold text-gray-900">{integration.category}</h4>
+                      <h4 className="font-bold text-[#16213d]">{integration.category}</h4>
                     </div>
                     <div className="grid grid-cols-2 gap-2">
                       {integration.integrations.map((item, i) => (
                         <div key={i} className="flex items-center space-x-2">
-                          <div className="w-2 h-2 bg-purple-600 rounded-full"></div>
+                          <div className="w-2 h-2 bg-[#ff4e00] rounded-full"></div>
                           <span className="text-gray-600 text-sm">{item}</span>
                         </div>
                       ))}
@@ -256,13 +256,13 @@ function BuildingWideAutomation() {
       </div>
 
       {/* Collaboration Section */}
-      <div className="py-20 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
+      <div className="py-20 px-4 bg-gradient-to-br from-gray-50 to-orange-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-white text-sm font-medium mb-4">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
               Collaboration
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
               Enhanced Building Intelligence
             </h2>
           </div>
@@ -287,7 +287,7 @@ function BuildingWideAutomation() {
             ].map((item, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 text-center hover:shadow-xl transition-shadow">
                 <div className="text-5xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
+                <h3 className="text-xl font-bold text-[#16213d] mb-3">{item.title}</h3>
                 <p className="text-gray-600">{item.desc}</p>
               </div>
             ))}
@@ -298,16 +298,16 @@ function BuildingWideAutomation() {
       {/* CTA Section */}
       <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-12 rounded-3xl">
+          <div className="bg-gradient-to-r from-[#ff4e00] to-[#e54600] text-white p-12 rounded-3xl">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Ready to Automate Your Building?
             </h3>
-            <p className="text-blue-100 mb-8 text-lg">
+            <p className="text-orange-100 mb-8 text-lg">
               Let's design a comprehensive building-wide automation solution that enhances productivity and reduces costs.
             </p>
             <button 
               onClick={handleButtonClick}
-              className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+              className="bg-white text-[#ff4e00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
             >
               Schedule Assessment
             </button>

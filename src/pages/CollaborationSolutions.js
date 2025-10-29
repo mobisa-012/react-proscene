@@ -90,7 +90,7 @@ function CollaborationSolutions() {
       <div className="pb-5 maxWidthContainer">
         <div className="flex flex-col mt-20 md:flex-row items-center justify-center p-8 bg-white">
           <div
-            className="bg-[#3b37e6] py-16 text-white p-10 md:w-1/2 Br"
+            className="bg-[#ff4e00] py-16 text-white p-10 md:w-1/2 Br"
             style={{ height: "100%" }}
           >
             <h1 className="font-bold h1sizing">
@@ -98,7 +98,7 @@ function CollaborationSolutions() {
             </h1>
             <p className="text-lg mb-6">{swipeTexts[currentIndex]}</p>
             <div className="button-Center">
-              <button className="border border-white text-white py-2 px-6 rounded-2xl hover:bg-blue-700"
+              <button className="border border-white text-white py-2 px-6 rounded-2xl hover:bg-[#e54600]"
               onClick={handleButtonClick}>
                 Get Started
               </button>
@@ -118,7 +118,7 @@ function CollaborationSolutions() {
               className="absolute -bottom-2 left-4 w-40"
               style={{ zIndex: "999" }}
             />
-            <div className="absolute top-1/4 right-1/4 w-16 h-16 bg-red-300 rounded-lg"></div>
+            <div className="absolute top-1/4 right-1/4 w-16 h-16 bg-[#16213d] rounded-lg"></div>
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@ function CollaborationSolutions() {
                 onClick={() => setActiveLink(link.id)}
                 className={`px-4 py-2 ${
                 activeLink === link.id
-                    ? "text-blue-500 border-b-2 border-blue-500"
+                    ? "text-[#ff4e00] border-b-2 border-[#ff4e00]"
                     : "text-gray-700"
                 }`}
             >
@@ -144,7 +144,7 @@ function CollaborationSolutions() {
             ))}
         </div>
         <div
-            className="absolute bottom-0 left-0 h-[2px] bg-blue-500 transition-transform"
+            className="absolute bottom-0 left-0 h-[2px] bg-[#ff4e00] transition-transform"
             style={{
             transform: `translateX(${links.findIndex((link) => link.id === activeLink) * 100}%)`,
             }}

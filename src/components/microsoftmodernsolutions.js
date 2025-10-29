@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import BookDemo from "../pages/BookDemoPage";
 import { useNavigate } from "react-router-dom";
 
-function RoomScheduling() {
+function MicrosoftModernSolutions() {
   const navigate = useNavigate();
   const handleButtonClick = () => {
     navigate("/bookDemo");
@@ -10,107 +10,107 @@ function RoomScheduling() {
 
   const [activeFeature, setActiveFeature] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [activeTab, setActiveTab] = useState("panels");
+  const [activeTab, setActiveTab] = useState("microsoft365");
 
   const technologies = {
-    panels: {
-      name: "Scheduling Panels",
-      tagline: "Smart Room Displays",
-      icon: "📱",
+    microsoft365: {
+      name: "Microsoft 365",
+      tagline: "Modern Workplace Platform",
+      icon: "🏢",
       color: "from-[#ff4e00] to-[#e54600]",
       features: [
-        { icon: "👆", title: "Touch Interface", desc: "Intuitive touchscreen for easy room booking and management" },
-        { icon: "📅", title: "Real-Time Availability", desc: "Instant visibility of room schedules and bookings" },
-        { icon: "🎨", title: "Custom Branding", desc: "Match your organization's look and feel" },
-        { icon: "🔌", title: "Easy Integration", desc: "Seamless connection with calendar systems" },
-        { icon: "⚡", title: "Instant Booking", desc: "One-touch room reservation and check-in" },
-        { icon: "🔋", title: "PoE Powered", desc: "Simple installation with Power over Ethernet" }
+        { icon: "📧", title: "Office Apps", desc: "Word, Excel, PowerPoint, Outlook with cloud integration" },
+        { icon: "☁️", title: "Cloud Storage", desc: "OneDrive with 1TB storage per user" },
+        { icon: "🔄", title: "Real-Time Collaboration", desc: "Co-author documents simultaneously with Teams integration" },
+        { icon: "🛡️", title: "Enterprise Security", desc: "Advanced threat protection and data loss prevention" },
+        { icon: "📊", title: "Business Analytics", desc: "Power BI integration for data insights" },
+        { icon: "🌐", title: "Anywhere Access", desc: "Access files and apps from any device, anywhere" }
       ],
       benefits: [
-        "Reduce meeting room conflicts and double-bookings",
-        "Improve space utilization and efficiency",
-        "Enhance employee experience and productivity",
-        "Real-time room status and availability"
+        "Increase team productivity by 30% with seamless collaboration",
+        "Reduce IT costs with cloud-based management",
+        "Enhance security with enterprise-grade protection",
+        "Scale effortlessly as your business grows"
       ]
     },
-    software: {
-      name: "Scheduling Software",
-      tagline: "Centralized Room Management",
-      icon: "💻",
+    azureCopilot: {
+      name: "Azure Copilot",
+      tagline: "AI-Powered Business Transformation",
+      icon: "🤖",
       color: "from-[#ff4e00] to-[#e54600]",
       features: [
-        { icon: "🌐", title: "Web Portal", desc: "Book rooms from any device with web browser" },
-        { icon: "📱", title: "Mobile App", desc: "Room booking and management on the go" },
-        { icon: "📊", title: "Analytics", desc: "Usage reports and space utilization data" },
-        { icon: "🔄", title: "Sync Integration", desc: "Automatic sync with Outlook and Google Calendar" },
-        { icon: "🎯", title: "Smart Scheduling", desc: "AI-powered room suggestions based on needs" },
-        { icon: "🛡️", title: "Admin Control", desc: "Centralized management and permissions" }
+        { icon: "💡", title: "AI Assistance", desc: "Intelligent suggestions and automation across Microsoft 365" },
+        { icon: "📝", title: "Content Creation", desc: "Generate documents, emails, and presentations with AI" },
+        { icon: "🔍", title: "Data Insights", desc: "Analyze and visualize data with natural language queries" },
+        { icon: "⚡", title: "Workflow Automation", desc: "Automate repetitive tasks and processes" },
+        { icon: "🎯", title: "Personalized Experiences", desc: "AI-driven personalization for each user" },
+        { icon: "🛡️", title: "Security AI", desc: "AI-powered threat detection and security recommendations" }
       ],
       benefits: [
-        "Centralized control of all meeting spaces",
-        "Detailed analytics for space optimization",
-        "Flexible booking policies and rules",
-        "Scalable solution for organizations of any size"
+        "Accelerate content creation and decision-making",
+        "Reduce manual tasks with intelligent automation",
+        "Gain deeper insights from your business data",
+        "Enhance security with AI-driven protection"
       ]
     }
   };
 
   const applications = [
     {
-      category: "Corporate Offices",
-      title: "Meeting Room Management",
-      description: "Streamline room bookings and eliminate scheduling conflicts in corporate environments.",
-      features: ["Outlook integration", "Mobile booking", "Resource scheduling", "Conflict prevention"],
+      category: "Enterprise Businesses",
+      title: "Digital Workplace Transformation",
+      description: "Complete Microsoft 365 implementation with Azure Copilot for large-scale organizations.",
+      features: ["Enterprise security", "AI integration", "Global scalability", "Compliance management"],
       icon: "🏢"
     },
     {
-      category: "Education",
-      title: "Classroom & Lab Scheduling",
-      description: "Efficiently manage classroom, lab, and facility bookings for educational institutions.",
-      features: ["Course scheduling", "Faculty bookings", "Equipment management", "Student access"],
-      icon: "🎓"
+      category: "Small & Medium Business",
+      title: "Productivity Suite",
+      description: "Microsoft 365 solutions tailored for growing businesses with AI capabilities.",
+      features: ["Cost-effective plans", "Easy deployment", "Team collaboration", "Business analytics"],
+      icon: "📈"
     },
     {
-      category: "Healthcare",
-      title: "Medical Room Scheduling",
-      description: "Coordinate consultation rooms, operating theaters, and medical equipment usage.",
-      features: ["Patient scheduling", "Equipment tracking", "Staff coordination", "Emergency overrides"],
-      icon: "🏥"
+      category: "Education",
+      title: "Learning Platform",
+      description: "Microsoft 365 for Education with AI-enhanced teaching and learning tools.",
+      features: ["Classroom tools", "Student management", "Parent communication", "Learning analytics"],
+      icon: "🎓"
     }
   ];
 
   const products = [
     { 
-      name: "Touch Panels", 
-      icon: "👆", 
+      name: "Microsoft 365 Business", 
+      icon: "💼", 
       color: "from-[#ff4e00] to-[#e54600]",
-      specs: ["7-10 inch displays", "Touch interface", "Room status", "Instant booking"]
+      specs: ["Office apps", "1TB cloud storage", "Business email", "Teams integration"]
     },
     { 
-      name: "Desktop Software", 
-      icon: "💻", 
+      name: "Enterprise Plans", 
+      icon: "🏛️", 
       color: "from-[#ff4e00] to-[#e54600]",
-      specs: ["Web-based portal", "Admin controls", "Reporting tools", "User management"]
+      specs: ["Advanced security", "Power BI", "Azure services", "24/7 support"]
     },
     { 
-      name: "Mobile Apps", 
-      icon: "📱", 
+      name: "Azure Copilot", 
+      icon: "🤖", 
       color: "from-[#ff4e00] to-[#e54600]",
-      specs: ["iOS & Android", "On-the-go booking", "Push notifications", "QR check-in"]
+      specs: ["AI assistance", "Workflow automation", "Data insights", "Security AI"]
     },
     { 
-      name: "Analytics Suite", 
-      icon: "📊", 
+      name: "Migration Services", 
+      icon: "🚀", 
       color: "from-[#ff4e00] to-[#e54600]",
-      specs: ["Usage reports", "Space utilization", "Trend analysis", "ROI tracking"]
+      specs: ["Data migration", "User training", "Setup & configuration", "Ongoing support"]
     }
   ];
 
   const integrations = [
-    { name: "Microsoft Outlook", icon: "📧", color: "from-[#ff4e00] to-[#e54600]" },
-    { name: "Google Calendar", icon: "📅", color: "from-[#ff4e00] to-[#e54600]" },
-    { name: "Office 365", icon: "🏢", color: "from-[#ff4e00] to-[#e54600]" },
-    { name: "Teams & Zoom", icon: "🎥", color: "from-[#ff4e00] to-[#e54600]" }
+    { name: "Microsoft Teams", icon: "💬", color: "from-[#ff4e00] to-[#e54600]" },
+    { name: "SharePoint", icon: "📁", color: "from-[#ff4e00] to-[#e54600]" },
+    { name: "Power Platform", icon: "⚡", color: "from-[#ff4e00] to-[#e54600]" },
+    { name: "Azure Services", icon: "🌐", color: "from-[#ff4e00] to-[#e54600]" }
   ];
 
   const current = technologies[activeTab];
@@ -135,53 +135,53 @@ function RoomScheduling() {
         <div className="relative max-w-7xl mx-auto px-4 py-20 mt-5">
           <div className="text-center space-y-8">
             <div className="inline-block px-6 py-3 bg-white bg-opacity-20 rounded-full text-sm font-medium backdrop-blur-sm">
-              Interactive Technology
+              Microsoft Solutions
             </div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Room Scheduling Systems
+              Microsoft Modern Workplace
             </h1>
             <p className="text-xl text-orange-100 max-w-3xl mx-auto leading-relaxed">
-              Accelerate your organization's growth with intelligent room scheduling that eliminates conflicts and maximizes space utilization.
+              Transform your business with Microsoft 365 and Azure Copilot - the complete solution for modern, AI-powered workplace productivity.
             </p>
 
             {/* Technology Tabs */}
             <div className="flex justify-center gap-4 pt-8">
               <button
-                onClick={() => setActiveTab("panels")}
+                onClick={() => setActiveTab("microsoft365")}
                 className={`px-8 py-4 rounded-2xl font-bold transition-all duration-300 ${
-                  activeTab === "panels"
+                  activeTab === "microsoft365"
                     ? "bg-white text-[#ff4e00] shadow-xl scale-105"
                     : "bg-white bg-opacity-20 text-white hover:bg-opacity-30"
                 }`}
               >
-                📱 Scheduling Panels
+                🏢 Microsoft 365
               </button>
               <button
-                onClick={() => setActiveTab("software")}
+                onClick={() => setActiveTab("azureCopilot")}
                 className={`px-8 py-4 rounded-2xl font-bold transition-all duration-300 ${
-                  activeTab === "software"
+                  activeTab === "azureCopilot"
                     ? "bg-white text-[#ff4e00] shadow-xl scale-105"
                     : "bg-white bg-opacity-20 text-white hover:bg-opacity-30"
                 }`}
               >
-                💻 Scheduling Software
+                🤖 Azure Copilot
               </button>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Digital Media Section */}
+      {/* Digital Workplace Section */}
       <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
-              Digital Media
+              Digital Workplace
             </div>
             <h2 className="text-3xl md:text-5xl font-bold text-[#16213d] mb-4">
-              Smart Room Management
+              Modern Workplace Solutions
             </h2>
-            <p className="text-2xl text-gray-600 font-light">Next-generation scheduling solutions for modern workplaces</p>
+            <p className="text-2xl text-gray-600 font-light">AI-powered productivity and collaboration for the modern enterprise</p>
           </div>
 
           {/* Features Grid */}
@@ -217,18 +217,18 @@ function RoomScheduling() {
         </div>
       </div>
 
-      {/* Audio Visual Section */}
+      {/* Business Solutions Section */}
       <div className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
-              Audio Visual
+              Business Solutions
             </div>
             <h2 className="text-3xl md:text-5xl font-bold text-[#16213d] mb-6">
-              True Omnichannel Room Management
+              Tailored Microsoft Solutions
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              All-in-one scheduling solutions that integrate seamlessly with your AV systems and meeting room technology.
+              Comprehensive Microsoft 365 and Azure Copilot implementations designed for your specific business needs.
             </p>
           </div>
 
@@ -286,18 +286,18 @@ function RoomScheduling() {
         </div>
       </div>
 
-      {/* Collaboration Section */}
+      {/* Products & Services Section */}
       <div className="py-20 px-4 bg-gradient-to-br from-gray-50 to-orange-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
-              Collaboration
+              Products & Services
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
-              Enhanced Meeting Collaboration
+              Complete Microsoft Ecosystem
             </h2>
             <p className="text-lg text-gray-600">
-              Streamline meeting room management and enable seamless collaboration across your organization.
+              End-to-end Microsoft solutions with expert implementation and support services.
             </p>
           </div>
 
@@ -321,7 +321,7 @@ function RoomScheduling() {
           {/* Integration Partners */}
           <div className="bg-white rounded-3xl p-8 shadow-xl mb-12">
             <h3 className="text-2xl font-bold text-[#16213d] mb-8 text-center">
-              Seamless Integrations
+              Microsoft Ecosystem Integration
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {integrations.map((integration, index) => (
@@ -336,17 +336,17 @@ function RoomScheduling() {
             </div>
           </div>
 
-          {/* Workflow Section */}
+          {/* Implementation Process */}
           <div className="bg-white rounded-3xl p-8 shadow-xl">
             <h3 className="text-2xl font-bold text-[#16213d] mb-6 text-center">
-              How It Works
+              Our Implementation Process
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {[
-                { step: "1", icon: "📅", title: "Book Room", desc: "Schedule via panel, app, or web portal" },
-                { step: "2", icon: "✅", title: "Check In", desc: "Tap to confirm your meeting" },
-                { step: "3", icon: "⚡", title: "Auto Setup", desc: "AV systems activate automatically" },
-                { step: "4", icon: "📊", title: "Analytics", desc: "Track usage and optimize space" }
+                { step: "1", icon: "🔍", title: "Assessment", desc: "Analyze your current setup and business needs" },
+                { step: "2", icon: "📋", title: "Planning", desc: "Design tailored Microsoft solution architecture" },
+                { step: "3", icon: "🚀", title: "Deployment", desc: "Implement and configure Microsoft 365 & Copilot" },
+                { step: "4", icon: "🎓", title: "Training & Support", desc: "Train users and provide ongoing support" }
               ].map((step, index) => (
                 <div key={index} className="text-center">
                   <div className="w-12 h-12 bg-[#ff4e00] text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
@@ -367,15 +367,15 @@ function RoomScheduling() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
-              The Proscene Advantage
+              The Proscene Microsoft Advantage
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: "🎯", title: "Expert Consultation", desc: "We analyze your space and recommend the perfect scheduling solution" },
-              { icon: "⚙️", title: "Professional Installation", desc: "Certified technicians ensure seamless setup and integration" },
-              { icon: "🛡️", title: "Ongoing Support", desc: "Training, maintenance, and technical support when you need it" }
+              { icon: "👨‍💼", title: "Microsoft Gold Partner", desc: "Certified expertise in Microsoft 365 and Azure solutions" },
+              { icon: "🔧", title: "Expert Implementation", desc: "Professional deployment and configuration services" },
+              { icon: "🛡️", title: "Comprehensive Support", desc: "Training, maintenance, and 24/7 technical support" }
             ].map((item, index) => (
               <div key={index} className="bg-gradient-to-br from-gray-50 to-orange-50 rounded-2xl p-8 text-center hover:shadow-xl transition-shadow">
                 <div className="text-5xl mb-4">{item.icon}</div>
@@ -392,17 +392,17 @@ function RoomScheduling() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-gradient-to-r from-[#ff4e00] to-[#e54600] text-white p-12 rounded-3xl">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Ready to Transform Your Room Management?
+              Ready to Transform Your Workplace with Microsoft?
             </h3>
             <p className="text-orange-100 mb-8 text-lg">
-              Let's implement an intelligent room scheduling system that eliminates conflicts and maximizes your space utilization.
+              Let's implement Microsoft 365 and Azure Copilot to revolutionize your productivity and collaboration.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={handleButtonClick}
                 className="bg-white text-[#ff4e00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
               >
-                Schedule Demo
+                Schedule Microsoft Demo
               </button>
             </div>
           </div>
@@ -414,4 +414,4 @@ function RoomScheduling() {
   );
 }
 
-export default RoomScheduling;
+export default MicrosoftModernSolutions;

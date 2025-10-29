@@ -598,6 +598,8 @@ function Navbar() {
                                       </span>
                                     </a>
                                   </li>
+
+                                  
                                   <li
                                     id="menu-item-20778"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
@@ -626,6 +628,16 @@ function Navbar() {
                                     </a>
                                   </li>
                                   <li
+                                    id="menu-item-20780"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page"
+                                  >
+                                    <a href="/microsoft-modern-solutions">
+                                      <span>
+                                        Microsoft Modern Work Solutions
+                                      </span>
+                                    </a>
+                                  </li>
+                                  <li
                                     id="menu-item-20770"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
@@ -636,6 +648,7 @@ function Navbar() {
                                 </ul>
                               </div>
                             </li>
+                            
                             <li
                               id="menu-item-20775"
                               className="columns-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"
@@ -680,7 +693,7 @@ function Navbar() {
                           <a
                             className="btn"
                             style={{
-                              backgroundColor: "#4f46e5",
+                              backgroundColor: "#ff4e00",
                               padding: ".7em",
                               color: "#fff",
                               borderRadius: "10px",
@@ -1184,11 +1197,11 @@ function Navbar() {
                               </div>
                               <div className="item-content-area-button">
                                 <a 
-                                href="/data/profile.pdf" 
-    download="Proscene_Company_Profile.pdf"
-    className="btn blue p-2"
-    target="_blank"
-    rel="noopener noreferrer">
+                                href={`${process.env.PUBLIC_URL}/ProsceneCompanyProfile.pdf`} 
+                                  download="Proscene_Company_Profile.pdf"
+                                  className="btn blue p-2"
+                                  target="_blank"
+                                  rel="noopener noreferrer">
                                   Download now
                                 </a>
                               </div>

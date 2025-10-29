@@ -13,10 +13,10 @@ const EducationFeatures = () => {
     <div className="bg-white py-4 sm:py-4 lg:py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#001e62] mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#16213d] mb-4">
             Advanced Educational Solutions
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-[#16213d] max-w-3xl mx-auto">
             Transforming learning environments with cutting-edge technology and seamless campus-wide integration
           </p>
         </div>
@@ -31,7 +31,7 @@ const EducationFeatures = () => {
                 className="w-full h-full object-cover rounded-xl"
               />
             </div>
-            <h3 className="text-xl sm:text-2xl font-semibold text-[#001e62] mb-4">
+            <h3 className="text-xl sm:text-2xl font-semibold text-[#16213d] mb-4">
               Smart Classrooms
             </h3>
             <p className="text-gray-600 text-sm sm:text-base">
@@ -48,7 +48,7 @@ const EducationFeatures = () => {
                 className="w-full h-full object-cover rounded-xl"
               />
             </div>
-            <h3 className="text-xl sm:text-2xl font-semibold text-[#001e62] mb-4">
+            <h3 className="text-xl sm:text-2xl font-semibold text-[#16213d] mb-4">
               Lecture Capture & Presentation Systems
             </h3>
             <p className="text-gray-600 text-sm sm:text-base">
@@ -65,7 +65,7 @@ const EducationFeatures = () => {
                 className="w-full h-full object-cover rounded-xl"
               />
             </div>
-            <h3 className="text-xl sm:text-2xl font-semibold text-[#001e62] mb-4">
+            <h3 className="text-xl sm:text-2xl font-semibold text-[#16213d] mb-4">
               Campus-wide Signage
             </h3>
             <p className="text-gray-600 text-sm sm:text-base">
@@ -78,7 +78,7 @@ const EducationFeatures = () => {
         <div className="mt-16 sm:mt-20 bg-gray-50 rounded-2xl p-8 sm:p-12">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <h3 className="text-2xl sm:text-3xl font-bold text-[#001e62] mb-4">
+              <h3 className="text-2xl sm:text-3xl font-bold text-[#16213d] mb-4">
                 Comprehensive Educational Technology
               </h3>
               <p className="text-gray-600 text-lg">
@@ -96,20 +96,20 @@ const EducationFeatures = () => {
                     className="w-64 h-48 object-cover rounded-xl"
                   />
                 </div>
-                <h4 className="text-lg sm:text-xl font-semibold text-[#001e62] mb-4">
+                <h4 className="text-lg sm:text-xl font-semibold text-[#16213d] mb-4">
                   Smart Learning Features
                 </h4>
                 <ul className="space-y-3 text-gray-600 text-center">
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#00abfa] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
                     Interactive whiteboards and displays
                   </li>
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#00abfa] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
                     Student response systems
                   </li>
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#00abfa] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
                     Wireless content sharing
                   </li>
                 </ul>
@@ -124,20 +124,20 @@ const EducationFeatures = () => {
                     className="w-64 h-48 object-cover rounded-xl"
                   />
                 </div>
-                <h4 className="text-lg sm:text-xl font-semibold text-[#001e62] mb-4">
+                <h4 className="text-lg sm:text-xl font-semibold text-[#16213d] mb-4">
                   Campus Communication Systems
                 </h4>
                 <ul className="space-y-3 text-gray-600 text-center">
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#00abfa] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
                     Digital wayfinding and directories
                   </li>
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#00abfa] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
                     Emergency alert systems
                   </li>
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#00abfa] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
                     Event and schedule displays
                   </li>
                 </ul>
@@ -160,8 +160,8 @@ function Education() {
         <AboutEd/>
         <CoopNav/>
         <div className="flex flex-col items-center max-w-7xl py-12 sm:py-16 md:py-20 lg:py-28 bg-white mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-8 sm:mb-12 md:mb-16 lg:mb-20 text-[#001e62] font-semibold tracking-wide sm:tracking-wider">We help you</h2>
-            <h2 className="text-center text-[#001e62] font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-wider sm:tracking-widest leading-tight">WORK WITHOUT BORDERS</h2>
+            <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-8 sm:mb-12 md:mb-16 lg:mb-20 text-[#16213d] font-semibold tracking-wide sm:tracking-wider">We help you</h2>
+            <h2 className="text-center text-[#16213d] font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-wider sm:tracking-widest leading-tight">WORK WITHOUT BORDERS</h2>
         </div>
         
         {/* Added the new EducationFeatures component */}
@@ -171,11 +171,11 @@ function Education() {
         <Stats/>
         <div className="bg-gradient-to-r from-[#e0f2f7] via-[#f0f9ff] to-[#e0f2f7] py-24 flex flex-col items-center justify-center">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-8 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#16213d] mb-8 leading-tight">
               Your New <br />
               Experience Awaits
             </h1>
-            <button className="bg-[#16213D] hover:bg-[#00abfa] hover:text-black text-white font-bold py-4 px-8 rounded-full transition duration-300"
+            <button className="bg-[#ff4e00] hover:bg-[#16213d] text-white font-bold py-4 px-8 rounded-full transition duration-300"
             onClick={handleButtonClick}>
               Speak With An Expert
             </button>

@@ -279,7 +279,7 @@ function ServicesPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-[#3b37e6] to-blue-800 text-white overflow-hidden">
+      <div className="relative bg-gradient-to-br from-[#ff4e00] to-[#e64500] text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 py-20 lg:py-28">
           <div className="text-center space-y-6 max-w-4xl mx-auto">
@@ -288,21 +288,21 @@ function ServicesPage() {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Digitally Transforming How We
-              <span className="block text-yellow-300">Work, Learn, and Live</span>
+              <span className="block text-[#16213d]">Work, Learn, and Live</span>
             </h1>
-            <p className="text-xl text-blue-100 leading-relaxed">
+            <p className="text-xl text-orange-100 leading-relaxed">
               East Africa's leading video communications partner providing integrated and professional Audio Visual solutions designed to help clients collaborate and communicate effectively.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <button
                 onClick={() => navigate("/bookDemo")}
-                className="bg-white text-[#3b37e6] px-8 py-3 rounded-2xl font-semibold hover:bg-gray-100 transition-colors duration-300 shadow-lg"
+                className="bg-white text-[#ff4e00] px-8 py-3 rounded-2xl font-semibold hover:bg-gray-100 transition-colors duration-300 shadow-lg"
               >
                 Schedule Consultation
               </button>
               <button
                 onClick={() => document.getElementById('services-grid').scrollIntoView({ behavior: 'smooth' })}
-                className="border-2 border-white text-white px-8 py-3 rounded-2xl font-semibold hover:bg-white hover:text-[#3b37e6] transition-colors duration-300"
+                className="border-2 border-white text-white px-8 py-3 rounded-2xl font-semibold hover:bg-white hover:text-[#ff4e00] transition-colors duration-300"
               >
                 Explore Services
               </button>
@@ -314,7 +314,7 @@ function ServicesPage() {
       {/* Trust Statement */}
       <div className="py-12 px-4 bg-white border-b border-gray-200">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#16213d] mb-4">
             East Africa's Most Trusted AV, UC and Video Collaboration Provider
           </h2>
           <p className="text-lg text-gray-600 mb-6">
@@ -340,7 +340,7 @@ function ServicesPage() {
       <div id="services-grid" className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
               Our Services
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -356,7 +356,7 @@ function ServicesPage() {
                 onClick={() => setActiveService(activeService === index ? null : index)}
               >
                 <div className="text-5xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#3b37e6] transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#ff4e00] transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -374,7 +374,7 @@ function ServicesPage() {
                       <div className="grid grid-cols-1 gap-2">
                         {service.features.slice(0, 4).map((feature, idx) => (
                           <div key={idx} className="flex items-center space-x-2 text-sm text-gray-600">
-                            <div className="w-1.5 h-1.5 bg-[#3b37e6] rounded-full"></div>
+                            <div className="w-1.5 h-1.5 bg-[#ff4e00] rounded-full"></div>
                             <span>{feature}</span>
                           </div>
                         ))}
@@ -383,7 +383,7 @@ function ServicesPage() {
                   </div>
                 )}
 
-                <div className="flex items-center text-[#3b37e6] font-semibold mt-4 group-hover:translate-x-2 transition-transform">
+                <div className="flex items-center text-[#ff4e00] font-semibold mt-4 group-hover:translate-x-2 transition-transform">
                   {activeService === index ? "Show Less" : "Learn More"}
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeService === index ? "M5 15l7-7 7 7" : "M9 5l7 7-7 7"} />
@@ -399,7 +399,7 @@ function ServicesPage() {
       <div className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
               Our Service Approach
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -411,14 +411,14 @@ function ServicesPage() {
             {serviceApproach.map((step, index) => (
               <div key={index} className="text-center group">
                 <div className="relative mb-6">
-                  <div className="w-24 h-24 bg-gradient-to-br from-[#3b37e6] to-blue-600 rounded-full flex items-center justify-center mx-auto text-3xl group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <div className="w-24 h-24 bg-gradient-to-br from-[#ff4e00] to-[#e64500] rounded-full flex items-center justify-center mx-auto text-3xl group-hover:scale-110 transition-transform duration-300 shadow-lg">
                     {step.icon}
                   </div>
-                  <div className="absolute -top-3 -right-3 w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center text-sm font-bold text-gray-900 shadow-md">
+                  <div className="absolute -top-3 -right-3 w-10 h-10 bg-[#16213d] rounded-full flex items-center justify-center text-sm font-bold text-white shadow-md">
                     {step.step}
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
+                <h3 className="text-xl font-bold text-[#16213d] mb-3">{step.title}</h3>
                 <p className="text-gray-600">{step.description}</p>
               </div>
             ))}
@@ -430,7 +430,7 @@ function ServicesPage() {
       <div className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
               Flexible Engagement Options
             </h2>
             <p className="text-lg text-gray-600">
@@ -442,7 +442,7 @@ function ServicesPage() {
             {engagementOptions.map((option, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
                 <div className="text-5xl mb-4">{option.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{option.title}</h3>
+                <h3 className="text-xl font-bold text-[#16213d] mb-3">{option.title}</h3>
                 <p className="text-gray-600">{option.description}</p>
               </div>
             ))}
@@ -454,7 +454,7 @@ function ServicesPage() {
       <div className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
               Sectors We Serve
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -469,7 +469,7 @@ function ServicesPage() {
                 className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 text-center shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
                 <div className="text-4xl mb-3">{sector.icon}</div>
-                <h3 className="font-bold text-gray-900 mb-2">{sector.name}</h3>
+                <h3 className="font-bold text-[#16213d] mb-2">{sector.name}</h3>
                 <p className="text-sm text-gray-600">{sector.description}</p>
               </div>
             ))}
@@ -478,7 +478,7 @@ function ServicesPage() {
       </div>
 
       {/* Stats Section */}
-      <div className="py-16 px-4 bg-gradient-to-r from-[#3b37e6] to-blue-600 text-white">
+      <div className="py-16 px-4 bg-gradient-to-r from-[#ff4e00] to-[#e64500] text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -489,7 +489,7 @@ function ServicesPage() {
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-4xl md:text-5xl font-bold mb-2">{stat.number}</div>
-                <div className="text-blue-100">{stat.label}</div>
+                <div className="text-orange-100">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -500,7 +500,7 @@ function ServicesPage() {
       <div className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
               Value Added Support
             </h2>
             <p className="text-lg text-gray-600">
@@ -519,7 +519,7 @@ function ServicesPage() {
             ].map((item, index) => (
               <div key={index} className="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="text-3xl mb-3">{item.icon}</div>
-                <h3 className="font-semibold text-gray-900 text-sm">{item.title}</h3>
+                <h3 className="font-semibold text-[#16213d] text-sm">{item.title}</h3>
               </div>
             ))}
           </div>
@@ -529,7 +529,7 @@ function ServicesPage() {
       {/* CTA Section */}
       <div className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-6">
             Ready to Transform Your Workspace?
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -538,13 +538,13 @@ function ServicesPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => navigate("/bookDemo")}
-              className="bg-[#3b37e6] text-white px-8 py-3 rounded-2xl font-semibold hover:bg-blue-700 transition-colors duration-300 shadow-lg"
+              className="bg-[#ff4e00] text-white px-8 py-3 rounded-2xl font-semibold hover:bg-[#16213d] transition-colors duration-300 shadow-lg"
             >
               Schedule Consultation
             </button>
             <button
               onClick={() => navigate("/case-studies")}
-              className="border-2 border-[#3b37e6] text-[#3b37e6] px-8 py-3 rounded-2xl font-semibold hover:bg-[#3b37e6] hover:text-white transition-colors duration-300"
+              className="border-2 border-[#ff4e00] text-[#ff4e00] px-8 py-3 rounded-2xl font-semibold hover:bg-[#ff4e00] hover:text-white transition-colors duration-300"
             >
               View Our Projects
             </button>

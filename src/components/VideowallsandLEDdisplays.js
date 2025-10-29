@@ -17,7 +17,7 @@ function VideoWallsLED() {
       name: "Video Walls",
       tagline: "Seamless Large-Format Displays",
       icon: "🖼️",
-      color: "from-blue-600 to-blue-800",
+      color: "from-[#ff4e00] to-[#e54600]",
       features: [
         { icon: "🔲", title: "Narrow Bezels", desc: "Ultra-thin borders for seamless viewing experience" },
         { icon: "💎", title: "4K Resolution", desc: "Crystal-clear imagery with exceptional detail" },
@@ -37,7 +37,7 @@ function VideoWallsLED() {
       name: "LED Displays",
       tagline: "Brilliant, Flexible Visual Solutions",
       icon: "✨",
-      color: "from-purple-600 to-indigo-700",
+      color: "from-[#ff4e00] to-[#e54600]",
       features: [
         { icon: "🌟", title: "High Brightness", desc: "Outstanding visibility even in direct sunlight" },
         { icon: "🎨", title: "Vivid Colors", desc: "Wide color gamut for stunning visual impact" },
@@ -83,25 +83,25 @@ function VideoWallsLED() {
     { 
       name: "LCD Video Walls", 
       icon: "📺", 
-      color: "from-blue-500 to-blue-700",
+      color: "from-[#ff4e00] to-[#e54600]",
       specs: ["Narrow bezels", "4K resolution", "55-86 inch panels", "Commercial grade"]
     },
     { 
       name: "Direct View LED", 
       icon: "🌟", 
-      color: "from-purple-500 to-purple-700",
+      color: "from-[#ff4e00] to-[#e54600]",
       specs: ["Fine pixel pitch", "High brightness", "Seamless display", "Indoor/outdoor"]
     },
     { 
       name: "Transparent LED", 
       icon: "🔍", 
-      color: "from-indigo-500 to-indigo-700",
+      color: "from-[#ff4e00] to-[#e54600]",
       specs: ["See-through design", "Maintains visibility", "Retail applications", "Modern aesthetic"]
     },
     { 
       name: "Creative Shapes", 
       icon: "💡", 
-      color: "from-blue-600 to-purple-600",
+      color: "from-[#ff4e00] to-[#e54600]",
       specs: ["Curved displays", "Custom shapes", "Architectural integration", "Brand identity"]
     }
   ];
@@ -133,7 +133,7 @@ function VideoWallsLED() {
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Video Walls & LED Displays
             </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-orange-100 max-w-3xl mx-auto leading-relaxed">
               Accelerate your organization's growth with stunning large-format displays that captivate audiences and deliver your message with impact.
             </p>
 
@@ -143,7 +143,7 @@ function VideoWallsLED() {
                 onClick={() => setActiveTab("videowalls")}
                 className={`px-8 py-4 rounded-2xl font-bold transition-all duration-300 ${
                   activeTab === "videowalls"
-                    ? "bg-white text-blue-600 shadow-xl scale-105"
+                    ? "bg-white text-[#ff4e00] shadow-xl scale-105"
                     : "bg-white bg-opacity-20 text-white hover:bg-opacity-30"
                 }`}
               >
@@ -153,7 +153,7 @@ function VideoWallsLED() {
                 onClick={() => setActiveTab("led")}
                 className={`px-8 py-4 rounded-2xl font-bold transition-all duration-300 ${
                   activeTab === "led"
-                    ? "bg-white text-purple-600 shadow-xl scale-105"
+                    ? "bg-white text-[#ff4e00] shadow-xl scale-105"
                     : "bg-white bg-opacity-20 text-white hover:bg-opacity-30"
                 }`}
               >
@@ -168,10 +168,10 @@ function VideoWallsLED() {
       <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-white text-sm font-medium mb-4">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
               Digital Media
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-[#16213d] mb-4">
               Next-Gen Display Solutions
             </h2>
             <p className="text-2xl text-gray-600 font-light">Professional display technology for every environment</p>
@@ -185,7 +185,7 @@ function VideoWallsLED() {
                 className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
                 <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
+                <h3 className="text-xl font-bold text-[#16213d] mb-2">{feature.title}</h3>
                 <p className="text-gray-600">{feature.desc}</p>
               </div>
             ))}
@@ -193,13 +193,13 @@ function VideoWallsLED() {
 
           {/* Benefits Section */}
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#16213d] mb-8 text-center">
               Why Choose {current.name}?
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {current.benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-6 h-6 bg-gradient-to-br from-[#ff4e00] to-[#e54600] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white text-sm">✓</span>
                   </div>
                   <p className="text-gray-700 text-lg">{benefit}</p>
@@ -214,10 +214,10 @@ function VideoWallsLED() {
       <div className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-white text-sm font-medium mb-4">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
               Audio Visual
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold text-[#16213d] mb-6">
               True Omnichannel Visual Experiences
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -231,29 +231,29 @@ function VideoWallsLED() {
                 <div
                   key={index}
                   className={`bg-white rounded-3xl shadow-xl overflow-hidden cursor-pointer transition-all duration-500 transform ${
-                    currentSlide === index ? "scale-105 ring-4 ring-blue-600 ring-opacity-50" : "hover:scale-102"
+                    currentSlide === index ? "scale-105 ring-4 ring-[#ff4e00] ring-opacity-50" : "hover:scale-102"
                   }`}
                   onClick={() => setCurrentSlide(index)}
                 >
                   <div className="relative">
-                    <div className="w-full h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+                    <div className="w-full h-48 bg-gradient-to-br from-[#ff4e00] to-[#e54600] flex items-center justify-center">
                       <div className="text-6xl">{application.icon}</div>
                     </div>
-                    <div className="absolute top-4 left-4 px-3 py-1 bg-blue-600 text-white text-sm font-semibold rounded-full">
+                    <div className="absolute top-4 left-4 px-3 py-1 bg-[#ff4e00] text-white text-sm font-semibold rounded-full">
                       {application.category}
                     </div>
                   </div>
                   
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">{application.title}</h3>
+                    <h3 className="text-xl font-bold text-[#16213d] mb-3">{application.title}</h3>
                     <p className="text-gray-600 mb-4">{application.description}</p>
                     
                     <div className="space-y-2">
-                      <h4 className="font-semibold text-gray-900">Key Features:</h4>
+                      <h4 className="font-semibold text-[#16213d]">Key Features:</h4>
                       <div className="grid grid-cols-1 gap-2">
                         {application.features.map((feature, featureIndex) => (
                           <div key={featureIndex} className="flex items-center space-x-2">
-                            <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            <div className="w-2 h-2 bg-[#ff4e00] rounded-full"></div>
                             <span className="text-sm text-gray-600">{feature}</span>
                           </div>
                         ))}
@@ -270,7 +270,7 @@ function VideoWallsLED() {
                   key={index}
                   onClick={() => setCurrentSlide(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    currentSlide === index ? "bg-blue-600 w-8" : "bg-gray-300"
+                    currentSlide === index ? "bg-[#ff4e00] w-8" : "bg-gray-300"
                   }`}
                 />
               ))}
@@ -280,13 +280,13 @@ function VideoWallsLED() {
       </div>
 
       {/* Collaboration Section */}
-      <div className="py-20 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
+      <div className="py-20 px-4 bg-gradient-to-br from-gray-50 to-orange-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-white text-sm font-medium mb-4">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
               Collaboration
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
               Enhanced Visual Collaboration
             </h2>
             <p className="text-lg text-gray-600">
@@ -313,7 +313,7 @@ function VideoWallsLED() {
 
           {/* Technical Comparison */}
           <div className="bg-white rounded-3xl p-8 shadow-xl">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            <h3 className="text-2xl font-bold text-[#16213d] mb-6 text-center">
               Technology Comparison
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -321,14 +321,14 @@ function VideoWallsLED() {
                 <div className="flex items-start space-x-3">
                   <div className="text-2xl">🖼️</div>
                   <div>
-                    <h4 className="font-bold text-gray-900">LCD Video Walls</h4>
+                    <h4 className="font-bold text-[#16213d]">LCD Video Walls</h4>
                     <p className="text-gray-600 text-sm">Ideal for control rooms, corporate lobbies, and retail with excellent color accuracy and reliability</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="text-2xl">🌟</div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Direct View LED</h4>
+                    <h4 className="font-bold text-[#16213d]">Direct View LED</h4>
                     <p className="text-gray-600 text-sm">Perfect for large venues, events, and outdoor advertising with seamless displays and high brightness</p>
                   </div>
                 </div>
@@ -337,14 +337,14 @@ function VideoWallsLED() {
                 <div className="flex items-start space-x-3">
                   <div className="text-2xl">🔍</div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Transparent LED</h4>
+                    <h4 className="font-bold text-[#16213d]">Transparent LED</h4>
                     <p className="text-gray-600 text-sm">Innovative solution for retail windows, museums, and architectural integration maintaining visibility</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="text-2xl">💡</div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Creative Shapes</h4>
+                    <h4 className="font-bold text-[#16213d]">Creative Shapes</h4>
                     <p className="text-gray-600 text-sm">Custom configurations for brand experiences, exhibitions, and unique architectural features</p>
                   </div>
                 </div>
@@ -358,7 +358,7 @@ function VideoWallsLED() {
       <div className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
               The Proscene Advantage
             </h2>
           </div>
@@ -369,9 +369,9 @@ function VideoWallsLED() {
               { icon: "⚙️", title: "Professional Installation", desc: "Certified technicians ensure perfect setup and calibration" },
               { icon: "🛡️", title: "Complete Support", desc: "Ongoing maintenance, content management, and technical support" }
             ].map((item, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 text-center hover:shadow-xl transition-shadow">
+              <div key={index} className="bg-gradient-to-br from-gray-50 to-orange-50 rounded-2xl p-8 text-center hover:shadow-xl transition-shadow">
                 <div className="text-5xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
+                <h3 className="text-xl font-bold text-[#16213d] mb-3">{item.title}</h3>
                 <p className="text-gray-600">{item.desc}</p>
               </div>
             ))}
@@ -382,17 +382,17 @@ function VideoWallsLED() {
       {/* CTA Section */}
       <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-12 rounded-3xl">
+          <div className="bg-gradient-to-r from-[#ff4e00] to-[#e54600] text-white p-12 rounded-3xl">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Ready to Make an Impact?
             </h3>
-            <p className="text-blue-100 mb-8 text-lg">
+            <p className="text-orange-100 mb-8 text-lg">
               Let's design a stunning video wall or LED display solution that transforms your space and engages your audience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={handleButtonClick}
-                className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+                className="bg-white text-[#ff4e00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
               >
                 Schedule Consultation
               </button>

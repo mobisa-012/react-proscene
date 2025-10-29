@@ -74,17 +74,17 @@ const TestimonialCarousel = () => {
 
         {/* Color Overlay */}
         <div
-            className="absolute inset-0 bg-blue-900 bg-opacity-50"
+            className="absolute inset-0"
             style={{
-            backgroundColor: "#3b37e6",
-            opacity: 0.4,
+            backgroundColor: "#16213d",
+            opacity: 0.6,
             }}
         ></div>
         </div>
       ))}
 
       {/* Content */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white px-4">
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4">
         <h2 className=" font-bold mb-4 absolute top-1/3 max-w-7xl mx-auto" style={{fontSize: 'clamp(1.8019rem, 1.0209rem + 3.9051vw, 4.6819rem)', lineHeight:'1'}}>
           {testimonials[currentIndex].quote}
         </h2>
@@ -95,7 +95,7 @@ const TestimonialCarousel = () => {
       <div className="absolute bottom-4 mb-10 flex justify-center items-center space-x-4">
         <button
           onClick={handlePrev}
-          className="bg-white text-black rounded-full w-10 h-10 flex justify-center items-center shadow-lg hover:bg-blue-500 active:bg-blue-700 transition-colors"
+          className="bg-white text-[#ff4e00] rounded-full w-10 h-10 flex justify-center items-center shadow-lg hover:bg-[#16213d] hover:text-white active:bg-[#0f172a] transition-colors duration-300"
         >
           <FaChevronLeft />
         </button>
@@ -104,14 +104,14 @@ const TestimonialCarousel = () => {
             <div
               key={index}
               className={`w-10 h-3 rounded-2xl ${
-                index === currentIndex ? "bg-blue-500" : "bg-gray-200"
+                index === currentIndex ? "bg-[#ff4e00]" : "bg-gray-200"
               }`}
             ></div>
           ))}
         </div>
         <button
           onClick={handleNext}
-          className="bg-white text-black rounded-full w-10 h-10 flex justify-center items-center shadow-lg hover:bg-blue-500 active:bg-blue-700 transition-colors"
+          className="bg-white text-[#ff4e00] rounded-full w-10 h-10 flex justify-center items-center shadow-lg hover:bg-[#16213d] hover:text-white active:bg-[#0f172a] transition-colors duration-300"
         >
           <FaChevronRight />
         </button>

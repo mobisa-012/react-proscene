@@ -33,7 +33,7 @@
 }
 
 .carousel-item img {
-  width: 90px;
+  width: 150px;
   height: auto;
   object-fit: contain;
   filter: grayscale(100%);

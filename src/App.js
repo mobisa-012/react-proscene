@@ -59,6 +59,7 @@ import Localizations from "./components/Localizations";
 import TouchPanelControl from "./components/TouchPanelControl";
 import IPTV from "./components/iptv";
 import Avautomation from "./components/Avautomation";
+import MicrosoftModernSolutions from "./components/microsoftmodernsolutions";
 
 function App() {
   return (
@@ -123,6 +124,7 @@ function App() {
         <Route path="/interactive-kiosk-and-screens" element={<Interactivekiosk/>} />
         <Route path="/iptv" element={<IPTV/>} />
         <Route path="/localizations" element={<Localizations/>} />
+        <Route path="/microsoft-modern-solutions" element={<MicrosoftModernSolutions/>} />
         <Route path="/av-automation" element={<Avautomation/>} />
         <Route path="*" element={<h1 className="text-center mt-5">404 Not Found</h1>} />
     </Routes>

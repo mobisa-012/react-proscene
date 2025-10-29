@@ -9,7 +9,7 @@
         @apply bg-white rounded-lg shadow-md w-full flex flex-col space-y-4 border justify-between;
     }
     .sector-card {
-        @apply bg-white rounded-xl sm:rounded-[50px] shadow-md w-full flex flex-col lg:flex-row flex-nowrap p-[12px] sm:p-[50px] border border-indigo-300 gap-3;
+        @apply bg-white rounded-xl sm:rounded-[50px] shadow-md w-full flex flex-col lg:flex-row flex-nowrap p-[12px] sm:p-[50px] border border-orange-300 gap-3;
     }
 }
 

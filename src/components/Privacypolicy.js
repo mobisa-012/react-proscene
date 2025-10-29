@@ -129,10 +129,10 @@ function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-[#3b37e6] to-[#5b51ff] text-white overflow-hidden">
+      <div className="relative bg-gradient-to-br from-[#ff4e00] to-[#e64500] text-white overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-32 h-32 bg-white rounded-full opacity-10 animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-24 h-24 bg-purple-300 rounded-full opacity-15 animate-bounce"></div>
+          <div className="absolute bottom-20 right-20 w-24 h-24 bg-orange-300 rounded-full opacity-15 animate-bounce"></div>
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 py-24 mt-16">
@@ -140,10 +140,10 @@ function PrivacyPolicy() {
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Privacy Policy
             </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl text-orange-100 max-w-3xl mx-auto">
               Your privacy and the security of your AV project information matter to us. This policy explains how we collect, use, and protect your data throughout our service delivery.
             </p>
-            <div className="text-sm text-blue-200">
+            <div className="text-sm text-orange-200">
               Last Updated: October 14, 2025
             </div>
           </div>
@@ -153,7 +153,7 @@ function PrivacyPolicy() {
       {/* Main Content */}
       <div className="max-w-5xl mx-auto px-4 py-16">
         {/* Introduction */}
-        <div className="mb-12 p-8 bg-blue-50 rounded-2xl border-l-4 border-[#3b37e6]">
+        <div className="mb-12 p-8 bg-orange-50 rounded-2xl border-l-4 border-[#ff4e00]">
           <p className="text-lg text-gray-700 leading-relaxed">
             This Privacy Policy describes how we, as an audio-visual solutions provider, collect, use, disclose, and protect your information when you engage our services for AV consultation, installation, maintenance, or support. By using our services or website, you agree to the collection and use of information in accordance with this policy.
           </p>
@@ -164,10 +164,10 @@ function PrivacyPolicy() {
           {sections.map((section, index) => (
             <div key={index} className="scroll-mt-24">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-[#3b37e6] text-white rounded-full flex items-center justify-center font-bold text-lg mr-4 flex-shrink-0">
+                <div className="w-12 h-12 bg-[#ff4e00] text-white rounded-full flex items-center justify-center font-bold text-lg mr-4 flex-shrink-0">
                   {index + 1}
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-[#001e62]">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#16213d]">
                   {section.title}
                 </h2>
               </div>
@@ -191,8 +191,8 @@ function PrivacyPolicy() {
         </div>
 
         {/* Contact Section */}
-        <div className="mt-16 p-8 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl">
-          <h2 className="text-2xl font-bold text-[#001e62] mb-4">
+        <div className="mt-16 p-8 bg-gradient-to-r from-orange-50 to-orange-50 rounded-2xl">
+          <h2 className="text-2xl font-bold text-[#16213d] mb-4">
             Contact Us About Privacy
           </h2>
           <p className="text-gray-700 mb-6">
@@ -201,20 +201,16 @@ function PrivacyPolicy() {
           <div className="space-y-3 text-gray-700">
             <div className="flex items-center">
               <span className="font-semibold w-24">Email:</span>
-              <a href="mailto:privacy@yourcompany.com" className="text-[#3b37e6] hover:underline">
+              <a href="mailto:info@proscene.co.ke" className="text-[#ff4e00] hover:underline">
                 info@proscene.co.ke
               </a>
             </div>
             <div className="flex items-center">
               <span className="font-semibold w-24">Phone:</span>
-              <a href="tel:+1234567890" className="text-[#3b37e6] hover:underline">
+              <a href="tel:+254713761269" className="text-[#ff4e00] hover:underline">
                 +254 713 761269
               </a>
             </div>
-            {/* <div className="flex items-start">
-              <span className="font-semibold w-24">Address: </span>
-              <span>info@proscene.co.ke</span>
-            </div> */}
           </div>
         </div>
 
@@ -224,30 +220,18 @@ function PrivacyPolicy() {
           <div className="flex flex-wrap gap-4">
             <button 
               onClick={() => navigate('/terms')}
-              className="text-[#3b37e6] hover:underline font-medium"
+              className="text-[#ff4e00] hover:underline font-medium"
             >
               Terms of Service →
             </button>
-            {/* <button 
-              onClick={() => navigate('/cookie-policy')}
-              className="text-[#3b37e6] hover:underline font-medium"
-            >
-              Cookie Policy →
-            </button>
-            <button 
-              onClick={() => navigate('/service-agreement')}
-              className="text-[#3b37e6] hover:underline font-medium"
-            >
-              Service Agreement →
-            </button> */}
           </div>
         </div>
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-[#e0f2f7] via-[#f0f9ff] to-[#e0f2f7] py-20">
+      <div className="bg-gradient-to-r from-[#fff0e6] via-[#fff8f0] to-[#fff0e6] py-20">
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-6">
             Your Privacy & Project Security Matter
           </h2>
           <p className="text-lg text-gray-700 mb-8">
@@ -256,13 +240,13 @@ function PrivacyPolicy() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               onClick={() => navigate('/contact')}
-              className="bg-[#3b37e6] text-white px-8 py-4 rounded-2xl font-bold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
+              className="bg-[#ff4e00] text-white px-8 py-4 rounded-2xl font-bold hover:bg-[#16213d] transition-all duration-300 transform hover:scale-105"
             >
               Contact Us
             </button>
             <button 
               onClick={() => navigate('/')}
-              className="border-2 border-[#3b37e6] text-[#3b37e6] px-8 py-4 rounded-2xl font-bold hover:bg-[#3b37e6] hover:text-white transition-all duration-300"
+              className="border-2 border-[#ff4e00] text-[#ff4e00] px-8 py-4 rounded-2xl font-bold hover:bg-[#ff4e00] hover:text-white transition-all duration-300"
             >
               Back to Home
             </button>

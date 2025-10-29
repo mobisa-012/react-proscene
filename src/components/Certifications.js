@@ -2,19 +2,13 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 
-// Import your certification logos - adjust paths as needed
-// import caLogo from "../assets/certifications/ca-logo.png";
-// import viscarLogo from "../assets/certifications/viscar-logo.png";
-// import ncaLogo from "../assets/certifications/nca-logo.png";
-// import epraLogo from "../assets/certifications/epra-logo.png";
-
 function CertificationsPage() {
   const navigate = useNavigate();
 
   const certifications = [
     {
       id: "ca-kenya",
-      logo: "/assets/certifications/ca-logo.png", // Replace with your actual path
+      logo: "/assets/certifications/ca-logo.png",
       title: "TELECOMMUNICATIONS CONTRACTOR",
       organization: "Communications Authority of Kenya",
       description: "Licensed telecommunications contractor qualified to design, install, and maintain telecommunications infrastructure across Kenya.",
@@ -24,7 +18,7 @@ function CertificationsPage() {
         "Qualified for government and corporate projects",
         "Regular audits and quality assurance"
       ],
-      badgeColor: "from-blue-600 to-blue-800"
+      badgeColor: "from-[#ff4e00] to-[#e54600]"
     },
     {
       id: "work-at-height",
@@ -38,7 +32,7 @@ function CertificationsPage() {
         "Trained in fall protection systems",
         "Insurance and liability coverage"
       ],
-      badgeColor: "from-red-600 to-red-800"
+      badgeColor: "from-[#ff4e00] to-[#e54600]"
     },
     {
       id: "nca-company",
@@ -52,7 +46,7 @@ function CertificationsPage() {
         "Quality assurance certification",
         "Project management standards"
       ],
-      badgeColor: "from-orange-600 to-orange-800"
+      badgeColor: "from-[#ff4e00] to-[#e54600]"
     },
     {
       id: "nca-individual",
@@ -66,7 +60,7 @@ function CertificationsPage() {
         "Industry recognition",
         "Compliance with building codes"
       ],
-      badgeColor: "from-orange-600 to-orange-800"
+      badgeColor: "from-[#ff4e00] to-[#e54600]"
     },
     {
       id: "epra-t3",
@@ -80,7 +74,7 @@ function CertificationsPage() {
         "Power system design and installation",
         "Regulatory compliance"
       ],
-      badgeColor: "from-green-600 to-green-800"
+      badgeColor: "from-[#ff4e00] to-[#e54600]"
     },
     {
       id: "epra-t2",
@@ -94,7 +88,7 @@ function CertificationsPage() {
         "Energy efficiency consulting",
         "High-voltage equipment handling"
       ],
-      badgeColor: "from-green-600 to-green-800"
+      badgeColor: "from-[#ff4e00] to-[#e54600]"
     }
   ];
 
@@ -124,16 +118,16 @@ function CertificationsPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-[#3b37e6] to-blue-800 text-white overflow-hidden">
+      <div className="relative bg-gradient-to-br from-[#ff4e00] to-[#e54600] text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 py-20 lg:py-28 text-center">
           <div className="inline-block px-4 py-2 bg-white bg-opacity-20 rounded-full text-sm font-medium mb-6">
             Licensed & Certified
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            We're <span className="text-[#ff6663]">Certified</span>
+            We're <span className="text-[#16213d]">Certified</span>
           </h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-orange-100 max-w-3xl mx-auto leading-relaxed">
             Proscene Systems Limited holds multiple certifications and licenses, ensuring that every project meets the highest standards of quality, safety, and regulatory compliance.
           </p>
         </div>
@@ -146,7 +140,7 @@ function CertificationsPage() {
             {industryRecognition.map((item, index) => (
               <div key={index} className="bg-white rounded-2xl p-6 shadow-md text-center hover:shadow-xl transition-shadow duration-300">
                 <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
+                <h3 className="text-lg font-bold text-[#16213d] mb-2">{item.title}</h3>
                 <p className="text-gray-600 text-sm">{item.description}</p>
               </div>
             ))}
@@ -158,7 +152,7 @@ function CertificationsPage() {
       <div className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
               Our Certifications & Licenses
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -204,8 +198,8 @@ function CertificationsPage() {
                   </p>
 
                   <div className="space-y-3">
-                    <h4 className="font-semibold text-gray-900 flex items-center gap-2">
-                      <svg className="w-5 h-5 text-[#3b37e6]" fill="currentColor" viewBox="0 0 20 20">
+                    <h4 className="font-semibold text-[#16213d] flex items-center gap-2">
+                      <svg className="w-5 h-5 text-[#ff4e00]" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       Key Benefits
@@ -213,7 +207,7 @@ function CertificationsPage() {
                     <ul className="space-y-2">
                       {cert.benefits.map((benefit, idx) => (
                         <li key={idx} className="flex items-start gap-3 text-gray-600">
-                          <div className="w-1.5 h-1.5 bg-[#ff6663] rounded-full mt-2 flex-shrink-0"></div>
+                          <div className="w-1.5 h-1.5 bg-[#ff4e00] rounded-full mt-2 flex-shrink-0"></div>
                           <span className="text-sm">{benefit}</span>
                         </li>
                       ))}
@@ -230,7 +224,7 @@ function CertificationsPage() {
       <div className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
               Why Our Certifications Matter
             </h2>
             <p className="text-lg text-gray-600">
@@ -258,7 +252,7 @@ function CertificationsPage() {
             ].map((item, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
                 <div className="text-5xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
+                <h3 className="text-xl font-bold text-[#16213d] mb-3">{item.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{item.description}</p>
               </div>
             ))}
@@ -267,7 +261,7 @@ function CertificationsPage() {
       </div>
 
       {/* Stats Section */}
-      <div className="py-16 px-4 bg-gradient-to-r from-[#3b37e6] to-blue-700 text-white">
+      <div className="py-16 px-4 bg-gradient-to-r from-[#ff4e00] to-[#e54600] text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -278,7 +272,7 @@ function CertificationsPage() {
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-4xl md:text-5xl font-bold mb-2">{stat.number}</div>
-                <div className="text-blue-100">{stat.label}</div>
+                <div className="text-orange-100">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -288,7 +282,7 @@ function CertificationsPage() {
       {/* CTA Section */}
       <div className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-6">
             Work With a Certified Partner
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -297,13 +291,13 @@ function CertificationsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => navigate("/bookDemo")}
-              className="bg-[#3b37e6] text-white px-8 py-3 rounded-2xl font-semibold hover:bg-blue-700 transition-colors duration-300 shadow-lg"
+              className="bg-[#ff4e00] text-white px-8 py-3 rounded-2xl font-semibold hover:bg-[#16213d] transition-colors duration-300 shadow-lg"
             >
               Request Consultation
             </button>
             <button
               onClick={() => navigate("/contact")}
-              className="border-2 border-[#3b37e6] text-[#3b37e6] px-8 py-3 rounded-2xl font-semibold hover:bg-[#3b37e6] hover:text-white transition-colors duration-300"
+              className="border-2 border-[#ff4e00] text-[#ff4e00] px-8 py-3 rounded-2xl font-semibold hover:bg-[#ff4e00] hover:text-white transition-colors duration-300"
             >
               Contact Us
             </button>

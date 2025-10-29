@@ -76,7 +76,7 @@ const AboutPS = () => {
                             text-sm sm:text-base md:text-lg lg:text-xl
                             rounded-lg md:rounded-xl
                             font-semibold
-                            hover:bg-white hover:text-[#3b37e6] 
+                            hover:bg-white hover:text-[#ff4e00] 
                             transition-all duration-300
                             shadow-lg hover:shadow-2xl
                             transform hover:scale-105

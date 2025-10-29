@@ -11,7 +11,7 @@ const CoopNav = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-[#3b37e6] to-blue-700 py-6 md:py-10">
+    <div className="bg-gradient-to-r from-[#ff4e00] to-[#ff6a33] py-6 md:py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
        
         {/* Desktop Navigation - Horizontal */}
@@ -19,7 +19,7 @@ const CoopNav = () => {
           {navItems.map((item, index) => (
             <div key={index} className="flex items-center">
               <div
-                className={`text-white text-base lg:text-xl font-medium transition duration-300 hover:text-[#ff6663] cursor-pointer
+                className={`text-white text-base lg:text-xl font-medium transition duration-300 hover:text-[#16213d] cursor-pointer
                  `}
               >
                 {item.label}
@@ -35,9 +35,9 @@ const CoopNav = () => {
         <div className="hidden sm:grid md:hidden grid-cols-2 gap-4">
           {navItems.map((item, index) => (
             <div
-              
-              className={`text-white text-base font-medium transition duration-300 hover:text-[#ff6663] cursor-pointer p-4 rounded-lg border border-white/30 hover:border-[#ff6663] hover:bg-white/10
-                ${activeItem === index ? 'text-[#ff6663] bg-white/10 border-[#ff6663]' : ''}`}
+              key={index}
+              className={`text-white text-base font-medium transition duration-300 hover:text-[#16213d] cursor-pointer p-4 rounded-lg border border-white/30 hover:border-[#16213d] hover:bg-white/10
+                ${activeItem === index ? 'text-[#16213d] bg-white/10 border-[#16213d]' : ''}`}
             >
               <div className="flex items-center justify-center gap-2">
                 <span className="text-xl">{item.icon}</span>
@@ -51,6 +51,7 @@ const CoopNav = () => {
         <div className="flex flex-col gap-3 sm:hidden">
           {navItems.map((item, index) => (
             <div
+              key={index}
               className={`text-white text-sm font-medium transition duration-300 cursor-pointer p-4 rounded-lg border border-white/30 hover:bg-white/10 text-left
                 `}
             >

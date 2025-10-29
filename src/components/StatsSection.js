@@ -62,7 +62,7 @@ const Stats = () => {
       </div>
     </div>
       </div>
-      <div className="bg-[#fff] py-1" ref={statsRef}>
+      <div className="bg-[#fff] py-1 pb-12" ref={statsRef}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mt-10 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6">
             {statsData.map((stat, index) => (

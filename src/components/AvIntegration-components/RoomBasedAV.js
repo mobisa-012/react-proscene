@@ -76,7 +76,7 @@ function RoomBasedAV() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br mt-9 from-[#3b37e6] to-blue-800 text-white overflow-hidden">
+      <div className="relative bg-gradient-to-br mt-9 from-[#ff4e00] to-[#e54600] text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -86,15 +86,15 @@ function RoomBasedAV() {
               </div>
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                 Transform Every
-                <span className="block text-yellow-300">Meeting Space</span>
+                <span className="block text-[#16213d]">Meeting Space</span>
               </h1>
-              <p className="text-xl text-blue-100 max-w-lg">
+              <p className="text-xl text-orange-100 max-w-lg">
                 From intimate conference rooms to grand auditoriums, we create AV experiences that inspire, engage, and deliver results.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={handleButtonClick}
-                  className="bg-white text-[#3b37e6] px-8 py-3 rounded-2xl font-semibold hover:bg-gray-100 transition-colors duration-300"
+                  className="bg-white text-[#ff4e00] px-8 py-3 rounded-2xl font-semibold hover:bg-gray-100 transition-colors duration-300"
                 >
                   Schedule Consultation
                 </button>
@@ -108,8 +108,8 @@ function RoomBasedAV() {
                   className="w-full h-auto rounded-2xl shadow-2xl"
                 />
               </div>
-              <div className="absolute -top-8 -right-8 w-32 h-32 bg-yellow-300 rounded-full opacity-20"></div>
-              <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-blue-300 rounded-full opacity-30"></div>
+              <div className="absolute -top-8 -right-8 w-32 h-32 bg-[#16213d] rounded-full opacity-20"></div>
+              <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-orange-300 rounded-full opacity-30"></div>
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@ function RoomBasedAV() {
       <div className="bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
               Specialized Solutions for Every Space
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -135,8 +135,8 @@ function RoomBasedAV() {
                 onClick={() => setActiveTab(key)}
                 className={`flex-1 py-3 px-6 rounded-xl font-semibold transition-all duration-300 ${
                   activeTab === key
-                    ? "bg-[#3b37e6] text-white shadow-lg"
-                    : "text-gray-600 hover:text-[#3b37e6]"
+                    ? "bg-[#ff4e00] text-white shadow-lg"
+                    : "text-gray-600 hover:text-[#ff4e00]"
                 }`}
               >
                 {room.title}
@@ -150,10 +150,10 @@ function RoomBasedAV() {
               <div className="p-8 lg:p-12">
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-3xl font-bold text-gray-900 mb-2">
+                    <h3 className="text-3xl font-bold text-[#16213d] mb-2">
                       {roomTypes[activeTab].title}
                     </h3>
-                    <p className="text-xl text-[#3b37e6] font-semibold mb-4">
+                    <p className="text-xl text-[#ff4e00] font-semibold mb-4">
                       {roomTypes[activeTab].subtitle}
                     </p>
                     <p className="text-gray-600 text-lg leading-relaxed">
@@ -162,11 +162,11 @@ function RoomBasedAV() {
                   </div>
 
                   <div>
-                    <h4 className="text-xl font-semibold text-gray-900 mb-4">Key Features</h4>
+                    <h4 className="text-xl font-semibold text-[#16213d] mb-4">Key Features</h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       {roomTypes[activeTab].features.map((feature, index) => (
                         <div key={index} className="flex items-center space-x-3">
-                          <div className="w-2 h-2 bg-[#3b37e6] rounded-full"></div>
+                          <div className="w-2 h-2 bg-[#ff4e00] rounded-full"></div>
                           <span className="text-gray-700">{feature}</span>
                         </div>
                       ))}
@@ -174,7 +174,7 @@ function RoomBasedAV() {
                   </div>
 
                   <div>
-                    <h4 className="text-xl font-semibold text-gray-900 mb-4">Benefits</h4>
+                    <h4 className="text-xl font-semibold text-[#16213d] mb-4">Benefits</h4>
                     <div className="space-y-3">
                       {roomTypes[activeTab].benefits.map((benefit, index) => (
                         <div key={index} className="flex items-start space-x-3">
@@ -197,8 +197,8 @@ function RoomBasedAV() {
                   alt={roomTypes[activeTab].title}
                   className="w-full h-auto rounded-2xl shadow-lg"
                 />
-                <div className="absolute top-4 right-4 w-16 h-16 bg-[#3b37e6] rounded-full opacity-20"></div>
-                <div className="absolute bottom-4 left-4 w-12 h-12 bg-yellow-400 rounded-full opacity-30"></div>
+                <div className="absolute top-4 right-4 w-16 h-16 bg-[#ff4e00] rounded-full opacity-20"></div>
+                <div className="absolute bottom-4 left-4 w-12 h-12 bg-[#16213d] rounded-full opacity-30"></div>
               </div>
             </div>
           </div>
@@ -209,7 +209,7 @@ function RoomBasedAV() {
       <div className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
               Our Proven Process
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -246,14 +246,14 @@ function RoomBasedAV() {
             ].map((item, index) => (
               <div key={index} className="text-center group">
                 <div className="relative mb-6">
-                  <div className="w-20 h-20 bg-gradient-to-br from-[#3b37e6] to-blue-600 rounded-full flex items-center justify-center mx-auto text-2xl group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[#ff4e00] to-[#e54600] rounded-full flex items-center justify-center mx-auto text-2xl group-hover:scale-110 transition-transform duration-300">
                     {item.icon}
                   </div>
-                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center text-sm font-bold text-gray-900">
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#16213d] rounded-full flex items-center justify-center text-sm font-bold text-white">
                     {item.step}
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
+                <h3 className="text-xl font-semibold text-[#16213d] mb-3">{item.title}</h3>
                 <p className="text-gray-600">{item.description}</p>
               </div>
             ))}
@@ -262,7 +262,7 @@ function RoomBasedAV() {
       </div>
 
       {/* Stats Section */}
-      <div className="py-16 px-4 bg-gradient-to-r from-[#3b37e6] to-blue-600 text-white">
+      <div className="py-16 px-4 bg-gradient-to-r from-[#ff4e00] to-[#e54600] text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -273,7 +273,7 @@ function RoomBasedAV() {
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold mb-2">{stat.number}</div>
-                <div className="text-blue-100">{stat.label}</div>
+                <div className="text-orange-100">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -283,7 +283,7 @@ function RoomBasedAV() {
       {/* CTA Section */}
       <div className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-6">
             Ready to Transform Your Space?
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -292,11 +292,11 @@ function RoomBasedAV() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               onClick={handleButtonClick}
-              className="bg-[#3b37e6] text-white px-8 py-3 rounded-2xl font-semibold hover:bg-blue-700 transition-colors duration-300"
+              className="bg-[#ff4e00] text-white px-8 py-3 rounded-2xl font-semibold hover:bg-[#16213d] transition-colors duration-300"
             >
               Get Free Consultation
             </button>
-            <button className="border-2 border-[#3b37e6] text-[#3b37e6] px-8 py-3 rounded-2xl font-semibold hover:bg-[#3b37e6] hover:text-white transition-colors duration-300">
+            <button className="border-2 border-[#ff4e00] text-[#ff4e00] px-8 py-3 rounded-2xl font-semibold hover:bg-[#ff4e00] hover:text-white transition-colors duration-300">
               Download Brochure
             </button>
           </div>

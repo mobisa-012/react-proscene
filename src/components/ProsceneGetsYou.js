@@ -15,7 +15,7 @@ function ProsceneGetYou() {
 ];
 
 const FeatureCard = ({ image, text,}) => (
-  <div className="bg-white rounded-2xl border border-blue-500 p-6 flex items-start w-auto min-w-[250px]">
+  <div className="bg-white rounded-2xl border border-[#ff4e00] p-6 flex items-start w-auto min-w-[250px] hover:shadow-lg transition-shadow duration-300">
     <div className="mr-4 flex flex-col items-center">
       <img src={image} alt="" className="w-10 h-10 object-contain" />
     </div>
@@ -39,7 +39,7 @@ const FeatureGrid = () => (
     return (
         <div className="pt-10 pb-10">
         {/* title */}
-        <div className="text-center text-2xl font-bold">With Proscene you will get:</div>
+        <div className="text-center text-2xl font-bold text-[#16213d]">With Proscene you will get:</div>
         <FeatureGrid/>
         </div>
     );

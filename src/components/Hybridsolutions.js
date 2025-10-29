@@ -5,12 +5,10 @@ import { useNavigate } from "react-router-dom";
 function HybridMeetings() {
      const navigate = useNavigate();
   const handleButtonClick = () => {
-    // console.log("Navigate to book demo");
     navigate("/bookDemo");
   };
   
   const sendtoStudypage = () => {
-    // console.log("Navigate to case studies");
     navigate("/case-studies");
   };
 
@@ -71,11 +69,11 @@ function HybridMeetings() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-blue-600 to-purple-700 text-white overflow-hidden">
+      <div className="relative bg-gradient-to-br from-[#ff4e00] to-[#e54600] text-white overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-black opacity-20"></div>
-          <div className="absolute top-20 left-20 w-32 h-32 bg-purple-400 rounded-full opacity-10 blur-3xl"></div>
-          <div className="absolute bottom-20 right-20 w-40 h-40 bg-pink-400 rounded-full opacity-15 blur-3xl"></div>
+          <div className="absolute top-20 left-20 w-32 h-32 bg-orange-400 rounded-full opacity-10 blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-40 h-40 bg-orange-300 rounded-full opacity-15 blur-3xl"></div>
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 py-20 mt-5">
@@ -88,13 +86,13 @@ function HybridMeetings() {
                 Connect Teams
                 <span className="block">Anywhere, Seamlessly</span>
               </h1>
-              <p className="text-xl text-purple-100 max-w-lg leading-relaxed">
+              <p className="text-xl text-orange-100 max-w-lg leading-relaxed">
                 Bridge the gap between remote and in-room participants with enterprise-grade AV solutions designed for the modern hybrid workplace.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={handleButtonClick}
-                  className="bg-white text-gray-900 px-8 py-4 rounded-2xl font-bold hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                  className="bg-white text-[#ff4e00] px-8 py-4 rounded-2xl font-bold hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
                 >
                   Schedule Consultation
                 </button>
@@ -105,7 +103,7 @@ function HybridMeetings() {
               <div className="relative z-10 transform transition-transform duration-500">
                 <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl shadow-2xl p-8">
                   <div className="bg-gray-700 rounded-xl h-64 mb-4 flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#ff4e00]/20 to-[#e54600]/20"></div>
                     <div className="text-6xl z-10">🎬</div>
                   </div>
                   <div className="flex gap-2">
@@ -121,8 +119,8 @@ function HybridMeetings() {
                   </div>
                 </div>
               </div>
-              <div className="absolute -top-8 -right-8 w-40 h-40 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full opacity-20 blur-2xl"></div>
-              <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full opacity-25 blur-2xl"></div>
+              <div className="absolute -top-8 -right-8 w-40 h-40 bg-gradient-to-br from-orange-400 to-[#ff4e00] rounded-full opacity-20 blur-2xl"></div>
+              <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-[#ff4e00] to-orange-400 rounded-full opacity-25 blur-2xl"></div>
             </div>
           </div>
         </div>
@@ -132,9 +130,9 @@ function HybridMeetings() {
       <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold text-[#16213d] mb-6">
               Features That Make
-              <span className="text-blue-600"> Hybrid Work Better</span>
+              <span className="text-[#ff4e00]"> Hybrid Work Better</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Our hybrid meeting solutions eliminate the technology barriers that frustrate teams and reduce productivity.
@@ -148,7 +146,7 @@ function HybridMeetings() {
                   key={index}
                   className={`p-6 rounded-2xl cursor-pointer transition-all duration-300 ${
                     activeFeature === index
-                      ? "bg-blue-600 text-white shadow-xl transform scale-105"
+                      ? "bg-[#ff4e00] text-white shadow-xl transform scale-105"
                       : "bg-white text-gray-700 hover:shadow-lg"
                   }`}
                   onClick={() => setActiveFeature(index)}
@@ -161,7 +159,7 @@ function HybridMeetings() {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-                      <p className={`${activeFeature === index ? "text-blue-100" : "text-gray-600"}`}>
+                      <p className={`${activeFeature === index ? "text-orange-100" : "text-gray-600"}`}>
                         {feature.description}
                       </p>
                     </div>
@@ -171,7 +169,7 @@ function HybridMeetings() {
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl p-8 text-white">
+              <div className="bg-gradient-to-br from-[#ff4e00] to-[#e54600] rounded-3xl p-8 text-white">
                 <div className="bg-white bg-opacity-10 rounded-2xl p-6 mb-6 backdrop-blur-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center space-x-2">
@@ -195,12 +193,12 @@ function HybridMeetings() {
                   <h3 className="text-2xl font-bold mb-3">
                     {features[activeFeature].title}
                   </h3>
-                  <p className="text-blue-100">
+                  <p className="text-orange-100">
                     Experience seamless collaboration with technology that just works, every time.
                   </p>
                 </div>
               </div>
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-purple-400 rounded-full opacity-30 blur-xl"></div>
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-[#ff4e00] rounded-full opacity-30 blur-xl"></div>
             </div>
           </div>
         </div>
@@ -210,9 +208,9 @@ function HybridMeetings() {
       <div className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold text-[#16213d] mb-6">
               Solutions for
-              <span className="text-blue-600"> Every Meeting Space</span>
+              <span className="text-[#ff4e00]"> Every Meeting Space</span>
             </h2>
           </div>
 
@@ -222,31 +220,31 @@ function HybridMeetings() {
                 <div
                   key={index}
                   className={`bg-white rounded-3xl shadow-xl overflow-hidden cursor-pointer transition-all duration-500 transform ${
-                    currentSlide === index ? "scale-105 ring-4 ring-blue-600 ring-opacity-50" : "hover:scale-102"
+                    currentSlide === index ? "scale-105 ring-4 ring-[#ff4e00] ring-opacity-50" : "hover:scale-102"
                   }`}
                   onClick={() => setCurrentSlide(index)}
                 >
                   <div className="relative">
-                    <div className="w-full h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+                    <div className="w-full h-48 bg-gradient-to-br from-[#ff4e00] to-[#e54600] flex items-center justify-center">
                       <div className="text-6xl">
                         {index === 0 ? "🎯" : index === 1 ? "💡" : "📚"}
                       </div>
                     </div>
-                    <div className="absolute top-4 left-4 px-3 py-1 bg-blue-600 text-white text-sm font-semibold rounded-full">
+                    <div className="absolute top-4 left-4 px-3 py-1 bg-[#ff4e00] text-white text-sm font-semibold rounded-full">
                       {solution.category}
                     </div>
                   </div>
                   
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">{solution.title}</h3>
+                    <h3 className="text-xl font-bold text-[#16213d] mb-3">{solution.title}</h3>
                     <p className="text-gray-600 mb-4">{solution.description}</p>
                     
                     <div className="space-y-2">
-                      <h4 className="font-semibold text-gray-900">Key Features:</h4>
+                      <h4 className="font-semibold text-[#16213d]">Key Features:</h4>
                       <div className="grid grid-cols-2 gap-2">
                         {solution.applications.map((app, appIndex) => (
                           <div key={appIndex} className="flex items-center space-x-2">
-                            <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            <div className="w-2 h-2 bg-[#ff4e00] rounded-full"></div>
                             <span className="text-sm text-gray-600">{app}</span>
                           </div>
                         ))}
@@ -263,7 +261,7 @@ function HybridMeetings() {
                   key={index}
                   onClick={() => setCurrentSlide(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    currentSlide === index ? "bg-blue-600 w-8" : "bg-gray-300"
+                    currentSlide === index ? "bg-[#ff4e00] w-8" : "bg-gray-300"
                   }`}
                 />
               ))}
@@ -273,17 +271,17 @@ function HybridMeetings() {
       </div>
 
       {/* Integration Section */}
-      <div className="py-20 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
+      <div className="py-20 px-4 bg-gradient-to-br from-gray-50 to-orange-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div>
-                <div className="inline-block px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-semibold mb-4">
+                <div className="inline-block px-4 py-2 bg-[#ff4e00] text-white rounded-full text-sm font-semibold mb-4">
                   Universal Compatibility
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-6">
                   Works With Your
-                  <span className="text-blue-600"> Existing Tools</span>
+                  <span className="text-[#ff4e00]"> Existing Tools</span>
                 </h2>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   Our solutions integrate seamlessly with the platforms your team already uses. No need to change workflows or learn new systems.
@@ -299,7 +297,7 @@ function HybridMeetings() {
                 ].map((item, index) => (
                   <div key={index} className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <div className="text-3xl mb-3">{item.icon}</div>
-                    <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                    <h3 className="font-bold text-[#16213d] mb-2">{item.title}</h3>
                     <p className="text-gray-600 text-sm">{item.desc}</p>
                   </div>
                 ))}
@@ -308,11 +306,11 @@ function HybridMeetings() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={handleButtonClick}
-                  className="bg-blue-600 text-white px-8 py-3 rounded-2xl font-semibold hover:bg-blue-700 transition-colors duration-300"
+                  className="bg-[#ff4e00] text-white px-8 py-3 rounded-2xl font-semibold hover:bg-[#e54600] transition-colors duration-300"
                 >
                   Get Started
                 </button>
-                <button onClick={sendtoStudypage} className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-2xl font-semibold hover:bg-blue-600 hover:text-white transition-colors duration-300">
+                <button onClick={sendtoStudypage} className="border-2 border-[#ff4e00] text-[#ff4e00] px-8 py-3 rounded-2xl font-semibold hover:bg-[#ff4e00] hover:text-white transition-colors duration-300">
                   View Case Studies
                 </button>
               </div>
@@ -321,15 +319,15 @@ function HybridMeetings() {
             <div className="relative">
               <div className="relative z-10 bg-white rounded-3xl shadow-2xl p-8">
                 <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-6 flex flex-col items-center justify-center hover:scale-105 transition-transform">
+                  <div className="bg-gradient-to-br from-orange-100 to-orange-50 rounded-2xl p-6 flex flex-col items-center justify-center hover:scale-105 transition-transform">
                     <div className="text-4xl mb-2">📹</div>
                     <div className="text-sm font-semibold text-gray-700">Teams</div>
                   </div>
-                  <div className="bg-gradient-to-br from-purple-100 to-purple-50 rounded-2xl p-6 flex flex-col items-center justify-center hover:scale-105 transition-transform">
+                  <div className="bg-gradient-to-br from-orange-100 to-orange-50 rounded-2xl p-6 flex flex-col items-center justify-center hover:scale-105 transition-transform">
                     <div className="text-4xl mb-2">🔵</div>
                     <div className="text-sm font-semibold text-gray-700">Zoom</div>
                   </div>
-                  <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-2xl p-6 flex flex-col items-center justify-center hover:scale-105 transition-transform">
+                  <div className="bg-gradient-to-br from-orange-100 to-orange-50 rounded-2xl p-6 flex flex-col items-center justify-center hover:scale-105 transition-transform">
                     <div className="text-4xl mb-2">🎯</div>
                     <div className="text-sm font-semibold text-gray-700">Meet</div>
                   </div>
@@ -357,7 +355,7 @@ function HybridMeetings() {
       {/* Technology Specifications */}
       <div className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-12">
             Enterprise-Grade Technology
           </h2>
           
@@ -368,23 +366,23 @@ function HybridMeetings() {
               { name: "Spatial Audio", desc: "Immersive sound" },
               { name: "Easy Control", desc: "Touch panels" }
             ].map((tech, index) => (
-              <div key={index} className="p-6 bg-gray-50 rounded-2xl hover:bg-blue-600 hover:text-white transition-all duration-300 group">
-                <div className="text-2xl font-bold mb-2 text-blue-600 group-hover:text-white">{tech.name}</div>
-                <div className="text-gray-600 group-hover:text-blue-100">{tech.desc}</div>
+              <div key={index} className="p-6 bg-gray-50 rounded-2xl hover:bg-[#ff4e00] hover:text-white transition-all duration-300 group">
+                <div className="text-2xl font-bold mb-2 text-[#ff4e00] group-hover:text-white">{tech.name}</div>
+                <div className="text-gray-600 group-hover:text-orange-100">{tech.desc}</div>
               </div>
             ))}
           </div>
 
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-12 rounded-3xl">
+          <div className="bg-gradient-to-r from-[#ff4e00] to-[#e54600] text-white p-12 rounded-3xl">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Ready to Upgrade Your Meeting Rooms?
             </h3>
-            <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-orange-100 mb-8 max-w-2xl mx-auto">
               Let Proscene design and install a hybrid meeting solution that makes collaboration effortless for your teams.
             </p>
             <button 
               onClick={handleButtonClick}
-              className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105"
+              className="bg-white text-[#ff4e00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105"
             >
               Contact Our Experts
             </button>

@@ -39,7 +39,7 @@ function MoreSection () {
         <div class="wrapper4 wrappers grid-col-span2 borderRadius">
           <div class="maincontainer justify-center">
             <div class="flex justify-center align-center">
-             <h2>The best audio visual provider for your business</h2>
+             <h2 className="text-[#16213d]">The best audio visual provider for your business</h2>
             </div>
            
           </div>
@@ -49,7 +49,7 @@ function MoreSection () {
               Proscene provides cutting-edge audio-visual-based solutions equipped with the latest technologies and applications to amplify operational efficiency, discover new opportunities and stay agile in the rapidly changing market.
             </p>
             <div className="button-Center center pt-8">
-                <button class="border border-blue-700 bg-blue-700 text-white py-3 px-8 rounded-2xl hover:bg-blue-700" 
+                <button class="bg-[#ff4e00] text-white py-3 px-8 rounded-2xl hover:bg-[#16213d] transition-colors duration-300" 
                 onClick={handleButtonClick}>
                 Schedule a demo
                 </button>
@@ -60,8 +60,8 @@ function MoreSection () {
         <div class="wrapper5 wrappers borderRadius">
           <div class="maincontainer flex justify-center">
           <section className="morePartners2  morePartnerspinkish center flex-col" style={{margin:'0 auto', maxWidth:'16em'}}>
-              <h3>10 +</h3>
-              <p>partners</p>
+              <h3>3000 +</h3>
+              <p>Projects</p>
             </section>
             
             
