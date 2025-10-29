@@ -92,7 +92,7 @@ function OnSiteSupport() {
       <div className="pb-5 maxWidthContainer">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-20 mt-16 sm:mt-20 lg:mt-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
-            <div className="bg-[#3b37e6] text-white p-6 sm:p-8 lg:p-10 Br flex flex-col justify-center space-y-4 sm:space-y-6 lg:space-y-8">
+            <div className="bg-[#ff4e00] text-white p-6 sm:p-8 lg:p-10 Br flex flex-col justify-center space-y-4 sm:space-y-6 lg:space-y-8">
               <h1 className="font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl h1sizing">
                 Support made easy.
               </h1>
@@ -102,7 +102,7 @@ function OnSiteSupport() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={handleButtonClick}
-                  className="bg-white text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
+                  className="bg-white text-[#16213d] px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-bold hover:bg-[#16213d] hover:text-white transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
                 >
                   Contact us
                 </button>
@@ -136,7 +136,7 @@ function OnSiteSupport() {
               <button
                 key={index}
                 onClick={() => handleScroll(button.id)}
-                className="bg-[#e3eeff] text-[#3b37e6] font-semibold px-4 sm:px-6 py-2 text-sm sm:text-base transition-colors duration-300 hover:bg-[#3b37e6] hover:text-white"
+                className="bg-[#e3eeff] text-[#ff4e00] font-semibold px-4 sm:px-6 py-2 text-sm sm:text-base transition-colors duration-300 hover:bg-[#ff4e00] hover:text-white"
                 style={{ borderRadius: "3em" }}
               >
                 {button.text}
@@ -154,10 +154,10 @@ function OnSiteSupport() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
               {/* Text Column */}
               <div className="w-full order-2 lg:order-1">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 sm:mb-6">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#16213d] mb-4 sm:mb-6">
                   Support That Powers Your Vision
                 </h1>
-                <p className="text-base sm:text-lg text-gray-600">
+                <p className="text-base sm:text-lg text-[#16213d]">
                   At ProScene, we understand that exceptional support is the
                   foundation of success in the audio-visual industry. Our
                   dedicated team is here to ensure your systems perform
@@ -178,7 +178,7 @@ function OnSiteSupport() {
                     className="absolute hidden sm:block"
                     style={{
                       backgroundColor: "#ecdeff",
-                      border: "1px solid #3b37e6",
+                      border: "1px solid #ff4e00",
                       borderRadius: "46px",
                       height: "334px",
                       width: "170px",
@@ -190,7 +190,7 @@ function OnSiteSupport() {
                   <div
                     className="absolute hidden sm:block"
                     style={{
-                      backgroundColor: "#3b37e6",
+                      backgroundColor: "#ff4e00",
                       border: "1px solid #ecdeff",
                       borderRadius: "46px",
                       height: "334px",
@@ -226,13 +226,13 @@ function OnSiteSupport() {
           id="key-features"
           className="py-8 sm:py-12 flex justify-center items-center px-4 sm:px-6 lg:px-8"
         >
-          <div className="max-w-7xl w-full mx-auto py-8 sm:py-12 lg:py-14 bg-[#e3eeff] border border-[#3b37e6] rounded-3xl px-4 sm:px-6 lg:px-8">
-            <h1 className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-6 sm:mb-8">
+          <div className="max-w-7xl w-full mx-auto py-8 sm:py-12 lg:py-14 bg-[#e3eeff] border border-[#ff4e00] rounded-3xl px-4 sm:px-6 lg:px-8">
+            <h1 className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold text-[#16213d] mb-6 sm:mb-8">
               See how Proscene works for you
             </h1>
             <button 
               onClick={handleButtonClick}
-              className="mx-auto block px-6 sm:px-8 py-3 sm:py-4 rounded-[10px] bg-[#3b37e6] text-white hover:bg-[#16213d] transition-all duration-300"
+              className="mx-auto block px-6 sm:px-8 py-3 sm:py-4 rounded-[10px] bg-[#ff4e00] text-white hover:bg-[#16213d] transition-all duration-300"
             >
               Book a demo today
             </button>
@@ -245,7 +245,7 @@ function OnSiteSupport() {
           className="bg-[#f3f6ff] flex justify-center items-center py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8"
         >
           <div className="w-full max-w-7xl">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl onsitesubheads mb-8 sm:mb-12 text-center font-bold">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl onsitesubheads mb-8 sm:mb-12 text-center font-bold text-[#16213d]">
               Proscene gives you a true <br className="hidden sm:block"/>competitive edge
             </h1>
 
@@ -265,9 +265,9 @@ function OnSiteSupport() {
                   variants={cardVariants}
                 >
                   <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full mb-3 sm:mb-4 flex items-center justify-center">
-                    <span className="text-3xl sm:text-4xl iconsize text-gray-700">🎯</span>
+                    <span className="text-3xl sm:text-4xl iconsize text-[#16213d]">🎯</span>
                   </div>
-                  <h3 className="text-base sm:text-lg cardheaders font-bold text-center mb-2">Tailored Solutions</h3>
+                  <h3 className="text-base sm:text-lg cardheaders font-bold text-center mb-2 text-[#16213d]">Tailored Solutions</h3>
                   <p className="text-gray-600 text-xs sm:text-sm text-center">
                     On-site support allows technicians to address technical
                     issues in real-time, minimizing downtime and disruptions
@@ -280,9 +280,9 @@ function OnSiteSupport() {
                   variants={cardVariants}
                 >
                   <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full mb-3 sm:mb-4 flex items-center justify-center">
-                    <span className="text-3xl sm:text-4xl iconsize text-gray-700">🚀</span>
+                    <span className="text-3xl sm:text-4xl iconsize text-[#16213d]">🚀</span>
                   </div>
-                  <h3 className="text-base sm:text-lg cardheaders font-bold text-center mb-2">
+                  <h3 className="text-base sm:text-lg cardheaders font-bold text-center mb-2 text-[#16213d]">
                     Improved User Confidence
                   </h3>
                   <p className="text-gray-600 text-xs sm:text-sm text-center">
@@ -297,9 +297,9 @@ function OnSiteSupport() {
                   variants={cardVariants}
                 >
                   <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full mb-3 sm:mb-4 flex items-center justify-center">
-                    <span className="text-3xl sm:text-4xl iconsize text-gray-700">⚡</span>
+                    <span className="text-3xl sm:text-4xl iconsize text-[#16213d]">⚡</span>
                   </div>
-                  <h3 className="text-base sm:text-lg cardheaders font-bold text-center mb-2">
+                  <h3 className="text-base sm:text-lg cardheaders font-bold text-center mb-2 text-[#16213d]">
                     Enhanced Communication
                   </h3>
                   <p className="text-gray-600 text-xs sm:text-sm text-center">
@@ -325,9 +325,9 @@ function OnSiteSupport() {
                   variants={cardVariants}
                 >
                   <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full mb-3 sm:mb-4 flex items-center justify-center">
-                    <span className="text-3xl sm:text-4xl iconsize text-gray-700">💵</span>
+                    <span className="text-3xl sm:text-4xl iconsize text-[#16213d]">💵</span>
                   </div>
-                  <h3 className="text-base sm:text-lg cardheaders font-bold text-center mb-2">Cost Efficiency</h3>
+                  <h3 className="text-base sm:text-lg cardheaders font-bold text-center mb-2 text-[#16213d]">Cost Efficiency</h3>
                   <p className="text-gray-600 text-xs sm:text-sm text-center">
                     While on-site support may seem like an added expense, it can
                     save businesses money in the long run by preventing costly
@@ -341,9 +341,9 @@ function OnSiteSupport() {
                   variants={cardVariants}
                 >
                   <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full mb-3 sm:mb-4 flex items-center justify-center">
-                    <span className="text-3xl sm:text-4xl iconsize text-gray-700">⌛</span>
+                    <span className="text-3xl sm:text-4xl iconsize text-[#16213d]">⌛</span>
                   </div>
-                  <h3 className="text-base sm:text-lg cardheaders font-bold text-center mb-2">
+                  <h3 className="text-base sm:text-lg cardheaders font-bold text-center mb-2 text-[#16213d]">
                     Immediate Problem Resolution
                   </h3>
                   <p className="text-gray-600 text-xs sm:text-sm text-center">
@@ -358,9 +358,9 @@ function OnSiteSupport() {
                   variants={cardVariants}
                 >
                   <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full mb-3 sm:mb-4 flex items-center justify-center">
-                    <span className="text-3xl sm:text-4xl iconsize text-gray-700">👌</span>
+                    <span className="text-3xl sm:text-4xl iconsize text-[#16213d]">👌</span>
                   </div>
-                  <h3 className="text-base sm:text-lg cardheaders font-bold text-center mb-2">
+                  <h3 className="text-base sm:text-lg cardheaders font-bold text-center mb-2 text-[#16213d]">
                     Enhanced Reliability
                   </h3>
                   <p className="text-gray-600 text-xs sm:text-sm text-center">
@@ -379,10 +379,10 @@ function OnSiteSupport() {
         <div className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-8 sm:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-3 sm:mb-4 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#16213d] mb-3 sm:mb-4 px-4">
                 Comprehensive Training & Support
               </h2>
-              <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
+              <p className="text-base sm:text-lg text-[#16213d] max-w-2xl mx-auto px-4">
                 Empower your team with the knowledge and skills they need to succeed
               </p>
             </div>
@@ -390,10 +390,10 @@ function OnSiteSupport() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {/* Onboarding Staff */}
               <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 sm:p-8 hover:shadow-xl transition-shadow duration-300">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#3b37e6] rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#ff4e00] rounded-full flex items-center justify-center mb-4 sm:mb-6">
                   <span className="text-2xl sm:text-3xl">👥</span>
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4">
+                <h3 className="text-lg sm:text-xl font-bold text-[#16213d] mb-3 sm:mb-4">
                   Onboarding Staff
                 </h3>
                 <p className="text-gray-600 text-sm sm:text-base mb-3 sm:mb-4">
@@ -401,15 +401,15 @@ function OnSiteSupport() {
                 </p>
                 <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
                   <li className="flex items-start">
-                    <span className="text-[#3b37e6] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
                     <span>Customized orientation sessions</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#3b37e6] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
                     <span>Hands-on equipment training</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#3b37e6] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
                     <span>Role-specific skill development</span>
                   </li>
                 </ul>
@@ -417,10 +417,10 @@ function OnSiteSupport() {
 
               {/* Ongoing User Training */}
               <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 sm:p-8 hover:shadow-xl transition-shadow duration-300">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#3b37e6] rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#ff4e00] rounded-full flex items-center justify-center mb-4 sm:mb-6">
                   <span className="text-2xl sm:text-3xl">🎓</span>
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4">
+                <h3 className="text-lg sm:text-xl font-bold text-[#16213d] mb-3 sm:mb-4">
                   Ongoing User Training
                 </h3>
                 <p className="text-gray-600 text-sm sm:text-base mb-3 sm:mb-4">
@@ -428,15 +428,15 @@ function OnSiteSupport() {
                 </p>
                 <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
                   <li className="flex items-start">
-                    <span className="text-[#3b37e6] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
                     <span>Regular workshops and webinars</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#3b37e6] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
                     <span>Advanced feature training</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#3b37e6] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
                     <span>Performance optimization tips</span>
                   </li>
                 </ul>
@@ -444,10 +444,10 @@ function OnSiteSupport() {
 
               {/* Documentation */}
               <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 sm:p-8 hover:shadow-xl transition-shadow duration-300">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#3b37e6] rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#ff4e00] rounded-full flex items-center justify-center mb-4 sm:mb-6">
                   <span className="text-2xl sm:text-3xl">📚</span>
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4">
+                <h3 className="text-lg sm:text-xl font-bold text-[#16213d] mb-3 sm:mb-4">
                   Documentation
                 </h3>
                 <p className="text-gray-600 text-sm sm:text-base mb-3 sm:mb-4">
@@ -455,15 +455,15 @@ function OnSiteSupport() {
                 </p>
                 <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
                   <li className="flex items-start">
-                    <span className="text-[#3b37e6] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
                     <span>Detailed user manuals</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#3b37e6] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
                     <span>Quick reference guides</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#3b37e6] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
                     <span>Video tutorials and demos</span>
                   </li>
                 </ul>
@@ -473,11 +473,11 @@ function OnSiteSupport() {
         </div>
 
         {/* Consultation CTA */}
-        <div className="max-w-7xl mx-auto bg-[#f3f6ff] border border-[#3b37e6] rounded-xl p-4 sm:p-6 lg:p-8 mx-4 my-12 sm:my-16 lg:my-24">
+        <div className="max-w-7xl mx-auto bg-[#f3f6ff] border border-[#ff4e00] rounded-xl p-4 sm:p-6 lg:p-8 mx-4 my-12 sm:my-16 lg:my-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {/* Text Column */}
             <div className="flex flex-col justify-center order-2 md:order-1">
-              <p className="text-sm sm:text-base lg:text-lg text-gray-700 mb-4 sm:mb-6">
+              <p className="text-sm sm:text-base lg:text-lg text-[#16213d] mb-4 sm:mb-6">
                 Schedule a no-obligation call with one of our experts to get
                 expert advice on how Proscene can help streamline your
                 operations.
@@ -485,7 +485,7 @@ function OnSiteSupport() {
               <div>
                 <button 
                   onClick={handleButtonClick} 
-                  className="bg-[#3b37e6] text-white px-6 sm:px-8 py-3 rounded-[15px] hover:bg-[#16213d] transition-colors w-full sm:w-auto"
+                  className="bg-[#ff4e00] text-white px-6 sm:px-8 py-3 rounded-[15px] hover:bg-[#16213d] transition-colors w-full sm:w-auto"
                 >
                   Contact us
                 </button>
@@ -504,7 +504,7 @@ function OnSiteSupport() {
 
         {/* Key Features Section */}
         <div className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-2xl sm:text-3xl lg:text-4xl onsitesubheads font-bold mb-6 sm:mb-8">
+          <h2 className="text-center text-2xl sm:text-3xl lg:text-4xl onsitesubheads font-bold mb-6 sm:mb-8 text-[#16213d]">
             Key Features
           </h2>
           
@@ -517,8 +517,8 @@ function OnSiteSupport() {
                   onClick={() => setActiveLink(link.id)}
                   className={`px-3 sm:px-4 py-2 whitespace-nowrap text-sm sm:text-base ${
                     activeLink === link.id
-                      ? "text-blue-500 border-b-2 border-blue-500 font-semibold"
-                      : "text-gray-700 hover:text-blue-500"
+                      ? "text-[#ff4e00] border-b-2 border-[#ff4e00] font-semibold"
+                      : "text-[#16213d] hover:text-[#ff4e00]"
                   } transition-colors duration-200`}
                 >
                   {link.label}
@@ -530,7 +530,7 @@ function OnSiteSupport() {
           {/* Content Row */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 max-w-7xl mx-auto px-4 sm:px-8">
             <div className="flex justify-center flex-col order-2 lg:order-1">
-              <h3 className="text-xl sm:text-2xl lg:text-3xl cardheaders font-semibold mb-3 sm:mb-4">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl cardheaders font-semibold mb-3 sm:mb-4 text-[#16213d]">
                 {content[activeLink].title}
               </h3>
               <p className="text-gray-600 text-sm sm:text-base lg:text-lg featuresp">
@@ -549,7 +549,7 @@ function OnSiteSupport() {
 
         {/* FAQ Section */}
         <div id="faqs" className="flex flex-col py-12 sm:py-16 justify-center items-center px-4 sm:px-6 lg:px-8">
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl onsitesubheads font-bold mb-6 sm:mb-8 text-center">
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl onsitesubheads font-bold mb-6 sm:mb-8 text-center text-[#16213d]">
             Frequently Asked Questions
           </h3>
           <div className="w-full max-w-4xl">

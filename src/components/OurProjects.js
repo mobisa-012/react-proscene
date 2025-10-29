@@ -104,16 +104,13 @@ const OurProjects = () => {
   return (
     <div className="pt-10 pb-10">
       {/* Header Section */}
-      <div className="text-center bg-white py-10">
-        {/* <h1 className="text-5xl sm:text-4xl font-bold text-navy-900 mb-6">
-          Our Projects,
-        </h1> */}
+      {/* <div className="text-center bg-white py-10">
         <img
           src="https://onediversified.com/hubfs/NEVERBEENDONE_1.gif"
           alt="Never Been Done"
           className="mx-auto w-full max-w-4xl"
         />
-      </div>
+      </div> */}
 
       {/* Cards Section */}
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">

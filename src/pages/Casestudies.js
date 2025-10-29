@@ -11,7 +11,7 @@ function Casestudies() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
       {/* left side */}
         <div className="text-center md:text-left md:w-1/2">
-        <h1 className=" font-bold text-[#3b37e6] pb-6" style={{fontSize:'clamp(1.4238rem, 1.0921rem + 1.6585vw, 2.6469rem)'}}>Case Studies</h1>
+        <h1 className=" font-bold text-[#ff4e00] pb-6" style={{fontSize:'clamp(1.4238rem, 1.0921rem + 1.6585vw, 2.6469rem)'}}>Case Studies</h1>
           <h3 className="text-[#16213d] mb-4" style={{fontSize: 'clamp(1.8019rem, 1.0209rem + 3.9051vw, 4.6819rem)',
   lineHeight: '1',
   fontWeight: '600'}}>
@@ -22,7 +22,7 @@ function Casestudies() {
             open audio visual solutions.
           </p>
           <div className="mt-7">
-          <button className="bg-[#3b37e6] text-white rounded-[15px] px-6 py-3 text-lg transition-all duration-300 hover:bg-[#16213d]">
+          <button className="bg-[#ff4e00] text-white rounded-[15px] px-6 py-3 text-lg transition-all duration-300 hover:bg-[#16213d]">
       Book a Demo
     </button>
           </div>
@@ -39,7 +39,7 @@ function Casestudies() {
       </div>
     </div>
         <div className= "pt-10 pb-10">
-        <h3 className="text-center text-2xl font-bold">Featured Case studies</h3>
+        <h3 className="text-center text-2xl font-bold text-[#16213d]">Featured Case studies</h3>
         </div>
             <div className="">
                 <FeaturedStudies/>

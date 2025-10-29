@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer";
-import BookDemoToday from "../components/BookDemo.js";
+import BookDemoPage from "./BookDemoPage.js";
 import './Contact.css';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from 'react-icons/fa';
 
@@ -298,8 +298,9 @@ const HelpSection = () => {
   return (
     <div className="pt-12 p-0 pb-0 mt-20">
       <h1 className="contact-header text-center mb-6">How can we help?</h1>
-      <p className="text-center contact-choice mb-6">Select an option below</p>
-      <div className="flex flex-col sm:flex-row items-center gap-2 mb-8 justify-around mx-auto" style={{maxWidth:'1000px'}} >
+     
+      {/* <p className="text-center contact-choice mb-6">Select an option below</p> */}
+      {/* <div className="flex flex-col sm:flex-row items-center gap-2 mb-8 justify-around mx-auto" style={{maxWidth:'1000px'}} >
         <div
           className={`flex flex-col items-center p-4 rounded-lg ${
             selectedOption === "sales" ? "bg-blue-200" : "bg-blue-100"
@@ -344,16 +345,16 @@ const HelpSection = () => {
           />
           <span className="text-center">I’d like to be a Proscene Partner</span>
         </div>
-      </div>
-      <div>{renderForm()}</div>
+      </div> */}
+      {/* <div>{renderForm()}</div> */}
       <div>
-      <h2 className="mt-10 text-center contact-header mb-5">Contact Us</h2>
+      {/* <h2 className="mt-10 text-center contact-header mb-5">Contact Us</h2> */}
       <p className="text-center contact-choice mb-6">Find us at</p>
       </div>
 
       {/* Contact us */}
       <div className="pb-7 pt-4 mx-auto bg-white mr-4 ml-4">
-      <div className=" mx-auto p-10 bg-white border border-blue-500 rounded-lg shadow-lg" style={{maxWidth:'600px'}}>
+      <div className=" mx-auto p-10 bg-white border border-orange-500 rounded-lg shadow-lg" style={{maxWidth:'600px'}}>
         <div className="flex items-center mb-2">
           <FaMapMarkedAlt className="mr-2 text-xl" />
           <span className=" font-semibold text-gray-600">Nairobi Karen Southern Bypass, Kenya</span>
@@ -374,7 +375,7 @@ const HelpSection = () => {
         </a> */}
          <button
       onClick={handleClick}
-      className="border mt-3 border-blue-500 text-blue-500 bg-transparent px-4 py-2 rounded-lg transition duration-1000 hover:bg-blue-500 hover:text-white"
+      className="border mt-3 border-orange-500 text-orange-500 bg-transparent px-4 py-2 rounded-lg transition duration-1000 hover:bg-[#16213D]-500 hover:text-orange-500"
     >
       See directions
     </button>
@@ -382,7 +383,7 @@ const HelpSection = () => {
     </div>
 
     {/* email us */}
-    <div className="mx-auto pt-16 pb-16 pl-8 pr-8 bg-blue-50">
+    {/* <div className="mx-auto pt-16 pb-16 pl-8 pr-8 bg-blue-50">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-0 justify-between border border-blue-500 rounded-2xl" style={{maxWidth:'1100px', margin:'0 auto'}}>
     <div className="pl-8 pr-6 pt-8 pb-8">
       <h2 className="text-3xl font-bold text-purple-600">Our newsletter</h2>
@@ -391,7 +392,7 @@ const HelpSection = () => {
       <div className="mt-4">
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col sm:flex-row gap-3 mb-4">
-            {/* Email Field */}
+            
             <div className="w-full md:w-1/2">
               <label className="block text-gray-700 font-medium mb-2">
                 Business email*
@@ -405,7 +406,7 @@ const HelpSection = () => {
               />
             </div>
 
-            {/* Interest Field */}
+            
             <div className="w-full md:w-1/2">
               <label className="block text-gray-700 font-medium mb-2">
                 What are you interested in?*
@@ -438,7 +439,7 @@ const HelpSection = () => {
     </div>
 
     <div className="flex justify-center md:justify-end">
-      {/* Image Section */}
+      
       <img
         src="https://www.priority-software.com/wp-content/uploads/2023/04/group-17441.png"
         alt="Illustration"
@@ -448,10 +449,9 @@ const HelpSection = () => {
     </div>
 
 
-    </div>
+    </div> */}
     <div className=" max-w-full"></div>
-      <BookDemoToday/>
-      <Footer />
+     <BookDemoPage/>
     </div>
   );
 };

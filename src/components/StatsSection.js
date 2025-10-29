@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 
 const Stats = () => {
   const statsData = [
-    { value: 100, label: 'Team Members', suffix: '+' },
+    { value: 20, label: 'Team Members', suffix: '' },
     { value: 500, label: 'Projects Completed', suffix: '+' },
     { value: 15, label: 'Years Experience', suffix: '+' },
     { value: 98, label: 'Client Satisfaction', suffix: '%' },
@@ -41,7 +41,7 @@ const Stats = () => {
     
         <div className="flex flex-col justify-center">
           <h2 className="" style={{fontWeight:'700', color:'#16213d', lineHeight:'1' , fontSize:'clamp(2.8019rem, 1.0209rem + 3.9051vw, 4.6819rem) '}}>
-            We are  <span className="text-blue-800"> <br />Proscene</span>
+            We are  <span className="text-[#ff4e00]"> <br />Proscene</span>
           </h2>
           <p className="mt-8"  style={{fontSize:'clamp(1.2656rem, 1.0692rem + 0.9822vw, 1.99rem)',color:'#16213d'}}>
             We are building a world without boundaries - where every experience transcends the technology that enables it.
@@ -69,7 +69,7 @@ const Stats = () => {
               <div key={index} className="text-center relative">
                 {/* Divider line */}
                 {index !== 0 && (
-                  <div className="absolute left-0 top-0 bottom-0 w-[1px] bg-[#080e2b] mx-auto hidden md:block"></div>
+                  <div className="absolute left-0 top-0 bottom-0 w-[1px] bg-[#ff4e00] mx-auto hidden md:block"></div>
                 )}
                 {/* Countup animation */}
                 <div className="" style={{fontSize:'clamp(1.8019rem, 1.0209rem + 3.9051vw, 4.6819rem)', fontWeight:'700', color:'#16213d'}}>

@@ -33,12 +33,12 @@ function DiamondSection() {
           className="relative w-80 h-[500px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden z-20 group"
           style={{
             backgroundImage: `url(${av})`,
-            border: "1px solid rgba(59, 55, 230, 0.9)",
+            border: "1px solid rgba(255, 78, 0, 0.9)",
           }}
         >
           <div
-            className="absolute bottom-0 left-0 w-[90%] m-4 bg-white bg-opacity-90 transition-all duration-300 ease-in-out h-16 hover:h-48 rounded-lg overflow-hidden group-hover:h-48"
-            style={{ backgroundColor: "rgba(59, 55, 230, 0.9)" }}
+            className="absolute bottom-0 left-0 w-[90%] m-4 bg-opacity-90 transition-all duration-300 ease-in-out h-16 hover:h-48 rounded-lg overflow-hidden group-hover:h-48"
+            style={{ backgroundColor: "rgba(255, 78, 0, 0.9)" }}
           >
             <div className="flex items-center justify-center h-16 text-xl font-bold text-white">
               Audio Visual Integration
@@ -46,9 +46,9 @@ function DiamondSection() {
 
             <div className="p-4 text-center hidden group-hover:block">
               <p className="text-white text-sm mb-4">
-                Next-Gen property management software
+                Professional AV systems for immersive experiences and seamless presentations
               </p>
-              <button className="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4"
+              <button className="px-4 py-2 bg-white text-[#16213d] text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4"
               onClick={handleButtonClickAV}>
                 Read More
               </button>
@@ -64,22 +64,22 @@ function DiamondSection() {
           className="relative w-80 h-[500px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden group"
           style={{
             backgroundImage: `url(${cs})`,
-            border: "1px solid rgba(85, 187, 249, 0.9)",
+            border: "1px solid rgba(255, 78, 0, 0.9)",
           }}
         >
           <div
             className="absolute bottom-0 left-0 w-[90%] m-4 bg-opacity-90 transition-all duration-300 ease-in-out h-16 hover:h-48 rounded-lg overflow-hidden group-hover:h-48"
-            style={{ backgroundColor: "rgba(85, 187, 249, 0.9)" }}
+            style={{ backgroundColor: "rgba(255, 78, 0, 0.9)" }}
           >
             <div className="flex items-center justify-center h-16 text-xl font-bold text-white">
-              Collaboration
+              Collaboration Solutions
             </div>
 
             <div className="p-4 text-center hidden group-hover:block">
               <p className="text-white text-sm mb-4">
-                PHP is the best language I know.
+                Unified communication platforms for seamless team collaboration
               </p>
-              <button className="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4"
+              <button className="px-4 py-2 bg-white text-[#16213d] text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4"
               onClick={handleButtonClickCS}>
                 Read More
               </button>
@@ -95,12 +95,12 @@ function DiamondSection() {
           className="relative w-80 h-[500px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden group"
           style={{
             backgroundImage: `url(${as})`,
-            border: "1px solid rgba(161, 66, 255, 0.9)",
+            border: "1px solid rgba(255, 78, 0, 0.9)",
           }}
         >
           <div
             className="absolute bottom-0 left-0 w-[90%] m-4 bg-opacity-90 transition-all duration-300 ease-in-out h-16 hover:h-48 rounded-lg overflow-hidden group-hover:h-48"
-            style={{ backgroundColor: "rgba(161, 66, 255, 0.9)" }}
+            style={{ backgroundColor: "rgba(255, 78, 0, 0.9)" }}
           >
             <div className="flex items-center justify-center h-16 text-xl font-bold text-white">
               Automation Solutions
@@ -108,9 +108,9 @@ function DiamondSection() {
 
             <div className="p-4 text-center hidden group-hover:block">
               <p className="text-white text-sm mb-4">
-                PHP is the best language I know.
+                Smart automation systems for enhanced efficiency and control
               </p>
-              <button className="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4"
+              <button className="px-4 py-2 bg-white text-[#16213d] text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4"
               onClick={handleButtonClickAS}>
                 Read More
               </button>
@@ -125,12 +125,12 @@ function DiamondSection() {
           className="relative w-80 h-[500px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden group"
           style={{
             backgroundImage: `url(${dm})`,
-            border: "1px solid rgba(255, 115, 105, 0.9)",
+            border: "1px solid rgba(255, 78, 0, 0.9)",
           }}
         >
           <div
             className="absolute bottom-0 left-0 w-[90%] m-4 bg-opacity-90 transition-all duration-300 ease-in-out h-16 hover:h-48 rounded-lg overflow-hidden group-hover:h-48"
-            style={{ backgroundColor: "rgba(255, 115, 105, 0.9)" }}
+            style={{ backgroundColor: "rgba(255, 78, 0, 0.9)" }}
           >
             <div className="flex items-center justify-center h-16 text-xl font-bold text-white">
               Digital Media
@@ -138,9 +138,9 @@ function DiamondSection() {
 
             <div className="p-4 text-center hidden group-hover:block">
               <p className="text-white text-sm mb-4">
-                PHP is the best language I know.
+                Dynamic digital signage and media solutions for impactful communication
               </p>
-              <button className="px-4 py-2 bg-white text-black text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4"
+              <button className="px-4 py-2 bg-white text-[#16213d] text-sm rounded-lg shadow hover:bg-gray-200 transition duration-300 mb-4"
               onClick={handleButtonClickDM}>
                 Read More
               </button>              

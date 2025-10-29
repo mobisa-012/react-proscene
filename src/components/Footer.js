@@ -3,7 +3,8 @@ import './Footer.css';
 import logo from './assets/log.png';
 import avixamember from './assets/avixamember.png';
 import { Link } from "react-router-dom";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import Copyright from "./Copyright";
 
 const Footer = () => {
@@ -89,9 +90,9 @@ const Footer = () => {
                                 <FaFacebook />
                             </a>
                             <a href="https://x.com/AudioVisualEA" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaTwitter />
+                                <FaSquareXTwitter />
                             </a>
-                            <a href="https://www.linkedin.com/company/proscene-systems-ltd/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            <a href="http://www.linkedin.com/in/proscene-systems-ltd-4658a515a" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <FaLinkedin />
                             </a>
                             <a href="https://www.instagram.com/proscenesystems/?__pwa=1#" target="_blank" rel="noopener noreferrer" className="social-icon">

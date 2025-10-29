@@ -113,7 +113,7 @@ function Support() {
     return (
         <div className="min-h-screen mt-6 bg-white">
             {/* Hero Section */}
-            <div className="relative bg-gradient-to-br from-[#3b37e6] to-blue-800 text-white overflow-hidden">
+            <div className="relative bg-gradient-to-br from-[#ff4e00] to-[#ff6a33] text-white overflow-hidden">
                 <div className="absolute inset-0 bg-black opacity-10"></div>
                 <div className="relative max-w-7xl mx-auto px-4 py-16 lg:py-24">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -123,21 +123,21 @@ function Support() {
                             </div>
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                                 Support That's Always
-                                <span className="block text-yellow-300">There For You</span>
+                                <span className="block text-[#16213d]">There For You</span>
                             </h1>
-                            <p className="text-xl text-blue-100 leading-relaxed">
+                            <p className="text-xl text-white leading-relaxed">
                                 Get always-on access to technical support, self-help resources, and expert guidance. Our team is ready to ensure your AV systems run flawlessly.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 pt-4">
                                 <button
                                     onClick={() => navigate("/contact")}
-                                    className="bg-white text-[#3b37e6] px-8 py-3 rounded-2xl font-semibold hover:bg-yellow-300 hover:text-gray-900 transition-colors duration-300 shadow-lg"
+                                    className="bg-white text-[#ff4e00] px-8 py-3 rounded-2xl font-semibold hover:bg-[#16213d] hover:text-white transition-colors duration-300 shadow-lg"
                                 >
                                     Contact Support
                                 </button>
                                 <button
                                     onClick={() => document.getElementById('support-options').scrollIntoView({ behavior: 'smooth' })}
-                                    className="border-2 border-white text-white px-8 py-3 rounded-2xl font-semibold hover:bg-white hover:text-[#3b37e6] transition-colors duration-300"
+                                    className="border-2 border-white text-white px-8 py-3 rounded-2xl font-semibold hover:bg-white hover:text-[#ff4e00] transition-colors duration-300"
                                 >
                                     Explore Options
                                 </button>
@@ -151,8 +151,8 @@ function Support() {
                                     className="w-full h-auto rounded-2xl shadow-2xl"
                                 />
                             </div>
-                            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-400 rounded-full opacity-30"></div>
-                            <div className="absolute -top-6 -left-6 w-24 h-24 bg-blue-300 rounded-full opacity-20"></div>
+                            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#16213d] rounded-full opacity-30"></div>
+                            <div className="absolute -top-6 -left-6 w-24 h-24 bg-[#ff4e00] rounded-full opacity-20"></div>
                         </div>
                     </div>
                 </div>
@@ -170,7 +170,7 @@ function Support() {
                         ].map((item, index) => (
                             <div key={index} className="text-center bg-white rounded-2xl p-6 shadow-md">
                                 <div className="text-3xl mb-2">{item.icon}</div>
-                                <div className="text-3xl font-bold text-[#3b37e6] mb-1">{item.stat}</div>
+                                <div className="text-3xl font-bold text-[#ff4e00] mb-1">{item.stat}</div>
                                 <div className="text-sm text-gray-600">{item.label}</div>
                             </div>
                         ))}
@@ -182,10 +182,10 @@ function Support() {
             <div className="py-16 px-4 bg-white">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
                             What Do You Need Help With?
                         </h2>
-                        <p className="text-lg text-gray-600">
+                        <p className="text-lg text-[#16213d]">
                             Select a category to get started
                         </p>
                     </div>
@@ -197,13 +197,13 @@ function Support() {
                                 onClick={() => setActiveCategory(category.id)}
                                 className={`p-6 rounded-2xl text-center transition-all duration-300 ${
                                     activeCategory === category.id
-                                        ? "bg-gradient-to-br from-[#3b37e6] to-blue-600 text-white shadow-xl scale-105"
-                                        : "bg-gray-50 hover:bg-gray-100 text-gray-900"
+                                        ? "bg-gradient-to-br from-[#ff4e00] to-[#ff6a33] text-white shadow-xl scale-105"
+                                        : "bg-gray-50 hover:bg-gray-100 text-[#16213d]"
                                 }`}
                             >
                                 <div className="text-4xl mb-3">{category.icon}</div>
                                 <h3 className="font-bold text-lg mb-2">{category.name}</h3>
-                                <p className={`text-sm ${activeCategory === category.id ? "text-blue-100" : "text-gray-600"}`}>
+                                <p className={`text-sm ${activeCategory === category.id ? "text-white" : "text-gray-600"}`}>
                                     {category.description}
                                 </p>
                             </button>
@@ -216,10 +216,10 @@ function Support() {
             <div id="support-options" className="py-16 px-4 bg-gray-50">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
                             How Would You Like to Get Help?
                         </h2>
-                        <p className="text-lg text-gray-600">
+                        <p className="text-lg text-[#16213d]">
                             Choose the support channel that works best for you
                         </p>
                     </div>
@@ -229,16 +229,16 @@ function Support() {
                             <div
                                 key={index}
                                 className={`bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 group ${
-                                    option.highlight ? "ring-2 ring-[#3b37e6]" : ""
+                                    option.highlight ? "ring-2 ring-[#ff4e00]" : ""
                                 }`}
                             >
                                 {option.highlight && (
-                                    <div className="inline-block px-3 py-1 bg-[#3b37e6] text-white text-xs font-bold rounded-full mb-3">
+                                    <div className="inline-block px-3 py-1 bg-[#ff4e00] text-white text-xs font-bold rounded-full mb-3">
                                         PRIORITY SUPPORT
                                     </div>
                                 )}
                                 <div className="text-5xl mb-4">{option.icon}</div>
-                                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#3b37e6] transition-colors">
+                                <h3 className="text-xl font-bold text-[#16213d] mb-2 group-hover:text-[#ff4e00] transition-colors">
                                     {option.title}
                                 </h3>
                                 <p className="text-gray-600 mb-4 leading-relaxed">
@@ -253,7 +253,7 @@ function Support() {
                                         }
                                     }}
                                     className={`inline-flex items-center font-semibold transition-all group-hover:translate-x-2 ${
-                                        option.highlight ? "text-[#3b37e6]" : "text-gray-700 group-hover:text-[#3b37e6]"
+                                        option.highlight ? "text-[#ff4e00]" : "text-gray-700 group-hover:text-[#ff4e00]"
                                     }`}
                                 >
                                     {option.cta}
@@ -271,10 +271,10 @@ function Support() {
             <div className="py-16 px-4 bg-white">
                 <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
                             Our Service Commitment
                         </h2>
-                        <p className="text-lg text-gray-600">
+                        <p className="text-lg text-[#16213d]">
                             Service is at the forefront of our system integration model
                         </p>
                     </div>
@@ -315,7 +315,7 @@ function Support() {
                             <div key={index} className="flex gap-4 p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl">
                                 <div className="text-4xl flex-shrink-0">{service.icon}</div>
                                 <div>
-                                    <h3 className="font-bold text-lg text-gray-900 mb-2">{service.title}</h3>
+                                    <h3 className="font-bold text-lg text-[#16213d] mb-2">{service.title}</h3>
                                     <p className="text-gray-600">{service.description}</p>
                                 </div>
                             </div>
@@ -328,10 +328,10 @@ function Support() {
             <div className="py-16 px-4 bg-gray-50">
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
                             Frequently Asked Questions
                         </h2>
-                        <p className="text-lg text-gray-600">
+                        <p className="text-lg text-[#16213d]">
                             Quick answers to common questions
                         </p>
                     </div>
@@ -343,9 +343,9 @@ function Support() {
                                     onClick={() => setOpenFaq(openFaq === index ? null : index)}
                                     className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
                                 >
-                                    <span className="font-semibold text-gray-900 pr-4">{faq.question}</span>
+                                    <span className="font-semibold text-[#16213d] pr-4">{faq.question}</span>
                                     <svg
-                                        className={`w-6 h-6 text-[#3b37e6] flex-shrink-0 transition-transform duration-300 ${
+                                        className={`w-6 h-6 text-[#ff4e00] flex-shrink-0 transition-transform duration-300 ${
                                             openFaq === index ? "rotate-180" : ""
                                         }`}
                                         fill="none"
@@ -367,19 +367,19 @@ function Support() {
             </div>
 
             {/* Emergency Support CTA */}
-            <div className="py-16 px-4 bg-gradient-to-r from-red-600 to-red-700 text-white">
+            <div className="py-16 px-4 bg-gradient-to-r from-[#ff4e00] to-[#ff6a33] text-white">
                 <div className="max-w-4xl mx-auto text-center">
                     <div className="text-5xl mb-4">🚨</div>
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
                         Critical Issue? We're Here 24/7
                     </h2>
-                    <p className="text-xl text-red-100 mb-8">
+                    <p className="text-xl text-white mb-8">
                         For urgent system failures or critical support needs, contact our emergency hotline immediately
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
                             href="tel:+254713761269"
-                            className="bg-white text-red-600 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-red-50 transition-colors duration-300 shadow-lg inline-flex items-center justify-center"
+                            className="bg-white text-[#ff4e00] px-8 py-4 rounded-2xl font-bold text-lg hover:bg-[#16213d] hover:text-white transition-colors duration-300 shadow-lg inline-flex items-center justify-center"
                         >
                             <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -393,15 +393,15 @@ function Support() {
             {/* Contact CTA */}
             <div className="py-16 px-4 bg-white">
                 <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-6">
                         Still Need Help?
                     </h2>
-                    <p className="text-lg text-gray-600 mb-8">
+                    <p className="text-lg text-[#16213d] mb-8">
                         Our support team is ready to assist you with any questions or concerns
                     </p>
                     <button
                         onClick={() => navigate("/contact")}
-                        className="bg-[#3b37e6] text-white px-8 py-3 rounded-2xl font-semibold hover:bg-blue-700 transition-colors duration-300 shadow-lg"
+                        className="bg-[#ff4e00] text-white px-8 py-3 rounded-2xl font-semibold hover:bg-[#e04500] transition-colors duration-300 shadow-lg"
                     >
                         Contact Support Team
                     </button>

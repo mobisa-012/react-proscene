@@ -3,7 +3,7 @@ import sup from './assets/nera-offices-london-2-1200x847.jpg';
 
 const SupportMaintain = () => {
   return (
-    <div className="bg-[#3b37e6] text-white py-16">
+    <div className="bg-[#ff4e00] text-white py-16">
       <div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col lg:flex-row items-center">
          {/* Image Section */}
          <div className="lg:w-1/2 mt-10 lg:mt-0 ml-5">
@@ -24,10 +24,10 @@ const SupportMaintain = () => {
           <p className="text-lg mb-4">
             At Proscene, we offer end-to-end management 
             and support for every solution we design, configure and integrate. Winning, after all, is 
-            about more than the starting line-up. It’s about lasting performance.
+            about more than the starting line-up. It's about lasting performance.
           </p>
           <div>
-            <a className="bg-[#3b37e6] border hover:bg-white hover:text-[#3b37e6] text-white font-medium px-6 py-3 mt-4 rounded-[20px]" href="/contact">
+            <a className="bg-white text-[#16213d] hover:bg-[#16213d] hover:text-white font-medium px-6 py-3 mt-4 rounded-[20px]" href="/contact">
               contact our team
             </a>
           </div>

@@ -36,15 +36,15 @@
 }
 
 .vision-title {
-    -webkit-text-stroke: 1px #a142ff;
-    color: #ecdeff;
+    -webkit-text-stroke: 1px #16213d;
+    color: #ff4d0065;
     line-height: 1.1;
 }
 
 .vision-line {
     height: 100px;
     width: 0.5px;
-    background-color: #a142ff;
+    background-color: #ff4e00;
     margin: 0 15px;
 }
 
