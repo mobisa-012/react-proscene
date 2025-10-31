@@ -1,48 +1,68 @@
 import React, { useState } from 'react';
 import './Partner.css';
-import safaricom from './assets/safaricom.png';
+import ICIPE from './assets/ICIPE.png';
 import harney from './assets/harney.webp';
-import cocacola from './assets/cocacola.png';
+import MicrosoftKenya from './assets/microsoftKenya.png';
+import SBM from './assets/SBM.png';
+import AUA from './assets/AUA.png';
 import NCBA from './assets/NCBA2.png';
 import DHL from './assets/DHL.png';
-import UON from './assets/UON.jpg';
+import HHM from './assets/HHM.png';
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 
 const partnerData = [
   { 
     id: 1, 
-    logo: harney, 
-    description: 'Proscene gave us courtroom-grade clarity in our boardrooms. The technology is discreet, secure, and intuitive—our clients immediately notice the professionalism it adds.', 
+    logo: MicrosoftKenya, 
+    description: 'Proscene Systems Limited delivered an exceptional AV upgrade for our meeting room. Their professionalism, technical expertise, and seamless implementation exceeded our expectations. We are extremely satisfied with the results and highly recommend their services. ~ Microsoft Kenya', 
     link: '#loadMore1' 
   },
   { 
     id: 2, 
-    logo: cocacola, 
-    description: "I can confidently say the Proscene team transformed our meeting and event spaces. The audio and visuals are world-class, and they've made collaboration effortless for us.", 
+    logo: SBM, 
+    description: "Proscene Systems Limited has been our trusted audio-visual solutions partner for over 10 years, supporting our branches and head office with advanced technology, installation, and ongoing service. They are reliable, professional, and highly recommended.", 
     link: '#loadMore2' 
   },
   { 
     id: 3, 
-    logo: safaricom, 
-    description: 'I highly recommend their solutions. Our boardrooms and training suites run smoothly, the systems are reliable, and our teams connect with customers better than ever.', 
+    logo: harney, 
+    description: 'Proscene Systems Limited has consistently delivered reliable audio-visual services and maintenance for our organization. Their professionalism and high-quality solutions make them easy to recommend to any organization seeking dependable AV services.', 
     link: '#loadMore3' 
   },
   { 
     id: 4, 
-    logo: DHL, 
-    description: 'They modernized our control rooms and warehouses seamlessly. Communication is clear, downtime is minimal, and the scalable design supports our fast-paced logistics operations perfectly.', 
+    logo: AUA, 
+    description: 'Proscene Systems Limited has been a dependable partner, providing professional audio-visual services and continued maintenance support for our organization. Their expertise and service quality make them highly recommended for organizations seeking reliable AV solutions.', 
     link: '#loadMore4' 
   },
   { 
     id: 5, 
     logo: NCBA, 
-    description: 'With the Proscene AV setup, our hybrid meetings are smooth and feel in-person. The rollout was easy, and their support has been consistently excellent.', 
+    description: 'Proscene Systems Limited supplied and installed digital signage displays across our branches. The delivery was efficient and the screens performed exactly as expected.', 
     link: '#loadMore5' 
   },
   { 
     id: 6, 
-    logo: UON, 
-    description: 'Our lecture halls and hybrid classrooms were upgraded without disruption. Faculty finds the systems simple, and students benefit from clear visuals and audio everywhere.', 
+    logo: MicrosoftKenya, 
+    description: 'Proscene Systems Limited delivered an exceptional AV upgrade for our meeting room. Their professionalism, expertise, and attention to detail ensured a seamless implementation and a user-friendly, high-performing system ~ Microsoft Nigeria', 
+    link: '#loadMore6' 
+  },
+  { 
+    id: 7, 
+    logo: MicrosoftKenya, 
+    description: 'Proscene Systems Limited delivered an outstanding AV upgrade to our meeting room. We are very pleased with the outcome and confidently recommend Proscene Systems Limited for dependable, high-quality AV integration services. ~ Microsoft Tunisia', 
+    link: '#loadMore4' 
+  },
+  { 
+    id: 8, 
+    logo: ICIPE, 
+    description: 'We partnered with Proscene Systems Limited for a meeting-room AV upgrade and were extremely impressed. They delivered a seamless, well-executed solution that is modern, easy to use, and has greatly improved our meeting experience. Their professionalism and technical capability make them a standout choice for AV projects', 
+    link: '#loadMore5' 
+  },
+  { 
+    id: 9, 
+    logo: HHM, 
+    description: 'Proscene Systems Limited delivered an exceptional AV upgrade for our meeting room. Their professionalism, expertise, and attention to detail ensured a seamless implementation and a user-friendly, high-performing system ~ Microsoft Nigeria', 
     link: '#loadMore6' 
   },
 ];

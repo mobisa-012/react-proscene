@@ -255,10 +255,10 @@ function Gallery() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-[#3b37e6] to-[#5b51ff] text-white overflow-hidden">
+      <div className="relative bg-gradient-to-br from-[#ff4e00] to-[#ff6b35] text-white overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-32 h-32 bg-white rounded-full opacity-10 animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-24 h-24 bg-purple-300 rounded-full opacity-15 animate-bounce"></div>
+          <div className="absolute bottom-20 right-20 w-24 h-24 bg-[#16213d] rounded-full opacity-15 animate-bounce"></div>
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 py-24 mt-16">
@@ -266,7 +266,7 @@ function Gallery() {
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Our Work in Action
             </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl text-orange-100 max-w-3xl mx-auto">
               See how our AV systems come to life—from corporate boardrooms to lecture halls.
             </p>
           </div>
@@ -283,7 +283,7 @@ function Gallery() {
                 onClick={() => setActiveFilter(category.id)}
                 className={`px-6 py-3 rounded-full font-semibold whitespace-nowrap transition-all duration-300 ${
                   activeFilter === category.id
-                    ? 'bg-[#3b37e6] text-white shadow-lg transform scale-105'
+                    ? 'bg-[#ff4e00] text-white shadow-lg transform scale-105'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -313,21 +313,21 @@ function Gallery() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
                 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-[#3b37e6] bg-opacity-95 opacity-0 group-hover:opacity-100 transition-all duration-500 p-6 flex flex-col justify-center overflow-hidden">
+                <div className="absolute inset-0 bg-[#ff4e00] bg-opacity-95 opacity-0 group-hover:opacity-100 transition-all duration-500 p-6 flex flex-col justify-center overflow-hidden">
                   <h3 className="text-xl font-bold text-white mb-3">Key Stats</h3>
                   <div className="space-y-2">
                     {Object.entries(project.stats).map(([key, value]) => (
                       <div key={key} className="flex items-start">
                         <div className="w-2 h-2 bg-white rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
                         <div className="min-w-0 flex-1">
-                          <div className="text-blue-200 text-xs capitalize truncate">{key}</div>
+                          <div className="text-orange-200 text-xs capitalize truncate">{key}</div>
                           <div className="text-white font-semibold text-sm truncate">{value}</div>
                         </div>
                       </div>
                     ))}
                   </div>
                   <div className="mt-4 pt-4 border-t border-white/20">
-                    <div className="text-blue-200 text-xs mb-1">Outcome</div>
+                    <div className="text-orange-200 text-xs mb-1">Outcome</div>
                     <div className="text-white font-bold text-sm line-clamp-2">{project.outcome}</div>
                   </div>
                 </div>
@@ -335,10 +335,10 @@ function Gallery() {
 
               {/* Project Info */}
               <div className="p-6">
-                <div className="inline-block px-3 py-1 bg-blue-100 text-[#3b37e6] text-xs font-semibold rounded-full mb-3 capitalize">
+                <div className="inline-block px-3 py-1 bg-orange-100 text-[#ff4e00] text-xs font-semibold rounded-full mb-3 capitalize">
                   {project.category}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#3b37e6] transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#ff4e00] transition-colors">
                   {project.title}
                 </h3>
                 <div className="flex items-center text-gray-600 text-sm mb-3">
@@ -355,7 +355,7 @@ function Gallery() {
 
               {/* View Details Button */}
               <div className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="bg-white text-[#3b37e6] px-4 py-2 rounded-full font-semibold text-sm shadow-lg">
+                <div className="bg-white text-[#ff4e00] px-4 py-2 rounded-full font-semibold text-sm shadow-lg">
                   View Details →
                 </div>
               </div>
@@ -394,7 +394,7 @@ function Gallery() {
               >
                 ✕
               </button>
-              <div className="absolute bottom-4 left-4 inline-block px-4 py-2 bg-[#3b37e6] text-white font-semibold rounded-full capitalize">
+              <div className="absolute bottom-4 left-4 inline-block px-4 py-2 bg-[#ff4e00] text-white font-semibold rounded-full capitalize">
                 {selectedProject.category}
               </div>
             </div>
@@ -414,8 +414,8 @@ function Gallery() {
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-blue-50 p-6 rounded-2xl">
-                  <h3 className="text-xl font-bold text-[#3b37e6] mb-4">Technical Specs</h3>
+                <div className="bg-orange-50 p-6 rounded-2xl">
+                  <h3 className="text-xl font-bold text-[#ff4e00] mb-4">Technical Specs</h3>
                   <div className="space-y-3">
                     {Object.entries(selectedProject.stats).map(([key, value]) => (
                       <div key={key} className="flex justify-between">
@@ -437,7 +437,7 @@ function Gallery() {
 
               <button
                 onClick={() => navigate('/bookDemo')}
-                className="w-full bg-[#3b37e6] text-white py-4 rounded-2xl font-bold hover:bg-blue-700 transition-colors"
+                className="w-full bg-[#ff4e00] text-white py-4 rounded-2xl font-bold hover:bg-[#e54600] transition-colors"
               >
                 Start Your Project
               </button>
@@ -449,7 +449,7 @@ function Gallery() {
       {/* CTA Section */}
       <div className="bg-gradient-to-r from-[#e0f2f7] via-[#f0f9ff] to-[#e0f2f7] py-20">
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-6">
             Ready to Create Your Own Success Story?
           </h2>
           <p className="text-lg text-gray-700 mb-8">
@@ -458,13 +458,13 @@ function Gallery() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               onClick={() => navigate('/bookDemo')}
-              className="bg-[#3b37e6] text-white px-8 py-4 rounded-2xl font-bold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
+              className="bg-[#ff4e00] text-white px-8 py-4 rounded-2xl font-bold hover:bg-[#e54600] transition-all duration-300 transform hover:scale-105"
             >
               Request a Consultation
             </button>
             <button 
               onClick={() => navigate('/case-studies')}
-              className="border-2 border-[#3b37e6] text-[#3b37e6] px-8 py-4 rounded-2xl font-bold hover:bg-[#3b37e6] hover:text-white transition-all duration-300"
+              className="border-2 border-[#ff4e00] text-[#ff4e00] px-8 py-4 rounded-2xl font-bold hover:bg-[#ff4e00] hover:text-white transition-all duration-300"
             >
               View Case Studies
             </button>

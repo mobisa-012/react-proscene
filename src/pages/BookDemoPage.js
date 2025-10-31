@@ -345,7 +345,7 @@ function BookDemo() {
               <div className="bg-[#ff4e00] text-white rounded-3xl shadow-2xl overflow-hidden">
                 <div className="p-8 lg:p-10">
                   <div className="text-center mb-8">
-                    <h2 className="text-3xl font-bold mb-3">Book a Demo</h2>
+                    <h2 className="text-3xl font-bold mb-3">Contact Us</h2>
                     <p className="text-white">
                       Fill out the form below and our team will get back to you within 24 hours
                     </p>
