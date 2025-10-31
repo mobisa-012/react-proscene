@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import BookDemo from "../pages/BookDemoPage";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Footer from "./Footer";
 
 function MicrosoftModernSolutions() {
   const navigate = useNavigate();
@@ -8,119 +8,112 @@ function MicrosoftModernSolutions() {
     navigate("/bookDemo");
   };
 
-  const [activeFeature, setActiveFeature] = useState(0);
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [activeTab, setActiveTab] = useState("microsoft365");
+  const [activeTab, setActiveTab] = useState("modernWork");
 
-  const technologies = {
-    microsoft365: {
-      name: "Microsoft 365",
-      tagline: "Modern Workplace Platform",
+  const solutions = {
+    modernWork: {
+      name: "Microsoft Modern Work",
+      tagline: "Empowering Your Workforce with the Modern Microsoft Cloud",
       icon: "🏢",
       color: "from-[#ff4e00] to-[#e54600]",
       features: [
-        { icon: "📧", title: "Office Apps", desc: "Word, Excel, PowerPoint, Outlook with cloud integration" },
-        { icon: "☁️", title: "Cloud Storage", desc: "OneDrive with 1TB storage per user" },
-        { icon: "🔄", title: "Real-Time Collaboration", desc: "Co-author documents simultaneously with Teams integration" },
-        { icon: "🛡️", title: "Enterprise Security", desc: "Advanced threat protection and data loss prevention" },
-        { icon: "📊", title: "Business Analytics", desc: "Power BI integration for data insights" },
-        { icon: "🌐", title: "Anywhere Access", desc: "Access files and apps from any device, anywhere" }
-      ],
-      benefits: [
-        "Increase team productivity by 30% with seamless collaboration",
-        "Reduce IT costs with cloud-based management",
-        "Enhance security with enterprise-grade protection",
-        "Scale effortlessly as your business grows"
+        { icon: "💬", title: "Microsoft Teams", desc: "Unified communication and collaboration platform" },
+        { icon: "📧", title: "Outlook", desc: "Enterprise-grade email and calendar management" },
+        { icon: "☁️", title: "OneDrive", desc: "1TB of secure cloud storage per user" },
+        { icon: "📄", title: "Office Suite", desc: "Real-time document collaboration across web and mobile" },
+        { icon: "🌐", title: "SharePoint", desc: "Beautiful intranet experiences and document management" },
+        { icon: "🔄", title: "Co-authoring", desc: "Real-time collaboration on documents across devices" }
       ]
     },
-    azureCopilot: {
-      name: "Azure Copilot",
-      tagline: "AI-Powered Business Transformation",
+    security: {
+      name: "Security & Compliance",
+      tagline: "Secure, Intelligent, and Always Connected",
+      icon: "🛡️",
+      color: "from-[#ff4e00] to-[#e54600]",
+      features: [
+        { icon: "🔒", title: "Microsoft Defender", desc: "Advanced Threat Protection with Safe Links & Attachments" },
+        { icon: "🤖", title: "Endpoint Detection", desc: "EDR with AI-driven insights and response" },
+        { icon: "🔑", title: "Conditional Access", desc: "Multi-factor authentication and access controls" },
+        { icon: "📱", title: "Microsoft Intune", desc: "Device management and compliance enforcement" },
+        { icon: "🛡️", title: "Business Premium", desc: "Advanced productivity tools with enterprise-grade protection" },
+        { icon: "🌍", title: "Secure Access", desc: "Protected access across platforms and locations" }
+      ]
+    },
+    aiCopilot: {
+      name: "AI & Copilot",
+      tagline: "Unleash the Power of AI with Microsoft Copilot",
       icon: "🤖",
       color: "from-[#ff4e00] to-[#e54600]",
       features: [
-        { icon: "💡", title: "AI Assistance", desc: "Intelligent suggestions and automation across Microsoft 365" },
-        { icon: "📝", title: "Content Creation", desc: "Generate documents, emails, and presentations with AI" },
-        { icon: "🔍", title: "Data Insights", desc: "Analyze and visualize data with natural language queries" },
-        { icon: "⚡", title: "Workflow Automation", desc: "Automate repetitive tasks and processes" },
-        { icon: "🎯", title: "Personalized Experiences", desc: "AI-driven personalization for each user" },
-        { icon: "🛡️", title: "Security AI", desc: "AI-powered threat detection and security recommendations" }
-      ],
-      benefits: [
-        "Accelerate content creation and decision-making",
-        "Reduce manual tasks with intelligent automation",
-        "Gain deeper insights from your business data",
-        "Enhance security with AI-driven protection"
+        { icon: "💡", title: "Copilot for Microsoft 365", desc: "Intelligent productivity assistant built into Office apps" },
+        { icon: "⚡", title: "Copilot Studio", desc: "Automate business processes and workflows" },
+        { icon: "📊", title: "Microsoft Fabric & Azure AI", desc: "Data-driven decision making capabilities" },
+        { icon: "📝", title: "Content Creation", desc: "Draft proposals, analyze reports, summarize meetings" },
+        { icon: "🔍", title: "Workflow Automation", desc: "Turn words into powerful workflows and insights" },
+        { icon: "🎯", title: "AI Transformation", desc: "Bring AI to every employee in your organization" }
+      ]
+    },
+    businessApps: {
+      name: "Business Applications",
+      tagline: "Reimagine Business Operations with Dynamics 365",
+      icon: "📈",
+      color: "from-[#ff4e00] to-[#e54600]",
+      features: [
+        { icon: "🔄", title: "Dynamics 365 Business Central", desc: "AI-powered ERP solution for business management" },
+        { icon: "📊", title: "Power BI", desc: "Data visualization and business analytics" },
+        { icon: "🌐", title: "Microsoft Fabric", desc: "Unified data analytics platform" },
+        { icon: "🤝", title: "Integration", desc: "Seamless connection with Outlook, Excel, and Teams" },
+        { icon: "⚡", title: "Automation", desc: "AI-assisted insights and reporting across operations" },
+        { icon: "🏢", title: "Global Trust", desc: "Trusted by over 40,000 businesses worldwide" }
       ]
     }
   };
 
-  const applications = [
+  const pricingTiers = [
     {
-      category: "Enterprise Businesses",
-      title: "Digital Workplace Transformation",
-      description: "Complete Microsoft 365 implementation with Azure Copilot for large-scale organizations.",
-      features: ["Enterprise security", "AI integration", "Global scalability", "Compliance management"],
-      icon: "🏢"
+      tier: "Business Basic",
+      solution: "Web-based Office apps, email, Teams & 1TB OneDrive",
+      perfectFor: "Startups & Small Teams",
+      features: ["Web-based Office apps", "Business email", "Microsoft Teams", "1TB OneDrive storage"]
     },
     {
-      category: "Small & Medium Business",
-      title: "Productivity Suite",
-      description: "Microsoft 365 solutions tailored for growing businesses with AI capabilities.",
-      features: ["Cost-effective plans", "Easy deployment", "Team collaboration", "Business analytics"],
-      icon: "📈"
+      tier: "Business Standard",
+      solution: "Full desktop apps + collaboration tools",
+      perfectFor: "Growing SMEs",
+      features: ["Full desktop Office apps", "All Basic features", "Advanced collaboration", "Business analytics"]
     },
     {
-      category: "Education",
-      title: "Learning Platform",
-      description: "Microsoft 365 for Education with AI-enhanced teaching and learning tools.",
-      features: ["Classroom tools", "Student management", "Parent communication", "Learning analytics"],
-      icon: "🎓"
+      tier: "Business Premium",
+      solution: "Everything in Standard + advanced security & device management",
+      perfectFor: "Enterprises & Regulated Sectors",
+      features: ["All Standard features", "Advanced security", "Device management", "Compliance tools"]
     }
   ];
 
-  const products = [
-    { 
-      name: "Microsoft 365 Business", 
-      icon: "💼", 
-      color: "from-[#ff4e00] to-[#e54600]",
-      specs: ["Office apps", "1TB cloud storage", "Business email", "Teams integration"]
+  const whyProscene = [
+    {
+      icon: "🏆",
+      title: "Certified Microsoft Partner",
+      description: "Decades of AV and IT integration expertise ensuring secure, seamless digital transformation"
     },
-    { 
-      name: "Enterprise Plans", 
-      icon: "🏛️", 
-      color: "from-[#ff4e00] to-[#e54600]",
-      specs: ["Advanced security", "Power BI", "Azure services", "24/7 support"]
+    {
+      icon: "🔄",
+      title: "End-to-End Services",
+      description: "Licensing, migration, implementation, integration, training, and ongoing support"
     },
-    { 
-      name: "Azure Copilot", 
-      icon: "🤖", 
-      color: "from-[#ff4e00] to-[#e54600]",
-      specs: ["AI assistance", "Workflow automation", "Data insights", "Security AI"]
+    {
+      icon: "🛡️",
+      title: "Security First",
+      description: "Security hardening and compliance optimization for enterprise-grade protection"
     },
-    { 
-      name: "Migration Services", 
-      icon: "🚀", 
-      color: "from-[#ff4e00] to-[#e54600]",
-      specs: ["Data migration", "User training", "Setup & configuration", "Ongoing support"]
+    {
+      icon: "🎯",
+      title: "Future-Ready Solutions",
+      description: "Modern Work solutions designed to scale and adapt with your business needs"
     }
   ];
 
-  const integrations = [
-    { name: "Microsoft Teams", icon: "💬", color: "from-[#ff4e00] to-[#e54600]" },
-    { name: "SharePoint", icon: "📁", color: "from-[#ff4e00] to-[#e54600]" },
-    { name: "Power Platform", icon: "⚡", color: "from-[#ff4e00] to-[#e54600]" },
-    { name: "Azure Services", icon: "🌐", color: "from-[#ff4e00] to-[#e54600]" }
-  ];
-
-  const current = technologies[activeTab];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % applications.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [applications.length]);
+  const current = solutions[activeTab];
 
   return (
     <div className="min-h-screen bg-white">
@@ -135,53 +128,99 @@ function MicrosoftModernSolutions() {
         <div className="relative max-w-7xl mx-auto px-4 py-20 mt-5">
           <div className="text-center space-y-8">
             <div className="inline-block px-6 py-3 bg-white bg-opacity-20 rounded-full text-sm font-medium backdrop-blur-sm">
-              Microsoft Solutions
+              Microsoft Modern Work Solutions
             </div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Microsoft Modern Workplace
+              Microsoft Modern Work
             </h1>
             <p className="text-xl text-orange-100 max-w-3xl mx-auto leading-relaxed">
-              Transform your business with Microsoft 365 and Azure Copilot - the complete solution for modern, AI-powered workplace productivity.
+              Empowering Your Workforce with the Modern Microsoft Cloud
+            </p>
+            <p className="text-lg text-orange-200 max-w-4xl mx-auto">
+              At Proscene Systems Limited, we help organizations reimagine how work gets done through 
+              Microsoft's Modern Work solutions — connecting people, systems, and ideas securely across 
+              devices and locations.
             </p>
 
-            {/* Technology Tabs */}
-            <div className="flex justify-center gap-4 pt-8">
-              <button
-                onClick={() => setActiveTab("microsoft365")}
-                className={`px-8 py-4 rounded-2xl font-bold transition-all duration-300 ${
-                  activeTab === "microsoft365"
-                    ? "bg-white text-[#ff4e00] shadow-xl scale-105"
-                    : "bg-white bg-opacity-20 text-white hover:bg-opacity-30"
-                }`}
-              >
-                🏢 Microsoft 365
-              </button>
-              <button
-                onClick={() => setActiveTab("azureCopilot")}
-                className={`px-8 py-4 rounded-2xl font-bold transition-all duration-300 ${
-                  activeTab === "azureCopilot"
-                    ? "bg-white text-[#ff4e00] shadow-xl scale-105"
-                    : "bg-white bg-opacity-20 text-white hover:bg-opacity-30"
-                }`}
-              >
-                🤖 Azure Copilot
-              </button>
+            {/* Solution Tabs */}
+            <div className="flex flex-wrap justify-center gap-4 pt-8">
+              {Object.entries(solutions).map(([key, solution]) => (
+                <button
+                  key={key}
+                  onClick={() => setActiveTab(key)}
+                  className={`px-6 py-3 rounded-2xl font-bold transition-all duration-300 ${
+                    activeTab === key
+                      ? "bg-white text-[#ff4e00] shadow-xl scale-105"
+                      : "bg-white bg-opacity-20 text-white hover:bg-opacity-30"
+                  }`}
+                >
+                  {solution.icon} {solution.name}
+                </button>
+              ))}
             </div>
           </div>
         </div>
       </div>
 
-      {/* Digital Workplace Section */}
-      <div className="py-20 px-4 bg-gray-50">
+      {/* Main Content Section */}
+      <div className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
-              Digital Workplace
-            </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-[#16213d] mb-4">
-              Modern Workplace Solutions
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-6">
+              {current.tagline}
             </h2>
-            <p className="text-2xl text-gray-600 font-light">AI-powered productivity and collaboration for the modern enterprise</p>
+            <div className="prose prose-lg max-w-4xl mx-auto text-gray-600 text-left">
+              {activeTab === "modernWork" && (
+                <>
+                  <p className="text-xl mb-6 text-center">
+                    Today's workforce is distributed, mobile, and dynamic. Microsoft 365 brings together Teams, 
+                    Outlook, Word, Excel, PowerPoint, and OneDrive — empowering seamless communication and 
+                    teamwork anywhere, anytime.
+                  </p>
+                  <p className="text-xl text-center">
+                    Whether you're hosting hybrid meetings, co-authoring documents in real-time, or managing projects 
+                    across borders, our Modern Work solutions transform how your team collaborates and delivers results.
+                  </p>
+                </>
+              )}
+              {activeTab === "security" && (
+                <>
+                  <p className="text-xl mb-6">
+                    Modern work requires modern security. Proscene integrates Microsoft 365 Business Premium, 
+                    combining advanced productivity tools with enterprise-grade protection.
+                  </p>
+                  <p className="text-xl">
+                    Microsoft Defender for Business and Intune safeguard your users, data, and devices — automatically 
+                    detecting threats, enforcing policies, and providing secure access across platforms.
+                  </p>
+                </>
+              )}
+              {activeTab === "aiCopilot" && (
+                <>
+                  <p className="text-xl mb-6">
+                    Bring AI to every employee with Microsoft 365 Copilot — your everyday AI assistant built right into 
+                    Word, Excel, PowerPoint, and Teams.
+                  </p>
+                  <p className="text-xl">
+                    From drafting proposals to analyzing reports or summarizing meetings, Copilot turns words into 
+                    powerful workflows and insights.
+                  </p>
+                </>
+              )}
+              {activeTab === "businessApps" && (
+                <>
+                  <p className="text-xl mb-6">
+                    Seamlessly connect finance, sales, service, and operations with Dynamics 365 Business Central — an 
+                    AI-powered ERP solution trusted by over 40,000 businesses globally.
+                  </p>
+                  <p className="text-xl">
+                    Harness the power of Power BI and Microsoft Fabric to unify your data, visualize performance, and 
+                    make informed decisions. From dashboards to real-time analytics, we help you move from data to 
+                    discovery — all secured by Microsoft Cloud.
+                  </p>
+                </>
+              )}
+            </div>
           </div>
 
           {/* Features Grid */}
@@ -189,7 +228,7 @@ function MicrosoftModernSolutions() {
             {current.features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100"
               >
                 <div className="text-4xl mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-bold text-[#16213d] mb-2">{feature.title}</h3>
@@ -197,219 +236,190 @@ function MicrosoftModernSolutions() {
               </div>
             ))}
           </div>
-
-          {/* Benefits Section */}
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl">
-            <h3 className="text-2xl md:text-3xl font-bold text-[#16213d] mb-8 text-center">
-              Benefits of {current.name}
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {current.benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-gradient-to-br from-[#ff4e00] to-[#e54600] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-sm">✓</span>
-                  </div>
-                  <p className="text-gray-700 text-lg">{benefit}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 
-      {/* Business Solutions Section */}
-      <div className="py-20 px-4 bg-white">
+      {/* Pricing Tiers Section */}
+      <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
-              Business Solutions
+              Modern Workplace Stack
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-[#16213d] mb-6">
-              Tailored Microsoft Solutions
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-6">
+              Choose Your Microsoft 365 Plan
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Comprehensive Microsoft 365 and Azure Copilot implementations designed for your specific business needs.
+              Each plan is designed to help your organization adapt faster, work smarter, and perform better.
             </p>
           </div>
 
-          <div className="relative">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-              {applications.map((application, index) => (
-                <div
-                  key={index}
-                  className={`bg-white rounded-3xl shadow-xl overflow-hidden cursor-pointer transition-all duration-500 transform ${
-                    currentSlide === index ? "scale-105 ring-4 ring-[#ff4e00] ring-opacity-50" : "hover:scale-102"
-                  }`}
-                  onClick={() => setCurrentSlide(index)}
-                >
-                  <div className="relative">
-                    <div className="w-full h-48 bg-gradient-to-br from-[#ff4e00] to-[#e54600] flex items-center justify-center">
-                      <div className="text-6xl">{application.icon}</div>
-                    </div>
-                    <div className="absolute top-4 left-4 px-3 py-1 bg-[#ff4e00] text-white text-sm font-semibold rounded-full">
-                      {application.category}
-                    </div>
-                  </div>
-                  
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-[#16213d] mb-3">{application.title}</h3>
-                    <p className="text-gray-600 mb-4">{application.description}</p>
-                    
-                    <div className="space-y-2">
-                      <h4 className="font-semibold text-[#16213d]">Key Features:</h4>
-                      <div className="grid grid-cols-1 gap-2">
-                        {application.features.map((feature, featureIndex) => (
-                          <div key={featureIndex} className="flex items-center space-x-2">
-                            <div className="w-2 h-2 bg-[#ff4e00] rounded-full"></div>
-                            <span className="text-sm text-gray-600">{feature}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {pricingTiers.map((tier, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300"
+              >
+                <div className="bg-gradient-to-r from-[#ff4e00] to-[#e54600] p-6 text-white">
+                  <h3 className="text-2xl font-bold mb-2">{tier.tier}</h3>
+                  <p className="text-orange-100 mb-4">{tier.solution}</p>
+                  <div className="inline-block px-4 py-1 bg-white bg-opacity-20 rounded-full text-sm">
+                    Perfect for: {tier.perfectFor}
                   </div>
                 </div>
-              ))}
-            </div>
+                
+                <div className="p-6">
+                  <div className="space-y-4">
+                    {tier.features.map((feature, featureIndex) => (
+                      <div key={featureIndex} className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-[#ff4e00] rounded-full flex-shrink-0"></div>
+                        <span className="text-gray-700">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                  
+                  <button 
+                    onClick={handleButtonClick}
+                    className="w-full mt-8 bg-[#ff4e00] text-white py-3 rounded-xl font-bold hover:bg-[#e54600] transition-colors"
+                  >
+                    Get Started
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
-            <div className="flex justify-center space-x-2">
-              {applications.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    currentSlide === index ? "bg-[#ff4e00] w-8" : "bg-gray-300"
-                  }`}
-                />
+      {/* Why Proscene Section */}
+      <div className="py-20 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-6">
+              Why Partner with Proscene Systems
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              As a certified Microsoft partner, Proscene Systems Limited brings decades of AV and IT integration 
+              expertise — ensuring your digital transformation journey is secure, seamless, and future-ready.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {whyProscene.map((item, index) => (
+              <div
+                key={index}
+                className="bg-gradient-to-br from-gray-50 to-orange-50 rounded-2xl p-6 text-center hover:shadow-xl transition-shadow border border-gray-100"
+              >
+                <div className="text-5xl mb-4">{item.icon}</div>
+                <h3 className="text-xl font-bold text-[#16213d] mb-3">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.description}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Services Offered */}
+          <div className="bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-3xl p-8 text-white">
+            <h3 className="text-2xl font-bold mb-6 text-center">Our Modern Work Offering</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+              {[
+                { icon: "📋", title: "Licensing & Migration", desc: "Seamless transition to Microsoft 365" },
+                { icon: "⚡", title: "Implementation", desc: "Integration with existing systems" },
+                { icon: "🎓", title: "User Training", desc: "Onboarding and ongoing support" },
+                { icon: "🛡️", title: "Security Optimization", desc: "Hardening and compliance" }
+              ].map((service, index) => (
+                <div key={index} className="bg-white bg-opacity-10 rounded-2xl p-4 backdrop-blur-sm">
+                  <div className="text-3xl mb-2">{service.icon}</div>
+                  <h4 className="font-bold mb-2">{service.title}</h4>
+                  <p className="text-orange-100 text-sm">{service.desc}</p>
+                </div>
               ))}
             </div>
           </div>
         </div>
       </div>
 
-      {/* Products & Services Section */}
-      <div className="py-20 px-4 bg-gradient-to-br from-gray-50 to-orange-50">
+      {/* Key Benefits Section */}
+      <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
-              Products & Services
-            </div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
-              Complete Microsoft Ecosystem
+              Transform Your Workplace
             </h2>
             <p className="text-lg text-gray-600">
-              End-to-end Microsoft solutions with expert implementation and support services.
+              Adapt faster. Work smarter. Perform better — with the Microsoft Cloud and Proscene.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            {products.map((product, index) => (
-              <div
-                key={index}
-                className={`bg-gradient-to-br ${product.color} text-white rounded-2xl p-8 text-center hover:scale-105 transition-transform duration-300 shadow-lg`}
-              >
-                <div className="text-5xl mb-3">{product.icon}</div>
-                <h3 className="text-xl font-bold mb-4">{product.name}</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { 
+                icon: "🚀", 
+                title: "Empower Productivity", 
+                desc: "Enhance collaboration with next-generation tools for modern workforce needs",
+                features: ["Seamless communication", "Real-time collaboration", "Anywhere access"]
+              },
+              { 
+                icon: "🛡️", 
+                title: "Enterprise Security", 
+                desc: "Advanced protection with AI-driven threat detection and compliance",
+                features: ["Advanced threat protection", "Device management", "Data loss prevention"]
+              },
+              { 
+                icon: "🤖", 
+                title: "AI Intelligence", 
+                desc: "Transform workflows with Microsoft Copilot and AI-powered insights",
+                features: ["AI assistance", "Workflow automation", "Data-driven decisions"]
+              }
+            ].map((item, index) => (
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="text-5xl mb-4">{item.icon}</div>
+                <h3 className="text-xl font-bold text-[#16213d] mb-3">{item.title}</h3>
+                <p className="text-gray-600 mb-4">{item.desc}</p>
                 <div className="space-y-2">
-                  {product.specs.map((spec, i) => (
-                    <div key={i} className="text-sm opacity-90">• {spec}</div>
+                  {item.features.map((feature, featureIndex) => (
+                    <div key={featureIndex} className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-[#ff4e00] rounded-full"></div>
+                      <span className="text-sm text-gray-600">{feature}</span>
+                    </div>
                   ))}
                 </div>
               </div>
             ))}
           </div>
-
-          {/* Integration Partners */}
-          <div className="bg-white rounded-3xl p-8 shadow-xl mb-12">
-            <h3 className="text-2xl font-bold text-[#16213d] mb-8 text-center">
-              Microsoft Ecosystem Integration
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {integrations.map((integration, index) => (
-                <div
-                  key={index}
-                  className={`bg-gradient-to-br ${integration.color} text-white rounded-2xl p-6 text-center hover:scale-105 transition-transform duration-300`}
-                >
-                  <div className="text-4xl mb-3">{integration.icon}</div>
-                  <h4 className="font-bold text-lg">{integration.name}</h4>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Implementation Process */}
-          <div className="bg-white rounded-3xl p-8 shadow-xl">
-            <h3 className="text-2xl font-bold text-[#16213d] mb-6 text-center">
-              Our Implementation Process
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              {[
-                { step: "1", icon: "🔍", title: "Assessment", desc: "Analyze your current setup and business needs" },
-                { step: "2", icon: "📋", title: "Planning", desc: "Design tailored Microsoft solution architecture" },
-                { step: "3", icon: "🚀", title: "Deployment", desc: "Implement and configure Microsoft 365 & Copilot" },
-                { step: "4", icon: "🎓", title: "Training & Support", desc: "Train users and provide ongoing support" }
-              ].map((step, index) => (
-                <div key={index} className="text-center">
-                  <div className="w-12 h-12 bg-[#ff4e00] text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
-                    {step.step}
-                  </div>
-                  <div className="text-3xl mb-2">{step.icon}</div>
-                  <h4 className="font-bold text-[#16213d] mb-2">{step.title}</h4>
-                  <p className="text-gray-600 text-sm">{step.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 
-      {/* Benefits Section */}
+      {/* Final CTA Section */}
       <div className="py-20 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
-              The Proscene Microsoft Advantage
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { icon: "👨‍💼", title: "Microsoft Gold Partner", desc: "Certified expertise in Microsoft 365 and Azure solutions" },
-              { icon: "🔧", title: "Expert Implementation", desc: "Professional deployment and configuration services" },
-              { icon: "🛡️", title: "Comprehensive Support", desc: "Training, maintenance, and 24/7 technical support" }
-            ].map((item, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-50 to-orange-50 rounded-2xl p-8 text-center hover:shadow-xl transition-shadow">
-                <div className="text-5xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-bold text-[#16213d] mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* CTA Section */}
-      <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-gradient-to-r from-[#ff4e00] to-[#e54600] text-white p-12 rounded-3xl">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Ready to Transform Your Workplace with Microsoft?
+              Let's Modernize Your Workplace
             </h3>
-            <p className="text-orange-100 mb-8 text-lg">
-              Let's implement Microsoft 365 and Azure Copilot to revolutionize your productivity and collaboration.
+            <p className="text-orange-100 mb-6 text-lg">
+              Empower your teams with next-generation tools for collaboration, security, and intelligence.
+            </p>
+            <p className="text-orange-200 mb-8 text-xl font-semibold">
+              Talk to our Microsoft Solutions team today and discover how we can transform your work experience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={handleButtonClick}
                 className="bg-white text-[#ff4e00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
               >
-                Schedule Microsoft Demo
+                Start Your Modern Work Journey
+              </button>
+              <button 
+                onClick={() => navigate("/contact")}
+                className="border-2 border-white text-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-[#ff4e00] transition-all duration-300"
+              >
+                Contact Our Team
               </button>
             </div>
           </div>
         </div>
       </div>
-
-      <BookDemo />
+      <Footer />
     </div>
   );
 }

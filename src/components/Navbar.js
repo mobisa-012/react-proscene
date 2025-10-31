@@ -50,7 +50,7 @@ function Navbar() {
   const solutionsSubMenuItems = [
     { label: "Audio Visual Integration", href: "/avIntegration" },
     { label: "Collaboration Solutions", href: "/collaborationSolutions" },
-    { label: "Digital Media", href: "/digitalMedia" },
+    { label: "Microsoft Modern Work Solutions", href: "/microsoft-modern-solutions" },
     { label: "Automation Solutions", href: "/automationSolutions" },
     { label: "Interactive Technology", href: "/interactiveTechnology" },
   ];
@@ -631,9 +631,9 @@ function Navbar() {
                                     id="menu-item-20780"
                                     className="menu-item menu-item-type-post_type menu-item-object-page"
                                   >
-                                    <a href="/microsoft-modern-solutions">
+                                    <a href="/digitalMedia">
                                       <span>
-                                        Microsoft Modern Work Solutions
+                                        Digital Media
                                       </span>
                                     </a>
                                   </li>
@@ -705,8 +705,8 @@ function Navbar() {
                         </div>
                       </div>
                       <div className="tab-header hospitality-management style-light-blue menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                        <a href="/digitalMedia" data-tab="20822">
-                          <span>Digital Media</span>
+                        <a href="/microsoft-modern-solutions" data-tab="20822">
+                          <span>Microsoft Modern Work Solutions</span>
                         </a>
                       </div>
                       <div
@@ -1470,18 +1470,18 @@ function Navbar() {
               className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"
               onClick={(e) => {
                 e.stopPropagation();
-                handleToggle("digitalMedia");
+                handleToggle("microsoft-modern-solutions");
               }}
             >
-              <a href="/digitalMedia" onClick={(e) => e.preventDefault()}>
-                Digital Media
+              <a href="/microsoft-modern-solutions" onClick={(e) => e.preventDefault()}>
+                Microsoft Modern Work Solutions
               </a>
               <ul
                 className={`sub-menu ${
-                  activeMenu["digitalMedia"] ? "active" : ""
+                  activeMenu["microsoft-modern-solutions"] ? "active" : ""
                 }`}
                 style={{
-                  maxHeight: activeMenu["digitalMedia"] ? "300px" : "0px",
+                  maxHeight: activeMenu["microsoft-modern-solutions"] ? "300px" : "0px",
                   overflow: "hidden",
                   transition: "max-height 0.3s ease",
                 }}
