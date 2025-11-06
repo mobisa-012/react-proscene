@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import adi from './assets/adi.jpeg';
+import DMS from './assets/DMS.jpg';
 import st from './assets/Boardroom1.png';
-import church from './assets/church.jpg';
+import church from './assets/Church.jpg';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const testimonials = [
@@ -15,7 +16,7 @@ const testimonials = [
     quote:
       `"Exceeded expectations—technically and on schedule.`,
     author: "DMS",
-    image: "https://onediversified.com/hubfs/Oracle_Park_2021.jpg",
+    image: DMS,
   },
   {
     quote:
