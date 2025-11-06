@@ -36,7 +36,7 @@
   width: 150px;
   height: auto;
   object-fit: contain;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); makes them grey and i do not want this  */
   transition: filter 0.3s ease-in-out; /* Smooth color change on hover */
 }
 
