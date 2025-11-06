@@ -23,8 +23,8 @@ const LogoCarousel = () => {
     { src: extron, alt: 'Extron' },
     { src: LG, alt: 'LG' },
     { src: lifesize, alt: 'Lifesize' },
-    { src: optoma, alt: 'Optoma' },
-    { src: panasonic, alt: 'Panasonic' },
+    // { src: optoma, alt: 'Optoma' },
+    // { src: panasonic, alt: 'Panasonic' },
     { src: samsung, alt: 'Samsung' },
   ];
 
