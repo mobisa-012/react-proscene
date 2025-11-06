@@ -1011,7 +1011,7 @@
   background: #fff;
   border: 1px solid #e3eeff;
   border-radius: 6px;
-  color: #16213d;
+  /* color: #16213d; */
   display: -ms-flexbox;
   display: flex;
   font-size: 14px;
@@ -3621,7 +3621,7 @@
   text-align: left;
 }
 .site-header .other-items-wrapper .item-title-area .item-title {
-  color: #16213d;
+  /* color: #16213d; */
   font-size: 16px;
   /* font-weight: 300; */
   line-height: 18px;
