@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        axioforma: ['axioforma',],
+        axioforma: ['Segoe UI',],
       },
     },
   },
