@@ -2,9 +2,56 @@
     --textGrey: #343434;
     --textBluish: #16213d;
   }
-  body{
-    font-family: 'Segoe UI'!important;
+ /* src/global.css */
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('./components/assets/fonts/IBMPlexSans-Regular.ttf') format('Ttf'),
+       url('./components/assets/fonts/IBMPlexSans-Regular.ttf') format('truetype');
+  /* font-weight: 500; */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Salmond';
+  src: url('./components/assets/fonts/Salmond-Semibold.otf') format('otf'),
+       url('./components/assets/fonts/Salmond-Semibold.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@Font-face {
+    font-family: 'Salmond-light';
+    src: url('./components/assets/fonts/Salmond-Light.otf') format('otf'),
+         url('./components/assets/fonts/Salmond-Light.ttf') format('truetype');
+    /* font-weight: 600; */
+    font-style: normal;
+    font-display: swap;
   }
+@Font-face {
+    font-family: 'Salmond-regular';
+    src: url('./components/assets/fonts/SalmondRegular.otf') format('otf'),
+         url('./components/assets/fonts/SalmondRegular.otf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+/* apply globally */
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Salmond';
+  font-weight: 400;
+}
+P, li, button{
+    font-family: 'IBMPlexSans';
+}
+a{
+    font-family:'salmond-regular'; 
+    font-weight: 400!important;
+
+}
+
   
 .maxWidthContainer{
     max-width: min(1450px, 98%);
@@ -14,7 +61,8 @@
     border-radius: 60px;
 }
 .h1sizing{
-    font-size: clamp(2.4019rem, 1.0209rem + 3.9051vw, 4.6819rem);
+    font-size:  clamp(1.8019rem, 1.0209rem + 3.9051vw, 4.1819rem);
+    padding-top: .2em;
     font-weight: 500;
     line-height: 1;
     padding-bottom: .4em;

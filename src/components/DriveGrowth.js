@@ -18,7 +18,7 @@ function DriveGrowth() {
     ];
 
     const swipeTopics = [
-        "Transforming Meeting Spaces with Innovative Audio-Visual Solutions",
+        "Transforming Spaces with Innovative Audio-Visual Solutions",
         "Digitally Transforming How We Work, Learn and Live",
         // "Be felt, be visible through all the seasons. Check.",
     ];
