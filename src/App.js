@@ -57,6 +57,7 @@ import RoomScheduling from "./components/Roomschedulingsystems";
 import Interactivekiosk from "./components/Interactivekiosk";
 import Localizations from "./components/Localizations";
 import TouchPanelControl from "./components/TouchPanelControl";
+import ScrollToTop from "./components/ScrollToTop";
 import IPTV from "./components/iptv";
 import Avautomation from "./components/Avautomation";
 import MicrosoftModernSolutions from "./components/microsoftmodernsolutions";
@@ -65,6 +66,7 @@ import Company from "./components/company";
 function App() {
   return (
     <Router>
+       <ScrollToTop />
     <Navbar />    
     <Routes>
       <Route path="/" element={<Home />} />

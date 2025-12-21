@@ -23,9 +23,9 @@ function Home() {
         <div className="my-[4rem]">
         <SolutionsLayout/>
         </div>
-        <div className="home-section mx-auto" style={{marginBlock:'clamp(1.5rem, 2.9915rem + 2.5424vw, 5.375rem)'}}>
+        {/* <div className="home-section mx-auto" style={{marginBlock:'clamp(1.5rem, 2.9915rem + 2.5424vw, 5.375rem)'}}>
         <Partners/>
-        </div>
+        </div> */}
         <div className="home-section" style={{marginBottom:'clamp(1.5rem, 1.4492rem + 1.9542vw, 3.6875rem)'}}>
         <LogoCarousel /> 
         </div>

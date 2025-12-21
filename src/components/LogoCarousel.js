@@ -65,6 +65,9 @@ const LogoCarousel = () => {
 
   return (
     <div className="logo-carousel">
+      <div className="partners-header">
+        <h2 className='h2-Partners text-[#16213d]'>Trusted by the best</h2>
+      </div>
       <div className="carousel" ref={carouselRef}>
         <div
           className="carousel-content"

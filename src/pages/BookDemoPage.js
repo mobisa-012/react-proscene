@@ -253,10 +253,10 @@ function BookDemo() {
       <div className="relative bg-[#ff4e00] text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 py-16 lg:py-20 text-center">
-          <div className="inline-block px-4 py-2 bg-white bg-opacity-20 rounded-full text-sm font-medium mb-4">
+          <div className="inline-block px-4 py-2 bg-white bg-opacity-20 rounded-full text-sm font-medium mb-2 mt-6">
             Let's Connect
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             Get the Resources
             <span className="block">You Need</span>
           </h1>
