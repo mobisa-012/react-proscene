@@ -10,7 +10,7 @@
        url('/public/fonts/IBMPlexSans-Regular.ttf') format('truetype');
   /* font-weight: 500; */
   font-style: normal;
-  /* font-display: block; */
+  font-display: block;
 }
 
 /* this code will help to preload the fonts */
@@ -29,7 +29,7 @@ body::before {
        url('/public/fonts/Salmond-Semibold.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
-  /* font-display: block; */
+  font-display: block;
 }
 @font-face {
     font-family: 'Salmond-light';
@@ -37,7 +37,7 @@ body::before {
          url('/public/fonts/Salmond-Light.ttf') format('truetype');
     /* font-weight: 600; */
     font-style: normal;
-    font-display: swap;
+    font-display: block;
   }
 @font-face {
     font-family: 'Salmond-regular';
@@ -45,7 +45,7 @@ body::before {
          url('/public/fonts/SalmondRegular.otf') format('truetype');
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
+    font-display: block;
   }
 
 /* apply globally */
