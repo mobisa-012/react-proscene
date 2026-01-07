@@ -10,7 +10,7 @@ function SolutionThatWorkForYou() {
   };
 
   return (
-    <div className="bg-[#ff4e00] py-16 px-6 w-full mt-12">
+    <div className="bg-[#f24b00] py-16 px-6 w-full mt-12">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10 pt-6">
         {/* Left Section: Text */}
         <div className="lg:w-1/2 text-center lg:text-left px-4">
@@ -22,7 +22,7 @@ function SolutionThatWorkForYou() {
 you're streamlining communication, enhancing collaboration, or automating your environment.
           </p>
           <button
-            className="bg-white hover:bg-[#16213d] text-[#ff4e00] font-medium py-2 px-4 sm:py-3 sm:px-6 rounded-[15px] transition-colors duration-300"
+            className="bg-white hover:bg-[#16213d] text-[#f24b00] font-medium py-2 px-4 sm:py-3 sm:px-6 rounded-[15px] transition-colors duration-300"
             onClick={handleButtonClick}
           >
             Schedule a Demo

@@ -16,7 +16,7 @@ function About() {
 
       {/* Our Story Section */}
       <div className="w-full mx-auto mt-20 flex flex-col justify-center items-center">
-        <h2 className="py-5 text-center ourstory text-[#ff4e00] font-black text-3xl sm:text-5xl lg:text-[140px]">
+        <h2 className="py-5 text-center ourstory text-[#f24b00] font-black text-3xl sm:text-5xl lg:text-[140px]">
           OUR STORY
         </h2>
         <p
@@ -40,7 +40,7 @@ function About() {
             Powered by our clients' vision and driven by innovation
           </h3>
           {/* line  */}
-          <div class="hidden sm:block w-0.5 h-56 bg-[#ff4e00]"></div>
+          <div class="hidden sm:block w-0.5 h-56 bg-[#f24b00]"></div>
           {/* description */}
           <p class="ml-4 sm:ml-0 sm:text-lg text-[#16213d] vision-description px-4 sm:px-8 sm:w-1/2 w-full mx-8 sm:mx-0 sm:text-left text-center">
             Proscene specializes in providing organizations with cutting-edge

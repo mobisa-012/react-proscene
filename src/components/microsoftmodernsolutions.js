@@ -15,7 +15,7 @@ function MicrosoftModernSolutions() {
       name: "Microsoft Modern Work",
       tagline: "Empowering Your Workforce with the Modern Microsoft Cloud",
       icon: "🏢",
-      color: "from-[#ff4e00] to-[#e54600]",
+      color: "from-[#f24b00] to-[#e54600]",
       features: [
         { icon: "💬", title: "Microsoft Teams", desc: "Unified communication and collaboration platform" },
         { icon: "📧", title: "Outlook", desc: "Enterprise-grade email and calendar management" },
@@ -29,7 +29,7 @@ function MicrosoftModernSolutions() {
       name: "Security & Compliance",
       tagline: "Secure, Intelligent, and Always Connected",
       icon: "🛡️",
-      color: "from-[#ff4e00] to-[#e54600]",
+      color: "from-[#f24b00] to-[#e54600]",
       features: [
         { icon: "🔒", title: "Microsoft Defender", desc: "Advanced Threat Protection with Safe Links & Attachments" },
         { icon: "🤖", title: "Endpoint Detection", desc: "EDR with AI-driven insights and response" },
@@ -43,7 +43,7 @@ function MicrosoftModernSolutions() {
       name: "AI & Copilot",
       tagline: "Unleash the Power of AI with Microsoft Copilot",
       icon: "🤖",
-      color: "from-[#ff4e00] to-[#e54600]",
+      color: "from-[#f24b00] to-[#e54600]",
       features: [
         { icon: "💡", title: "Copilot for Microsoft 365", desc: "Intelligent productivity assistant built into Office apps" },
         { icon: "⚡", title: "Copilot Studio", desc: "Automate business processes and workflows" },
@@ -57,7 +57,7 @@ function MicrosoftModernSolutions() {
       name: "Business Applications",
       tagline: "Reimagine Business Operations with Dynamics 365",
       icon: "📈",
-      color: "from-[#ff4e00] to-[#e54600]",
+      color: "from-[#f24b00] to-[#e54600]",
       features: [
         { icon: "🔄", title: "Dynamics 365 Business Central", desc: "AI-powered ERP solution for business management" },
         { icon: "📊", title: "Power BI", desc: "Data visualization and business analytics" },
@@ -150,7 +150,7 @@ function MicrosoftModernSolutions() {
                   onClick={() => setActiveTab(key)}
                   className={`px-6 py-3 rounded-2xl font-bold transition-all duration-300 ${
                     activeTab === key
-                      ? "bg-white text-[#ff4e00] shadow-xl scale-105"
+                      ? "bg-white text-[#f24b00] shadow-xl scale-105"
                       : "bg-white bg-opacity-20 text-white hover:bg-opacity-30"
                   }`}
                 >
@@ -243,7 +243,7 @@ function MicrosoftModernSolutions() {
       <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#f24b00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
               Modern Workplace Stack
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-6">
@@ -260,7 +260,7 @@ function MicrosoftModernSolutions() {
                 key={index}
                 className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300"
               >
-                <div className="bg-gradient-to-r from-[#ff4e00] to-[#e54600] p-6 text-white">
+                <div className="bg-gradient-to-r from-[#f24b00] to-[#e54600] p-6 text-white">
                   <h3 className="text-2xl font-bold mb-2">{tier.tier}</h3>
                   <p className="text-orange-100 mb-4">{tier.solution}</p>
                   <div className="inline-block px-4 py-1 bg-white bg-opacity-20 rounded-full text-sm">
@@ -272,7 +272,7 @@ function MicrosoftModernSolutions() {
                   <div className="space-y-4">
                     {tier.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-[#ff4e00] rounded-full flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#f24b00] rounded-full flex-shrink-0"></div>
                         <span className="text-gray-700">{feature}</span>
                       </div>
                     ))}
@@ -280,7 +280,7 @@ function MicrosoftModernSolutions() {
                   
                   <button 
                     onClick={handleButtonClick}
-                    className="w-full mt-8 bg-[#ff4e00] text-white py-3 rounded-xl font-bold hover:bg-[#e54600] transition-colors"
+                    className="w-full mt-8 bg-[#f24b00] text-white py-3 rounded-xl font-bold hover:bg-[#e54600] transition-colors"
                   >
                     Get Started
                   </button>
@@ -318,7 +318,7 @@ function MicrosoftModernSolutions() {
           </div>
 
           {/* Services Offered */}
-          <div className="bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-3xl p-8 text-white">
+          <div className="bg-gradient-to-r from-[#f24b00] to-[#e54600] rounded-3xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-6 text-center">Our Modern Work Offering</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
               {[
@@ -378,7 +378,7 @@ function MicrosoftModernSolutions() {
                 <div className="space-y-2">
                   {item.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-[#ff4e00] rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#f24b00] rounded-full"></div>
                       <span className="text-sm text-gray-600">{feature}</span>
                     </div>
                   ))}
@@ -392,7 +392,7 @@ function MicrosoftModernSolutions() {
       {/* Final CTA Section */}
       <div className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-r from-[#ff4e00] to-[#e54600] text-white p-12 rounded-3xl">
+          <div className="bg-gradient-to-r from-[#f24b00] to-[#e54600] text-white p-12 rounded-3xl">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Let's Modernize Your Workplace
             </h3>
@@ -405,13 +405,13 @@ function MicrosoftModernSolutions() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={handleButtonClick}
-                className="bg-white text-[#ff4e00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+                className="bg-white text-[#f24b00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
               >
                 Start Your Modern Work Journey
               </button>
               <button 
                 onClick={() => navigate("/contact")}
-                className="border-2 border-white text-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-[#ff4e00] transition-all duration-300"
+                className="border-2 border-white text-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-[#f24b00] transition-all duration-300"
               >
                 Contact Our Team
               </button>

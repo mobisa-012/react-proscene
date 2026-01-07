@@ -103,16 +103,16 @@ const SolutionsLayout = () => {
           title="Interactive Technology"
           description="Accelerate your organization's growth."
           icon={
-            <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-[#ff4e00]">
+            <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-[#f24b00]">
               <span className="text-3xl font-bold">📱</span>
             </div>
           }
-          hoverColor="text-[#ff4e00]"
-          borderColor="border-[#ff4e00]"
+          hoverColor="text-[#f24b00]"
+          borderColor="border-[#f24b00]"
           hoverBgColor="#fff0e6"
-          titleColor="#ff4e00"
+          titleColor="#f24b00"
           navigateTo="/interactiveTechnology"
-          buttonColor="#ff4e00"
+          buttonColor="#f24b00"
         />
         <Card
           title="Audio Visual"
@@ -133,16 +133,16 @@ const SolutionsLayout = () => {
           title="Digital Media"
           description="Next-Gen Property Management Software."
           icon={
-            <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-[#ff4e00]">
+            <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-[#f24b00]">
               <span className="text-3xl font-bold">💻</span>
             </div>
           }
-          hoverColor="text-[#ff4e00]"
-          borderColor="border-[#ff4e00]"
+          hoverColor="text-[#f24b00]"
+          borderColor="border-[#f24b00]"
           hoverBgColor="#fff0e6"
-          titleColor="#ff4e00"
+          titleColor="#f24b00"
           navigateTo="/digitalMedia"
-          buttonColor="#ff4e00"
+          buttonColor="#f24b00"
         />
         <Card
           title="Collaboration"

@@ -49,7 +49,7 @@ function MoreSection () {
               Proscene provides cutting-edge audio-visual-based solutions equipped with the latest technologies and applications to amplify operational efficiency, discover new opportunities and stay agile in the rapidly changing market.
             </p>
             <div className="button-Center center pt-8">
-                <button class="bg-[#ff4e00] text-white py-3 px-8 rounded-2xl hover:bg-[#16213d] transition-colors duration-300" 
+                <button class="bg-[#f24b00] text-white py-3 px-8 rounded-2xl hover:bg-[#16213d] transition-colors duration-300" 
                 onClick={handleButtonClick}>
                 Schedule a demo
                 </button>

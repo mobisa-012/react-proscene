@@ -76,7 +76,7 @@ function RoomBasedAV() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br mt-9 from-[#ff4e00] to-[#e54600] text-white overflow-hidden">
+      <div className="relative bg-gradient-to-br mt-9 from-[#f24b00] to-[#e54600] text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -94,7 +94,7 @@ function RoomBasedAV() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={handleButtonClick}
-                  className="bg-white text-[#ff4e00] px-8 py-3 rounded-2xl font-semibold hover:bg-gray-100 transition-colors duration-300"
+                  className="bg-white text-[#f24b00] px-8 py-3 rounded-2xl font-semibold hover:bg-gray-100 transition-colors duration-300"
                 >
                   Schedule Consultation
                 </button>
@@ -135,8 +135,8 @@ function RoomBasedAV() {
                 onClick={() => setActiveTab(key)}
                 className={`flex-1 py-3 px-6 rounded-xl font-semibold transition-all duration-300 ${
                   activeTab === key
-                    ? "bg-[#ff4e00] text-white shadow-lg"
-                    : "text-gray-600 hover:text-[#ff4e00]"
+                    ? "bg-[#f24b00] text-white shadow-lg"
+                    : "text-gray-600 hover:text-[#f24b00]"
                 }`}
               >
                 {room.title}
@@ -153,7 +153,7 @@ function RoomBasedAV() {
                     <h3 className="text-3xl font-bold text-[#16213d] mb-2">
                       {roomTypes[activeTab].title}
                     </h3>
-                    <p className="text-xl text-[#ff4e00] font-semibold mb-4">
+                    <p className="text-xl text-[#f24b00] font-semibold mb-4">
                       {roomTypes[activeTab].subtitle}
                     </p>
                     <p className="text-gray-600 text-lg leading-relaxed">
@@ -166,7 +166,7 @@ function RoomBasedAV() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       {roomTypes[activeTab].features.map((feature, index) => (
                         <div key={index} className="flex items-center space-x-3">
-                          <div className="w-2 h-2 bg-[#ff4e00] rounded-full"></div>
+                          <div className="w-2 h-2 bg-[#f24b00] rounded-full"></div>
                           <span className="text-gray-700">{feature}</span>
                         </div>
                       ))}
@@ -197,7 +197,7 @@ function RoomBasedAV() {
                   alt={roomTypes[activeTab].title}
                   className="w-full h-auto rounded-2xl shadow-lg"
                 />
-                <div className="absolute top-4 right-4 w-16 h-16 bg-[#ff4e00] rounded-full opacity-20"></div>
+                <div className="absolute top-4 right-4 w-16 h-16 bg-[#f24b00] rounded-full opacity-20"></div>
                 <div className="absolute bottom-4 left-4 w-12 h-12 bg-[#16213d] rounded-full opacity-30"></div>
               </div>
             </div>
@@ -246,7 +246,7 @@ function RoomBasedAV() {
             ].map((item, index) => (
               <div key={index} className="text-center group">
                 <div className="relative mb-6">
-                  <div className="w-20 h-20 bg-gradient-to-br from-[#ff4e00] to-[#e54600] rounded-full flex items-center justify-center mx-auto text-2xl group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[#f24b00] to-[#e54600] rounded-full flex items-center justify-center mx-auto text-2xl group-hover:scale-110 transition-transform duration-300">
                     {item.icon}
                   </div>
                   <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#16213d] rounded-full flex items-center justify-center text-sm font-bold text-white">
@@ -262,7 +262,7 @@ function RoomBasedAV() {
       </div>
 
       {/* Stats Section */}
-      <div className="py-16 px-4 bg-gradient-to-r from-[#ff4e00] to-[#e54600] text-white">
+      <div className="py-16 px-4 bg-gradient-to-r from-[#f24b00] to-[#e54600] text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -292,11 +292,11 @@ function RoomBasedAV() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               onClick={handleButtonClick}
-              className="bg-[#ff4e00] text-white px-8 py-3 rounded-2xl font-semibold hover:bg-[#16213d] transition-colors duration-300"
+              className="bg-[#f24b00] text-white px-8 py-3 rounded-2xl font-semibold hover:bg-[#16213d] transition-colors duration-300"
             >
               Get Free Consultation
             </button>
-            <button className="border-2 border-[#ff4e00] text-[#ff4e00] px-8 py-3 rounded-2xl font-semibold hover:bg-[#ff4e00] hover:text-white transition-colors duration-300">
+            <button className="border-2 border-[#f24b00] text-[#f24b00] px-8 py-3 rounded-2xl font-semibold hover:bg-[#f24b00] hover:text-white transition-colors duration-300">
               Download Brochure
             </button>
           </div>

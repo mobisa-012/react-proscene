@@ -129,7 +129,7 @@ function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-[#ff4e00] to-[#e64500] text-white overflow-hidden">
+      <div className="relative bg-gradient-to-br from-[#f24b00] to-[#e64500] text-white overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-32 h-32 bg-white rounded-full opacity-10 animate-pulse"></div>
           <div className="absolute bottom-20 right-20 w-24 h-24 bg-orange-300 rounded-full opacity-15 animate-bounce"></div>
@@ -153,7 +153,7 @@ function PrivacyPolicy() {
       {/* Main Content */}
       <div className="max-w-5xl mx-auto px-4 py-16">
         {/* Introduction */}
-        <div className="mb-12 p-8 bg-orange-50 rounded-2xl border-l-4 border-[#ff4e00]">
+        <div className="mb-12 p-8 bg-orange-50 rounded-2xl border-l-4 border-[#f24b00]">
           <p className="text-lg text-gray-700 leading-relaxed">
             This Privacy Policy describes how we, as an audio-visual solutions provider, collect, use, disclose, and protect your information when you engage our services for AV consultation, installation, maintenance, or support. By using our services or website, you agree to the collection and use of information in accordance with this policy.
           </p>
@@ -164,7 +164,7 @@ function PrivacyPolicy() {
           {sections.map((section, index) => (
             <div key={index} className="scroll-mt-24">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-[#ff4e00] text-white rounded-full flex items-center justify-center font-bold text-lg mr-4 flex-shrink-0">
+                <div className="w-12 h-12 bg-[#f24b00] text-white rounded-full flex items-center justify-center font-bold text-lg mr-4 flex-shrink-0">
                   {index + 1}
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold text-[#16213d]">
@@ -201,13 +201,13 @@ function PrivacyPolicy() {
           <div className="space-y-3 text-gray-700">
             <div className="flex items-center">
               <span className="font-semibold w-24">Email:</span>
-              <a href="mailto:info@proscene.co.ke" className="text-[#ff4e00] hover:underline">
+              <a href="mailto:info@proscene.co.ke" className="text-[#f24b00] hover:underline">
                 info@proscene.co.ke
               </a>
             </div>
             <div className="flex items-center">
               <span className="font-semibold w-24">Phone:</span>
-              <a href="tel:+254713761269" className="text-[#ff4e00] hover:underline">
+              <a href="tel:+254713761269" className="text-[#f24b00] hover:underline">
                 +254 713 761269
               </a>
             </div>
@@ -220,7 +220,7 @@ function PrivacyPolicy() {
           <div className="flex flex-wrap gap-4">
             <button 
               onClick={() => navigate('/terms')}
-              className="text-[#ff4e00] hover:underline font-medium"
+              className="text-[#f24b00] hover:underline font-medium"
             >
               Terms of Service →
             </button>
@@ -240,13 +240,13 @@ function PrivacyPolicy() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               onClick={() => navigate('/contact')}
-              className="bg-[#ff4e00] text-white px-8 py-4 rounded-2xl font-bold hover:bg-[#16213d] transition-all duration-300 transform hover:scale-105"
+              className="bg-[#f24b00] text-white px-8 py-4 rounded-2xl font-bold hover:bg-[#16213d] transition-all duration-300 transform hover:scale-105"
             >
               Contact Us
             </button>
             <button 
               onClick={() => navigate('/')}
-              className="border-2 border-[#ff4e00] text-[#ff4e00] px-8 py-4 rounded-2xl font-bold hover:bg-[#ff4e00] hover:text-white transition-all duration-300"
+              className="border-2 border-[#f24b00] text-[#f24b00] px-8 py-4 rounded-2xl font-bold hover:bg-[#f24b00] hover:text-white transition-all duration-300"
             >
               Back to Home
             </button>

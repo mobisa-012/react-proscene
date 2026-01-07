@@ -15,7 +15,7 @@ function InteractiveKiosks() {
       name: "Interactive Kiosks",
       tagline: "Self-Service Digital Solutions",
       icon: "🖥️",
-      color: "from-[#ff4e00] to-[#e54600]",
+      color: "from-[#f24b00] to-[#e54600]",
       features: [
         { icon: "👆", title: "Touch Interface", desc: "Intuitive touchscreen for easy interaction" },
         { icon: "🏢", title: "Wayfinding", desc: "Digital directories and navigation maps" },
@@ -27,7 +27,7 @@ function InteractiveKiosks() {
       name: "Digital Signage",
       tagline: "Dynamic Content Display",
       icon: "📺",
-      color: "from-[#ff4e00] to-[#e54600]",
+      color: "from-[#f24b00] to-[#e54600]",
       features: [
         { icon: "🔄", title: "Content Management", desc: "Remote updates and scheduling" },
         { icon: "🎨", title: "Dynamic Content", desc: "Video, images, and real-time data" },
@@ -65,7 +65,7 @@ function InteractiveKiosks() {
                 onClick={() => setActiveTab("kiosks")}
                 className={`px-8 py-4 rounded-2xl font-bold transition-all duration-300 ${
                   activeTab === "kiosks"
-                    ? "bg-white text-[#ff4e00] shadow-xl scale-105"
+                    ? "bg-white text-[#f24b00] shadow-xl scale-105"
                     : "bg-white bg-opacity-20 text-white hover:bg-opacity-30"
                 }`}
               >
@@ -75,7 +75,7 @@ function InteractiveKiosks() {
                 onClick={() => setActiveTab("screens")}
                 className={`px-8 py-4 rounded-2xl font-bold transition-all duration-300 ${
                   activeTab === "screens"
-                    ? "bg-white text-[#ff4e00] shadow-xl scale-105"
+                    ? "bg-white text-[#f24b00] shadow-xl scale-105"
                     : "bg-white bg-opacity-20 text-white hover:bg-opacity-30"
                 }`}
               >
@@ -90,7 +90,7 @@ function InteractiveKiosks() {
       <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#f24b00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
               Digital Media
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
@@ -115,7 +115,7 @@ function InteractiveKiosks() {
       <div className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#f24b00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
               Audio Visual
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-6">
@@ -132,7 +132,7 @@ function InteractiveKiosks() {
                 "Remote management and monitoring"
               ].map((item, index) => (
                 <div key={index} className="flex items-center space-x-3">
-                  <div className="w-6 h-6 bg-gradient-to-br from-[#ff4e00] to-[#e54600] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-6 h-6 bg-gradient-to-br from-[#f24b00] to-[#e54600] rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white text-sm">✓</span>
                   </div>
                   <p className="text-gray-700 text-lg">{item}</p>
@@ -140,7 +140,7 @@ function InteractiveKiosks() {
               ))}
             </div>
             
-            <div className="bg-gradient-to-br from-[#ff4e00] to-[#e54600] rounded-3xl p-8 text-white text-center">
+            <div className="bg-gradient-to-br from-[#f24b00] to-[#e54600] rounded-3xl p-8 text-white text-center">
               <div className="text-6xl mb-4">👥</div>
               <h3 className="text-2xl font-bold mb-4">Engage Your Audience</h3>
               <p className="text-orange-100">Dynamic content that captures attention and delivers results</p>
@@ -153,7 +153,7 @@ function InteractiveKiosks() {
       <div className="py-20 px-4 bg-gradient-to-br from-gray-50 to-orange-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#f24b00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
               Collaboration
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
@@ -180,7 +180,7 @@ function InteractiveKiosks() {
       {/* CTA Section */}
       <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-r from-[#ff4e00] to-[#e54600] text-white p-12 rounded-3xl">
+          <div className="bg-gradient-to-r from-[#f24b00] to-[#e54600] text-white p-12 rounded-3xl">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Ready to Engage Your Audience?
             </h3>
@@ -189,7 +189,7 @@ function InteractiveKiosks() {
             </p>
             <button 
               onClick={handleButtonClick}
-              className="bg-white text-[#ff4e00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+              className="bg-white text-[#f24b00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
             >
               Get Started
             </button>

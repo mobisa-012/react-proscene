@@ -101,15 +101,15 @@ const EducationFeatures = () => {
                 </h4>
                 <ul className="space-y-3 text-gray-600 text-center">
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#f24b00] rounded-full mr-3"></span>
                     Interactive whiteboards and displays
                   </li>
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#f24b00] rounded-full mr-3"></span>
                     Student response systems
                   </li>
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#f24b00] rounded-full mr-3"></span>
                     Wireless content sharing
                   </li>
                 </ul>
@@ -129,15 +129,15 @@ const EducationFeatures = () => {
                 </h4>
                 <ul className="space-y-3 text-gray-600 text-center">
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#f24b00] rounded-full mr-3"></span>
                     Digital wayfinding and directories
                   </li>
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#f24b00] rounded-full mr-3"></span>
                     Emergency alert systems
                   </li>
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#f24b00] rounded-full mr-3"></span>
                     Event and schedule displays
                   </li>
                 </ul>
@@ -175,7 +175,7 @@ function Education() {
               Your New <br />
               Experience Awaits
             </h1>
-            <button className="bg-[#ff4e00] hover:bg-[#16213d] text-white font-bold py-4 px-8 rounded-full transition duration-300"
+            <button className="bg-[#f24b00] hover:bg-[#16213d] text-white font-bold py-4 px-8 rounded-full transition duration-300"
             onClick={handleButtonClick}>
               Speak With An Expert
             </button>

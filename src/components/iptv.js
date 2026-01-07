@@ -15,7 +15,7 @@ function IPTV() {
       name: "Corporate IPTV",
       tagline: "Internal Communications & Digital Signage",
       icon: "🏢",
-      color: "from-[#ff4e00] to-[#e54600]",
+      color: "from-[#f24b00] to-[#e54600]",
       features: [
         { icon: "📢", title: "Corporate Communications", desc: "Live broadcasts and company announcements" },
         { icon: "📊", title: "Data Feeds", desc: "Real-time KPI dashboards and performance metrics" },
@@ -27,7 +27,7 @@ function IPTV() {
       name: "Hospitality IPTV",
       tagline: "In-Room Entertainment & Hotel TV",
       icon: "🏨",
-      color: "from-[#ff4e00] to-[#e54600]",
+      color: "from-[#f24b00] to-[#e54600]",
       features: [
         { icon: "📺", title: "In-Room Entertainment", desc: "Live TV, movies, and guest information" },
         { icon: "💼", title: "Hotel Services", desc: "Room service, amenities, and billing integration" },
@@ -88,7 +88,7 @@ function IPTV() {
                 onClick={() => setActiveTab("corporate")}
                 className={`px-8 py-4 rounded-2xl font-bold transition-all duration-300 ${
                   activeTab === "corporate"
-                    ? "bg-white text-[#ff4e00] shadow-xl scale-105"
+                    ? "bg-white text-[#f24b00] shadow-xl scale-105"
                     : "bg-white bg-opacity-20 text-white hover:bg-opacity-30"
                 }`}
               >
@@ -98,7 +98,7 @@ function IPTV() {
                 onClick={() => setActiveTab("hospitality")}
                 className={`px-8 py-4 rounded-2xl font-bold transition-all duration-300 ${
                   activeTab === "hospitality"
-                    ? "bg-white text-[#ff4e00] shadow-xl scale-105"
+                    ? "bg-white text-[#f24b00] shadow-xl scale-105"
                     : "bg-white bg-opacity-20 text-white hover:bg-opacity-30"
                 }`}
               >
@@ -113,7 +113,7 @@ function IPTV() {
       <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#f24b00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
               Digital Media
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
@@ -138,7 +138,7 @@ function IPTV() {
       <div className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#f24b00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
               Audio Visual
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-6">
@@ -155,7 +155,7 @@ function IPTV() {
                 "Integration with existing AV systems"
               ].map((item, index) => (
                 <div key={index} className="flex items-center space-x-3">
-                  <div className="w-6 h-6 bg-gradient-to-br from-[#ff4e00] to-[#e54600] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-6 h-6 bg-gradient-to-br from-[#f24b00] to-[#e54600] rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white text-sm">✓</span>
                   </div>
                   <p className="text-gray-700 text-lg">{item}</p>
@@ -163,7 +163,7 @@ function IPTV() {
               ))}
             </div>
             
-            <div className="bg-gradient-to-br from-[#ff4e00] to-[#e54600] rounded-3xl p-8 text-white text-center">
+            <div className="bg-gradient-to-br from-[#f24b00] to-[#e54600] rounded-3xl p-8 text-white text-center">
               <div className="text-6xl mb-4">📡</div>
               <h3 className="text-2xl font-bold mb-4">Network Video Distribution</h3>
               <p className="text-orange-100">Deliver content efficiently over your existing IP infrastructure</p>
@@ -176,7 +176,7 @@ function IPTV() {
       <div className="py-20 px-4 bg-gradient-to-br from-gray-50 to-orange-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#f24b00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
               Collaboration
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
@@ -192,7 +192,7 @@ function IPTV() {
                 <ul className="space-y-2">
                   {app.useCases.map((useCase, i) => (
                     <li key={i} className="flex items-start space-x-2">
-                      <div className="w-2 h-2 bg-[#ff4e00] rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#f24b00] rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-gray-600 text-sm">{useCase}</span>
                     </li>
                   ))}
@@ -231,7 +231,7 @@ function IPTV() {
       {/* CTA Section */}
       <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-r from-[#ff4e00] to-[#e54600] text-white p-12 rounded-3xl">
+          <div className="bg-gradient-to-r from-[#f24b00] to-[#e54600] text-white p-12 rounded-3xl">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Ready to Streamline Your Video Delivery?
             </h3>
@@ -240,7 +240,7 @@ function IPTV() {
             </p>
             <button 
               onClick={handleButtonClick}
-              className="bg-white text-[#ff4e00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+              className="bg-white text-[#f24b00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
             >
               Schedule Consultation
             </button>

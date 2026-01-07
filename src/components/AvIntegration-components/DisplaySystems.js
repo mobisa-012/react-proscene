@@ -93,7 +93,7 @@ function DisplayAudio() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-[#ff4e00] text-white overflow-hidden">
+      <div className="relative bg-[#f24b00] text-white overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-50"></div>
           {/* Animated sound waves */}
@@ -107,7 +107,7 @@ function DisplayAudio() {
         <div className="relative max-w-7xl mx-auto px-4 py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
-              <div className="inline-block px-6 py-3 bg-white text-[#ff4e00] rounded-full text-sm font-bold">
+              <div className="inline-block px-6 py-3 bg-white text-[#f24b00] rounded-full text-sm font-bold">
                 Display Systems & Audio Reinforcement
               </div>
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
@@ -147,7 +147,7 @@ function DisplayAudio() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={handleButtonClick}
-                  className="bg-white text-[#ff4e00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+                  className="bg-white text-[#f24b00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
                 >
                   Experience the Difference
                 </button>
@@ -161,14 +161,14 @@ function DisplayAudio() {
                   alt="Professional AV System"
                   className="w-full h-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#ff4e00] via-transparent to-transparent opacity-40 rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#f24b00] via-transparent to-transparent opacity-40 rounded-3xl"></div>
               </div>
               
               {/* Floating quality indicators */}
               <div className="absolute top-8 right-8 bg-[#16213d] text-white p-3 rounded-2xl shadow-lg animate-bounce">
                 <div className="text-xs font-bold">4K ULTRA HD</div>
               </div>
-              <div className="absolute bottom-8 left-8 bg-[#ff4e00] text-white p-3 rounded-2xl shadow-lg animate-pulse">
+              <div className="absolute bottom-8 left-8 bg-[#f24b00] text-white p-3 rounded-2xl shadow-lg animate-pulse">
                 <div className="text-xs font-bold">DOLBY AUDIO</div>
               </div>
             </div>
@@ -182,7 +182,7 @@ function DisplayAudio() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-[#16213d] mb-6">
               Professional Display
-              <span className="text-[#ff4e00]"> Technologies</span>
+              <span className="text-[#f24b00]"> Technologies</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               From intimate meeting rooms to grand auditoriums, we provide display solutions that deliver exceptional visual impact for every application.
@@ -197,8 +197,8 @@ function DisplayAudio() {
                 onClick={() => setActiveSystem(index)}
                 className={`flex-1 py-4 px-6 rounded-2xl font-semibold transition-all duration-300 ${
                   activeSystem === index
-                    ? "bg-gradient-to-r from-[#ff4e00] to-[#e54600] text-white shadow-lg transform scale-105"
-                    : "text-gray-600 hover:text-[#ff4e00] hover:bg-gray-50"
+                    ? "bg-gradient-to-r from-[#f24b00] to-[#e54600] text-white shadow-lg transform scale-105"
+                    : "text-gray-600 hover:text-[#f24b00] hover:bg-gray-50"
                 }`}
               >
                 {system.type}
@@ -222,7 +222,7 @@ function DisplayAudio() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {displaySystems[activeSystem].specs.map((spec, index) => (
                       <div key={index} className="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl">
-                        <div className="w-2 h-2 bg-[#ff4e00] rounded-full"></div>
+                        <div className="w-2 h-2 bg-[#f24b00] rounded-full"></div>
                         <span className="text-gray-700 font-medium">{spec}</span>
                       </div>
                     ))}
@@ -233,7 +233,7 @@ function DisplayAudio() {
                   <h4 className="text-xl font-bold text-[#16213d] mb-4">Ideal Applications</h4>
                   <div className="flex flex-wrap gap-3">
                     {displaySystems[activeSystem].applications.map((app, index) => (
-                      <span key={index} className="px-4 py-2 bg-[#ff4e00] text-white rounded-full text-sm font-medium">
+                      <span key={index} className="px-4 py-2 bg-[#f24b00] text-white rounded-full text-sm font-medium">
                         {app}
                       </span>
                     ))}
@@ -242,7 +242,7 @@ function DisplayAudio() {
 
                 <button 
                   onClick={handleButtonClick}
-                  className="bg-gradient-to-r from-[#ff4e00] to-[#e54600] text-white px-8 py-3 rounded-2xl font-semibold hover:from-[#e54600] hover:to-[#cc3d00] transition-all duration-300 transform hover:scale-105"
+                  className="bg-gradient-to-r from-[#f24b00] to-[#e54600] text-white px-8 py-3 rounded-2xl font-semibold hover:from-[#e54600] hover:to-[#cc3d00] transition-all duration-300 transform hover:scale-105"
                 >
                   Get Custom Quote
                 </button>
@@ -255,7 +255,7 @@ function DisplayAudio() {
                   className="w-full h-auto rounded-2xl shadow-xl"
                 />
                 <div className="absolute top-6 right-6 bg-white p-3 rounded-xl shadow-lg">
-                  <div className="text-xs font-bold text-[#ff4e00]">PROFESSIONAL GRADE</div>
+                  <div className="text-xs font-bold text-[#f24b00]">PROFESSIONAL GRADE</div>
                 </div>
               </div>
             </div>
@@ -269,7 +269,7 @@ function DisplayAudio() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-[#16213d] mb-6">
               Audio Reinforcement
-              <span className="text-[#ff4e00]"> Excellence</span>
+              <span className="text-[#f24b00]"> Excellence</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Deliver pristine audio quality with our comprehensive range of professional sound reinforcement solutions.
@@ -287,7 +287,7 @@ function DisplayAudio() {
                 <div className="space-y-3">
                   {category.solutions.map((solution, solutionIndex) => (
                     <div key={solutionIndex} className="flex items-center space-x-3 p-3 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200">
-                      <div className="w-2 h-2 bg-[#ff4e00] rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#f24b00] rounded-full"></div>
                       <span className="text-gray-700 font-medium">{solution}</span>
                     </div>
                   ))}
@@ -299,7 +299,7 @@ function DisplayAudio() {
       </div>
 
       {/* Performance Metrics */}
-      <div className="py-20 px-4 bg-gradient-to-br from-[#ff4e00] to-[#e54600] text-white">
+      <div className="py-20 px-4 bg-gradient-to-br from-[#f24b00] to-[#e54600] text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -351,7 +351,7 @@ function DisplayAudio() {
                   <div className="font-bold text-[#16213d] text-lg">
                     {testimonials[currentTestimonial].author}
                   </div>
-                  <div className="text-[#ff4e00] font-medium">
+                  <div className="text-[#f24b00] font-medium">
                     {testimonials[currentTestimonial].title}
                   </div>
                 </div>
@@ -365,7 +365,7 @@ function DisplayAudio() {
                   key={index}
                   onClick={() => setCurrentTestimonial(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    currentTestimonial === index ? "bg-[#ff4e00] w-8" : "bg-gray-300"
+                    currentTestimonial === index ? "bg-[#f24b00] w-8" : "bg-gray-300"
                   }`}
                 />
               ))}
@@ -375,7 +375,7 @@ function DisplayAudio() {
       </div>
 
       {/* Final CTA */}
-      <div className="py-20 px-4 bg-gradient-to-r from-[#16213d] to-[#ff4e00] text-white">
+      <div className="py-20 px-4 bg-gradient-to-r from-[#16213d] to-[#f24b00] text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Ready to Elevate Your
@@ -388,11 +388,11 @@ function DisplayAudio() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               onClick={handleButtonClick}
-              className="bg-white text-[#ff4e00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+              className="bg-white text-[#f24b00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
             >
               Schedule System Demo
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-[#ff4e00] transition-all duration-300">
+            <button className="border-2 border-white text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-[#f24b00] transition-all duration-300">
               Download Catalog
             </button>
           </div>

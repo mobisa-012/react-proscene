@@ -101,15 +101,15 @@ const LegalFeatures = () => {
                 </h4>
                 <ul className="space-y-3 text-gray-600 text-center">
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#f24b00] rounded-full mr-3"></span>
                     Encrypted client-attorney communications
                   </li>
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#f24b00] rounded-full mr-3"></span>
                     Remote witness testimony solutions
                   </li>
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#f24b00] rounded-full mr-3"></span>
                     Multi-party conference capabilities
                   </li>
                 </ul>
@@ -129,15 +129,15 @@ const LegalFeatures = () => {
                 </h4>
                 <ul className="space-y-3 text-gray-600 text-center">
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#f24b00] rounded-full mr-3"></span>
                     Judge and counsel display systems
                   </li>
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#f24b00] rounded-full mr-3"></span>
                     Public gallery viewing screens
                   </li>
                   <li className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-[#ff4e00] rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#f24b00] rounded-full mr-3"></span>
                     Evidence recording and archiving
                   </li>
                 </ul>
@@ -175,7 +175,7 @@ function LegalCollaboration() {
           Your New <br />
           Experience Awaits
         </h1>
-        <button className="bg-[#ff4e00] hover:bg-[#16213d] text-white font-bold py-4 px-8 rounded-full transition duration-300"
+        <button className="bg-[#f24b00] hover:bg-[#16213d] text-white font-bold py-4 px-8 rounded-full transition duration-300"
         onClick={handleButtonClick}>
           Speak With An Expert
         </button>

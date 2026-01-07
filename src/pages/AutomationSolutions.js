@@ -89,7 +89,7 @@ function AutomationSolutions() {
       <div className="pb-5 maxWidthContainer">
         <div className="flex flex-col mt-20 md:flex-row items-center justify-center p-8 bg-white">
           <div
-            className="bg-[#ff4e00] py-16 text-white p-10 md:w-1/2 Br"
+            className="bg-[#f24b00] py-16 text-white p-10 md:w-1/2 Br"
             style={{ height: "100%" }}
           >
             <h1 className="font-bold h1sizing">
@@ -97,7 +97,7 @@ function AutomationSolutions() {
             </h1>
             <p className="text-lg mb-6">{swipeTexts[currentIndex]}</p>
             <div className="button-Center">
-              <button className="bg-[#ff4e00] text-white py-2 px-6 rounded-2xl hover:bg-[#16213d] border border-white transition-colors duration-300"
+              <button className="bg-[#f24b00] text-white py-2 px-6 rounded-2xl hover:bg-[#16213d] border border-white transition-colors duration-300"
               onClick={handleButtonClick}>
                 Get Started
               </button>
@@ -117,7 +117,7 @@ function AutomationSolutions() {
               className="absolute -bottom-2 left-4 w-40"
               style={{ zIndex: "999" }}
             />
-            <div className="absolute top-1/4 right-1/4 w-16 h-16 bg-[#ff4e00] rounded-lg"></div>
+            <div className="absolute top-1/4 right-1/4 w-16 h-16 bg-[#f24b00] rounded-lg"></div>
           </div>
         </div>
       </div>
@@ -133,7 +133,7 @@ function AutomationSolutions() {
                 onClick={() => setActiveLink(link.id)}
                 className={`px-4 py-2 ${
                 activeLink === link.id
-                    ? "text-[#ff4e00] border-b-2 border-[#ff4e00]"
+                    ? "text-[#f24b00] border-b-2 border-[#f24b00]"
                     : "text-gray-700"
                 }`}
             >
@@ -142,7 +142,7 @@ function AutomationSolutions() {
             ))}
         </div>
         <div
-            className="absolute bottom-0 left-0 h-[2px] bg-[#ff4e00] transition-transform"
+            className="absolute bottom-0 left-0 h-[2px] bg-[#f24b00] transition-transform"
             style={{
             transform: `translateX(${links.findIndex((link) => link.id === activeLink) * 100}%)`,
             }}

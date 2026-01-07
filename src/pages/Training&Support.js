@@ -78,7 +78,7 @@ function TrainingAndSupport() {
       <div className="pb-5 maxWidthContainer">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-20 mt-16 sm:mt-20 lg:mt-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
-            <div className="bg-[#ff4e00] text-white p-6 sm:p-8 lg:p-10 Br flex flex-col justify-center space-y-4 sm:space-y-6 lg:space-y-8">
+            <div className="bg-[#f24b00] text-white p-6 sm:p-8 lg:p-10 Br flex flex-col justify-center space-y-4 sm:space-y-6 lg:space-y-8">
               <h1 className="font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl h1sizing">
                 Training and Support Made Easy
               </h1>
@@ -123,7 +123,7 @@ function TrainingAndSupport() {
                 onClick={() => setActiveLink(link.id)}
                 className={`px-3 sm:px-4 py-2 text-xs sm:text-sm lg:text-base whitespace-nowrap flex-shrink-0 ${
                   activeLink === link.id 
-                    ? "text-[#ff4e00] border-b-2 border-[#ff4e00]" 
+                    ? "text-[#f24b00] border-b-2 border-[#f24b00]" 
                     : "text-[#16213d]"
                 }`}
               >
@@ -163,7 +163,7 @@ function TrainingAndSupport() {
             Experience Awaits
           </h1>
           <button 
-            className="bg-[#ff4e00] hover:bg-[#16213d] text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full transition duration-300 w-full sm:w-auto"
+            className="bg-[#f24b00] hover:bg-[#16213d] text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full transition duration-300 w-full sm:w-auto"
             onClick={handleButtonClick}
           >
             Speak With An Expert

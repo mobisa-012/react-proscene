@@ -693,7 +693,7 @@ function Navbar() {
                           <a
                             className="btn"
                             style={{
-                              backgroundColor: "#ff4e00",
+                              backgroundColor: "#f24b00",
                               padding: ".7em",
                               color: "#fff",
                               borderRadius: "10px",

@@ -8,7 +8,7 @@ function BookDemoToday() {
         navigate("/bookDemo");
     }
     return (
-        <div className="relative overflow-hidden w-full py-[4em] bg-[#ff4e00] flex justify-center items-center">
+        <div className="relative overflow-hidden w-full py-[4em] bg-[#f24b00] flex justify-center items-center">
             <svg 
                 className="absolute h-[433px] left-[-15.27%] top-0 w-[910px]" 
                 fill="none" 

@@ -96,7 +96,7 @@ const TestimonialCarousel = () => {
       <div className="absolute bottom-4 mb-10 flex justify-center items-center space-x-4">
         <button
           onClick={handlePrev}
-          className="bg-white text-[#ff4e00] rounded-full w-10 h-10 flex justify-center items-center shadow-lg hover:bg-[#16213d] hover:text-white active:bg-[#0f172a] transition-colors duration-300"
+          className="bg-white text-[#f24b00] rounded-full w-10 h-10 flex justify-center items-center shadow-lg hover:bg-[#16213d] hover:text-white active:bg-[#0f172a] transition-colors duration-300"
         >
           <FaChevronLeft />
         </button>
@@ -105,14 +105,14 @@ const TestimonialCarousel = () => {
             <div
               key={index}
               className={`w-10 h-3 rounded-2xl ${
-                index === currentIndex ? "bg-[#ff4e00]" : "bg-gray-200"
+                index === currentIndex ? "bg-[#f24b00]" : "bg-gray-200"
               }`}
             ></div>
           ))}
         </div>
         <button
           onClick={handleNext}
-          className="bg-white text-[#ff4e00] rounded-full w-10 h-10 flex justify-center items-center shadow-lg hover:bg-[#16213d] hover:text-white active:bg-[#0f172a] transition-colors duration-300"
+          className="bg-white text-[#f24b00] rounded-full w-10 h-10 flex justify-center items-center shadow-lg hover:bg-[#16213d] hover:text-white active:bg-[#0f172a] transition-colors duration-300"
         >
           <FaChevronRight />
         </button>

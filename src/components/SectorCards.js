@@ -64,13 +64,13 @@ function SectorCards() {
       </div>
       <div className='flex gap-2'>
         <div 
-          className="bg-[#ff4e00] rounded-full p-2 cursor-pointer hover:bg-[#16213d] transition-colors duration-300" 
+          className="bg-[#f24b00] rounded-full p-2 cursor-pointer hover:bg-[#16213d] transition-colors duration-300" 
           onClick={handlePreviousCard}
         >
           <ArrowBackOutlinedIcon className="text-white" />
         </div>
         <div 
-          className="bg-[#ff4e00] rounded-full p-2 cursor-pointer hover:bg-[#16213d] transition-colors duration-300" 
+          className="bg-[#f24b00] rounded-full p-2 cursor-pointer hover:bg-[#16213d] transition-colors duration-300" 
           onClick={handleNextCard}
         >
           <ArrowForwardOutlinedIcon className="text-white"/>

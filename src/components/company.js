@@ -84,7 +84,7 @@ function Company() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-[#ff4e00] to-[#e54600] text-white overflow-hidden">
+      <div className="relative bg-gradient-to-br from-[#f24b00] to-[#e54600] text-white overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-black opacity-20"></div>
           <div className="absolute top-20 left-20 w-32 h-32 bg-white rounded-full opacity-10 blur-3xl"></div>
@@ -114,7 +114,7 @@ function Company() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-[#ff4e00] mb-2">
+                <div className="text-3xl md:text-4xl font-bold text-[#f24b00] mb-2">
                   {stat.number}
                 </div>
                 <div className="text-gray-600 font-medium">{stat.label}</div>
@@ -131,14 +131,14 @@ function Company() {
             <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
               {/* Avatar Section */}
               <div className="flex-shrink-0 flex justify-center md:justify-start">
-                <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-[#ff4e00] to-[#e54600] rounded-full flex items-center justify-center text-white text-xl md:text-2xl font-bold">
+                <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-[#f24b00] to-[#e54600] rounded-full flex items-center justify-center text-white text-xl md:text-2xl font-bold">
                   PS
                 </div>
               </div>
               
               {/* Content Section */}
               <div className="flex-1  md:text-left">
-                <div className="inline-block px-4 py-1 bg-orange-100 text-[#ff4e00] rounded-full text-sm font-medium mb-4">
+                <div className="inline-block px-4 py-1 bg-orange-100 text-[#f24b00] rounded-full text-sm font-medium mb-4">
                   Message from Director
                 </div>
                 <blockquote className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
@@ -177,17 +177,17 @@ function Company() {
               
               <div className="grid grid-cols-2 gap-4 md:gap-6">
                 <div className="text-center p-4 bg-orange-50 rounded-xl">
-                  <div className="text-xl md:text-2xl font-bold text-[#ff4e00] mb-1">20+</div>
+                  <div className="text-xl md:text-2xl font-bold text-[#f24b00] mb-1">20+</div>
                   <div className="text-gray-600 text-xs md:text-sm">Dedicated Staff</div>
                 </div>
                 <div className="text-center p-4 bg-orange-50 rounded-xl">
-                  <div className="text-xl md:text-2xl font-bold text-[#ff4e00] mb-1">7</div>
+                  <div className="text-xl md:text-2xl font-bold text-[#f24b00] mb-1">7</div>
                   <div className="text-gray-600 text-xs md:text-sm">Country Offices</div>
                 </div>
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-[#ff4e00] to-[#e54600] rounded-3xl p-6 md:p-8 text-white">
+            <div className="bg-gradient-to-br from-[#f24b00] to-[#e54600] rounded-3xl p-6 md:p-8 text-white">
               <h3 className="text-xl md:text-2xl font-bold mb-6">Our Guiding Principles</h3>
               <div className="space-y-4">
                 {[
@@ -231,7 +231,7 @@ function Company() {
                 <div className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-[#ff4e00] rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#f24b00] rounded-full flex-shrink-0"></div>
                       <span className="text-sm text-gray-600">{feature}</span>
                     </div>
                   ))}
@@ -346,7 +346,7 @@ function Company() {
               <div key={index} className="bg-gradient-to-br from-orange-50 to-white rounded-2xl p-6 border border-orange-100">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <div className="w-10 h-10 md:w-12 md:h-12 bg-[#ff4e00] rounded-full flex items-center justify-center text-white font-bold text-sm md:text-base">
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-[#f24b00] rounded-full flex items-center justify-center text-white font-bold text-sm md:text-base">
                       {index + 1}
                     </div>
                   </div>
@@ -364,7 +364,7 @@ function Company() {
       {/* CTA Section */}
       <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-r from-[#ff4e00] to-[#e54600] text-white p-8 md:p-12 rounded-3xl">
+          <div className="bg-gradient-to-r from-[#f24b00] to-[#e54600] text-white p-8 md:p-12 rounded-3xl">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Ready to Transform Your Space?
             </h3>
@@ -374,13 +374,13 @@ function Company() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={() => navigate("/contact")}
-                className="bg-white text-[#ff4e00] px-6 md:px-8 py-3 md:py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 text-sm md:text-base"
+                className="bg-white text-[#f24b00] px-6 md:px-8 py-3 md:py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 text-sm md:text-base"
               >
                 Get in Touch
               </button>
               <button 
                 onClick={() => navigate("/gallery")}
-                className="border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-2xl font-bold hover:bg-white hover:text-[#ff4e00] transition-all duration-300 text-sm md:text-base"
+                className="border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-2xl font-bold hover:bg-white hover:text-[#f24b00] transition-all duration-300 text-sm md:text-base"
               >
                 View Our Work
               </button>

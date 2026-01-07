@@ -122,11 +122,11 @@ const Partners = () => {
           className="load-more-text cursor-pointer flex items-center gap-2"
         >
           {isExpanded ? (
-            <div className='flex flex-col items-center gap-3' style={{fontWeight:'400', color:'#ff4e00'}}>
+            <div className='flex flex-col items-center gap-3' style={{fontWeight:'400', color:'#f24b00'}}>
               Load Less <FaChevronUp className="load-more-icon text-lg" />
             </div>
           ) : (
-            <div className='flex flex-col items-center gap-3' style={{fontWeight:'400', color:'#ff4e00'}}>
+            <div className='flex flex-col items-center gap-3' style={{fontWeight:'400', color:'#f24b00'}}>
               Load More <FaChevronDown className="load-more-icon text-lg" />
             </div>
           )}

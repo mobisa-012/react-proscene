@@ -63,7 +63,7 @@ const AboutCoop = () => {
                             text-sm sm:text-base md:text-lg lg:text-xl
                             rounded-lg md:rounded-xl
                             font-semibold
-                            hover:bg-white hover:text-[#ff4e00] 
+                            hover:bg-white hover:text-[#f24b00] 
                             transition-all duration-300
                             shadow-lg hover:shadow-2xl
                             transform hover:scale-105

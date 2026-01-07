@@ -92,7 +92,7 @@ function OnSiteSupport() {
       <div className="pb-5 maxWidthContainer">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-20 mt-16 sm:mt-20 lg:mt-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
-            <div className="bg-[#ff4e00] text-white p-6 sm:p-8 lg:p-10 Br flex flex-col justify-center space-y-4 sm:space-y-6 lg:space-y-8">
+            <div className="bg-[#f24b00] text-white p-6 sm:p-8 lg:p-10 Br flex flex-col justify-center space-y-4 sm:space-y-6 lg:space-y-8">
               <h1 className="font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl h1sizing">
                 Support made easy.
               </h1>
@@ -136,7 +136,7 @@ function OnSiteSupport() {
               <button
                 key={index}
                 onClick={() => handleScroll(button.id)}
-                className="bg-[#e3eeff] text-[#ff4e00] font-semibold px-4 sm:px-6 py-2 text-sm sm:text-base transition-colors duration-300 hover:bg-[#ff4e00] hover:text-white"
+                className="bg-[#e3eeff] text-[#f24b00] font-semibold px-4 sm:px-6 py-2 text-sm sm:text-base transition-colors duration-300 hover:bg-[#f24b00] hover:text-white"
                 style={{ borderRadius: "3em" }}
               >
                 {button.text}
@@ -178,7 +178,7 @@ function OnSiteSupport() {
                     className="absolute hidden sm:block"
                     style={{
                       backgroundColor: "#ecdeff",
-                      border: "1px solid #ff4e00",
+                      border: "1px solid #f24b00",
                       borderRadius: "46px",
                       height: "334px",
                       width: "170px",
@@ -190,7 +190,7 @@ function OnSiteSupport() {
                   <div
                     className="absolute hidden sm:block"
                     style={{
-                      backgroundColor: "#ff4e00",
+                      backgroundColor: "#f24b00",
                       border: "1px solid #ecdeff",
                       borderRadius: "46px",
                       height: "334px",
@@ -226,13 +226,13 @@ function OnSiteSupport() {
           id="key-features"
           className="py-8 sm:py-12 flex justify-center items-center px-4 sm:px-6 lg:px-8"
         >
-          <div className="max-w-7xl w-full mx-auto py-8 sm:py-12 lg:py-14 bg-[#e3eeff] border border-[#ff4e00] rounded-3xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl w-full mx-auto py-8 sm:py-12 lg:py-14 bg-[#e3eeff] border border-[#f24b00] rounded-3xl px-4 sm:px-6 lg:px-8">
             <h1 className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold text-[#16213d] mb-6 sm:mb-8">
               See how Proscene works for you
             </h1>
             <button 
               onClick={handleButtonClick}
-              className="mx-auto block px-6 sm:px-8 py-3 sm:py-4 rounded-[10px] bg-[#ff4e00] text-white hover:bg-[#16213d] transition-all duration-300"
+              className="mx-auto block px-6 sm:px-8 py-3 sm:py-4 rounded-[10px] bg-[#f24b00] text-white hover:bg-[#16213d] transition-all duration-300"
             >
               Book a demo today
             </button>
@@ -390,7 +390,7 @@ function OnSiteSupport() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {/* Onboarding Staff */}
               <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 sm:p-8 hover:shadow-xl transition-shadow duration-300">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#ff4e00] rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#f24b00] rounded-full flex items-center justify-center mb-4 sm:mb-6">
                   <span className="text-2xl sm:text-3xl">👥</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold text-[#16213d] mb-3 sm:mb-4">
@@ -401,15 +401,15 @@ function OnSiteSupport() {
                 </p>
                 <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
                   <li className="flex items-start">
-                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#f24b00] mr-2 flex-shrink-0">•</span>
                     <span>Customized orientation sessions</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#f24b00] mr-2 flex-shrink-0">•</span>
                     <span>Hands-on equipment training</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#f24b00] mr-2 flex-shrink-0">•</span>
                     <span>Role-specific skill development</span>
                   </li>
                 </ul>
@@ -417,7 +417,7 @@ function OnSiteSupport() {
 
               {/* Ongoing User Training */}
               <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 sm:p-8 hover:shadow-xl transition-shadow duration-300">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#ff4e00] rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#f24b00] rounded-full flex items-center justify-center mb-4 sm:mb-6">
                   <span className="text-2xl sm:text-3xl">🎓</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold text-[#16213d] mb-3 sm:mb-4">
@@ -428,15 +428,15 @@ function OnSiteSupport() {
                 </p>
                 <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
                   <li className="flex items-start">
-                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#f24b00] mr-2 flex-shrink-0">•</span>
                     <span>Regular workshops and webinars</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#f24b00] mr-2 flex-shrink-0">•</span>
                     <span>Advanced feature training</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#f24b00] mr-2 flex-shrink-0">•</span>
                     <span>Performance optimization tips</span>
                   </li>
                 </ul>
@@ -444,7 +444,7 @@ function OnSiteSupport() {
 
               {/* Documentation */}
               <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 sm:p-8 hover:shadow-xl transition-shadow duration-300">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#ff4e00] rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#f24b00] rounded-full flex items-center justify-center mb-4 sm:mb-6">
                   <span className="text-2xl sm:text-3xl">📚</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold text-[#16213d] mb-3 sm:mb-4">
@@ -455,15 +455,15 @@ function OnSiteSupport() {
                 </p>
                 <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
                   <li className="flex items-start">
-                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#f24b00] mr-2 flex-shrink-0">•</span>
                     <span>Detailed user manuals</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#f24b00] mr-2 flex-shrink-0">•</span>
                     <span>Quick reference guides</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#ff4e00] mr-2 flex-shrink-0">•</span>
+                    <span className="text-[#f24b00] mr-2 flex-shrink-0">•</span>
                     <span>Video tutorials and demos</span>
                   </li>
                 </ul>
@@ -473,7 +473,7 @@ function OnSiteSupport() {
         </div>
 
         {/* Consultation CTA */}
-        <div className="max-w-7xl mx-auto bg-[#f3f6ff] border border-[#ff4e00] rounded-xl p-4 sm:p-6 lg:p-8 mx-4 my-12 sm:my-16 lg:my-24">
+        <div className="max-w-7xl mx-auto bg-[#f3f6ff] border border-[#f24b00] rounded-xl p-4 sm:p-6 lg:p-8 mx-4 my-12 sm:my-16 lg:my-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {/* Text Column */}
             <div className="flex flex-col justify-center order-2 md:order-1">
@@ -485,7 +485,7 @@ function OnSiteSupport() {
               <div>
                 <button 
                   onClick={handleButtonClick} 
-                  className="bg-[#ff4e00] text-white px-6 sm:px-8 py-3 rounded-[15px] hover:bg-[#16213d] transition-colors w-full sm:w-auto"
+                  className="bg-[#f24b00] text-white px-6 sm:px-8 py-3 rounded-[15px] hover:bg-[#16213d] transition-colors w-full sm:w-auto"
                 >
                   Contact us
                 </button>
@@ -517,8 +517,8 @@ function OnSiteSupport() {
                   onClick={() => setActiveLink(link.id)}
                   className={`px-3 sm:px-4 py-2 whitespace-nowrap text-sm sm:text-base ${
                     activeLink === link.id
-                      ? "text-[#ff4e00] border-b-2 border-[#ff4e00] font-semibold"
-                      : "text-[#16213d] hover:text-[#ff4e00]"
+                      ? "text-[#f24b00] border-b-2 border-[#f24b00] font-semibold"
+                      : "text-[#16213d] hover:text-[#f24b00]"
                   } transition-colors duration-200`}
                 >
                   {link.label}

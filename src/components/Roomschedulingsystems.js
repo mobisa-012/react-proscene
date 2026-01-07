@@ -17,7 +17,7 @@ function RoomScheduling() {
       name: "Scheduling Panels",
       tagline: "Smart Room Displays",
       icon: "📱",
-      color: "from-[#ff4e00] to-[#e54600]",
+      color: "from-[#f24b00] to-[#e54600]",
       features: [
         { icon: "👆", title: "Touch Interface", desc: "Intuitive touchscreen for easy room booking and management" },
         { icon: "📅", title: "Real-Time Availability", desc: "Instant visibility of room schedules and bookings" },
@@ -37,7 +37,7 @@ function RoomScheduling() {
       name: "Scheduling Software",
       tagline: "Centralized Room Management",
       icon: "💻",
-      color: "from-[#ff4e00] to-[#e54600]",
+      color: "from-[#f24b00] to-[#e54600]",
       features: [
         { icon: "🌐", title: "Web Portal", desc: "Book rooms from any device with web browser" },
         { icon: "📱", title: "Mobile App", desc: "Room booking and management on the go" },
@@ -83,34 +83,34 @@ function RoomScheduling() {
     { 
       name: "Touch Panels", 
       icon: "👆", 
-      color: "from-[#ff4e00] to-[#e54600]",
+      color: "from-[#f24b00] to-[#e54600]",
       specs: ["7-10 inch displays", "Touch interface", "Room status", "Instant booking"]
     },
     { 
       name: "Desktop Software", 
       icon: "💻", 
-      color: "from-[#ff4e00] to-[#e54600]",
+      color: "from-[#f24b00] to-[#e54600]",
       specs: ["Web-based portal", "Admin controls", "Reporting tools", "User management"]
     },
     { 
       name: "Mobile Apps", 
       icon: "📱", 
-      color: "from-[#ff4e00] to-[#e54600]",
+      color: "from-[#f24b00] to-[#e54600]",
       specs: ["iOS & Android", "On-the-go booking", "Push notifications", "QR check-in"]
     },
     { 
       name: "Analytics Suite", 
       icon: "📊", 
-      color: "from-[#ff4e00] to-[#e54600]",
+      color: "from-[#f24b00] to-[#e54600]",
       specs: ["Usage reports", "Space utilization", "Trend analysis", "ROI tracking"]
     }
   ];
 
   const integrations = [
-    { name: "Microsoft Outlook", icon: "📧", color: "from-[#ff4e00] to-[#e54600]" },
-    { name: "Google Calendar", icon: "📅", color: "from-[#ff4e00] to-[#e54600]" },
-    { name: "Office 365", icon: "🏢", color: "from-[#ff4e00] to-[#e54600]" },
-    { name: "Teams & Zoom", icon: "🎥", color: "from-[#ff4e00] to-[#e54600]" }
+    { name: "Microsoft Outlook", icon: "📧", color: "from-[#f24b00] to-[#e54600]" },
+    { name: "Google Calendar", icon: "📅", color: "from-[#f24b00] to-[#e54600]" },
+    { name: "Office 365", icon: "🏢", color: "from-[#f24b00] to-[#e54600]" },
+    { name: "Teams & Zoom", icon: "🎥", color: "from-[#f24b00] to-[#e54600]" }
   ];
 
   const current = technologies[activeTab];
@@ -150,7 +150,7 @@ function RoomScheduling() {
                 onClick={() => setActiveTab("panels")}
                 className={`px-8 py-4 rounded-2xl font-bold transition-all duration-300 ${
                   activeTab === "panels"
-                    ? "bg-white text-[#ff4e00] shadow-xl scale-105"
+                    ? "bg-white text-[#f24b00] shadow-xl scale-105"
                     : "bg-white bg-opacity-20 text-white hover:bg-opacity-30"
                 }`}
               >
@@ -160,7 +160,7 @@ function RoomScheduling() {
                 onClick={() => setActiveTab("software")}
                 className={`px-8 py-4 rounded-2xl font-bold transition-all duration-300 ${
                   activeTab === "software"
-                    ? "bg-white text-[#ff4e00] shadow-xl scale-105"
+                    ? "bg-white text-[#f24b00] shadow-xl scale-105"
                     : "bg-white bg-opacity-20 text-white hover:bg-opacity-30"
                 }`}
               >
@@ -175,7 +175,7 @@ function RoomScheduling() {
       <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#f24b00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
               Digital Media
             </div>
             <h2 className="text-3xl md:text-5xl font-bold text-[#16213d] mb-4">
@@ -206,7 +206,7 @@ function RoomScheduling() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {current.benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-gradient-to-br from-[#ff4e00] to-[#e54600] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-6 h-6 bg-gradient-to-br from-[#f24b00] to-[#e54600] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white text-sm">✓</span>
                   </div>
                   <p className="text-gray-700 text-lg">{benefit}</p>
@@ -221,7 +221,7 @@ function RoomScheduling() {
       <div className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#f24b00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
               Audio Visual
             </div>
             <h2 className="text-3xl md:text-5xl font-bold text-[#16213d] mb-6">
@@ -238,15 +238,15 @@ function RoomScheduling() {
                 <div
                   key={index}
                   className={`bg-white rounded-3xl shadow-xl overflow-hidden cursor-pointer transition-all duration-500 transform ${
-                    currentSlide === index ? "scale-105 ring-4 ring-[#ff4e00] ring-opacity-50" : "hover:scale-102"
+                    currentSlide === index ? "scale-105 ring-4 ring-[#f24b00] ring-opacity-50" : "hover:scale-102"
                   }`}
                   onClick={() => setCurrentSlide(index)}
                 >
                   <div className="relative">
-                    <div className="w-full h-48 bg-gradient-to-br from-[#ff4e00] to-[#e54600] flex items-center justify-center">
+                    <div className="w-full h-48 bg-gradient-to-br from-[#f24b00] to-[#e54600] flex items-center justify-center">
                       <div className="text-6xl">{application.icon}</div>
                     </div>
-                    <div className="absolute top-4 left-4 px-3 py-1 bg-[#ff4e00] text-white text-sm font-semibold rounded-full">
+                    <div className="absolute top-4 left-4 px-3 py-1 bg-[#f24b00] text-white text-sm font-semibold rounded-full">
                       {application.category}
                     </div>
                   </div>
@@ -260,7 +260,7 @@ function RoomScheduling() {
                       <div className="grid grid-cols-1 gap-2">
                         {application.features.map((feature, featureIndex) => (
                           <div key={featureIndex} className="flex items-center space-x-2">
-                            <div className="w-2 h-2 bg-[#ff4e00] rounded-full"></div>
+                            <div className="w-2 h-2 bg-[#f24b00] rounded-full"></div>
                             <span className="text-sm text-gray-600">{feature}</span>
                           </div>
                         ))}
@@ -277,7 +277,7 @@ function RoomScheduling() {
                   key={index}
                   onClick={() => setCurrentSlide(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    currentSlide === index ? "bg-[#ff4e00] w-8" : "bg-gray-300"
+                    currentSlide === index ? "bg-[#f24b00] w-8" : "bg-gray-300"
                   }`}
                 />
               ))}
@@ -290,7 +290,7 @@ function RoomScheduling() {
       <div className="py-20 px-4 bg-gradient-to-br from-gray-50 to-orange-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#ff4e00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#f24b00] to-[#e54600] rounded-full text-white text-sm font-medium mb-4">
               Collaboration
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#16213d] mb-4">
@@ -349,7 +349,7 @@ function RoomScheduling() {
                 { step: "4", icon: "📊", title: "Analytics", desc: "Track usage and optimize space" }
               ].map((step, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-12 h-12 bg-[#ff4e00] text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
+                  <div className="w-12 h-12 bg-[#f24b00] text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
                     {step.step}
                   </div>
                   <div className="text-3xl mb-2">{step.icon}</div>
@@ -390,7 +390,7 @@ function RoomScheduling() {
       {/* CTA Section */}
       <div className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-r from-[#ff4e00] to-[#e54600] text-white p-12 rounded-3xl">
+          <div className="bg-gradient-to-r from-[#f24b00] to-[#e54600] text-white p-12 rounded-3xl">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Ready to Transform Your Room Management?
             </h3>
@@ -400,7 +400,7 @@ function RoomScheduling() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={handleButtonClick}
-                className="bg-white text-[#ff4e00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+                className="bg-white text-[#f24b00] px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
               >
                 Schedule Demo
               </button>

@@ -279,7 +279,7 @@ function ServicesPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-[#ff4e00] to-[#e64500] text-white overflow-hidden">
+      <div className="relative bg-gradient-to-br from-[#f24b00] to-[#e64500] text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 py-20 lg:py-28">
           <div className="text-center space-y-6 max-w-4xl mx-auto">
@@ -296,13 +296,13 @@ function ServicesPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <button
                 onClick={() => navigate("/bookDemo")}
-                className="bg-white text-[#ff4e00] px-8 py-3 rounded-2xl font-semibold hover:bg-gray-100 transition-colors duration-300 shadow-lg"
+                className="bg-white text-[#f24b00] px-8 py-3 rounded-2xl font-semibold hover:bg-gray-100 transition-colors duration-300 shadow-lg"
               >
                 Schedule Consultation
               </button>
               <button
                 onClick={() => document.getElementById('services-grid').scrollIntoView({ behavior: 'smooth' })}
-                className="border-2 border-white text-white px-8 py-3 rounded-2xl font-semibold hover:bg-white hover:text-[#ff4e00] transition-colors duration-300"
+                className="border-2 border-white text-white px-8 py-3 rounded-2xl font-semibold hover:bg-white hover:text-[#f24b00] transition-colors duration-300"
               >
                 Explore Services
               </button>
@@ -356,7 +356,7 @@ function ServicesPage() {
                 onClick={() => setActiveService(activeService === index ? null : index)}
               >
                 <div className="text-5xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#ff4e00] transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#f24b00] transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -374,7 +374,7 @@ function ServicesPage() {
                       <div className="grid grid-cols-1 gap-2">
                         {service.features.slice(0, 4).map((feature, idx) => (
                           <div key={idx} className="flex items-center space-x-2 text-sm text-gray-600">
-                            <div className="w-1.5 h-1.5 bg-[#ff4e00] rounded-full"></div>
+                            <div className="w-1.5 h-1.5 bg-[#f24b00] rounded-full"></div>
                             <span>{feature}</span>
                           </div>
                         ))}
@@ -383,7 +383,7 @@ function ServicesPage() {
                   </div>
                 )}
 
-                <div className="flex items-center text-[#ff4e00] font-semibold mt-4 group-hover:translate-x-2 transition-transform">
+                <div className="flex items-center text-[#f24b00] font-semibold mt-4 group-hover:translate-x-2 transition-transform">
                   {activeService === index ? "Show Less" : "Learn More"}
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeService === index ? "M5 15l7-7 7 7" : "M9 5l7 7-7 7"} />
@@ -411,7 +411,7 @@ function ServicesPage() {
             {serviceApproach.map((step, index) => (
               <div key={index} className="text-center group">
                 <div className="relative mb-6">
-                  <div className="w-24 h-24 bg-gradient-to-br from-[#ff4e00] to-[#e64500] rounded-full flex items-center justify-center mx-auto text-3xl group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <div className="w-24 h-24 bg-gradient-to-br from-[#f24b00] to-[#e64500] rounded-full flex items-center justify-center mx-auto text-3xl group-hover:scale-110 transition-transform duration-300 shadow-lg">
                     {step.icon}
                   </div>
                   <div className="absolute -top-3 -right-3 w-10 h-10 bg-[#16213d] rounded-full flex items-center justify-center text-sm font-bold text-white shadow-md">
@@ -478,7 +478,7 @@ function ServicesPage() {
       </div>
 
       {/* Stats Section */}
-      <div className="py-16 px-4 bg-gradient-to-r from-[#ff4e00] to-[#e64500] text-white">
+      <div className="py-16 px-4 bg-gradient-to-r from-[#f24b00] to-[#e64500] text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -538,13 +538,13 @@ function ServicesPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => navigate("/bookDemo")}
-              className="bg-[#ff4e00] text-white px-8 py-3 rounded-2xl font-semibold hover:bg-[#16213d] transition-colors duration-300 shadow-lg"
+              className="bg-[#f24b00] text-white px-8 py-3 rounded-2xl font-semibold hover:bg-[#16213d] transition-colors duration-300 shadow-lg"
             >
               Schedule Consultation
             </button>
             <button
               onClick={() => navigate("/case-studies")}
-              className="border-2 border-[#ff4e00] text-[#ff4e00] px-8 py-3 rounded-2xl font-semibold hover:bg-[#ff4e00] hover:text-white transition-colors duration-300"
+              className="border-2 border-[#f24b00] text-[#f24b00] px-8 py-3 rounded-2xl font-semibold hover:bg-[#f24b00] hover:text-white transition-colors duration-300"
             >
               View Our Projects
             </button>

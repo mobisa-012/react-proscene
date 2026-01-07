@@ -3,7 +3,7 @@ import sup from './assets/nera-offices-london-2-1200x847.jpg';
 
 const SupportMaintain = () => {
   return (
-    <div className="bg-[#ff4e00] text-white py-16">
+    <div className="bg-[#f24b00] text-white py-16">
       <div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col lg:flex-row items-center">
          {/* Image Section */}
          <div className="lg:w-1/2 mt-10 lg:mt-0 ml-5">

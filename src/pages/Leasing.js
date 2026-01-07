@@ -80,7 +80,7 @@ function Leasing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-16 md:py-20 mt-16 sm:mt-20 md:mt-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-stretch">
             {/* Text Content */}
-            <div className="bg-[#ff4e00] text-white p-6 sm:p-8 md:p-10 Br flex flex-col justify-center space-y-4 sm:space-y-6 md:space-y-8 ">
+            <div className="bg-[#f24b00] text-white p-6 sm:p-8 md:p-10 Br flex flex-col justify-center space-y-4 sm:space-y-6 md:space-y-8 ">
               <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
                 Lease Equipment Effortlessly
               </h1>
@@ -128,8 +128,8 @@ function Leasing() {
                 onClick={() => setActiveLink(link.id)}
                 className={`px-3 sm:px-4 py-2 whitespace-nowrap text-sm sm:text-base transition-colors ${
                   activeLink === link.id
-                    ? "text-[#ff4e00] border-b-2 border-[#ff4e00] font-semibold"
-                    : "text-[#16213d] hover:text-[#ff4e00]"
+                    ? "text-[#f24b00] border-b-2 border-[#f24b00] font-semibold"
+                    : "text-[#16213d] hover:text-[#f24b00]"
                 }`}
               >
                 {link.label}
@@ -168,7 +168,7 @@ function Leasing() {
             Experience Awaits
           </h1>
           <button 
-            className="bg-[#ff4e00] hover:bg-[#16213d] text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full transition duration-300 text-sm sm:text-base"
+            className="bg-[#f24b00] hover:bg-[#16213d] text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full transition duration-300 text-sm sm:text-base"
             onClick={handleButtonClick}
           >
             Speak With An Expert

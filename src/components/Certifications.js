@@ -18,7 +18,7 @@ function CertificationsPage() {
         "Qualified for government and corporate projects",
         "Regular audits and quality assurance"
       ],
-      badgeColor: "from-[#ff4e00] to-[#e54600]"
+      badgeColor: "from-[#f24b00] to-[#e54600]"
     },
     {
       id: "work-at-height",
@@ -32,7 +32,7 @@ function CertificationsPage() {
         "Trained in fall protection systems",
         "Insurance and liability coverage"
       ],
-      badgeColor: "from-[#ff4e00] to-[#e54600]"
+      badgeColor: "from-[#f24b00] to-[#e54600]"
     },
     {
       id: "nca-company",
@@ -46,7 +46,7 @@ function CertificationsPage() {
         "Quality assurance certification",
         "Project management standards"
       ],
-      badgeColor: "from-[#ff4e00] to-[#e54600]"
+      badgeColor: "from-[#f24b00] to-[#e54600]"
     },
     {
       id: "nca-individual",
@@ -60,7 +60,7 @@ function CertificationsPage() {
         "Industry recognition",
         "Compliance with building codes"
       ],
-      badgeColor: "from-[#ff4e00] to-[#e54600]"
+      badgeColor: "from-[#f24b00] to-[#e54600]"
     },
     {
       id: "epra-t3",
@@ -74,7 +74,7 @@ function CertificationsPage() {
         "Power system design and installation",
         "Regulatory compliance"
       ],
-      badgeColor: "from-[#ff4e00] to-[#e54600]"
+      badgeColor: "from-[#f24b00] to-[#e54600]"
     },
     {
       id: "epra-t2",
@@ -88,7 +88,7 @@ function CertificationsPage() {
         "Energy efficiency consulting",
         "High-voltage equipment handling"
       ],
-      badgeColor: "from-[#ff4e00] to-[#e54600]"
+      badgeColor: "from-[#f24b00] to-[#e54600]"
     }
   ];
 
@@ -118,7 +118,7 @@ function CertificationsPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-[#ff4e00] to-[#e54600] text-white overflow-hidden">
+      <div className="relative bg-gradient-to-br from-[#f24b00] to-[#e54600] text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 py-20 lg:py-28 text-center">
           <div className="inline-block px-4 py-2 bg-white bg-opacity-20 rounded-full text-sm font-medium mb-6">
@@ -199,7 +199,7 @@ function CertificationsPage() {
 
                   <div className="space-y-3">
                     <h4 className="font-semibold text-[#16213d] flex items-center gap-2">
-                      <svg className="w-5 h-5 text-[#ff4e00]" fill="currentColor" viewBox="0 0 20 20">
+                      <svg className="w-5 h-5 text-[#f24b00]" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       Key Benefits
@@ -207,7 +207,7 @@ function CertificationsPage() {
                     <ul className="space-y-2">
                       {cert.benefits.map((benefit, idx) => (
                         <li key={idx} className="flex items-start gap-3 text-gray-600">
-                          <div className="w-1.5 h-1.5 bg-[#ff4e00] rounded-full mt-2 flex-shrink-0"></div>
+                          <div className="w-1.5 h-1.5 bg-[#f24b00] rounded-full mt-2 flex-shrink-0"></div>
                           <span className="text-sm">{benefit}</span>
                         </li>
                       ))}
@@ -261,7 +261,7 @@ function CertificationsPage() {
       </div>
 
       {/* Stats Section */}
-      <div className="py-16 px-4 bg-gradient-to-r from-[#ff4e00] to-[#e54600] text-white">
+      <div className="py-16 px-4 bg-gradient-to-r from-[#f24b00] to-[#e54600] text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -291,13 +291,13 @@ function CertificationsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => navigate("/bookDemo")}
-              className="bg-[#ff4e00] text-white px-8 py-3 rounded-2xl font-semibold hover:bg-[#16213d] transition-colors duration-300 shadow-lg"
+              className="bg-[#f24b00] text-white px-8 py-3 rounded-2xl font-semibold hover:bg-[#16213d] transition-colors duration-300 shadow-lg"
             >
               Request Consultation
             </button>
             <button
               onClick={() => navigate("/contact")}
-              className="border-2 border-[#ff4e00] text-[#ff4e00] px-8 py-3 rounded-2xl font-semibold hover:bg-[#ff4e00] hover:text-white transition-colors duration-300"
+              className="border-2 border-[#f24b00] text-[#f24b00] px-8 py-3 rounded-2xl font-semibold hover:bg-[#f24b00] hover:text-white transition-colors duration-300"
             >
               Contact Us
             </button>

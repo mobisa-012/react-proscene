@@ -43,7 +43,7 @@ function DriveGrowth() {
     return (
         <div className="pb-5  maxWidthContainer" style={{paddingTop:'clamp(1.8019rem, 1.0209rem + 3.9051vw, 4.6819rem)'}}>
             <div className="flex flex-col md:flex-row items-center justify-center p-3 bg-white min-h-40">
-                <div className="bg-[#ff4e00] py-16 text-white sm:p-10 p-5 mb-10 mt-10 md:w-1/2 Br">
+                <div className="bg-[#f24b00] py-16 text-white sm:p-10 p-5 mb-10 mt-10 md:w-1/2 Br">
                     {/* Content with fixed height and scroll for overflow */}
                     <div
                         className="overflow-hidden relative"
@@ -72,7 +72,7 @@ function DriveGrowth() {
                     </div>
                     <div className="button-Center">
                         <button
-                            className="bg-white text-[#ff4e00] mx-4 py-2 px-6 mt-5 rounded-2xl hover:bg-[#16213d] hover:text-white border border-white transition-colors duration-300"
+                            className="bg-white text-[#f24b00] mx-4 py-2 px-6 mt-5 rounded-2xl hover:bg-[#16213d] hover:text-white border border-white transition-colors duration-300"
                             onClick={handleButtonClick}
                         >
                             Contact Our Team
