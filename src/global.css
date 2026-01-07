@@ -6,8 +6,8 @@
 
 @font-face {
   font-family: 'IBMPlexSans';
-  src: url('./components/assets/fonts/IBMPlexSans-Regular.ttf') format('Ttf'),
-       url('./components/assets/fonts/IBMPlexSans-Regular.ttf') format('truetype');
+  src: url('/public/fonts/IBMPlexSans-Regular.ttf') format('Ttf'),
+       url('/public/fonts/IBMPlexSans-Regular.ttf') format('truetype');
   /* font-weight: 500; */
   font-style: normal;
   /* font-display: block; */
@@ -25,24 +25,24 @@ body::before {
 
 @font-face {
   font-family: 'Salmond';
-  src: url('./components/assets/fonts/Salmond-Semibold.otf') format('otf'),
-       url('./components/assets/fonts/Salmond-Semibold.ttf') format('truetype');
+  src: url('/public/fonts/Salmond-Semibold.otf') format('otf'),
+       url('/public/fonts/Salmond-Semibold.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   /* font-display: block; */
 }
 @font-face {
     font-family: 'Salmond-light';
-    src: url('./components/assets/fonts/Salmond-Light.otf') format('otf'),
-         url('./components/assets/fonts/Salmond-Light.ttf') format('truetype');
+    src: url('/public/fonts/Salmond-Light.otf') format('otf'),
+         url('/public/fonts/Salmond-Light.ttf') format('truetype');
     /* font-weight: 600; */
     font-style: normal;
     font-display: swap;
   }
 @font-face {
     font-family: 'Salmond-regular';
-    src: url('./components/assets/fonts/SalmondRegular.otf') format('otf'),
-         url('./components/assets/fonts/SalmondRegular.otf') format('truetype');
+    src: url('/public/fonts/SalmondRegular.otf') format('otf'),
+         url('/public/fonts/SalmondRegular.otf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;

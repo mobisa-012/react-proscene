@@ -8,8 +8,8 @@ import epson from './assets/epson.jpg';
 import extron from './assets/extron.jpg';
 import LG from './assets/LG.jpg';
 import lifesize from './assets/lifesize.jpg';
-import optoma from './assets/optoma.jpg';
-import panasonic from './assets/panasonic.jpg';
+// import optoma from './assets/optoma.jpg';
+// import panasonic from './assets/panasonic.jpg';
 import samsung from './assets/samsung.jpg';
 
 const LogoCarousel = () => {

@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import About from  './pages/About';
 import Services from './pages/Services';
 import Sectors from './pages/Sectors';
-import Casestudies from './pages/Casestudies';
+// import Casestudies from './pages/Casestudies';
 import Contact from './pages/Contact';
 import Certifications from './components/Certifications';
 import Partners from './pages/Partners';
