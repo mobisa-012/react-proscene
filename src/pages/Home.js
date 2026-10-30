@@ -3,10 +3,10 @@ import Footer from "../components/Footer";
 import LogoCarousel from "../components/LogoCarousel";
 import SectorCards from "../components/SectorCards.js";
 import './Home.css';
-import Partners from "../components/Partners.js";
+
 import BookDemoToday from "../components/BookDemo.js";
 import SolutionsLayout from "../components/Solutions.js";
-import DriveGrowth from "../components/DriveGrowth.js";
+
 import Stats from "../components/StatsSection.js";
 import TestimonialCarousel from "../components/testimonials.js";
 import VideoBackground from "../components/VideoBackground.js";

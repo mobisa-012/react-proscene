@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import uccImage from "../components/assets/nera-offices-london-2-1200x847.jpg";
-import leftbottomSvg from "../components/assets/leftbottom.svg";
+
 import FAQ from "./Faq";
 import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Onsitesupport.css";
-import leftbottomSvg from "../components/assets/leftbottom.svg";
-import supportjpg from "../components/assets/support.jpg";
+
 import { motion } from "framer-motion";
 import FAQ from "./Faq";
 import Footer from '../components/Footer';
