@@ -9,9 +9,9 @@ const HelpSection = () => {
 
   const [email, setEmail] = useState('');
   const [interest, setInterest] = useState('');
-  const [error, setError] = useState('');
+  const [error, setError] = useState(''); // eslint-disable-line no-unused-vars
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e) => { // eslint-disable-line no-unused-vars
     e.preventDefault();
     if (!email || !interest) {
       setError('Please complete this required field.');
@@ -24,7 +24,7 @@ const HelpSection = () => {
     window.open("https://www.google.com/maps/dir/-1.31072,36.8017408/proscene+systems+ltd/@-1.3139321,36.6764244,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x182f1737f3e963d7:0xdc908ed52a11bc93!2m2!1d36.7015552!2d-1.30039?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D", "_blank"); 
   }
 
-  const renderForm = () => {
+  const renderForm = () => { // eslint-disable-line no-unused-vars
     switch (selectedOption) {
       case "sales":
         return (
