@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const CoopNav = () => {
-  const [activeItem, setActiveItem] = useState(0);
+  const [activeItem] = useState(0);
 
   const navItems = [
     { label: 'Our Work', icon: '💼' },

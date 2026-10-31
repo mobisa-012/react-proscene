@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-import leftbottomSvg from "../assets/leftbottom.svg";
 import digitalMediaJpg from "../assets/itau-private-bank-offices-bogota-6-1200x800.jpg";
 import BookDemo from "../../pages/BookDemoPage";
-import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 
 function DigitalSignage() {
@@ -69,7 +67,7 @@ function DigitalSignage() {
       setCurrentSlide((prev) => (prev + 1) % solutions.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [solutions.length]);
 
   return (
     <div className="min-h-screen bg-white">

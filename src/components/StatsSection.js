@@ -22,13 +22,14 @@ const Stats = () => {
       { threshold: 0.5 } // Trigger when 50% of the element is visible
     );
 
-    if (statsRef.current) {
-      observer.observe(statsRef.current);
+    const node = statsRef.current;
+    if (node) {
+      observer.observe(node);
     }
 
     return () => {
-      if (statsRef.current) {
-        observer.unobserve(statsRef.current);
+      if (node) {
+        observer.unobserve(node);
       }
     };
   }, []);
@@ -52,13 +53,19 @@ const Stats = () => {
         </div>
 
        
-        <div className="flex justify-center items-center">
-        <div 
-          className="relative w-[450px] h-[450px] rounded-xl border-4 border-white-500 overflow-hidden"
-        >
-          <iframe width="916" height="515" src="https://www.youtube.com/embed/Txv2PRYQA6Q" title="5 Must Have Interactive Display In 2025" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <div className="flex items-center justify-center">
+          <div className="relative aspect-video w-full max-w-[916px] overflow-hidden rounded-xl border-4 border-white">
+            <iframe
+              className="absolute inset-0 h-full w-full"
+              src="https://www.youtube.com/embed/ErBsPANTpqM"
+              title="Seamlessly Support Every Work Style with Neat"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
-      </div>
       </div>
     </div>
       </div>

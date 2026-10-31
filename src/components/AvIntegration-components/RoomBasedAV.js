@@ -2,7 +2,6 @@ import React, { useState } from "react";
 // import leftbottomSvg from "../assets/leftbottom.svg";
 import digitalMediaJpg from "../assets/itau-private-bank-offices-bogota-6-1200x800.jpg";
 import BookDemo from "../../pages/BookDemoPage";
-import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 
 function RoomBasedAV() {

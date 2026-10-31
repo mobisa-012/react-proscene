@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import Footer from "../components/Footer";
 import BookDemoPage from "./BookDemoPage.js";
 import './Contact.css';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from 'react-icons/fa';
 
 const HelpSection = () => {
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption] = useState(null);
 
-  const [email, setEmail] = useState('');
-  const [interest, setInterest] = useState('');
+  const [email] = useState('');
+  const [interest] = useState('');
   const [error, setError] = useState(''); // eslint-disable-line no-unused-vars
 
   const handleSubmit = (e) => { // eslint-disable-line no-unused-vars

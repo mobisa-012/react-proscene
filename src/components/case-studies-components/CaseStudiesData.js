@@ -1,4 +1,4 @@
-import ed from '../assets/ed.jpg';
+
 
 const caseStudies = [
   {

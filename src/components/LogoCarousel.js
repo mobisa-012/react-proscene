@@ -40,10 +40,6 @@ const LogoCarousel = () => {
       }, 20);
     };
 
-    const stopScrolling = () => {
-      clearInterval(scrollInterval);
-    };
-
     startScrolling();
 
     return () => clearInterval(scrollInterval);

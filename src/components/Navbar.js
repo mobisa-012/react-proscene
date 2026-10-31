@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { useMediaQuery } from "react-responsive";
 import logoHome from "./assets/logo.png";
 import solutionsimg from "./assets/adi.jpeg";
 
 function Navbar() {
-  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
-  const [isSectorsOpen, setIsSectorsOpen] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [, setIsSolutionsOpen] = useState(false);
+  const [, setIsSectorsOpen] = useState(false);
+  const [, setIsServicesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   // const [isMenuOpen, setIsMenuOpen] = useState(false);
   // const [activeMenu, setActiveMenu] = useState(null);
@@ -34,26 +33,19 @@ function Navbar() {
     setIsServicesOpen(false);
   };
 
-  const handleClickOutside = (event) => {
-    if (!event.target.closest(".navbar")) {
-      closeAllDropdowns();
-    }
-  };
-
   React.useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(".navbar")) {
+        closeAllDropdowns();
+      }
+    };
     document.addEventListener("click", handleClickOutside);
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
-  const solutionsSubMenuItems = [
-    { label: "Audio Visual Integration", href: "/avIntegration" },
-    { label: "Collaboration Solutions", href: "/collaborationSolutions" },
-    { label: "Microsoft Modern Work Solutions", href: "/microsoft-modern-solutions" },
-    { label: "Automation Solutions", href: "/automationSolutions" },
-    { label: "Interactive Technology", href: "/interactiveTechnology" },
-  ];
+
 
   const sectorsSubMenuItems = [
     { label: "Corporate", href: "/corporate" },
@@ -72,7 +64,7 @@ function Navbar() {
     { label: "Video Conference Rental", href: "/videoConferenceRental" },
   ];
 
-  const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1024px)" });
+  useMediaQuery({ query: "(min-width: 1024px)" });
 
   return (
     <header

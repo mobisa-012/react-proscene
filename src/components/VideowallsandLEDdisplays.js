@@ -8,7 +8,7 @@ function VideoWallsLED() {
     navigate("/bookDemo");
   };
 
-  const [activeFeature, setActiveFeature] = useState(0);
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const [activeTab, setActiveTab] = useState("videowalls");
 

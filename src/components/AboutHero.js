@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "../global.css";
 import "./abouthero.css";
 import homeSvg from "./assets/conference.webp";
@@ -17,11 +17,7 @@ const AboutHero = () => {
         // "Empower your business with cutting-edge solutions tailored to your needs.",
     ];
 
-    const swipeTopics = [
-        "We're in the business of enhancing your business.",
-        "Fits your business each day, everyday. Check.",
-        "Be felt, be visible through all the seasons. Check.",
-    ];
+
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isAnimating, setIsAnimating] = useState(false);
