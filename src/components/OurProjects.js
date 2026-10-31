@@ -1,10 +1,6 @@
-import React, { useState } from 'react';
-import ubs from './assets/ubs.jpg';
-
-
+import React from 'react';
 
 const OurProjects = () => {
-
 
   return (
     <div className="pt-10 pb-10">
